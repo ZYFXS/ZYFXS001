@@ -1,0 +1,4139 @@
+mixed-port: 7890
+allow-lan: true
+mode: rule
+log-level: info
+ipv6: true
+external-controller: 127.0.0.1:9090
+dns:
+  enable: true
+  listen: 0.0.0.0:1053
+  ipv6: true
+  enhanced-mode: fake-ip
+  fake-ip-range: 198.18.0.1/16
+  default-nameserver:
+    - 223.5.5.5
+    - 119.29.29.29
+  nameserver:
+    - https://dns.alidns.com/dns-query
+    - https://doh.pub/dns-query
+proxies:
+  - name: 捷克-youtube@资源分享师 06
+    type: vless
+    server: 95.173.199.116
+    port: 8443
+    uuid: 394f6981-a782-4779-9a85-e6cf22935d93
+    servername: ams1.fromblancwithlove.com
+    tls: true
+    skip-cert-verify: true
+    udp: true
+  - name: 捷克-youtube@资源分享师 01
+    type: vless
+    server: 79.127.227.215
+    port: 8443
+    uuid: 394f6981-a782-4779-9a85-e6cf22935d93
+    servername: ams1.fromblancwithlove.com
+    tls: true
+    skip-cert-verify: true
+    udp: true
+  - name: 捷克-youtube@资源分享师 02
+    type: vless
+    server: 79.127.227.215
+    port: 8443
+    uuid: 394f6981-a782-4779-9a85-e6cf22935d93
+    servername: ams1.fromblancwithlove.com
+    tls: true
+    skip-cert-verify: true
+    udp: true
+  - name: 捷克-youtube@资源分享师 03
+    type: vless
+    server: 87.249.139.236
+    port: 8443
+    uuid: 394f6981-a782-4779-9a85-e6cf22935d93
+    servername: ams1.fromblancwithlove.com
+    tls: true
+    skip-cert-verify: true
+    udp: true
+  - name: 捷克-youtube@资源分享师 04
+    type: vless
+    server: 95.173.199.86
+    port: 8443
+    uuid: 394f6981-a782-4779-9a85-e6cf22935d93
+    servername: ams1.fromblancwithlove.com
+    tls: true
+    skip-cert-verify: true
+    udp: true
+  - name: 捷克-youtube@资源分享师 05
+    type: vless
+    server: 95.173.199.117
+    port: 8443
+    uuid: 394f6981-a782-4779-9a85-e6cf22935d93
+    servername: ams1.fromblancwithlove.com
+    tls: true
+    skip-cert-verify: true
+    udp: true
+  - name: 捷克-youtube@资源分享师 07
+    type: vless
+    server: 95.173.199.99
+    port: 8443
+    uuid: 394f6981-a782-4779-9a85-e6cf22935d93
+    servername: ams1.fromblancwithlove.com
+    tls: true
+    skip-cert-verify: true
+    udp: true
+  - name: 捷克-youtube@资源分享师 08
+    type: vless
+    server: 95.173.199.86
+    port: 8443
+    uuid: 394f6981-a782-4779-9a85-e6cf22935d93
+    servername: ams1.fromblancwithlove.com
+    tls: true
+    skip-cert-verify: true
+    udp: true
+  - name: 捷克-youtube@资源分享师 09
+    type: vless
+    server: 95.173.199.98
+    port: 8443
+    uuid: 394f6981-a782-4779-9a85-e6cf22935d93
+    servername: ams1.fromblancwithlove.com
+    tls: true
+    skip-cert-verify: true
+    udp: true
+  - name: 荷兰-youtube@资源分享师 01
+    type: vless
+    server: 79.127.227.57
+    port: 8443
+    uuid: 394f6981-a782-4779-9a85-e6cf22935d93
+    servername: ams1.fromblancwithlove.com
+    tls: true
+    skip-cert-verify: true
+    udp: true
+  - name: 荷兰-youtube@资源分享师 02
+    type: vless
+    server: 185.229.191.12
+    port: 8443
+    uuid: 394f6981-a782-4779-9a85-e6cf22935d93
+    servername: ams1.fromblancwithlove.com
+    tls: true
+    skip-cert-verify: true
+    udp: true
+  - name: 荷兰-youtube@资源分享师 03
+    type: vless
+    server: 185.229.191.14
+    port: 8443
+    uuid: 394f6981-a782-4779-9a85-e6cf22935d93
+    servername: ams1.fromblancwithlove.com
+    tls: true
+    skip-cert-verify: true
+    udp: true
+  - name: 荷兰-youtube@资源分享师 04
+    type: vless
+    server: 185.229.191.13
+    port: 8443
+    uuid: 394f6981-a782-4779-9a85-e6cf22935d93
+    servername: ams1.fromblancwithlove.com
+    tls: true
+    skip-cert-verify: true
+    udp: true
+  - name: 荷兰-youtube@资源分享师 05
+    type: vless
+    server: 185.229.191.13
+    port: 8443
+    uuid: 394f6981-a782-4779-9a85-e6cf22935d93
+    servername: ams1.fromblancwithlove.com
+    tls: true
+    client-fingerprint: chrome
+    skip-cert-verify: true
+    udp: true
+  - name: 荷兰-youtube@资源分享师 06
+    type: vless
+    server: 185.229.191.10
+    port: 8443
+    uuid: 394f6981-a782-4779-9a85-e6cf22935d93
+    servername: ams1.fromblancwithlove.com
+    tls: true
+    client-fingerprint: chrome
+    skip-cert-verify: true
+    udp: true
+  - name: 荷兰-youtube@资源分享师 07
+    type: vless
+    server: 79.127.227.57
+    port: 8443
+    uuid: 394f6981-a782-4779-9a85-e6cf22935d93
+    servername: ams1.fromblancwithlove.com
+    tls: true
+    client-fingerprint: chrome
+    skip-cert-verify: true
+    udp: true
+  - name: 荷兰-youtube@资源分享师 08
+    type: vless
+    server: 185.229.191.10
+    port: 8443
+    uuid: 394f6981-a782-4779-9a85-e6cf22935d93
+    servername: ams1.fromblancwithlove.com
+    tls: true
+    skip-cert-verify: true
+    udp: true
+  - name: 荷兰-youtube@资源分享师 09
+    type: vless
+    server: 185.229.191.14
+    port: 8443
+    uuid: 394f6981-a782-4779-9a85-e6cf22935d93
+    servername: ams1.fromblancwithlove.com
+    tls: true
+    client-fingerprint: chrome
+    skip-cert-verify: true
+    udp: true
+  - name: 荷兰-youtube@资源分享师 10
+    type: vless
+    server: 79.127.227.215
+    port: 8443
+    uuid: 394f6981-a782-4779-9a85-e6cf22935d93
+    servername: ams1.fromblancwithlove.com
+    tls: true
+    client-fingerprint: chrome
+    skip-cert-verify: true
+    udp: true
+  - name: 荷兰-youtube@资源分享师 11
+    type: vless
+    server: 193.3.189.38
+    port: 1443
+    uuid: f68435e2-ac00-4374-8c03-c1d36e171088
+    servername: ee.snowfall.top
+    tls: true
+    flow: xtls-rprx-vision
+    client-fingerprint: firefox
+    reality-opts:
+      public-key: ARCkuOPVxHxqZULtxDVzr6dgCqmCzIPomXdb6OAxVS8
+      short-id: 0441f3e34348cb40
+    skip-cert-verify: true
+    udp: true
+  - name: 荷兰-youtube@资源分享师 12
+    type: vless
+    server: 185.229.191.12
+    port: 8443
+    uuid: 394f6981-a782-4779-9a85-e6cf22935d93
+    servername: ams1.fromblancwithlove.com
+    tls: true
+    skip-cert-verify: true
+    udp: true
+  - name: 荷兰-youtube@资源分享师 13
+    type: vless
+    server: 185.229.191.67
+    port: 8443
+    uuid: 394f6981-a782-4779-9a85-e6cf22935d93
+    servername: ams1.fromblancwithlove.com
+    tls: true
+    client-fingerprint: chrome
+    skip-cert-verify: true
+    udp: true
+  - name: 荷兰-youtube@资源分享师 14
+    type: vless
+    server: 185.229.191.184
+    port: 8443
+    uuid: 394f6981-a782-4779-9a85-e6cf22935d93
+    servername: ams1.fromblancwithlove.com
+    tls: true
+    client-fingerprint: chrome
+    skip-cert-verify: true
+    udp: true
+  - name: 荷兰-youtube@资源分享师 15
+    type: vless
+    server: 185.229.191.42
+    port: 8443
+    uuid: 394f6981-a782-4779-9a85-e6cf22935d93
+    servername: ams1.fromblancwithlove.com
+    tls: true
+    client-fingerprint: chrome
+    skip-cert-verify: true
+    udp: true
+  - name: 荷兰-youtube@资源分享师 16
+    type: vless
+    server: 185.229.191.110
+    port: 8443
+    uuid: 394f6981-a782-4779-9a85-e6cf22935d93
+    servername: ams1.fromblancwithlove.com
+    tls: true
+    client-fingerprint: chrome
+    skip-cert-verify: true
+    udp: true
+  - name: 荷兰-youtube@资源分享师 17
+    type: vless
+    server: 185.229.191.111
+    port: 8443
+    uuid: 394f6981-a782-4779-9a85-e6cf22935d93
+    servername: ams1.fromblancwithlove.com
+    tls: true
+    skip-cert-verify: true
+    udp: true
+  - name: 荷兰-youtube@资源分享师 18
+    type: vless
+    server: 185.229.191.46
+    port: 8443
+    uuid: 394f6981-a782-4779-9a85-e6cf22935d93
+    servername: ams1.fromblancwithlove.com
+    tls: true
+    skip-cert-verify: true
+    udp: true
+  - name: 荷兰-youtube@资源分享师 19
+    type: vless
+    server: 185.229.191.169
+    port: 8443
+    uuid: 394f6981-a782-4779-9a85-e6cf22935d93
+    servername: ams1.fromblancwithlove.com
+    tls: true
+    skip-cert-verify: true
+    udp: true
+  - name: 荷兰-youtube@资源分享师 20
+    type: vless
+    server: 185.229.191.49
+    port: 8443
+    uuid: 394f6981-a782-4779-9a85-e6cf22935d93
+    servername: ams1.fromblancwithlove.com
+    tls: true
+    skip-cert-verify: true
+    udp: true
+  - name: 荷兰-youtube@资源分享师 21
+    type: vless
+    server: 185.229.191.69
+    port: 8443
+    uuid: 394f6981-a782-4779-9a85-e6cf22935d93
+    servername: ams1.fromblancwithlove.com
+    tls: true
+    skip-cert-verify: true
+    udp: true
+  - name: 荷兰-youtube@资源分享师 22
+    type: vless
+    server: 185.229.191.109
+    port: 8443
+    uuid: 394f6981-a782-4779-9a85-e6cf22935d93
+    servername: ams1.fromblancwithlove.com
+    tls: true
+    skip-cert-verify: true
+    udp: true
+  - name: 荷兰-youtube@资源分享师 23
+    type: vless
+    server: 185.229.191.93
+    port: 8443
+    uuid: 394f6981-a782-4779-9a85-e6cf22935d93
+    servername: ams1.fromblancwithlove.com
+    tls: true
+    skip-cert-verify: true
+    udp: true
+  - name: 荷兰-youtube@资源分享师 24
+    type: vless
+    server: 185.229.191.93
+    port: 8443
+    uuid: 394f6981-a782-4779-9a85-e6cf22935d93
+    servername: ams1.fromblancwithlove.com
+    tls: true
+    client-fingerprint: chrome
+    skip-cert-verify: true
+    udp: true
+  - name: 荷兰-youtube@资源分享师 25
+    type: vless
+    server: 185.229.191.49
+    port: 8443
+    uuid: 394f6981-a782-4779-9a85-e6cf22935d93
+    servername: ams1.fromblancwithlove.com
+    tls: true
+    client-fingerprint: chrome
+    skip-cert-verify: true
+    udp: true
+  - name: 荷兰-youtube@资源分享师 26
+    type: vless
+    server: 185.229.191.111
+    port: 8443
+    uuid: 394f6981-a782-4779-9a85-e6cf22935d93
+    servername: ams1.fromblancwithlove.com
+    tls: true
+    client-fingerprint: chrome
+    skip-cert-verify: true
+    udp: true
+  - name: 荷兰-youtube@资源分享师 27
+    type: vless
+    server: 185.229.191.111
+    port: 8443
+    uuid: 394f6981-a782-4779-9a85-e6cf22935d93
+    servername: ams1.fromblancwithlove.com
+    tls: true
+    client-fingerprint: chrome
+    skip-cert-verify: true
+    udp: true
+  - name: 荷兰-youtube@资源分享师 28
+    type: vless
+    server: 185.229.191.180
+    port: 8443
+    uuid: 394f6981-a782-4779-9a85-e6cf22935d93
+    servername: ams1.fromblancwithlove.com
+    tls: true
+    skip-cert-verify: true
+    udp: true
+  - name: 荷兰-youtube@资源分享师 29
+    type: vless
+    server: 185.229.191.111
+    port: 8443
+    uuid: 394f6981-a782-4779-9a85-e6cf22935d93
+    servername: ams1.fromblancwithlove.com
+    tls: true
+    skip-cert-verify: true
+    udp: true
+  - name: 荷兰-youtube@资源分享师 30
+    type: vless
+    server: 185.229.191.185
+    port: 8443
+    uuid: 394f6981-a782-4779-9a85-e6cf22935d93
+    servername: ams1.fromblancwithlove.com
+    tls: true
+    client-fingerprint: chrome
+    skip-cert-verify: true
+    udp: true
+  - name: 荷兰-youtube@资源分享师 31
+    type: vless
+    server: 185.229.191.110
+    port: 8443
+    uuid: 394f6981-a782-4779-9a85-e6cf22935d93
+    servername: ams1.fromblancwithlove.com
+    tls: true
+    skip-cert-verify: true
+    udp: true
+  - name: 荷兰-youtube@资源分享师 32
+    type: vless
+    server: 185.229.191.169
+    port: 8443
+    uuid: 394f6981-a782-4779-9a85-e6cf22935d93
+    servername: ams1.fromblancwithlove.com
+    tls: true
+    skip-cert-verify: true
+    udp: true
+  - name: 荷兰-youtube@资源分享师 33
+    type: vless
+    server: 185.229.191.107
+    port: 8443
+    uuid: 394f6981-a782-4779-9a85-e6cf22935d93
+    servername: ams1.fromblancwithlove.com
+    tls: true
+    skip-cert-verify: true
+    udp: true
+  - name: 荷兰-youtube@资源分享师 34
+    type: vless
+    server: 185.229.191.184
+    port: 8443
+    uuid: 394f6981-a782-4779-9a85-e6cf22935d93
+    servername: ams1.fromblancwithlove.com
+    tls: true
+    skip-cert-verify: true
+    udp: true
+  - name: 荷兰-youtube@资源分享师 35
+    type: vless
+    server: 185.229.191.157
+    port: 8443
+    uuid: 394f6981-a782-4779-9a85-e6cf22935d93
+    servername: ams1.fromblancwithlove.com
+    tls: true
+    skip-cert-verify: true
+    udp: true
+  - name: 荷兰-youtube@资源分享师 36
+    type: vless
+    server: 185.229.191.96
+    port: 8443
+    uuid: 394f6981-a782-4779-9a85-e6cf22935d93
+    servername: ams1.fromblancwithlove.com
+    tls: true
+    skip-cert-verify: true
+    udp: true
+  - name: 荷兰-youtube@资源分享师 37
+    type: vless
+    server: 185.229.191.46
+    port: 8443
+    uuid: 394f6981-a782-4779-9a85-e6cf22935d93
+    servername: ams1.fromblancwithlove.com
+    tls: true
+    client-fingerprint: chrome
+    skip-cert-verify: true
+    udp: true
+  - name: 荷兰-youtube@资源分享师 38
+    type: vless
+    server: 185.229.191.157
+    port: 8443
+    uuid: 394f6981-a782-4779-9a85-e6cf22935d93
+    servername: ams1.fromblancwithlove.com
+    tls: true
+    client-fingerprint: chrome
+    skip-cert-verify: true
+    udp: true
+  - name: 荷兰-youtube@资源分享师 39
+    type: vless
+    server: 185.229.191.109
+    port: 8443
+    uuid: 394f6981-a782-4779-9a85-e6cf22935d93
+    servername: ams1.fromblancwithlove.com
+    tls: true
+    client-fingerprint: chrome
+    skip-cert-verify: true
+    udp: true
+  - name: 荷兰-youtube@资源分享师 40
+    type: vless
+    server: 185.229.191.157
+    port: 8443
+    uuid: 394f6981-a782-4779-9a85-e6cf22935d93
+    servername: ams1.fromblancwithlove.com
+    tls: true
+    skip-cert-verify: true
+    udp: true
+  - name: 荷兰-youtube@资源分享师 41
+    type: vless
+    server: 185.229.191.42
+    port: 8443
+    uuid: 394f6981-a782-4779-9a85-e6cf22935d93
+    servername: ams1.fromblancwithlove.com
+    tls: true
+    skip-cert-verify: true
+    udp: true
+  - name: 荷兰-youtube@资源分享师 42
+    type: vless
+    server: 185.229.191.42
+    port: 8443
+    uuid: 394f6981-a782-4779-9a85-e6cf22935d93
+    servername: ams1.fromblancwithlove.com
+    tls: true
+    skip-cert-verify: true
+    udp: true
+  - name: 荷兰-youtube@资源分享师 43
+    type: vless
+    server: 185.229.191.109
+    port: 8443
+    uuid: 394f6981-a782-4779-9a85-e6cf22935d93
+    servername: ams1.fromblancwithlove.com
+    tls: true
+    client-fingerprint: chrome
+    skip-cert-verify: true
+    udp: true
+  - name: 荷兰-youtube@资源分享师 44
+    type: vless
+    server: 185.229.191.96
+    port: 8443
+    uuid: 394f6981-a782-4779-9a85-e6cf22935d93
+    servername: ams1.fromblancwithlove.com
+    tls: true
+    skip-cert-verify: true
+    udp: true
+  - name: 荷兰-youtube@资源分享师 45
+    type: vless
+    server: 79.137.195.157
+    port: 443
+    uuid: e96ffcc1-5acf-4e24-9b67-1b736a2f1c24
+    servername: amazon.de
+    tls: true
+    flow: xtls-rprx-vision
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: G8SING6Ibc_igZ5vI5578fXCT_mBMRuq_o8_Ymnj2SQ
+      short-id: eba1498e012ef580
+    skip-cert-verify: true
+    udp: true
+  - name: 荷兰-youtube@资源分享师 46
+    type: vless
+    server: 185.229.191.180
+    port: 8443
+    uuid: 394f6981-a782-4779-9a85-e6cf22935d93
+    servername: ams1.fromblancwithlove.com
+    tls: true
+    client-fingerprint: chrome
+    skip-cert-verify: true
+    udp: true
+  - name: 荷兰-youtube@资源分享师 47
+    type: vless
+    server: 185.229.191.49
+    port: 8443
+    uuid: 394f6981-a782-4779-9a85-e6cf22935d93
+    servername: ams1.fromblancwithlove.com
+    tls: true
+    skip-cert-verify: true
+    udp: true
+  - name: 荷兰-youtube@资源分享师 48
+    type: vless
+    server: 185.229.191.110
+    port: 8443
+    uuid: 394f6981-a782-4779-9a85-e6cf22935d93
+    servername: ams1.fromblancwithlove.com
+    tls: true
+    skip-cert-verify: true
+    udp: true
+  - name: 荷兰-youtube@资源分享师 49
+    type: vless
+    server: 185.229.191.185
+    port: 8443
+    uuid: 394f6981-a782-4779-9a85-e6cf22935d93
+    servername: ams1.fromblancwithlove.com
+    tls: true
+    skip-cert-verify: true
+    udp: true
+  - name: 荷兰-youtube@资源分享师 50
+    type: vless
+    server: 185.229.191.67
+    port: 8443
+    uuid: 394f6981-a782-4779-9a85-e6cf22935d93
+    servername: ams1.fromblancwithlove.com
+    tls: true
+    skip-cert-verify: true
+    udp: true
+  - name: 荷兰-youtube@资源分享师 51
+    type: vless
+    server: 185.229.191.22
+    port: 8443
+    uuid: 394f6981-a782-4779-9a85-e6cf22935d93
+    servername: ams1.fromblancwithlove.com
+    tls: true
+    client-fingerprint: chrome
+    skip-cert-verify: true
+    udp: true
+  - name: 德国-youtube@资源分享师 02
+    type: vmess
+    server: nlt.reata.ir
+    port: 1020
+    uuid: 6244c41a-f4c1-4733-a654-c38f7729b13c
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+    udp: true
+  - name: 德国-youtube@资源分享师 03
+    type: vmess
+    server: nlt.reata.ir
+    port: 1020
+    uuid: 6244c41a-f4c1-4733-a654-c38f7729b13c
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+    udp: true
+  - name: 德国-youtube@资源分享师 05
+    type: trojan
+    server: 103.177.136.42
+    port: 46424
+    password: 4f4d1167-ef14-4304-9bce-0740472503ef
+    sni: de.01.naiun.bilibili.com
+    skip-cert-verify: true
+    tls: true
+    udp: true
+  - name: 德国-youtube@资源分享师 06
+    type: trojan
+    server: 63.178.57.215
+    port: 22222
+    password: telegram-id-privatevpns
+    sni: trojan.burgerip.co.uk
+    skip-cert-verify: true
+    tls: true
+    udp: true
+  - name: 德国-youtube@资源分享师 07
+    type: trojan
+    server: 18.195.157.51
+    port: 22222
+    password: telegram-id-privatevpns
+    sni: trojan.burgerip.co.uk
+    skip-cert-verify: true
+    tls: true
+    udp: true
+  - name: 德国-youtube@资源分享师 08
+    type: trojan
+    server: 103.177.136.45
+    port: 46424
+    password: 4f4d1167-ef14-4304-9bce-0740472503ef
+    sni: de.01.naiun.bilibili.com
+    skip-cert-verify: true
+    tls: true
+    udp: true
+  - name: 日本-youtube@资源分享师 01
+    type: trojan
+    server: 18.176.37.44
+    port: 443
+    password: eeb6823c-b926-4ea2-866a-5542edd26e59
+    sni: tjsp.hhxaf.cc.cd
+    skip-cert-verify: true
+    tls: true
+    ws-opts:
+      path: /
+      headers:
+        Host: tjsp.hhxaf.cc.cd
+    udp: true
+  - name: 日本-youtube@资源分享师 02
+    type: vmess
+    server: planb.mojcn.com
+    port: 16617
+    uuid: 82e6295c-9db7-4601-ab15-054a5e6129f4
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: 0e3b7b2b2adaf5b7929ddd31a8489521.mobgslb.tbcache.com
+    udp: true
+  - name: 日本-youtube@资源分享师 03
+    type: vmess
+    server: m.cnmjin.net
+    port: 16617
+    uuid: 53ab54ae-5812-47b9-a406-310cd65a9357
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: 413ffe93d2b648d008919bbc3a1af1be.mobgslb.tbcache.com
+    udp: true
+  - name: 日本-youtube@资源分享师 04
+    type: trojan
+    server: 172.104.80.248
+    port: 443
+    password: eeb6823c-b926-4ea2-866a-5542edd26e59
+    sni: hhcm.hhxaf.cc.cd
+    skip-cert-verify: true
+    tls: true
+    ws-opts:
+      path: /
+      headers:
+        Host: hhcm.hhxaf.cc.cd
+    udp: true
+  - name: 日本-youtube@资源分享师 05
+    type: trojan
+    server: 172.104.120.92
+    port: 443
+    password: eeb6823c-b926-4ea2-866a-5542edd26e59
+    sni: hhcm.hhxaf.cc.cd
+    skip-cert-verify: true
+    tls: true
+    ws-opts:
+      path: /
+      headers:
+        Host: hhcm.hhxaf.cc.cd
+    udp: true
+  - name: 日本-youtube@资源分享师 06
+    type: trojan
+    server: 207.65.189.9
+    port: 443
+    password: eeb6823c-b926-4ea2-866a-5542edd26e59
+    sni: hhcm.hhxaf.cc.cd
+    skip-cert-verify: true
+    tls: true
+    ws-opts:
+      path: /
+      headers:
+        Host: hhcm.hhxaf.cc.cd
+    udp: true
+  - name: 日本-youtube@资源分享师 07
+    type: trojan
+    server: 198.13.37.176
+    port: 443
+    password: eeb6823c-b926-4ea2-866a-5542edd26e59
+    sni: hhcm.hhxaf.cc.cd
+    skip-cert-verify: true
+    tls: true
+    udp: true
+  - name: 日本-youtube@资源分享师 08
+    type: vless
+    server: 212.135.211.16
+    port: 443
+    uuid: 23cb9aa7-9756-459f-aa84-3a27bdf6ad64
+    network: ws
+    servername: s5.868001.xyz
+    tls: true
+    client-fingerprint: chrome
+    ws-opts:
+      path: /proxyip=ProxyIP.CMLiussss.net
+      headers:
+        Host: s5.868001.xyz
+    skip-cert-verify: true
+    udp: true
+  - name: 日本-youtube@资源分享师 09
+    type: trojan
+    server: 124.156.208.160
+    port: 443
+    password: eeb6823c-b926-4ea2-866a-5542edd26e59
+    sni: 124.156.208.160
+    skip-cert-verify: true
+    tls: true
+    udp: true
+  - name: 日本-youtube@资源分享师 10
+    type: trojan
+    server: 172.104.120.92
+    port: 443
+    password: eeb6823c-b926-4ea2-866a-5542edd26e59
+    sni: hhcm.hhxaf.cc.cd
+    skip-cert-verify: true
+    tls: true
+    udp: true
+  - name: 日本-youtube@资源分享师 11
+    type: trojan
+    server: 207.65.189.9
+    port: 443
+    password: eeb6823c-b926-4ea2-866a-5542edd26e59
+    sni: hhcm.hhxaf.cc.cd
+    skip-cert-verify: true
+    tls: true
+    udp: true
+  - name: 日本-youtube@资源分享师 12
+    type: trojan
+    server: 172.104.80.248
+    port: 443
+    password: eeb6823c-b926-4ea2-866a-5542edd26e59
+    sni: hhcm.hhxaf.cc.cd
+    skip-cert-verify: true
+    tls: true
+    udp: true
+  - name: 台湾-youtube@资源分享师 01
+    type: vless
+    server: 213.210.4.19
+    port: 443
+    uuid: 23cb9aa7-9756-459f-aa84-3a27bdf6ad64
+    network: ws
+    servername: s5.868001.xyz
+    tls: true
+    client-fingerprint: chrome
+    ws-opts:
+      path: /proxyip=ProxyIP.CMLiussss.net
+      headers:
+        Host: s5.868001.xyz
+    skip-cert-verify: true
+    udp: true
+  - name: 台湾-youtube@资源分享师 02
+    type: vless
+    server: 213.210.4.19
+    port: 443
+    uuid: 23cb9aa7-9756-459f-aa84-3a27bdf6ad64
+    network: ws
+    servername: s5.868001.xyz
+    tls: true
+    ws-opts:
+      path: /proxyip=ProxyIP.CMLiussss.net
+      headers:
+        Host: s5.868001.xyz
+    skip-cert-verify: true
+    udp: true
+  - name: 台湾-youtube@资源分享师 03
+    type: vless
+    server: tw3.miyazono-kaori.com
+    port: 443
+    uuid: 580d81f8-4f30-49d6-ad90-59fb4a850313
+    servername: dlcdnets.asus.com
+    tls: true
+    flow: xtls-rprx-vision
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: JE82iOR_U_H7ffxJ5yfoxXeRkMlE-aVu1wxR7n6jrVM
+      short-id: "473277e2"
+    skip-cert-verify: true
+    udp: true
+  - name: 台湾-youtube@资源分享师 04
+    type: vless
+    server: 82.152.91.210
+    port: 443
+    uuid: 23cb9aa7-9756-459f-aa84-3a27bdf6ad64
+    network: ws
+    servername: s5.868001.xyz
+    tls: true
+    ws-opts:
+      path: /proxyip=ProxyIP.CMLiussss.net
+      headers:
+        Host: s5.868001.xyz
+    skip-cert-verify: true
+    udp: true
+  - name: 台湾-youtube@资源分享师 05
+    type: vless
+    server: 82.152.91.210
+    port: 443
+    uuid: 23cb9aa7-9756-459f-aa84-3a27bdf6ad64
+    network: ws
+    servername: s5.868001.xyz
+    tls: true
+    client-fingerprint: chrome
+    ws-opts:
+      path: /proxyip=ProxyIP.CMLiussss.net
+      headers:
+        Host: s5.868001.xyz
+    skip-cert-verify: true
+    udp: true
+  - name: 台湾-youtube@资源分享师 06
+    type: vless
+    server: 59.125.69.19
+    port: 443
+    uuid: e5ce79f9-fdac-4e80-8286-a15b96fded72
+    network: ws
+    servername: ty986gfazs.cainiaohub.xyz
+    tls: true
+    client-fingerprint: chrome
+    ws-opts:
+      path: /81574b6b-c9d7-44a0-b83d-dad56e8cb530
+      headers:
+        Host: ty986gfazs.cainiaohub.xyz
+    skip-cert-verify: true
+    udp: true
+  - name: 台湾-youtube@资源分享师 07
+    type: vless
+    server: 60.248.219.76
+    port: 443
+    uuid: e5ce79f9-fdac-4e80-8286-a15b96fded72
+    network: ws
+    servername: ty986gfazs.cainiaohub.xyz
+    tls: true
+    client-fingerprint: chrome
+    ws-opts:
+      path: /81574b6b-c9d7-44a0-b83d-dad56e8cb530
+      headers:
+        Host: ty986gfazs.cainiaohub.xyz
+    skip-cert-verify: true
+    udp: true
+  - name: 加拿大-youtube@资源分享师 01
+    type: vless
+    server: psf-1.zdshop.ir
+    port: 80
+    uuid: 7dfdbb4b-5bf7-4503-b2c0-4ef05922dcb9
+    network: ws
+    tls: false
+    ws-opts:
+      path: /
+      headers:
+        Host: khodroshop.ir
+    skip-cert-verify: true
+    udp: true
+  - name: 加拿大-youtube@资源分享师 02
+    type: vless
+    server: 104.18.12.149
+    port: 443
+    uuid: 3666e25b-a1c2-48ec-b060-075392b1aa6e
+    network: http
+    servername: GERMAN.sarzamiiinahang.ir
+    tls: true
+    client-fingerprint: chrome
+    http-opts:
+      path:
+        - /Meh?di=443
+      headers:
+        Host:
+          - GERMAN.sarzamiiinahang.ir
+    skip-cert-verify: true
+    udp: true
+  - name: 加拿大-youtube@资源分享师 03
+    type: vless
+    server: forallpanel.srtongston.ir
+    port: 8880
+    uuid: 334b4652-f11d-4f0a-9d26-b5c0fff6c31f
+    network: httpupgrade
+    tls: false
+    http-opts:
+      path:
+        - /?ed=2082
+      headers:
+        Host:
+          - cdn-pro1.postshup.ir
+    skip-cert-verify: true
+    udp: true
+  - name: 加拿大-youtube@资源分享师 04
+    type: trojan
+    server: 103.177.136.42
+    port: 47909
+    password: 4f4d1167-ef14-4304-9bce-0740472503ef
+    sni: is.01.naiun.bilibili.com
+    skip-cert-verify: true
+    tls: true
+    udp: true
+  - name: 加拿大-youtube@资源分享师 05
+    type: trojan
+    server: 103.177.136.45
+    port: 45619
+    password: 4f4d1167-ef14-4304-9bce-0740472503ef
+    sni: fr.01.naiun.bilibili.com
+    skip-cert-verify: true
+    tls: true
+    udp: true
+  - name: 加拿大-youtube@资源分享师 06
+    type: trojan
+    server: 103.177.136.42
+    port: 41943
+    password: 4f4d1167-ef14-4304-9bce-0740472503ef
+    sni: az.01.naiun.bilibili.com
+    skip-cert-verify: true
+    tls: true
+    udp: true
+  - name: 加拿大-youtube@资源分享师 07
+    type: trojan
+    server: 188.114.97.6
+    port: 8443
+    password: VPN_WOLFI
+    sni: bolbols.ir
+    skip-cert-verify: true
+    tls: true
+    udp: true
+  - name: 加拿大-youtube@资源分享师 08
+    type: trojan
+    server: 103.177.136.45
+    port: 48697
+    password: 4f4d1167-ef14-4304-9bce-0740472503ef
+    sni: gh.01.naiun.bilibili.com
+    skip-cert-verify: true
+    tls: true
+    udp: true
+  - name: 加拿大-youtube@资源分享师 09
+    type: trojan
+    server: 103.177.136.45
+    port: 45553
+    password: 4f4d1167-ef14-4304-9bce-0740472503ef
+    sni: ch.01.naiun.bilibili.com
+    skip-cert-verify: true
+    tls: true
+    udp: true
+  - name: 加拿大-youtube@资源分享师 10
+    type: trojan
+    server: 103.177.136.42
+    port: 45619
+    password: 4f4d1167-ef14-4304-9bce-0740472503ef
+    sni: fr.01.naiun.bilibili.com
+    skip-cert-verify: true
+    tls: true
+    udp: true
+  - name: 加拿大-youtube@资源分享师 11
+    type: trojan
+    server: 103.177.136.45
+    port: 41943
+    password: 4f4d1167-ef14-4304-9bce-0740472503ef
+    sni: az.01.naiun.bilibili.com
+    skip-cert-verify: true
+    tls: true
+    udp: true
+  - name: 加拿大-youtube@资源分享师 12
+    type: trojan
+    server: 103.177.136.42
+    port: 48697
+    password: 4f4d1167-ef14-4304-9bce-0740472503ef
+    sni: gh.01.naiun.bilibili.com
+    skip-cert-verify: true
+    tls: true
+    udp: true
+  - name: 加拿大-youtube@资源分享师 13
+    type: trojan
+    server: 103.177.136.45
+    port: 47909
+    password: 4f4d1167-ef14-4304-9bce-0740472503ef
+    sni: is.01.naiun.bilibili.com
+    skip-cert-verify: true
+    tls: true
+    udp: true
+  - name: 加拿大-youtube@资源分享师 14
+    type: trojan
+    server: 103.177.136.42
+    port: 45553
+    password: 4f4d1167-ef14-4304-9bce-0740472503ef
+    sni: ch.01.naiun.bilibili.com
+    skip-cert-verify: true
+    tls: true
+    udp: true
+  - name: 香港-youtube@资源分享师 01
+    type: vmess
+    server: planb.mojcn.com
+    port: 16622
+    uuid: d24bb5d7-dc1c-4131-9af5-b810d3e79969
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: b5bb896eafd9a7965431d0bd16c469e9.mobgslb.tbcache.com
+    udp: true
+  - name: 香港-youtube@资源分享师 02
+    type: vless
+    server: 103.148.73.119
+    port: 8443
+    uuid: e5ce79f9-fdac-4e80-8286-a15b96fded72
+    network: ws
+    servername: ty986gfazs.cainiaohub.xyz
+    tls: true
+    client-fingerprint: chrome
+    ws-opts:
+      path: /81574b6b-c9d7-44a0-b83d-dad56e8cb530
+      headers:
+        Host: ty986gfazs.cainiaohub.xyz
+    skip-cert-verify: true
+    udp: true
+  - name: 塞舌尔-youtube@资源分享师 01
+    type: vless
+    server: 45.130.125.101
+    port: 8443
+    uuid: f106648e-0644-40bc-974c-6edc966fe18d
+    network: http
+    servername: cji.new-persian-song.ir
+    tls: true
+    client-fingerprint: chrome
+    http-opts:
+      path:
+        - /?ed
+    skip-cert-verify: true
+    udp: true
+  - name: 塞舌尔-youtube@资源分享师 02
+    type: vless
+    server: 45.130.125.101
+    port: 8443
+    uuid: f106648e-0644-40bc-974c-6edc966fe18d
+    network: http
+    servername: cji.new-persian-song.ir
+    tls: true
+    client-fingerprint: chrome
+    http-opts:
+      path:
+        - /?ed=2053
+    skip-cert-verify: true
+    udp: true
+  - name: 韩国-youtube@资源分享师 01
+    type: trojan
+    server: 211.49.57.178
+    port: 443
+    password: eeb6823c-b926-4ea2-866a-5542edd26e59
+    sni: hhcm.hhxaf.cc.cd
+    skip-cert-verify: true
+    tls: true
+    ws-opts:
+      path: /
+      headers:
+        Host: hhcm.hhxaf.cc.cd
+    udp: true
+  - name: 韩国-youtube@资源分享师 02
+    type: trojan
+    server: 211.49.57.175
+    port: 443
+    password: eeb6823c-b926-4ea2-866a-5542edd26e59
+    sni: hhcm.hhxaf.cc.cd
+    skip-cert-verify: true
+    tls: true
+    ws-opts:
+      path: /
+      headers:
+        Host: hhcm.hhxaf.cc.cd
+    udp: true
+  - name: 韩国-youtube@资源分享师 03
+    type: trojan
+    server: 211.49.57.161
+    port: 443
+    password: eeb6823c-b926-4ea2-866a-5542edd26e59
+    sni: hhcm.hhxaf.cc.cd
+    skip-cert-verify: true
+    tls: true
+    ws-opts:
+      path: /
+      headers:
+        Host: hhcm.hhxaf.cc.cd
+    udp: true
+  - name: 韩国-youtube@资源分享师 04
+    type: vless
+    server: 211.49.57.178
+    port: 443
+    uuid: 23cb9aa7-9756-459f-aa84-3a27bdf6ad64
+    network: ws
+    servername: s5.868001.xyz
+    tls: true
+    client-fingerprint: chrome
+    ws-opts:
+      path: /proxyip
+      headers:
+        Host: s5.868001.xyz
+    skip-cert-verify: true
+    udp: true
+  - name: 韩国-youtube@资源分享师 05
+    type: trojan
+    server: 132.226.23.185
+    port: 443
+    password: eeb6823c-b926-4ea2-866a-5542edd26e59
+    sni: hhcm.hhxaf.cc.cd
+    skip-cert-verify: true
+    tls: true
+    ws-opts:
+      path: /
+      headers:
+        Host: hhcm.hhxaf.cc.cd
+    udp: true
+  - name: 韩国-youtube@资源分享师 06
+    type: vless
+    server: 211.49.57.161
+    port: 443
+    uuid: 23cb9aa7-9756-459f-aa84-3a27bdf6ad64
+    network: ws
+    servername: s5.868001.xyz
+    tls: true
+    ws-opts:
+      path: /
+      headers:
+        Host: s5.868001.xyz
+    skip-cert-verify: true
+    udp: true
+  - name: 韩国-youtube@资源分享师 07
+    type: trojan
+    server: 121.178.83.161
+    port: 26214
+    password: GKHWMe2R4qwNcNxu6l3KMkdd
+    sni: vpn1.rnmcnm.com
+    skip-cert-verify: true
+    tls: true
+    udp: true
+  - name: 韩国-youtube@资源分享师 08
+    type: trojan
+    server: 132.226.23.185
+    port: 443
+    password: eeb6823c-b926-4ea2-866a-5542edd26e59
+    sni: hhcm.hhxaf.cc.cd
+    skip-cert-verify: true
+    tls: true
+    udp: true
+  - name: 韩国-youtube@资源分享师 09
+    type: trojan
+    server: 211.49.57.175
+    port: 443
+    password: eeb6823c-b926-4ea2-866a-5542edd26e59
+    sni: hhcm.hhxaf.cc.cd
+    skip-cert-verify: true
+    tls: true
+    udp: true
+  - name: 韩国-youtube@资源分享师 10
+    type: trojan
+    server: 211.49.57.178
+    port: 443
+    password: eeb6823c-b926-4ea2-866a-5542edd26e59
+    sni: hhcm.hhxaf.cc.cd
+    skip-cert-verify: true
+    tls: true
+    udp: true
+  - name: 韩国-youtube@资源分享师 11
+    type: trojan
+    server: 211.49.57.175
+    port: 443
+    password: eeb6823c-b926-4ea2-866a-5542edd26e59
+    sni: 211.49.57.175
+    skip-cert-verify: true
+    tls: true
+    udp: true
+  - name: 韩国-youtube@资源分享师 12
+    type: trojan
+    server: 211.49.57.161
+    port: 443
+    password: eeb6823c-b926-4ea2-866a-5542edd26e59
+    sni: hhcm.hhxaf.cc.cd
+    skip-cert-verify: true
+    tls: true
+    udp: true
+  - name: 韩国-youtube@资源分享师 13
+    type: trojan
+    server: 211.49.57.178
+    port: 443
+    password: eeb6823c-b926-4ea2-866a-5542edd26e59
+    sni: 211.49.57.178
+    skip-cert-verify: true
+    tls: true
+    udp: true
+  - name: 美国-youtube@资源分享师 01
+    type: vless
+    server: 144.31.128.56
+    port: 443
+    uuid: e8bf51de-efc9-42a4-be50-1a6bc3170c63
+    servername: 33432ews-topology-gslb-yccdn.ru
+    tls: true
+    flow: xtls-rprx-vision
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: tSxNp48AuTUzqggANCWsR6v7bqlguCoVWk_YOUs36Ug
+      short-id: fe12
+    skip-cert-verify: true
+    udp: true
+  - name: 美国-youtube@资源分享师 02
+    type: trojan
+    server: 144.34.245.152
+    port: 443
+    password: eeb6823c-b926-4ea2-866a-5542edd26e59
+    sni: hhcm.hhxaf.cc.cd
+    skip-cert-verify: true
+    tls: true
+    ws-opts:
+      path: /
+      headers:
+        Host: hhcm.hhxaf.cc.cd
+    udp: true
+  - name: 美国-youtube@资源分享师 03
+    type: trojan
+    server: 95.181.188.76
+    port: 443
+    password: eeb6823c-b926-4ea2-866a-5542edd26e59
+    sni: hhcm.hhxaf.cc.cd
+    skip-cert-verify: true
+    tls: true
+    ws-opts:
+      path: /
+      headers:
+        Host: hhcm.hhxaf.cc.cd
+    udp: true
+  - name: 美国-youtube@资源分享师 04
+    type: vless
+    server: wire.zerinh.net
+    port: 443
+    uuid: bb4d7dcf-3482-4fd2-a211-f3d98b77d682
+    network: http
+    servername: www.cloudflare.com
+    tls: true
+    client-fingerprint: chrome
+    http-opts:
+      path:
+        - /cdn-cgi
+      headers:
+        Host:
+          - www.cloudflare.com
+    reality-opts:
+      public-key: v_S_v_aOtu4_H_dyQlDZyRqIjP4r3dbf_nPw_oJzszo
+      short-id: e1ecd76bde35fd
+    skip-cert-verify: true
+    udp: true
+  - name: 美国-youtube@资源分享师 05
+    type: vless
+    server: 191.44.118.101
+    port: 443
+    uuid: deecd21a-a24f-444d-b92a-2c8e41a6b05b
+    servername: www.microsoft.com
+    tls: true
+    flow: xtls-rprx-vision
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: 69_I9Wm_vP5wQUbiQhdejWS9yLlNYLFjcnF59G-0GAU
+      short-id: 31e36d0ac3355472
+    skip-cert-verify: true
+    udp: true
+  - name: 美国-youtube@资源分享师 06
+    type: vmess
+    server: planb.mojcn.com
+    port: 16626
+    uuid: 27cb600f-d4b5-4525-9467-712acfd399b6
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: 3579a368d27313df228fe8cccc79e48b.mobgslb.tbcache.com
+    udp: true
+  - name: 美国-youtube@资源分享师 07
+    type: vless
+    server: 169.150.215.80
+    port: 8443
+    uuid: 394f6981-a782-4779-9a85-e6cf22935d93
+    servername: ams1.fromblancwithlove.com
+    tls: true
+    skip-cert-verify: true
+    udp: true
+  - name: 美国-youtube@资源分享师 08
+    type: vless
+    server: 169.150.215.80
+    port: 8443
+    uuid: 394f6981-a782-4779-9a85-e6cf22935d93
+    servername: ams1.fromblancwithlove.com
+    tls: true
+    skip-cert-verify: true
+    udp: true
+  - name: 美国-youtube@资源分享师 09
+    type: vmess
+    server: planb.mojcn.com
+    port: 16626
+    uuid: 948dc89a-832e-45b4-8bb8-f62af116f8ab
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: 0a1fd37b6a3e4b2a2ab8860fb32e3e5e.mobgslb.tbcache.com
+    udp: true
+  - name: 美国-youtube@资源分享师 10
+    type: trojan
+    server: 104.194.81.48
+    port: 443
+    password: eeb6823c-b926-4ea2-866a-5542edd26e59
+    sni: hhcm.hhxaf.cc.cd
+    skip-cert-verify: true
+    tls: true
+    udp: true
+  - name: 美国-youtube@资源分享师 11
+    type: trojan
+    server: 154.31.114.10
+    port: 443
+    password: an70aOaIjcCF43gOlSB6eKER53Z38DYDx8l9RCSCpYTwXS3pueyAqyFZx2zDNA
+    sni: 154.31.114.10
+    skip-cert-verify: true
+    tls: true
+    udp: true
+  - name: 美国-youtube@资源分享师 12
+    type: trojan
+    server: 95.181.188.76
+    port: 443
+    password: eeb6823c-b926-4ea2-866a-5542edd26e59
+    sni: hhcm.hhxaf.cc.cd
+    skip-cert-verify: true
+    tls: true
+    udp: true
+  - name: 美国-youtube@资源分享师 15
+    type: trojan
+    server: 144.34.245.152
+    port: 443
+    password: eeb6823c-b926-4ea2-866a-5542edd26e59
+    sni: hhcm.hhxaf.cc.cd
+    skip-cert-verify: true
+    tls: true
+    udp: true
+  - name: 美国-youtube@资源分享师 16
+    type: trojan
+    server: 37.46.18.128
+    port: 41050
+    password: b1952da9-8a2a-4e2e-a79c-61914f9e6a9f
+    sni: www.oracle.com
+    skip-cert-verify: true
+    tls: true
+    udp: true
+  - name: 美国-youtube@资源分享师 17
+    type: trojan
+    server: 154.17.225.54
+    port: 443
+    password: eeb6823c-b926-4ea2-866a-5542edd26e59
+    sni: hhcm.hhxaf.cc.cd
+    skip-cert-verify: true
+    tls: true
+    udp: true
+  - name: 美国-youtube@资源分享师 18
+    type: trojan
+    server: 119.195.0.158
+    port: 35342
+    password: rYuChHcwQZskq9E0zdoR
+    sni: vpn5.rnmcnm.com
+    skip-cert-verify: true
+    tls: true
+    udp: true
+  - name: 美国-youtube@资源分享师 19
+    type: trojan
+    server: 141.193.213.30
+    port: 443
+    password: 86957ec0-b213-433b-a43b-51f2175e0ec3
+    sni: 141.193.213.30
+    skip-cert-verify: true
+    tls: true
+    udp: true
+  - name: 土耳其-youtube@资源分享师 01
+    type: trojan
+    server: 194.5.193.150
+    port: 443
+    password: SoftNetConnect
+    sni: www.yahoo.com
+    skip-cert-verify: true
+    tls: true
+    udp: true
+  - name: 土耳其-youtube@资源分享师 02
+    type: trojan
+    server: 194.5.193.150
+    port: 2087
+    password: SoftNetConnect
+    sni: www.yahoo.com
+    skip-cert-verify: true
+    tls: true
+    udp: true
+  - name: 土耳其-youtube@资源分享师 03
+    type: vless
+    server: 194.5.193.150
+    port: 2083
+    uuid: 89049f79-320b-48a0-b1cf-110165cae30c
+    servername: www.yahoo.com
+    tls: true
+    flow: xtls-rprx-vision
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: l1Ekgk-8T5rB-yolp5OIpc0XZTcd2gBeqmIR2bytKXY
+      short-id: 4e590fdc
+    skip-cert-verify: true
+    udp: true
+  - name: 土耳其-youtube@资源分享师 04
+    type: vless
+    server: 87.249.139.236
+    port: 8443
+    uuid: 394f6981-a782-4779-9a85-e6cf22935d93
+    servername: ams1.fromblancwithlove.com
+    tls: true
+    skip-cert-verify: true
+    udp: true
+  - name: 土耳其-youtube@资源分享师 05
+    type: vless
+    server: 169.150.215.72
+    port: 8443
+    uuid: 394f6981-a782-4779-9a85-e6cf22935d93
+    servername: ams1.fromblancwithlove.com
+    tls: true
+    skip-cert-verify: true
+    udp: true
+  - name: 土耳其-youtube@资源分享师 06
+    type: trojan
+    server: 194.5.193.150
+    port: 8443
+    password: SoftNetConnect
+    sni: www.yahoo.com
+    skip-cert-verify: true
+    tls: true
+    udp: true
+  - name: 土耳其-youtube@资源分享师 07
+    type: vless
+    server: 87.249.139.236
+    port: 8443
+    uuid: 394f6981-a782-4779-9a85-e6cf22935d93
+    servername: ams1.fromblancwithlove.com
+    tls: true
+    client-fingerprint: chrome
+    skip-cert-verify: true
+    udp: true
+  - name: 土耳其-youtube@资源分享师 08
+    type: vless
+    server: 87.249.139.231
+    port: 8443
+    uuid: 394f6981-a782-4779-9a85-e6cf22935d93
+    servername: ams1.fromblancwithlove.com
+    tls: true
+    skip-cert-verify: true
+    udp: true
+  - name: 土耳其-youtube@资源分享师 09
+    type: vless
+    server: 87.249.139.245
+    port: 8443
+    uuid: 394f6981-a782-4779-9a85-e6cf22935d93
+    servername: ams1.fromblancwithlove.com
+    tls: true
+    skip-cert-verify: true
+    udp: true
+  - name: 土耳其-youtube@资源分享师 10
+    type: vless
+    server: 87.249.139.235
+    port: 8443
+    uuid: 394f6981-a782-4779-9a85-e6cf22935d93
+    servername: ams1.fromblancwithlove.com
+    tls: true
+    skip-cert-verify: true
+    udp: true
+  - name: 土耳其-youtube@资源分享师 11
+    type: vless
+    server: 87.249.139.233
+    port: 8443
+    uuid: 394f6981-a782-4779-9a85-e6cf22935d93
+    servername: ams1.fromblancwithlove.com
+    tls: true
+    skip-cert-verify: true
+    udp: true
+  - name: 土耳其-youtube@资源分享师 12
+    type: vless
+    server: 169.150.215.77
+    port: 8443
+    uuid: 394f6981-a782-4779-9a85-e6cf22935d93
+    servername: ams1.fromblancwithlove.com
+    tls: true
+    skip-cert-verify: true
+    udp: true
+  - name: 土耳其-youtube@资源分享师 13
+    type: vless
+    server: 169.150.215.80
+    port: 8443
+    uuid: 394f6981-a782-4779-9a85-e6cf22935d93
+    servername: ams1.fromblancwithlove.com
+    tls: true
+    skip-cert-verify: true
+    udp: true
+  - name: 土耳其-youtube@资源分享师 14
+    type: vless
+    server: 87.249.139.237
+    port: 8443
+    uuid: 394f6981-a782-4779-9a85-e6cf22935d93
+    servername: ams1.fromblancwithlove.com
+    tls: true
+    skip-cert-verify: true
+    udp: true
+  - name: 土耳其-youtube@资源分享师 15
+    type: vless
+    server: 87.249.139.247
+    port: 8443
+    uuid: 394f6981-a782-4779-9a85-e6cf22935d93
+    servername: ams1.fromblancwithlove.com
+    tls: true
+    client-fingerprint: chrome
+    skip-cert-verify: true
+    udp: true
+  - name: 土耳其-youtube@资源分享师 16
+    type: vless
+    server: 169.150.215.80
+    port: 8443
+    uuid: 394f6981-a782-4779-9a85-e6cf22935d93
+    servername: ams1.fromblancwithlove.com
+    tls: true
+    client-fingerprint: chrome
+    skip-cert-verify: true
+    udp: true
+  - name: 土耳其-youtube@资源分享师 17
+    type: vless
+    server: 87.249.139.244
+    port: 8443
+    uuid: 394f6981-a782-4779-9a85-e6cf22935d93
+    servername: ams1.fromblancwithlove.com
+    tls: true
+    skip-cert-verify: true
+    udp: true
+  - name: 土耳其-youtube@资源分享师 18
+    type: vless
+    server: 87.249.139.247
+    port: 8443
+    uuid: 394f6981-a782-4779-9a85-e6cf22935d93
+    servername: ams1.fromblancwithlove.com
+    tls: true
+    skip-cert-verify: true
+    udp: true
+  - name: 土耳其-youtube@资源分享师 19
+    type: trojan
+    server: 194.5.193.150
+    port: 42549
+    password: SoftNetConnect
+    sni: www.speedtest.net
+    alpn:
+      - h2
+      - http/1.1
+      - h3
+    skip-cert-verify: true
+    tls: true
+    udp: true
+  - name: 波兰-youtube@资源分享师 01
+    type: vless
+    server: latviant2.life
+    port: 2053
+    uuid: 141bbdef-a341-4846-aec7-9d6531ff8790
+    network: grpc
+    servername: deepl.com
+    tls: true
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: ZYLVtAAKXdjtyV3rLfODQiheWedxr6_ZRGX6gfGd51k
+      short-id: d7abeb515312dc2f
+    skip-cert-verify: true
+    udp: true
+  - name: 波兰-youtube@资源分享师 02
+    type: vless
+    server: polandflulove.com
+    port: 446
+    uuid: 141bbdef-a341-4846-aec7-9d6531ff8790
+    network: grpc
+    servername: deepl.com
+    tls: true
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: tsmunuqIZw2IhgiL8uurUVBUhF1eXUg1s3pEjztuRgA
+      short-id: d7abeb515312dc2f
+    skip-cert-verify: true
+    udp: true
+  - name: 新加坡-youtube@资源分享师 01
+    type: trojan
+    server: 8.219.134.138
+    port: 443
+    password: eeb6823c-b926-4ea2-866a-5542edd26e59
+    sni: hhcm.hhxaf.cc.cd
+    skip-cert-verify: true
+    tls: true
+    ws-opts:
+      path: /
+      headers:
+        Host: hhcm.hhxaf.cc.cd
+    udp: true
+  - name: 新加坡-youtube@资源分享师 02
+    type: trojan
+    server: 139.162.62.195
+    port: 443
+    password: eeb6823c-b926-4ea2-866a-5542edd26e59
+    sni: tjsp.hhxaf.cc.cd
+    skip-cert-verify: true
+    tls: true
+    ws-opts:
+      path: /
+      headers:
+        Host: tjsp.hhxaf.cc.cd
+    udp: true
+  - name: 新加坡-youtube@资源分享师 03
+    type: trojan
+    server: 167.254.240.12
+    port: 443
+    password: eeb6823c-b926-4ea2-866a-5542edd26e59
+    sni: hhcm.hhxaf.cc.cd
+    skip-cert-verify: true
+    tls: true
+    ws-opts:
+      path: /
+      headers:
+        Host: hhcm.hhxaf.cc.cd
+    udp: true
+  - name: 新加坡-youtube@资源分享师 04
+    type: vless
+    server: 8.222.179.80
+    port: 443
+    uuid: 3e7f67de-648e-4871-b51a-a225214d41ee
+    servername: commerce.adobe.com
+    tls: true
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: TRP10HqKUXEQ3O-cfsq93DycfBmbJe9KM36yvSa8Mmw
+    skip-cert-verify: true
+    udp: true
+  - name: 新加坡-youtube@资源分享师 05
+    type: trojan
+    server: 167.254.240.12
+    port: 443
+    password: eeb6823c-b926-4ea2-866a-5542edd26e59
+    sni: hhcm.hhxaf.cc.cd
+    skip-cert-verify: true
+    tls: true
+    udp: true
+  - name: 新加坡-youtube@资源分享师 06
+    type: trojan
+    server: 8.219.134.138
+    port: 443
+    password: eeb6823c-b926-4ea2-866a-5542edd26e59
+    sni: hhcm.hhxaf.cc.cd
+    skip-cert-verify: true
+    tls: true
+    udp: true
+  - name: 立陶宛-youtube@资源分享师 01
+    type: vless
+    server: 88.119.176.156
+    port: 1443
+    uuid: f68435e2-ac00-4374-8c03-c1d36e171088
+    servername: loveit.kupivodku.top
+    tls: true
+    flow: xtls-rprx-vision
+    client-fingerprint: firefox
+    reality-opts:
+      public-key: bFPeOJxOvbEHD7JyojURPDzrY4HNYiVh1rqVeIFSRGk
+      short-id: 0441f3e34348cb45
+    skip-cert-verify: true
+    udp: true
+  - name: 芬兰-youtube@资源分享师 01
+    type: vless
+    server: 46.8.236.129
+    port: 26140
+    uuid: ee443a49-47a0-445c-8e2a-c7efbc74f483
+    servername: yahoo.com
+    tls: true
+    flow: xtls-rprx-vision
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: cEKeWhExRbsgjk8qAd0KvDNnWRK4Sm9NYHH62sdVUH0
+      short-id: fa893256a458b8a0
+    skip-cert-verify: true
+    udp: true
+  - name: 芬兰-youtube@资源分享师 02
+    type: vless
+    server: 2.27.26.132
+    port: 444
+    uuid: 141bbdef-a341-4846-aec7-9d6531ff8790
+    network: grpc
+    servername: apple.com
+    tls: true
+    client-fingerprint: qq
+    reality-opts:
+      public-key: dEhIR-YkvqguXB5_P3LMuyNYM82lMHQsSGhhtkmvE0k
+      short-id: d7abeb515312dc2f
+    skip-cert-verify: true
+    udp: true
+  - name: 保加利亚-youtube@资源分享师 01
+    type: vless
+    server: bolgarianflyemir.com
+    port: 446
+    uuid: 141bbdef-a341-4846-aec7-9d6531ff8790
+    network: grpc
+    servername: deepl.com
+    tls: true
+    client-fingerprint: qq
+    reality-opts:
+      public-key: GJnLm6LCekZoX81OvXV2CpVO-6NKCP2riGaAiZUml0w
+      short-id: d7abeb515312dc2f
+    skip-cert-verify: true
+    udp: true
+  - name: 英国-youtube@资源分享师 01
+    type: vmess
+    server: m.cnmjin.net
+    port: 16645
+    uuid: c4f54528-7d7a-4567-a6b3-585ab66926ca
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: 57d2adb7580c6f269170262904755545.mobgslb.tbcache.com
+    udp: true
+  - name: 俄罗斯-youtube@资源分享师 01
+    type: vless
+    server: 5.42.101.151
+    port: 443
+    uuid: 390ac1b2-dbef-4124-b374-4e1baf24f0bb
+    servername: yahoo.com
+    tls: true
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: OTImehRo1Cg4tW_pL1H2XhzH6W7QASoea3JlX3DZmUE
+      short-id: "8468"
+    skip-cert-verify: true
+    udp: true
+  - name: 俄罗斯-youtube@资源分享师 02
+    type: vless
+    server: hdupubkpph.pl.cdnfludelivery.com
+    port: 2053
+    uuid: 141bbdef-a341-4846-aec7-9d6531ff8790
+    network: grpc
+    servername: deepl.com
+    tls: true
+    client-fingerprint: qq
+    reality-opts:
+      public-key: ZYLVtAAKXdjtyV3rLfODQiheWedxr6_ZRGX6gfGd51k
+      short-id: d7abeb515312dc2f
+    skip-cert-verify: true
+    udp: true
+  - name: 俄罗斯-youtube@资源分享师 03
+    type: vless
+    server: t2xmzpec98.nl.cdnfludelivery.com
+    port: 447
+    uuid: 141bbdef-a341-4846-aec7-9d6531ff8790
+    network: grpc
+    servername: api-maps.yandex.ru
+    tls: true
+    client-fingerprint: qq
+    reality-opts:
+      public-key: sCpeAZBGOOE_9CeeXyu3-jl68ODzQjts8gG_ZHk44Qk
+      short-id: d7abeb515312dc2f
+    skip-cert-verify: true
+    udp: true
+  - name: 俄罗斯-youtube@资源分享师 04
+    type: vless
+    server: 5w72whxwqq.tj.cdnfludelivery.com
+    port: 446
+    uuid: 141bbdef-a341-4846-aec7-9d6531ff8790
+    network: grpc
+    servername: api-maps.yandex.ru
+    tls: true
+    client-fingerprint: qq
+    reality-opts:
+      public-key: sCpeAZBGOOE_9CeeXyu3-jl68ODzQjts8gG_ZHk44Qk
+      short-id: d7abeb515312dc2f
+    skip-cert-verify: true
+    udp: true
+  - name: 俄罗斯-youtube@资源分享师 05
+    type: vless
+    server: w30yxdu3ab.de.cdnfludelivery.com
+    port: 9090
+    uuid: 141bbdef-a341-4846-aec7-9d6531ff8790
+    network: grpc
+    servername: api-maps.yandex.ru
+    tls: true
+    client-fingerprint: qq
+    reality-opts:
+      public-key: 0C_OR7d6g8nJiz_H_3hbRJ_XhrVJZJ0sBHr7lqstdz8
+      short-id: d7abeb515312dc2f
+    skip-cert-verify: true
+    udp: true
+  - name: 塔吉克斯坦-youtube@资源分享师 01
+    type: vless
+    server: dushanbeflulife.com
+    port: 446
+    uuid: 141bbdef-a341-4846-aec7-9d6531ff8790
+    network: grpc
+    servername: deepl.com
+    tls: true
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: 5OXrB8hUCnvYyT9wVqpYN4NbJSWavxlHu7b3Dt3IgEw
+      short-id: d7abeb515312dc2f
+    skip-cert-verify: true
+    udp: true
+  - name: 塞浦路斯-youtube@资源分享师 01
+    type: vless
+    server: cyprushotelinfo.life
+    port: 443
+    uuid: 141bbdef-a341-4846-aec7-9d6531ff8790
+    network: grpc
+    servername: cyprushotelinfo.life
+    tls: true
+    client-fingerprint: qq
+    reality-opts:
+      public-key: KTtDBEU2GJsRD-zwrBaFvkh5WgbJL95CYkiQw2EQcTE
+      short-id: f1a3d4b6de93aa3a
+    skip-cert-verify: true
+    udp: true
+  - name: 瑞典-youtube@资源分享师 01
+    type: vless
+    server: 45.159.12.18
+    port: 8443
+    uuid: 394f6981-a782-4779-9a85-e6cf22935d93
+    servername: ams1.fromblancwithlove.com
+    tls: true
+    skip-cert-verify: true
+    udp: true
+  - name: 瑞典-youtube@资源分享师 02
+    type: vless
+    server: swflyingsupp.com
+    port: 446
+    uuid: 141bbdef-a341-4846-aec7-9d6531ff8790
+    network: grpc
+    servername: deepl.com
+    tls: true
+    client-fingerprint: qq
+    reality-opts:
+      public-key: uD-Adu6t_iFo4-FoaXOjNfSG0fHPcvPaQmO6v3qL3XY
+      short-id: d7abeb515312dc2f
+    skip-cert-verify: true
+    udp: true
+  - name: 瑞典-youtube@资源分享师 03
+    type: vless
+    server: 45.159.12.4
+    port: 8443
+    uuid: 394f6981-a782-4779-9a85-e6cf22935d93
+    servername: ams1.fromblancwithlove.com
+    tls: true
+    skip-cert-verify: true
+    udp: true
+  - name: 瑞典-youtube@资源分享师 04
+    type: vless
+    server: 45.159.12.11
+    port: 8443
+    uuid: 394f6981-a782-4779-9a85-e6cf22935d93
+    servername: ams1.fromblancwithlove.com
+    tls: true
+    skip-cert-verify: true
+    udp: true
+  - name: 瑞典-youtube@资源分享师 05
+    type: vless
+    server: 45.159.12.119
+    port: 8443
+    uuid: 394f6981-a782-4779-9a85-e6cf22935d93
+    servername: ams1.fromblancwithlove.com
+    tls: true
+    skip-cert-verify: true
+    udp: true
+  - name: 瑞典-youtube@资源分享师 06
+    type: vless
+    server: 45.159.12.26
+    port: 8443
+    uuid: 394f6981-a782-4779-9a85-e6cf22935d93
+    servername: ams1.fromblancwithlove.com
+    tls: true
+    skip-cert-verify: true
+    udp: true
+  - name: 瑞典-youtube@资源分享师 07
+    type: vless
+    server: 45.159.12.130
+    port: 8443
+    uuid: 394f6981-a782-4779-9a85-e6cf22935d93
+    servername: ams1.fromblancwithlove.com
+    tls: true
+    skip-cert-verify: true
+    udp: true
+  - name: 瑞典-youtube@资源分享师 08
+    type: vless
+    server: 45.159.12.194
+    port: 8443
+    uuid: 394f6981-a782-4779-9a85-e6cf22935d93
+    servername: ams1.fromblancwithlove.com
+    tls: true
+    skip-cert-verify: true
+    udp: true
+  - name: 瑞典-youtube@资源分享师 09
+    type: vless
+    server: 45.159.12.8
+    port: 8443
+    uuid: 394f6981-a782-4779-9a85-e6cf22935d93
+    servername: ams1.fromblancwithlove.com
+    tls: true
+    skip-cert-verify: true
+    udp: true
+  - name: 瑞典-youtube@资源分享师 10
+    type: vless
+    server: 45.159.12.132
+    port: 8443
+    uuid: 394f6981-a782-4779-9a85-e6cf22935d93
+    servername: ams1.fromblancwithlove.com
+    tls: true
+    skip-cert-verify: true
+    udp: true
+  - name: 瑞典-youtube@资源分享师 11
+    type: vless
+    server: 45.159.12.196
+    port: 8443
+    uuid: 394f6981-a782-4779-9a85-e6cf22935d93
+    servername: ams1.fromblancwithlove.com
+    tls: true
+    skip-cert-verify: true
+    udp: true
+  - name: 瑞典-youtube@资源分享师 12
+    type: vless
+    server: 79.127.249.221
+    port: 8443
+    uuid: 394f6981-a782-4779-9a85-e6cf22935d93
+    servername: ams1.fromblancwithlove.com
+    tls: true
+    skip-cert-verify: true
+    udp: true
+  - name: 瑞典-youtube@资源分享师 13
+    type: vless
+    server: 79.127.249.221
+    port: 8443
+    uuid: 394f6981-a782-4779-9a85-e6cf22935d93
+    servername: ams1.fromblancwithlove.com
+    tls: true
+    client-fingerprint: chrome
+    skip-cert-verify: true
+    udp: true
+  - name: 瑞典-youtube@资源分享师 14
+    type: vless
+    server: 45.159.12.21
+    port: 8443
+    uuid: 394f6981-a782-4779-9a85-e6cf22935d93
+    servername: ams1.fromblancwithlove.com
+    tls: true
+    skip-cert-verify: true
+    udp: true
+  - name: 瑞典-youtube@资源分享师 15
+    type: vless
+    server: 45.159.12.13
+    port: 8443
+    uuid: 394f6981-a782-4779-9a85-e6cf22935d93
+    servername: ams1.fromblancwithlove.com
+    tls: true
+    skip-cert-verify: true
+    udp: true
+  - name: 瑞典-youtube@资源分享师 16
+    type: vless
+    server: 79.127.249.221
+    port: 8443
+    uuid: 394f6981-a782-4779-9a85-e6cf22935d93
+    servername: ams1.fromblancwithlove.com
+    tls: true
+    client-fingerprint: chrome
+    skip-cert-verify: true
+    udp: true
+  - name: 瑞典-youtube@资源分享师 17
+    type: vless
+    server: 45.159.12.20
+    port: 8443
+    uuid: 394f6981-a782-4779-9a85-e6cf22935d93
+    servername: ams1.fromblancwithlove.com
+    tls: true
+    skip-cert-verify: true
+    udp: true
+  - name: 瑞典-youtube@资源分享师 18
+    type: vless
+    server: 45.159.12.31
+    port: 8443
+    uuid: 394f6981-a782-4779-9a85-e6cf22935d93
+    servername: ams1.fromblancwithlove.com
+    tls: true
+    skip-cert-verify: true
+    udp: true
+  - name: 瑞典-youtube@资源分享师 19
+    type: vless
+    server: 45.159.12.6
+    port: 8443
+    uuid: 394f6981-a782-4779-9a85-e6cf22935d93
+    servername: ams1.fromblancwithlove.com
+    tls: true
+    skip-cert-verify: true
+    udp: true
+  - name: 瑞典-youtube@资源分享师 20
+    type: vless
+    server: 45.159.12.232
+    port: 8443
+    uuid: 394f6981-a782-4779-9a85-e6cf22935d93
+    servername: ams1.fromblancwithlove.com
+    tls: true
+    skip-cert-verify: true
+    udp: true
+  - name: 瑞典-youtube@资源分享师 21
+    type: vless
+    server: 45.159.12.25
+    port: 8443
+    uuid: 394f6981-a782-4779-9a85-e6cf22935d93
+    servername: ams1.fromblancwithlove.com
+    tls: true
+    skip-cert-verify: true
+    udp: true
+  - name: 瑞典-youtube@资源分享师 22
+    type: hysteria2
+    server: 70.34.205.15
+    port: 443
+    password: T$me$V2RayyNGvpn
+    sni: www.wordreference.com
+    skip-cert-verify: true
+    obfs: salamander
+    obfs-password: T.me$V2RayyNGvpn
+    udp: true
+  - name: 罗马尼亚-youtube@资源分享师 01
+    type: vless
+    server: 95.173.199.88
+    port: 8443
+    uuid: 394f6981-a782-4779-9a85-e6cf22935d93
+    servername: ams1.fromblancwithlove.com
+    tls: true
+    skip-cert-verify: true
+    udp: true
+  - name: 罗马尼亚-youtube@资源分享师 02
+    type: vless
+    server: 95.173.199.78
+    port: 8443
+    uuid: 394f6981-a782-4779-9a85-e6cf22935d93
+    servername: ams1.fromblancwithlove.com
+    tls: true
+    client-fingerprint: chrome
+    skip-cert-verify: true
+    udp: true
+  - name: 罗马尼亚-youtube@资源分享师 03
+    type: vless
+    server: 95.173.199.87
+    port: 8443
+    uuid: 394f6981-a782-4779-9a85-e6cf22935d93
+    servername: ams1.fromblancwithlove.com
+    tls: true
+    skip-cert-verify: true
+    udp: true
+  - name: 罗马尼亚-youtube@资源分享师 04
+    type: vless
+    server: 95.173.199.104
+    port: 8443
+    uuid: 394f6981-a782-4779-9a85-e6cf22935d93
+    servername: ams1.fromblancwithlove.com
+    tls: true
+    skip-cert-verify: true
+    udp: true
+  - name: 罗马尼亚-youtube@资源分享师 05
+    type: vless
+    server: 95.173.199.83
+    port: 8443
+    uuid: 394f6981-a782-4779-9a85-e6cf22935d93
+    servername: ams1.fromblancwithlove.com
+    tls: true
+    skip-cert-verify: true
+    udp: true
+  - name: 罗马尼亚-youtube@资源分享师 06
+    type: vless
+    server: 95.173.199.118
+    port: 8443
+    uuid: 394f6981-a782-4779-9a85-e6cf22935d93
+    servername: ams1.fromblancwithlove.com
+    tls: true
+    client-fingerprint: chrome
+    skip-cert-verify: true
+    udp: true
+  - name: 罗马尼亚-youtube@资源分享师 07
+    type: vless
+    server: 95.173.199.82
+    port: 8443
+    uuid: 394f6981-a782-4779-9a85-e6cf22935d93
+    servername: ams1.fromblancwithlove.com
+    tls: true
+    skip-cert-verify: true
+    udp: true
+  - name: 罗马尼亚-youtube@资源分享师 08
+    type: vless
+    server: 95.173.199.118
+    port: 8443
+    uuid: 394f6981-a782-4779-9a85-e6cf22935d93
+    servername: ams1.fromblancwithlove.com
+    tls: true
+    client-fingerprint: chrome
+    skip-cert-verify: true
+    udp: true
+  - name: 罗马尼亚-youtube@资源分享师 09
+    type: vless
+    server: 95.173.199.84
+    port: 8443
+    uuid: 394f6981-a782-4779-9a85-e6cf22935d93
+    servername: ams1.fromblancwithlove.com
+    tls: true
+    skip-cert-verify: true
+    udp: true
+  - name: 罗马尼亚-youtube@资源分享师 10
+    type: vless
+    server: 95.173.199.117
+    port: 8443
+    uuid: 394f6981-a782-4779-9a85-e6cf22935d93
+    servername: ams1.fromblancwithlove.com
+    tls: true
+    client-fingerprint: chrome
+    skip-cert-verify: true
+    udp: true
+  - name: 罗马尼亚-youtube@资源分享师 11
+    type: vless
+    server: 95.173.199.86
+    port: 8443
+    uuid: 394f6981-a782-4779-9a85-e6cf22935d93
+    servername: ams1.fromblancwithlove.com
+    tls: true
+    skip-cert-verify: true
+    udp: true
+  - name: 罗马尼亚-youtube@资源分享师 12
+    type: vless
+    server: 95.173.199.78
+    port: 8443
+    uuid: 394f6981-a782-4779-9a85-e6cf22935d93
+    servername: ams1.fromblancwithlove.com
+    tls: true
+    client-fingerprint: chrome
+    skip-cert-verify: true
+    udp: true
+  - name: 罗马尼亚-youtube@资源分享师 13
+    type: vless
+    server: 95.173.199.85
+    port: 8443
+    uuid: 394f6981-a782-4779-9a85-e6cf22935d93
+    servername: ams1.fromblancwithlove.com
+    tls: true
+    client-fingerprint: chrome
+    skip-cert-verify: true
+    udp: true
+  - name: 罗马尼亚-youtube@资源分享师 14
+    type: vless
+    server: 95.173.199.78
+    port: 8443
+    uuid: 394f6981-a782-4779-9a85-e6cf22935d93
+    servername: ams1.fromblancwithlove.com
+    tls: true
+    skip-cert-verify: true
+    udp: true
+  - name: 罗马尼亚-youtube@资源分享师 15
+    type: vless
+    server: 95.173.199.117
+    port: 8443
+    uuid: 394f6981-a782-4779-9a85-e6cf22935d93
+    servername: ams1.fromblancwithlove.com
+    tls: true
+    skip-cert-verify: true
+    udp: true
+  - name: 罗马尼亚-youtube@资源分享师 16
+    type: vless
+    server: 95.173.199.117
+    port: 8443
+    uuid: 394f6981-a782-4779-9a85-e6cf22935d93
+    servername: ams1.fromblancwithlove.com
+    tls: true
+    client-fingerprint: chrome
+    skip-cert-verify: true
+    udp: true
+  - name: 罗马尼亚-youtube@资源分享师 17
+    type: vless
+    server: 95.173.199.85
+    port: 8443
+    uuid: 394f6981-a782-4779-9a85-e6cf22935d93
+    servername: ams1.fromblancwithlove.com
+    tls: true
+    skip-cert-verify: true
+    udp: true
+  - name: 罗马尼亚-youtube@资源分享师 18
+    type: vless
+    server: 95.173.199.84
+    port: 8443
+    uuid: 394f6981-a782-4779-9a85-e6cf22935d93
+    servername: ams1.fromblancwithlove.com
+    tls: true
+    client-fingerprint: chrome
+    skip-cert-verify: true
+    udp: true
+  - name: 罗马尼亚-youtube@资源分享师 19
+    type: vless
+    server: 95.173.199.99
+    port: 8443
+    uuid: 394f6981-a782-4779-9a85-e6cf22935d93
+    servername: ams1.fromblancwithlove.com
+    tls: true
+    skip-cert-verify: true
+    udp: true
+  - name: 罗马尼亚-youtube@资源分享师 20
+    type: vless
+    server: 95.173.199.98
+    port: 8443
+    uuid: 394f6981-a782-4779-9a85-e6cf22935d93
+    servername: ams1.fromblancwithlove.com
+    tls: true
+    skip-cert-verify: true
+    udp: true
+  - name: 罗马尼亚-youtube@资源分享师 21
+    type: vless
+    server: 95.173.199.69
+    port: 8443
+    uuid: 394f6981-a782-4779-9a85-e6cf22935d93
+    servername: ams1.fromblancwithlove.com
+    tls: true
+    skip-cert-verify: true
+    udp: true
+  - name: 罗马尼亚-youtube@资源分享师 22
+    type: vless
+    server: 95.173.199.106
+    port: 8443
+    uuid: 394f6981-a782-4779-9a85-e6cf22935d93
+    servername: ams1.fromblancwithlove.com
+    tls: true
+    skip-cert-verify: true
+    udp: true
+  - name: 罗马尼亚-youtube@资源分享师 23
+    type: vless
+    server: 95.173.199.116
+    port: 8443
+    uuid: 394f6981-a782-4779-9a85-e6cf22935d93
+    servername: ams1.fromblancwithlove.com
+    tls: true
+    skip-cert-verify: true
+    udp: true
+  - name: 西班牙-youtube@资源分享师 01
+    type: vless
+    server: 45.198.80.123
+    port: 8443
+    uuid: 3651e3f9-919a-404e-b96d-37b50b321e1c
+    servername: storage.yandex.net
+    tls: true
+    flow: xtls-rprx-vision
+    client-fingerprint: firefox
+    reality-opts:
+      public-key: zr8_rtHm86s_G1gfRwNtunStGngYZSdYkA3PyBFXpDg
+      short-id: 48fccabc158a4c22
+    skip-cert-verify: true
+    udp: true
+  - name: 法国-youtube@资源分享师 01
+    type: vmess
+    server: 69.84.182.49
+    port: 80
+    uuid: f8975871-a7a0-4906-8835-a23c1258ca1e
+    alterId: 0
+    cipher: auto
+    tls: false
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: google.whatsapp.snapp.torob.basalam.zula.uplaod-music.ir.
+    udp: true
+  - name: 巴西-youtube@资源分享师 01
+    type: vless
+    server: 191.44.118.101
+    port: 443
+    uuid: deecd21a-a24f-444d-b92a-2c8e41a6b05b
+    servername: www.microsoft.com
+    tls: true
+    flow: xtls-rprx-vision
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: 69_I9Wm_vP5wQUbiQhdejWS9yLlNYLFjcnF59G-0GAU
+      short-id: 31e36d0ac3355472
+    skip-cert-verify: true
+    udp: true
+  - name: 伊朗-youtube@资源分享师 01
+    type: vless
+    server: snapp.ir
+    port: 2082
+    uuid: 5fb3703b-7ad5-4c64-bb3a-28d82bc52d7e
+    network: ws
+    tls: false
+    ws-opts:
+      path: /
+      headers:
+        Host: arv.wzpower.ir
+    skip-cert-verify: true
+    udp: true
+  - name: 乌克兰-youtube@资源分享师 01
+    type: vless
+    server: 143.244.45.54
+    port: 8443
+    uuid: 394f6981-a782-4779-9a85-e6cf22935d93
+    servername: ams1.fromblancwithlove.com
+    tls: true
+    skip-cert-verify: true
+    udp: true
+  - name: 乌克兰-youtube@资源分享师 02
+    type: vless
+    server: 143.244.45.52
+    port: 8443
+    uuid: 394f6981-a782-4779-9a85-e6cf22935d93
+    servername: ams1.fromblancwithlove.com
+    tls: true
+    skip-cert-verify: true
+    udp: true
+  - name: 匈牙利-youtube@资源分享师 01
+    type: vless
+    server: 45.198.87.60
+    port: 8443
+    uuid: 7896c501-248f-4068-bc2f-363c91ba5122
+    servername: storage.yandex.net
+    tls: true
+    flow: xtls-rprx-vision
+    client-fingerprint: firefox
+    reality-opts:
+      public-key: 7zd9mJilgjOrg_ohtw23Vmio-pdnYqeP_r-kiWt87Cg
+      short-id: 2715592069f36fe7
+    skip-cert-verify: true
+    udp: true
+  - name: 刚果(金)-youtube@资源分享师 01
+    type: trojan
+    server: cf.877774.xyz
+    port: 443
+    password: eeb6823c-b926-4ea2-866a-5542edd26e59
+    sni: hhcm.hhxaf.cc.cd
+    skip-cert-verify: true
+    tls: true
+    udp: true
+  - name: 刚果(金)-youtube@资源分享师 02
+    type: trojan
+    server: cloudflare.czkcdn.cn
+    port: 443
+    password: eeb6823c-b926-4ea2-866a-5542edd26e59
+    sni: hhcm.hhxaf.cc.cd
+    skip-cert-verify: true
+    tls: true
+    udp: true
+  - name: 澳大利亚-youtube@资源分享师 01
+    type: vless
+    server: fast.cd-tur4.ir
+    port: 443
+    uuid: 4fcb91d0-bbc4-480c-b362-216d4a79bb5c
+    network: ws
+    servername: default.ssl.fastly.net
+    tls: true
+    ws-opts:
+      path: /
+      headers:
+        Host: pan3.global.ssl.fastly.net
+    skip-cert-verify: true
+    udp: true
+proxy-groups:
+  - name: 🚀 节点选择
+    type: select
+    proxies:
+      - ♻️ 自动选择
+      - DIRECT
+      - 捷克-youtube@资源分享师 06
+      - 捷克-youtube@资源分享师 01
+      - 捷克-youtube@资源分享师 02
+      - 捷克-youtube@资源分享师 03
+      - 捷克-youtube@资源分享师 04
+      - 捷克-youtube@资源分享师 05
+      - 捷克-youtube@资源分享师 07
+      - 捷克-youtube@资源分享师 08
+      - 捷克-youtube@资源分享师 09
+      - 荷兰-youtube@资源分享师 01
+      - 荷兰-youtube@资源分享师 02
+      - 荷兰-youtube@资源分享师 03
+      - 荷兰-youtube@资源分享师 04
+      - 荷兰-youtube@资源分享师 05
+      - 荷兰-youtube@资源分享师 06
+      - 荷兰-youtube@资源分享师 07
+      - 荷兰-youtube@资源分享师 08
+      - 荷兰-youtube@资源分享师 09
+      - 荷兰-youtube@资源分享师 10
+      - 荷兰-youtube@资源分享师 11
+      - 荷兰-youtube@资源分享师 12
+      - 荷兰-youtube@资源分享师 13
+      - 荷兰-youtube@资源分享师 14
+      - 荷兰-youtube@资源分享师 15
+      - 荷兰-youtube@资源分享师 16
+      - 荷兰-youtube@资源分享师 17
+      - 荷兰-youtube@资源分享师 18
+      - 荷兰-youtube@资源分享师 19
+      - 荷兰-youtube@资源分享师 20
+      - 荷兰-youtube@资源分享师 21
+      - 荷兰-youtube@资源分享师 22
+      - 荷兰-youtube@资源分享师 23
+      - 荷兰-youtube@资源分享师 24
+      - 荷兰-youtube@资源分享师 25
+      - 荷兰-youtube@资源分享师 26
+      - 荷兰-youtube@资源分享师 27
+      - 荷兰-youtube@资源分享师 28
+      - 荷兰-youtube@资源分享师 29
+      - 荷兰-youtube@资源分享师 30
+      - 荷兰-youtube@资源分享师 31
+      - 荷兰-youtube@资源分享师 32
+      - 荷兰-youtube@资源分享师 33
+      - 荷兰-youtube@资源分享师 34
+      - 荷兰-youtube@资源分享师 35
+      - 荷兰-youtube@资源分享师 36
+      - 荷兰-youtube@资源分享师 37
+      - 荷兰-youtube@资源分享师 38
+      - 荷兰-youtube@资源分享师 39
+      - 荷兰-youtube@资源分享师 40
+      - 荷兰-youtube@资源分享师 41
+      - 荷兰-youtube@资源分享师 42
+      - 荷兰-youtube@资源分享师 43
+      - 荷兰-youtube@资源分享师 44
+      - 荷兰-youtube@资源分享师 45
+      - 荷兰-youtube@资源分享师 46
+      - 荷兰-youtube@资源分享师 47
+      - 荷兰-youtube@资源分享师 48
+      - 荷兰-youtube@资源分享师 49
+      - 荷兰-youtube@资源分享师 50
+      - 荷兰-youtube@资源分享师 51
+      - 德国-youtube@资源分享师 02
+      - 德国-youtube@资源分享师 03
+      - 德国-youtube@资源分享师 05
+      - 德国-youtube@资源分享师 06
+      - 德国-youtube@资源分享师 07
+      - 德国-youtube@资源分享师 08
+      - 日本-youtube@资源分享师 01
+      - 日本-youtube@资源分享师 02
+      - 日本-youtube@资源分享师 03
+      - 日本-youtube@资源分享师 04
+      - 日本-youtube@资源分享师 05
+      - 日本-youtube@资源分享师 06
+      - 日本-youtube@资源分享师 07
+      - 日本-youtube@资源分享师 08
+      - 日本-youtube@资源分享师 09
+      - 日本-youtube@资源分享师 10
+      - 日本-youtube@资源分享师 11
+      - 日本-youtube@资源分享师 12
+      - 台湾-youtube@资源分享师 01
+      - 台湾-youtube@资源分享师 02
+      - 台湾-youtube@资源分享师 03
+      - 台湾-youtube@资源分享师 04
+      - 台湾-youtube@资源分享师 05
+      - 台湾-youtube@资源分享师 06
+      - 台湾-youtube@资源分享师 07
+      - 加拿大-youtube@资源分享师 01
+      - 加拿大-youtube@资源分享师 02
+      - 加拿大-youtube@资源分享师 03
+      - 加拿大-youtube@资源分享师 04
+      - 加拿大-youtube@资源分享师 05
+      - 加拿大-youtube@资源分享师 06
+      - 加拿大-youtube@资源分享师 07
+      - 加拿大-youtube@资源分享师 08
+      - 加拿大-youtube@资源分享师 09
+      - 加拿大-youtube@资源分享师 10
+      - 加拿大-youtube@资源分享师 11
+      - 加拿大-youtube@资源分享师 12
+      - 加拿大-youtube@资源分享师 13
+      - 加拿大-youtube@资源分享师 14
+      - 香港-youtube@资源分享师 01
+      - 香港-youtube@资源分享师 02
+      - 塞舌尔-youtube@资源分享师 01
+      - 塞舌尔-youtube@资源分享师 02
+      - 韩国-youtube@资源分享师 01
+      - 韩国-youtube@资源分享师 02
+      - 韩国-youtube@资源分享师 03
+      - 韩国-youtube@资源分享师 04
+      - 韩国-youtube@资源分享师 05
+      - 韩国-youtube@资源分享师 06
+      - 韩国-youtube@资源分享师 07
+      - 韩国-youtube@资源分享师 08
+      - 韩国-youtube@资源分享师 09
+      - 韩国-youtube@资源分享师 10
+      - 韩国-youtube@资源分享师 11
+      - 韩国-youtube@资源分享师 12
+      - 韩国-youtube@资源分享师 13
+      - 美国-youtube@资源分享师 01
+      - 美国-youtube@资源分享师 02
+      - 美国-youtube@资源分享师 03
+      - 美国-youtube@资源分享师 04
+      - 美国-youtube@资源分享师 05
+      - 美国-youtube@资源分享师 06
+      - 美国-youtube@资源分享师 07
+      - 美国-youtube@资源分享师 08
+      - 美国-youtube@资源分享师 09
+      - 美国-youtube@资源分享师 10
+      - 美国-youtube@资源分享师 11
+      - 美国-youtube@资源分享师 12
+      - 美国-youtube@资源分享师 15
+      - 美国-youtube@资源分享师 16
+      - 美国-youtube@资源分享师 17
+      - 美国-youtube@资源分享师 18
+      - 美国-youtube@资源分享师 19
+      - 土耳其-youtube@资源分享师 01
+      - 土耳其-youtube@资源分享师 02
+      - 土耳其-youtube@资源分享师 03
+      - 土耳其-youtube@资源分享师 04
+      - 土耳其-youtube@资源分享师 05
+      - 土耳其-youtube@资源分享师 06
+      - 土耳其-youtube@资源分享师 07
+      - 土耳其-youtube@资源分享师 08
+      - 土耳其-youtube@资源分享师 09
+      - 土耳其-youtube@资源分享师 10
+      - 土耳其-youtube@资源分享师 11
+      - 土耳其-youtube@资源分享师 12
+      - 土耳其-youtube@资源分享师 13
+      - 土耳其-youtube@资源分享师 14
+      - 土耳其-youtube@资源分享师 15
+      - 土耳其-youtube@资源分享师 16
+      - 土耳其-youtube@资源分享师 17
+      - 土耳其-youtube@资源分享师 18
+      - 土耳其-youtube@资源分享师 19
+      - 波兰-youtube@资源分享师 01
+      - 波兰-youtube@资源分享师 02
+      - 新加坡-youtube@资源分享师 01
+      - 新加坡-youtube@资源分享师 02
+      - 新加坡-youtube@资源分享师 03
+      - 新加坡-youtube@资源分享师 04
+      - 新加坡-youtube@资源分享师 05
+      - 新加坡-youtube@资源分享师 06
+      - 立陶宛-youtube@资源分享师 01
+      - 芬兰-youtube@资源分享师 01
+      - 芬兰-youtube@资源分享师 02
+      - 保加利亚-youtube@资源分享师 01
+      - 英国-youtube@资源分享师 01
+      - 俄罗斯-youtube@资源分享师 01
+      - 俄罗斯-youtube@资源分享师 02
+      - 俄罗斯-youtube@资源分享师 03
+      - 俄罗斯-youtube@资源分享师 04
+      - 俄罗斯-youtube@资源分享师 05
+      - 塔吉克斯坦-youtube@资源分享师 01
+      - 塞浦路斯-youtube@资源分享师 01
+      - 瑞典-youtube@资源分享师 01
+      - 瑞典-youtube@资源分享师 02
+      - 瑞典-youtube@资源分享师 03
+      - 瑞典-youtube@资源分享师 04
+      - 瑞典-youtube@资源分享师 05
+      - 瑞典-youtube@资源分享师 06
+      - 瑞典-youtube@资源分享师 07
+      - 瑞典-youtube@资源分享师 08
+      - 瑞典-youtube@资源分享师 09
+      - 瑞典-youtube@资源分享师 10
+      - 瑞典-youtube@资源分享师 11
+      - 瑞典-youtube@资源分享师 12
+      - 瑞典-youtube@资源分享师 13
+      - 瑞典-youtube@资源分享师 14
+      - 瑞典-youtube@资源分享师 15
+      - 瑞典-youtube@资源分享师 16
+      - 瑞典-youtube@资源分享师 17
+      - 瑞典-youtube@资源分享师 18
+      - 瑞典-youtube@资源分享师 19
+      - 瑞典-youtube@资源分享师 20
+      - 瑞典-youtube@资源分享师 21
+      - 瑞典-youtube@资源分享师 22
+      - 罗马尼亚-youtube@资源分享师 01
+      - 罗马尼亚-youtube@资源分享师 02
+      - 罗马尼亚-youtube@资源分享师 03
+      - 罗马尼亚-youtube@资源分享师 04
+      - 罗马尼亚-youtube@资源分享师 05
+      - 罗马尼亚-youtube@资源分享师 06
+      - 罗马尼亚-youtube@资源分享师 07
+      - 罗马尼亚-youtube@资源分享师 08
+      - 罗马尼亚-youtube@资源分享师 09
+      - 罗马尼亚-youtube@资源分享师 10
+      - 罗马尼亚-youtube@资源分享师 11
+      - 罗马尼亚-youtube@资源分享师 12
+      - 罗马尼亚-youtube@资源分享师 13
+      - 罗马尼亚-youtube@资源分享师 14
+      - 罗马尼亚-youtube@资源分享师 15
+      - 罗马尼亚-youtube@资源分享师 16
+      - 罗马尼亚-youtube@资源分享师 17
+      - 罗马尼亚-youtube@资源分享师 18
+      - 罗马尼亚-youtube@资源分享师 19
+      - 罗马尼亚-youtube@资源分享师 20
+      - 罗马尼亚-youtube@资源分享师 21
+      - 罗马尼亚-youtube@资源分享师 22
+      - 罗马尼亚-youtube@资源分享师 23
+      - 西班牙-youtube@资源分享师 01
+      - 法国-youtube@资源分享师 01
+      - 巴西-youtube@资源分享师 01
+      - 伊朗-youtube@资源分享师 01
+      - 乌克兰-youtube@资源分享师 01
+      - 乌克兰-youtube@资源分享师 02
+      - 匈牙利-youtube@资源分享师 01
+      - 刚果(金)-youtube@资源分享师 01
+      - 刚果(金)-youtube@资源分享师 02
+      - 澳大利亚-youtube@资源分享师 01
+  - name: ♻️ 自动选择
+    type: url-test
+    proxies:
+      - 捷克-youtube@资源分享师 06
+      - 捷克-youtube@资源分享师 01
+      - 捷克-youtube@资源分享师 02
+      - 捷克-youtube@资源分享师 03
+      - 捷克-youtube@资源分享师 04
+      - 捷克-youtube@资源分享师 05
+      - 捷克-youtube@资源分享师 07
+      - 捷克-youtube@资源分享师 08
+      - 捷克-youtube@资源分享师 09
+      - 荷兰-youtube@资源分享师 01
+      - 荷兰-youtube@资源分享师 02
+      - 荷兰-youtube@资源分享师 03
+      - 荷兰-youtube@资源分享师 04
+      - 荷兰-youtube@资源分享师 05
+      - 荷兰-youtube@资源分享师 06
+      - 荷兰-youtube@资源分享师 07
+      - 荷兰-youtube@资源分享师 08
+      - 荷兰-youtube@资源分享师 09
+      - 荷兰-youtube@资源分享师 10
+      - 荷兰-youtube@资源分享师 11
+      - 荷兰-youtube@资源分享师 12
+      - 荷兰-youtube@资源分享师 13
+      - 荷兰-youtube@资源分享师 14
+      - 荷兰-youtube@资源分享师 15
+      - 荷兰-youtube@资源分享师 16
+      - 荷兰-youtube@资源分享师 17
+      - 荷兰-youtube@资源分享师 18
+      - 荷兰-youtube@资源分享师 19
+      - 荷兰-youtube@资源分享师 20
+      - 荷兰-youtube@资源分享师 21
+      - 荷兰-youtube@资源分享师 22
+      - 荷兰-youtube@资源分享师 23
+      - 荷兰-youtube@资源分享师 24
+      - 荷兰-youtube@资源分享师 25
+      - 荷兰-youtube@资源分享师 26
+      - 荷兰-youtube@资源分享师 27
+      - 荷兰-youtube@资源分享师 28
+      - 荷兰-youtube@资源分享师 29
+      - 荷兰-youtube@资源分享师 30
+      - 荷兰-youtube@资源分享师 31
+      - 荷兰-youtube@资源分享师 32
+      - 荷兰-youtube@资源分享师 33
+      - 荷兰-youtube@资源分享师 34
+      - 荷兰-youtube@资源分享师 35
+      - 荷兰-youtube@资源分享师 36
+      - 荷兰-youtube@资源分享师 37
+      - 荷兰-youtube@资源分享师 38
+      - 荷兰-youtube@资源分享师 39
+      - 荷兰-youtube@资源分享师 40
+      - 荷兰-youtube@资源分享师 41
+      - 荷兰-youtube@资源分享师 42
+      - 荷兰-youtube@资源分享师 43
+      - 荷兰-youtube@资源分享师 44
+      - 荷兰-youtube@资源分享师 45
+      - 荷兰-youtube@资源分享师 46
+      - 荷兰-youtube@资源分享师 47
+      - 荷兰-youtube@资源分享师 48
+      - 荷兰-youtube@资源分享师 49
+      - 荷兰-youtube@资源分享师 50
+      - 荷兰-youtube@资源分享师 51
+      - 德国-youtube@资源分享师 02
+      - 德国-youtube@资源分享师 03
+      - 德国-youtube@资源分享师 05
+      - 德国-youtube@资源分享师 06
+      - 德国-youtube@资源分享师 07
+      - 德国-youtube@资源分享师 08
+      - 日本-youtube@资源分享师 01
+      - 日本-youtube@资源分享师 02
+      - 日本-youtube@资源分享师 03
+      - 日本-youtube@资源分享师 04
+      - 日本-youtube@资源分享师 05
+      - 日本-youtube@资源分享师 06
+      - 日本-youtube@资源分享师 07
+      - 日本-youtube@资源分享师 08
+      - 日本-youtube@资源分享师 09
+      - 日本-youtube@资源分享师 10
+      - 日本-youtube@资源分享师 11
+      - 日本-youtube@资源分享师 12
+      - 台湾-youtube@资源分享师 01
+      - 台湾-youtube@资源分享师 02
+      - 台湾-youtube@资源分享师 03
+      - 台湾-youtube@资源分享师 04
+      - 台湾-youtube@资源分享师 05
+      - 台湾-youtube@资源分享师 06
+      - 台湾-youtube@资源分享师 07
+      - 加拿大-youtube@资源分享师 01
+      - 加拿大-youtube@资源分享师 02
+      - 加拿大-youtube@资源分享师 03
+      - 加拿大-youtube@资源分享师 04
+      - 加拿大-youtube@资源分享师 05
+      - 加拿大-youtube@资源分享师 06
+      - 加拿大-youtube@资源分享师 07
+      - 加拿大-youtube@资源分享师 08
+      - 加拿大-youtube@资源分享师 09
+      - 加拿大-youtube@资源分享师 10
+      - 加拿大-youtube@资源分享师 11
+      - 加拿大-youtube@资源分享师 12
+      - 加拿大-youtube@资源分享师 13
+      - 加拿大-youtube@资源分享师 14
+      - 香港-youtube@资源分享师 01
+      - 香港-youtube@资源分享师 02
+      - 塞舌尔-youtube@资源分享师 01
+      - 塞舌尔-youtube@资源分享师 02
+      - 韩国-youtube@资源分享师 01
+      - 韩国-youtube@资源分享师 02
+      - 韩国-youtube@资源分享师 03
+      - 韩国-youtube@资源分享师 04
+      - 韩国-youtube@资源分享师 05
+      - 韩国-youtube@资源分享师 06
+      - 韩国-youtube@资源分享师 07
+      - 韩国-youtube@资源分享师 08
+      - 韩国-youtube@资源分享师 09
+      - 韩国-youtube@资源分享师 10
+      - 韩国-youtube@资源分享师 11
+      - 韩国-youtube@资源分享师 12
+      - 韩国-youtube@资源分享师 13
+      - 美国-youtube@资源分享师 01
+      - 美国-youtube@资源分享师 02
+      - 美国-youtube@资源分享师 03
+      - 美国-youtube@资源分享师 04
+      - 美国-youtube@资源分享师 05
+      - 美国-youtube@资源分享师 06
+      - 美国-youtube@资源分享师 07
+      - 美国-youtube@资源分享师 08
+      - 美国-youtube@资源分享师 09
+      - 美国-youtube@资源分享师 10
+      - 美国-youtube@资源分享师 11
+      - 美国-youtube@资源分享师 12
+      - 美国-youtube@资源分享师 15
+      - 美国-youtube@资源分享师 16
+      - 美国-youtube@资源分享师 17
+      - 美国-youtube@资源分享师 18
+      - 美国-youtube@资源分享师 19
+      - 土耳其-youtube@资源分享师 01
+      - 土耳其-youtube@资源分享师 02
+      - 土耳其-youtube@资源分享师 03
+      - 土耳其-youtube@资源分享师 04
+      - 土耳其-youtube@资源分享师 05
+      - 土耳其-youtube@资源分享师 06
+      - 土耳其-youtube@资源分享师 07
+      - 土耳其-youtube@资源分享师 08
+      - 土耳其-youtube@资源分享师 09
+      - 土耳其-youtube@资源分享师 10
+      - 土耳其-youtube@资源分享师 11
+      - 土耳其-youtube@资源分享师 12
+      - 土耳其-youtube@资源分享师 13
+      - 土耳其-youtube@资源分享师 14
+      - 土耳其-youtube@资源分享师 15
+      - 土耳其-youtube@资源分享师 16
+      - 土耳其-youtube@资源分享师 17
+      - 土耳其-youtube@资源分享师 18
+      - 土耳其-youtube@资源分享师 19
+      - 波兰-youtube@资源分享师 01
+      - 波兰-youtube@资源分享师 02
+      - 新加坡-youtube@资源分享师 01
+      - 新加坡-youtube@资源分享师 02
+      - 新加坡-youtube@资源分享师 03
+      - 新加坡-youtube@资源分享师 04
+      - 新加坡-youtube@资源分享师 05
+      - 新加坡-youtube@资源分享师 06
+      - 立陶宛-youtube@资源分享师 01
+      - 芬兰-youtube@资源分享师 01
+      - 芬兰-youtube@资源分享师 02
+      - 保加利亚-youtube@资源分享师 01
+      - 英国-youtube@资源分享师 01
+      - 俄罗斯-youtube@资源分享师 01
+      - 俄罗斯-youtube@资源分享师 02
+      - 俄罗斯-youtube@资源分享师 03
+      - 俄罗斯-youtube@资源分享师 04
+      - 俄罗斯-youtube@资源分享师 05
+      - 塔吉克斯坦-youtube@资源分享师 01
+      - 塞浦路斯-youtube@资源分享师 01
+      - 瑞典-youtube@资源分享师 01
+      - 瑞典-youtube@资源分享师 02
+      - 瑞典-youtube@资源分享师 03
+      - 瑞典-youtube@资源分享师 04
+      - 瑞典-youtube@资源分享师 05
+      - 瑞典-youtube@资源分享师 06
+      - 瑞典-youtube@资源分享师 07
+      - 瑞典-youtube@资源分享师 08
+      - 瑞典-youtube@资源分享师 09
+      - 瑞典-youtube@资源分享师 10
+      - 瑞典-youtube@资源分享师 11
+      - 瑞典-youtube@资源分享师 12
+      - 瑞典-youtube@资源分享师 13
+      - 瑞典-youtube@资源分享师 14
+      - 瑞典-youtube@资源分享师 15
+      - 瑞典-youtube@资源分享师 16
+      - 瑞典-youtube@资源分享师 17
+      - 瑞典-youtube@资源分享师 18
+      - 瑞典-youtube@资源分享师 19
+      - 瑞典-youtube@资源分享师 20
+      - 瑞典-youtube@资源分享师 21
+      - 瑞典-youtube@资源分享师 22
+      - 罗马尼亚-youtube@资源分享师 01
+      - 罗马尼亚-youtube@资源分享师 02
+      - 罗马尼亚-youtube@资源分享师 03
+      - 罗马尼亚-youtube@资源分享师 04
+      - 罗马尼亚-youtube@资源分享师 05
+      - 罗马尼亚-youtube@资源分享师 06
+      - 罗马尼亚-youtube@资源分享师 07
+      - 罗马尼亚-youtube@资源分享师 08
+      - 罗马尼亚-youtube@资源分享师 09
+      - 罗马尼亚-youtube@资源分享师 10
+      - 罗马尼亚-youtube@资源分享师 11
+      - 罗马尼亚-youtube@资源分享师 12
+      - 罗马尼亚-youtube@资源分享师 13
+      - 罗马尼亚-youtube@资源分享师 14
+      - 罗马尼亚-youtube@资源分享师 15
+      - 罗马尼亚-youtube@资源分享师 16
+      - 罗马尼亚-youtube@资源分享师 17
+      - 罗马尼亚-youtube@资源分享师 18
+      - 罗马尼亚-youtube@资源分享师 19
+      - 罗马尼亚-youtube@资源分享师 20
+      - 罗马尼亚-youtube@资源分享师 21
+      - 罗马尼亚-youtube@资源分享师 22
+      - 罗马尼亚-youtube@资源分享师 23
+      - 西班牙-youtube@资源分享师 01
+      - 法国-youtube@资源分享师 01
+      - 巴西-youtube@资源分享师 01
+      - 伊朗-youtube@资源分享师 01
+      - 乌克兰-youtube@资源分享师 01
+      - 乌克兰-youtube@资源分享师 02
+      - 匈牙利-youtube@资源分享师 01
+      - 刚果(金)-youtube@资源分享师 01
+      - 刚果(金)-youtube@资源分享师 02
+      - 澳大利亚-youtube@资源分享师 01
+    url: http://www.gstatic.com/generate_204
+    interval: 300
+    tolerance: 50
+  - name: 🌍 国外媒体
+    type: select
+    proxies:
+      - 🚀 节点选择
+      - ♻️ 自动选择
+      - 🎯 全球直连
+      - 捷克-youtube@资源分享师 06
+      - 捷克-youtube@资源分享师 01
+      - 捷克-youtube@资源分享师 02
+      - 捷克-youtube@资源分享师 03
+      - 捷克-youtube@资源分享师 04
+      - 捷克-youtube@资源分享师 05
+      - 捷克-youtube@资源分享师 07
+      - 捷克-youtube@资源分享师 08
+      - 捷克-youtube@资源分享师 09
+      - 荷兰-youtube@资源分享师 01
+      - 荷兰-youtube@资源分享师 02
+      - 荷兰-youtube@资源分享师 03
+      - 荷兰-youtube@资源分享师 04
+      - 荷兰-youtube@资源分享师 05
+      - 荷兰-youtube@资源分享师 06
+      - 荷兰-youtube@资源分享师 07
+      - 荷兰-youtube@资源分享师 08
+      - 荷兰-youtube@资源分享师 09
+      - 荷兰-youtube@资源分享师 10
+      - 荷兰-youtube@资源分享师 11
+      - 荷兰-youtube@资源分享师 12
+      - 荷兰-youtube@资源分享师 13
+      - 荷兰-youtube@资源分享师 14
+      - 荷兰-youtube@资源分享师 15
+      - 荷兰-youtube@资源分享师 16
+      - 荷兰-youtube@资源分享师 17
+      - 荷兰-youtube@资源分享师 18
+      - 荷兰-youtube@资源分享师 19
+      - 荷兰-youtube@资源分享师 20
+      - 荷兰-youtube@资源分享师 21
+      - 荷兰-youtube@资源分享师 22
+      - 荷兰-youtube@资源分享师 23
+      - 荷兰-youtube@资源分享师 24
+      - 荷兰-youtube@资源分享师 25
+      - 荷兰-youtube@资源分享师 26
+      - 荷兰-youtube@资源分享师 27
+      - 荷兰-youtube@资源分享师 28
+      - 荷兰-youtube@资源分享师 29
+      - 荷兰-youtube@资源分享师 30
+      - 荷兰-youtube@资源分享师 31
+      - 荷兰-youtube@资源分享师 32
+      - 荷兰-youtube@资源分享师 33
+      - 荷兰-youtube@资源分享师 34
+      - 荷兰-youtube@资源分享师 35
+      - 荷兰-youtube@资源分享师 36
+      - 荷兰-youtube@资源分享师 37
+      - 荷兰-youtube@资源分享师 38
+      - 荷兰-youtube@资源分享师 39
+      - 荷兰-youtube@资源分享师 40
+      - 荷兰-youtube@资源分享师 41
+      - 荷兰-youtube@资源分享师 42
+      - 荷兰-youtube@资源分享师 43
+      - 荷兰-youtube@资源分享师 44
+      - 荷兰-youtube@资源分享师 45
+      - 荷兰-youtube@资源分享师 46
+      - 荷兰-youtube@资源分享师 47
+      - 荷兰-youtube@资源分享师 48
+      - 荷兰-youtube@资源分享师 49
+      - 荷兰-youtube@资源分享师 50
+      - 荷兰-youtube@资源分享师 51
+      - 德国-youtube@资源分享师 02
+      - 德国-youtube@资源分享师 03
+      - 德国-youtube@资源分享师 05
+      - 德国-youtube@资源分享师 06
+      - 德国-youtube@资源分享师 07
+      - 德国-youtube@资源分享师 08
+      - 日本-youtube@资源分享师 01
+      - 日本-youtube@资源分享师 02
+      - 日本-youtube@资源分享师 03
+      - 日本-youtube@资源分享师 04
+      - 日本-youtube@资源分享师 05
+      - 日本-youtube@资源分享师 06
+      - 日本-youtube@资源分享师 07
+      - 日本-youtube@资源分享师 08
+      - 日本-youtube@资源分享师 09
+      - 日本-youtube@资源分享师 10
+      - 日本-youtube@资源分享师 11
+      - 日本-youtube@资源分享师 12
+      - 台湾-youtube@资源分享师 01
+      - 台湾-youtube@资源分享师 02
+      - 台湾-youtube@资源分享师 03
+      - 台湾-youtube@资源分享师 04
+      - 台湾-youtube@资源分享师 05
+      - 台湾-youtube@资源分享师 06
+      - 台湾-youtube@资源分享师 07
+      - 加拿大-youtube@资源分享师 01
+      - 加拿大-youtube@资源分享师 02
+      - 加拿大-youtube@资源分享师 03
+      - 加拿大-youtube@资源分享师 04
+      - 加拿大-youtube@资源分享师 05
+      - 加拿大-youtube@资源分享师 06
+      - 加拿大-youtube@资源分享师 07
+      - 加拿大-youtube@资源分享师 08
+      - 加拿大-youtube@资源分享师 09
+      - 加拿大-youtube@资源分享师 10
+      - 加拿大-youtube@资源分享师 11
+      - 加拿大-youtube@资源分享师 12
+      - 加拿大-youtube@资源分享师 13
+      - 加拿大-youtube@资源分享师 14
+      - 香港-youtube@资源分享师 01
+      - 香港-youtube@资源分享师 02
+      - 塞舌尔-youtube@资源分享师 01
+      - 塞舌尔-youtube@资源分享师 02
+      - 韩国-youtube@资源分享师 01
+      - 韩国-youtube@资源分享师 02
+      - 韩国-youtube@资源分享师 03
+      - 韩国-youtube@资源分享师 04
+      - 韩国-youtube@资源分享师 05
+      - 韩国-youtube@资源分享师 06
+      - 韩国-youtube@资源分享师 07
+      - 韩国-youtube@资源分享师 08
+      - 韩国-youtube@资源分享师 09
+      - 韩国-youtube@资源分享师 10
+      - 韩国-youtube@资源分享师 11
+      - 韩国-youtube@资源分享师 12
+      - 韩国-youtube@资源分享师 13
+      - 美国-youtube@资源分享师 01
+      - 美国-youtube@资源分享师 02
+      - 美国-youtube@资源分享师 03
+      - 美国-youtube@资源分享师 04
+      - 美国-youtube@资源分享师 05
+      - 美国-youtube@资源分享师 06
+      - 美国-youtube@资源分享师 07
+      - 美国-youtube@资源分享师 08
+      - 美国-youtube@资源分享师 09
+      - 美国-youtube@资源分享师 10
+      - 美国-youtube@资源分享师 11
+      - 美国-youtube@资源分享师 12
+      - 美国-youtube@资源分享师 15
+      - 美国-youtube@资源分享师 16
+      - 美国-youtube@资源分享师 17
+      - 美国-youtube@资源分享师 18
+      - 美国-youtube@资源分享师 19
+      - 土耳其-youtube@资源分享师 01
+      - 土耳其-youtube@资源分享师 02
+      - 土耳其-youtube@资源分享师 03
+      - 土耳其-youtube@资源分享师 04
+      - 土耳其-youtube@资源分享师 05
+      - 土耳其-youtube@资源分享师 06
+      - 土耳其-youtube@资源分享师 07
+      - 土耳其-youtube@资源分享师 08
+      - 土耳其-youtube@资源分享师 09
+      - 土耳其-youtube@资源分享师 10
+      - 土耳其-youtube@资源分享师 11
+      - 土耳其-youtube@资源分享师 12
+      - 土耳其-youtube@资源分享师 13
+      - 土耳其-youtube@资源分享师 14
+      - 土耳其-youtube@资源分享师 15
+      - 土耳其-youtube@资源分享师 16
+      - 土耳其-youtube@资源分享师 17
+      - 土耳其-youtube@资源分享师 18
+      - 土耳其-youtube@资源分享师 19
+      - 波兰-youtube@资源分享师 01
+      - 波兰-youtube@资源分享师 02
+      - 新加坡-youtube@资源分享师 01
+      - 新加坡-youtube@资源分享师 02
+      - 新加坡-youtube@资源分享师 03
+      - 新加坡-youtube@资源分享师 04
+      - 新加坡-youtube@资源分享师 05
+      - 新加坡-youtube@资源分享师 06
+      - 立陶宛-youtube@资源分享师 01
+      - 芬兰-youtube@资源分享师 01
+      - 芬兰-youtube@资源分享师 02
+      - 保加利亚-youtube@资源分享师 01
+      - 英国-youtube@资源分享师 01
+      - 俄罗斯-youtube@资源分享师 01
+      - 俄罗斯-youtube@资源分享师 02
+      - 俄罗斯-youtube@资源分享师 03
+      - 俄罗斯-youtube@资源分享师 04
+      - 俄罗斯-youtube@资源分享师 05
+      - 塔吉克斯坦-youtube@资源分享师 01
+      - 塞浦路斯-youtube@资源分享师 01
+      - 瑞典-youtube@资源分享师 01
+      - 瑞典-youtube@资源分享师 02
+      - 瑞典-youtube@资源分享师 03
+      - 瑞典-youtube@资源分享师 04
+      - 瑞典-youtube@资源分享师 05
+      - 瑞典-youtube@资源分享师 06
+      - 瑞典-youtube@资源分享师 07
+      - 瑞典-youtube@资源分享师 08
+      - 瑞典-youtube@资源分享师 09
+      - 瑞典-youtube@资源分享师 10
+      - 瑞典-youtube@资源分享师 11
+      - 瑞典-youtube@资源分享师 12
+      - 瑞典-youtube@资源分享师 13
+      - 瑞典-youtube@资源分享师 14
+      - 瑞典-youtube@资源分享师 15
+      - 瑞典-youtube@资源分享师 16
+      - 瑞典-youtube@资源分享师 17
+      - 瑞典-youtube@资源分享师 18
+      - 瑞典-youtube@资源分享师 19
+      - 瑞典-youtube@资源分享师 20
+      - 瑞典-youtube@资源分享师 21
+      - 瑞典-youtube@资源分享师 22
+      - 罗马尼亚-youtube@资源分享师 01
+      - 罗马尼亚-youtube@资源分享师 02
+      - 罗马尼亚-youtube@资源分享师 03
+      - 罗马尼亚-youtube@资源分享师 04
+      - 罗马尼亚-youtube@资源分享师 05
+      - 罗马尼亚-youtube@资源分享师 06
+      - 罗马尼亚-youtube@资源分享师 07
+      - 罗马尼亚-youtube@资源分享师 08
+      - 罗马尼亚-youtube@资源分享师 09
+      - 罗马尼亚-youtube@资源分享师 10
+      - 罗马尼亚-youtube@资源分享师 11
+      - 罗马尼亚-youtube@资源分享师 12
+      - 罗马尼亚-youtube@资源分享师 13
+      - 罗马尼亚-youtube@资源分享师 14
+      - 罗马尼亚-youtube@资源分享师 15
+      - 罗马尼亚-youtube@资源分享师 16
+      - 罗马尼亚-youtube@资源分享师 17
+      - 罗马尼亚-youtube@资源分享师 18
+      - 罗马尼亚-youtube@资源分享师 19
+      - 罗马尼亚-youtube@资源分享师 20
+      - 罗马尼亚-youtube@资源分享师 21
+      - 罗马尼亚-youtube@资源分享师 22
+      - 罗马尼亚-youtube@资源分享师 23
+      - 西班牙-youtube@资源分享师 01
+      - 法国-youtube@资源分享师 01
+      - 巴西-youtube@资源分享师 01
+      - 伊朗-youtube@资源分享师 01
+      - 乌克兰-youtube@资源分享师 01
+      - 乌克兰-youtube@资源分享师 02
+      - 匈牙利-youtube@资源分享师 01
+      - 刚果(金)-youtube@资源分享师 01
+      - 刚果(金)-youtube@资源分享师 02
+      - 澳大利亚-youtube@资源分享师 01
+  - name: 📲 电报信息
+    type: select
+    proxies:
+      - 🚀 节点选择
+      - 🎯 全球直连
+      - 捷克-youtube@资源分享师 06
+      - 捷克-youtube@资源分享师 01
+      - 捷克-youtube@资源分享师 02
+      - 捷克-youtube@资源分享师 03
+      - 捷克-youtube@资源分享师 04
+      - 捷克-youtube@资源分享师 05
+      - 捷克-youtube@资源分享师 07
+      - 捷克-youtube@资源分享师 08
+      - 捷克-youtube@资源分享师 09
+      - 荷兰-youtube@资源分享师 01
+      - 荷兰-youtube@资源分享师 02
+      - 荷兰-youtube@资源分享师 03
+      - 荷兰-youtube@资源分享师 04
+      - 荷兰-youtube@资源分享师 05
+      - 荷兰-youtube@资源分享师 06
+      - 荷兰-youtube@资源分享师 07
+      - 荷兰-youtube@资源分享师 08
+      - 荷兰-youtube@资源分享师 09
+      - 荷兰-youtube@资源分享师 10
+      - 荷兰-youtube@资源分享师 11
+      - 荷兰-youtube@资源分享师 12
+      - 荷兰-youtube@资源分享师 13
+      - 荷兰-youtube@资源分享师 14
+      - 荷兰-youtube@资源分享师 15
+      - 荷兰-youtube@资源分享师 16
+      - 荷兰-youtube@资源分享师 17
+      - 荷兰-youtube@资源分享师 18
+      - 荷兰-youtube@资源分享师 19
+      - 荷兰-youtube@资源分享师 20
+      - 荷兰-youtube@资源分享师 21
+      - 荷兰-youtube@资源分享师 22
+      - 荷兰-youtube@资源分享师 23
+      - 荷兰-youtube@资源分享师 24
+      - 荷兰-youtube@资源分享师 25
+      - 荷兰-youtube@资源分享师 26
+      - 荷兰-youtube@资源分享师 27
+      - 荷兰-youtube@资源分享师 28
+      - 荷兰-youtube@资源分享师 29
+      - 荷兰-youtube@资源分享师 30
+      - 荷兰-youtube@资源分享师 31
+      - 荷兰-youtube@资源分享师 32
+      - 荷兰-youtube@资源分享师 33
+      - 荷兰-youtube@资源分享师 34
+      - 荷兰-youtube@资源分享师 35
+      - 荷兰-youtube@资源分享师 36
+      - 荷兰-youtube@资源分享师 37
+      - 荷兰-youtube@资源分享师 38
+      - 荷兰-youtube@资源分享师 39
+      - 荷兰-youtube@资源分享师 40
+      - 荷兰-youtube@资源分享师 41
+      - 荷兰-youtube@资源分享师 42
+      - 荷兰-youtube@资源分享师 43
+      - 荷兰-youtube@资源分享师 44
+      - 荷兰-youtube@资源分享师 45
+      - 荷兰-youtube@资源分享师 46
+      - 荷兰-youtube@资源分享师 47
+      - 荷兰-youtube@资源分享师 48
+      - 荷兰-youtube@资源分享师 49
+      - 荷兰-youtube@资源分享师 50
+      - 荷兰-youtube@资源分享师 51
+      - 德国-youtube@资源分享师 02
+      - 德国-youtube@资源分享师 03
+      - 德国-youtube@资源分享师 05
+      - 德国-youtube@资源分享师 06
+      - 德国-youtube@资源分享师 07
+      - 德国-youtube@资源分享师 08
+      - 日本-youtube@资源分享师 01
+      - 日本-youtube@资源分享师 02
+      - 日本-youtube@资源分享师 03
+      - 日本-youtube@资源分享师 04
+      - 日本-youtube@资源分享师 05
+      - 日本-youtube@资源分享师 06
+      - 日本-youtube@资源分享师 07
+      - 日本-youtube@资源分享师 08
+      - 日本-youtube@资源分享师 09
+      - 日本-youtube@资源分享师 10
+      - 日本-youtube@资源分享师 11
+      - 日本-youtube@资源分享师 12
+      - 台湾-youtube@资源分享师 01
+      - 台湾-youtube@资源分享师 02
+      - 台湾-youtube@资源分享师 03
+      - 台湾-youtube@资源分享师 04
+      - 台湾-youtube@资源分享师 05
+      - 台湾-youtube@资源分享师 06
+      - 台湾-youtube@资源分享师 07
+      - 加拿大-youtube@资源分享师 01
+      - 加拿大-youtube@资源分享师 02
+      - 加拿大-youtube@资源分享师 03
+      - 加拿大-youtube@资源分享师 04
+      - 加拿大-youtube@资源分享师 05
+      - 加拿大-youtube@资源分享师 06
+      - 加拿大-youtube@资源分享师 07
+      - 加拿大-youtube@资源分享师 08
+      - 加拿大-youtube@资源分享师 09
+      - 加拿大-youtube@资源分享师 10
+      - 加拿大-youtube@资源分享师 11
+      - 加拿大-youtube@资源分享师 12
+      - 加拿大-youtube@资源分享师 13
+      - 加拿大-youtube@资源分享师 14
+      - 香港-youtube@资源分享师 01
+      - 香港-youtube@资源分享师 02
+      - 塞舌尔-youtube@资源分享师 01
+      - 塞舌尔-youtube@资源分享师 02
+      - 韩国-youtube@资源分享师 01
+      - 韩国-youtube@资源分享师 02
+      - 韩国-youtube@资源分享师 03
+      - 韩国-youtube@资源分享师 04
+      - 韩国-youtube@资源分享师 05
+      - 韩国-youtube@资源分享师 06
+      - 韩国-youtube@资源分享师 07
+      - 韩国-youtube@资源分享师 08
+      - 韩国-youtube@资源分享师 09
+      - 韩国-youtube@资源分享师 10
+      - 韩国-youtube@资源分享师 11
+      - 韩国-youtube@资源分享师 12
+      - 韩国-youtube@资源分享师 13
+      - 美国-youtube@资源分享师 01
+      - 美国-youtube@资源分享师 02
+      - 美国-youtube@资源分享师 03
+      - 美国-youtube@资源分享师 04
+      - 美国-youtube@资源分享师 05
+      - 美国-youtube@资源分享师 06
+      - 美国-youtube@资源分享师 07
+      - 美国-youtube@资源分享师 08
+      - 美国-youtube@资源分享师 09
+      - 美国-youtube@资源分享师 10
+      - 美国-youtube@资源分享师 11
+      - 美国-youtube@资源分享师 12
+      - 美国-youtube@资源分享师 15
+      - 美国-youtube@资源分享师 16
+      - 美国-youtube@资源分享师 17
+      - 美国-youtube@资源分享师 18
+      - 美国-youtube@资源分享师 19
+      - 土耳其-youtube@资源分享师 01
+      - 土耳其-youtube@资源分享师 02
+      - 土耳其-youtube@资源分享师 03
+      - 土耳其-youtube@资源分享师 04
+      - 土耳其-youtube@资源分享师 05
+      - 土耳其-youtube@资源分享师 06
+      - 土耳其-youtube@资源分享师 07
+      - 土耳其-youtube@资源分享师 08
+      - 土耳其-youtube@资源分享师 09
+      - 土耳其-youtube@资源分享师 10
+      - 土耳其-youtube@资源分享师 11
+      - 土耳其-youtube@资源分享师 12
+      - 土耳其-youtube@资源分享师 13
+      - 土耳其-youtube@资源分享师 14
+      - 土耳其-youtube@资源分享师 15
+      - 土耳其-youtube@资源分享师 16
+      - 土耳其-youtube@资源分享师 17
+      - 土耳其-youtube@资源分享师 18
+      - 土耳其-youtube@资源分享师 19
+      - 波兰-youtube@资源分享师 01
+      - 波兰-youtube@资源分享师 02
+      - 新加坡-youtube@资源分享师 01
+      - 新加坡-youtube@资源分享师 02
+      - 新加坡-youtube@资源分享师 03
+      - 新加坡-youtube@资源分享师 04
+      - 新加坡-youtube@资源分享师 05
+      - 新加坡-youtube@资源分享师 06
+      - 立陶宛-youtube@资源分享师 01
+      - 芬兰-youtube@资源分享师 01
+      - 芬兰-youtube@资源分享师 02
+      - 保加利亚-youtube@资源分享师 01
+      - 英国-youtube@资源分享师 01
+      - 俄罗斯-youtube@资源分享师 01
+      - 俄罗斯-youtube@资源分享师 02
+      - 俄罗斯-youtube@资源分享师 03
+      - 俄罗斯-youtube@资源分享师 04
+      - 俄罗斯-youtube@资源分享师 05
+      - 塔吉克斯坦-youtube@资源分享师 01
+      - 塞浦路斯-youtube@资源分享师 01
+      - 瑞典-youtube@资源分享师 01
+      - 瑞典-youtube@资源分享师 02
+      - 瑞典-youtube@资源分享师 03
+      - 瑞典-youtube@资源分享师 04
+      - 瑞典-youtube@资源分享师 05
+      - 瑞典-youtube@资源分享师 06
+      - 瑞典-youtube@资源分享师 07
+      - 瑞典-youtube@资源分享师 08
+      - 瑞典-youtube@资源分享师 09
+      - 瑞典-youtube@资源分享师 10
+      - 瑞典-youtube@资源分享师 11
+      - 瑞典-youtube@资源分享师 12
+      - 瑞典-youtube@资源分享师 13
+      - 瑞典-youtube@资源分享师 14
+      - 瑞典-youtube@资源分享师 15
+      - 瑞典-youtube@资源分享师 16
+      - 瑞典-youtube@资源分享师 17
+      - 瑞典-youtube@资源分享师 18
+      - 瑞典-youtube@资源分享师 19
+      - 瑞典-youtube@资源分享师 20
+      - 瑞典-youtube@资源分享师 21
+      - 瑞典-youtube@资源分享师 22
+      - 罗马尼亚-youtube@资源分享师 01
+      - 罗马尼亚-youtube@资源分享师 02
+      - 罗马尼亚-youtube@资源分享师 03
+      - 罗马尼亚-youtube@资源分享师 04
+      - 罗马尼亚-youtube@资源分享师 05
+      - 罗马尼亚-youtube@资源分享师 06
+      - 罗马尼亚-youtube@资源分享师 07
+      - 罗马尼亚-youtube@资源分享师 08
+      - 罗马尼亚-youtube@资源分享师 09
+      - 罗马尼亚-youtube@资源分享师 10
+      - 罗马尼亚-youtube@资源分享师 11
+      - 罗马尼亚-youtube@资源分享师 12
+      - 罗马尼亚-youtube@资源分享师 13
+      - 罗马尼亚-youtube@资源分享师 14
+      - 罗马尼亚-youtube@资源分享师 15
+      - 罗马尼亚-youtube@资源分享师 16
+      - 罗马尼亚-youtube@资源分享师 17
+      - 罗马尼亚-youtube@资源分享师 18
+      - 罗马尼亚-youtube@资源分享师 19
+      - 罗马尼亚-youtube@资源分享师 20
+      - 罗马尼亚-youtube@资源分享师 21
+      - 罗马尼亚-youtube@资源分享师 22
+      - 罗马尼亚-youtube@资源分享师 23
+      - 西班牙-youtube@资源分享师 01
+      - 法国-youtube@资源分享师 01
+      - 巴西-youtube@资源分享师 01
+      - 伊朗-youtube@资源分享师 01
+      - 乌克兰-youtube@资源分享师 01
+      - 乌克兰-youtube@资源分享师 02
+      - 匈牙利-youtube@资源分享师 01
+      - 刚果(金)-youtube@资源分享师 01
+      - 刚果(金)-youtube@资源分享师 02
+      - 澳大利亚-youtube@资源分享师 01
+  - name: Ⓜ️ 微软服务
+    type: select
+    proxies:
+      - 🎯 全球直连
+      - 🚀 节点选择
+      - 捷克-youtube@资源分享师 06
+      - 捷克-youtube@资源分享师 01
+      - 捷克-youtube@资源分享师 02
+      - 捷克-youtube@资源分享师 03
+      - 捷克-youtube@资源分享师 04
+      - 捷克-youtube@资源分享师 05
+      - 捷克-youtube@资源分享师 07
+      - 捷克-youtube@资源分享师 08
+      - 捷克-youtube@资源分享师 09
+      - 荷兰-youtube@资源分享师 01
+      - 荷兰-youtube@资源分享师 02
+      - 荷兰-youtube@资源分享师 03
+      - 荷兰-youtube@资源分享师 04
+      - 荷兰-youtube@资源分享师 05
+      - 荷兰-youtube@资源分享师 06
+      - 荷兰-youtube@资源分享师 07
+      - 荷兰-youtube@资源分享师 08
+      - 荷兰-youtube@资源分享师 09
+      - 荷兰-youtube@资源分享师 10
+      - 荷兰-youtube@资源分享师 11
+      - 荷兰-youtube@资源分享师 12
+      - 荷兰-youtube@资源分享师 13
+      - 荷兰-youtube@资源分享师 14
+      - 荷兰-youtube@资源分享师 15
+      - 荷兰-youtube@资源分享师 16
+      - 荷兰-youtube@资源分享师 17
+      - 荷兰-youtube@资源分享师 18
+      - 荷兰-youtube@资源分享师 19
+      - 荷兰-youtube@资源分享师 20
+      - 荷兰-youtube@资源分享师 21
+      - 荷兰-youtube@资源分享师 22
+      - 荷兰-youtube@资源分享师 23
+      - 荷兰-youtube@资源分享师 24
+      - 荷兰-youtube@资源分享师 25
+      - 荷兰-youtube@资源分享师 26
+      - 荷兰-youtube@资源分享师 27
+      - 荷兰-youtube@资源分享师 28
+      - 荷兰-youtube@资源分享师 29
+      - 荷兰-youtube@资源分享师 30
+      - 荷兰-youtube@资源分享师 31
+      - 荷兰-youtube@资源分享师 32
+      - 荷兰-youtube@资源分享师 33
+      - 荷兰-youtube@资源分享师 34
+      - 荷兰-youtube@资源分享师 35
+      - 荷兰-youtube@资源分享师 36
+      - 荷兰-youtube@资源分享师 37
+      - 荷兰-youtube@资源分享师 38
+      - 荷兰-youtube@资源分享师 39
+      - 荷兰-youtube@资源分享师 40
+      - 荷兰-youtube@资源分享师 41
+      - 荷兰-youtube@资源分享师 42
+      - 荷兰-youtube@资源分享师 43
+      - 荷兰-youtube@资源分享师 44
+      - 荷兰-youtube@资源分享师 45
+      - 荷兰-youtube@资源分享师 46
+      - 荷兰-youtube@资源分享师 47
+      - 荷兰-youtube@资源分享师 48
+      - 荷兰-youtube@资源分享师 49
+      - 荷兰-youtube@资源分享师 50
+      - 荷兰-youtube@资源分享师 51
+      - 德国-youtube@资源分享师 02
+      - 德国-youtube@资源分享师 03
+      - 德国-youtube@资源分享师 05
+      - 德国-youtube@资源分享师 06
+      - 德国-youtube@资源分享师 07
+      - 德国-youtube@资源分享师 08
+      - 日本-youtube@资源分享师 01
+      - 日本-youtube@资源分享师 02
+      - 日本-youtube@资源分享师 03
+      - 日本-youtube@资源分享师 04
+      - 日本-youtube@资源分享师 05
+      - 日本-youtube@资源分享师 06
+      - 日本-youtube@资源分享师 07
+      - 日本-youtube@资源分享师 08
+      - 日本-youtube@资源分享师 09
+      - 日本-youtube@资源分享师 10
+      - 日本-youtube@资源分享师 11
+      - 日本-youtube@资源分享师 12
+      - 台湾-youtube@资源分享师 01
+      - 台湾-youtube@资源分享师 02
+      - 台湾-youtube@资源分享师 03
+      - 台湾-youtube@资源分享师 04
+      - 台湾-youtube@资源分享师 05
+      - 台湾-youtube@资源分享师 06
+      - 台湾-youtube@资源分享师 07
+      - 加拿大-youtube@资源分享师 01
+      - 加拿大-youtube@资源分享师 02
+      - 加拿大-youtube@资源分享师 03
+      - 加拿大-youtube@资源分享师 04
+      - 加拿大-youtube@资源分享师 05
+      - 加拿大-youtube@资源分享师 06
+      - 加拿大-youtube@资源分享师 07
+      - 加拿大-youtube@资源分享师 08
+      - 加拿大-youtube@资源分享师 09
+      - 加拿大-youtube@资源分享师 10
+      - 加拿大-youtube@资源分享师 11
+      - 加拿大-youtube@资源分享师 12
+      - 加拿大-youtube@资源分享师 13
+      - 加拿大-youtube@资源分享师 14
+      - 香港-youtube@资源分享师 01
+      - 香港-youtube@资源分享师 02
+      - 塞舌尔-youtube@资源分享师 01
+      - 塞舌尔-youtube@资源分享师 02
+      - 韩国-youtube@资源分享师 01
+      - 韩国-youtube@资源分享师 02
+      - 韩国-youtube@资源分享师 03
+      - 韩国-youtube@资源分享师 04
+      - 韩国-youtube@资源分享师 05
+      - 韩国-youtube@资源分享师 06
+      - 韩国-youtube@资源分享师 07
+      - 韩国-youtube@资源分享师 08
+      - 韩国-youtube@资源分享师 09
+      - 韩国-youtube@资源分享师 10
+      - 韩国-youtube@资源分享师 11
+      - 韩国-youtube@资源分享师 12
+      - 韩国-youtube@资源分享师 13
+      - 美国-youtube@资源分享师 01
+      - 美国-youtube@资源分享师 02
+      - 美国-youtube@资源分享师 03
+      - 美国-youtube@资源分享师 04
+      - 美国-youtube@资源分享师 05
+      - 美国-youtube@资源分享师 06
+      - 美国-youtube@资源分享师 07
+      - 美国-youtube@资源分享师 08
+      - 美国-youtube@资源分享师 09
+      - 美国-youtube@资源分享师 10
+      - 美国-youtube@资源分享师 11
+      - 美国-youtube@资源分享师 12
+      - 美国-youtube@资源分享师 15
+      - 美国-youtube@资源分享师 16
+      - 美国-youtube@资源分享师 17
+      - 美国-youtube@资源分享师 18
+      - 美国-youtube@资源分享师 19
+      - 土耳其-youtube@资源分享师 01
+      - 土耳其-youtube@资源分享师 02
+      - 土耳其-youtube@资源分享师 03
+      - 土耳其-youtube@资源分享师 04
+      - 土耳其-youtube@资源分享师 05
+      - 土耳其-youtube@资源分享师 06
+      - 土耳其-youtube@资源分享师 07
+      - 土耳其-youtube@资源分享师 08
+      - 土耳其-youtube@资源分享师 09
+      - 土耳其-youtube@资源分享师 10
+      - 土耳其-youtube@资源分享师 11
+      - 土耳其-youtube@资源分享师 12
+      - 土耳其-youtube@资源分享师 13
+      - 土耳其-youtube@资源分享师 14
+      - 土耳其-youtube@资源分享师 15
+      - 土耳其-youtube@资源分享师 16
+      - 土耳其-youtube@资源分享师 17
+      - 土耳其-youtube@资源分享师 18
+      - 土耳其-youtube@资源分享师 19
+      - 波兰-youtube@资源分享师 01
+      - 波兰-youtube@资源分享师 02
+      - 新加坡-youtube@资源分享师 01
+      - 新加坡-youtube@资源分享师 02
+      - 新加坡-youtube@资源分享师 03
+      - 新加坡-youtube@资源分享师 04
+      - 新加坡-youtube@资源分享师 05
+      - 新加坡-youtube@资源分享师 06
+      - 立陶宛-youtube@资源分享师 01
+      - 芬兰-youtube@资源分享师 01
+      - 芬兰-youtube@资源分享师 02
+      - 保加利亚-youtube@资源分享师 01
+      - 英国-youtube@资源分享师 01
+      - 俄罗斯-youtube@资源分享师 01
+      - 俄罗斯-youtube@资源分享师 02
+      - 俄罗斯-youtube@资源分享师 03
+      - 俄罗斯-youtube@资源分享师 04
+      - 俄罗斯-youtube@资源分享师 05
+      - 塔吉克斯坦-youtube@资源分享师 01
+      - 塞浦路斯-youtube@资源分享师 01
+      - 瑞典-youtube@资源分享师 01
+      - 瑞典-youtube@资源分享师 02
+      - 瑞典-youtube@资源分享师 03
+      - 瑞典-youtube@资源分享师 04
+      - 瑞典-youtube@资源分享师 05
+      - 瑞典-youtube@资源分享师 06
+      - 瑞典-youtube@资源分享师 07
+      - 瑞典-youtube@资源分享师 08
+      - 瑞典-youtube@资源分享师 09
+      - 瑞典-youtube@资源分享师 10
+      - 瑞典-youtube@资源分享师 11
+      - 瑞典-youtube@资源分享师 12
+      - 瑞典-youtube@资源分享师 13
+      - 瑞典-youtube@资源分享师 14
+      - 瑞典-youtube@资源分享师 15
+      - 瑞典-youtube@资源分享师 16
+      - 瑞典-youtube@资源分享师 17
+      - 瑞典-youtube@资源分享师 18
+      - 瑞典-youtube@资源分享师 19
+      - 瑞典-youtube@资源分享师 20
+      - 瑞典-youtube@资源分享师 21
+      - 瑞典-youtube@资源分享师 22
+      - 罗马尼亚-youtube@资源分享师 01
+      - 罗马尼亚-youtube@资源分享师 02
+      - 罗马尼亚-youtube@资源分享师 03
+      - 罗马尼亚-youtube@资源分享师 04
+      - 罗马尼亚-youtube@资源分享师 05
+      - 罗马尼亚-youtube@资源分享师 06
+      - 罗马尼亚-youtube@资源分享师 07
+      - 罗马尼亚-youtube@资源分享师 08
+      - 罗马尼亚-youtube@资源分享师 09
+      - 罗马尼亚-youtube@资源分享师 10
+      - 罗马尼亚-youtube@资源分享师 11
+      - 罗马尼亚-youtube@资源分享师 12
+      - 罗马尼亚-youtube@资源分享师 13
+      - 罗马尼亚-youtube@资源分享师 14
+      - 罗马尼亚-youtube@资源分享师 15
+      - 罗马尼亚-youtube@资源分享师 16
+      - 罗马尼亚-youtube@资源分享师 17
+      - 罗马尼亚-youtube@资源分享师 18
+      - 罗马尼亚-youtube@资源分享师 19
+      - 罗马尼亚-youtube@资源分享师 20
+      - 罗马尼亚-youtube@资源分享师 21
+      - 罗马尼亚-youtube@资源分享师 22
+      - 罗马尼亚-youtube@资源分享师 23
+      - 西班牙-youtube@资源分享师 01
+      - 法国-youtube@资源分享师 01
+      - 巴西-youtube@资源分享师 01
+      - 伊朗-youtube@资源分享师 01
+      - 乌克兰-youtube@资源分享师 01
+      - 乌克兰-youtube@资源分享师 02
+      - 匈牙利-youtube@资源分享师 01
+      - 刚果(金)-youtube@资源分享师 01
+      - 刚果(金)-youtube@资源分享师 02
+      - 澳大利亚-youtube@资源分享师 01
+  - name: 🍎 苹果服务
+    type: select
+    proxies:
+      - 🚀 节点选择
+      - 🎯 全球直连
+      - 捷克-youtube@资源分享师 06
+      - 捷克-youtube@资源分享师 01
+      - 捷克-youtube@资源分享师 02
+      - 捷克-youtube@资源分享师 03
+      - 捷克-youtube@资源分享师 04
+      - 捷克-youtube@资源分享师 05
+      - 捷克-youtube@资源分享师 07
+      - 捷克-youtube@资源分享师 08
+      - 捷克-youtube@资源分享师 09
+      - 荷兰-youtube@资源分享师 01
+      - 荷兰-youtube@资源分享师 02
+      - 荷兰-youtube@资源分享师 03
+      - 荷兰-youtube@资源分享师 04
+      - 荷兰-youtube@资源分享师 05
+      - 荷兰-youtube@资源分享师 06
+      - 荷兰-youtube@资源分享师 07
+      - 荷兰-youtube@资源分享师 08
+      - 荷兰-youtube@资源分享师 09
+      - 荷兰-youtube@资源分享师 10
+      - 荷兰-youtube@资源分享师 11
+      - 荷兰-youtube@资源分享师 12
+      - 荷兰-youtube@资源分享师 13
+      - 荷兰-youtube@资源分享师 14
+      - 荷兰-youtube@资源分享师 15
+      - 荷兰-youtube@资源分享师 16
+      - 荷兰-youtube@资源分享师 17
+      - 荷兰-youtube@资源分享师 18
+      - 荷兰-youtube@资源分享师 19
+      - 荷兰-youtube@资源分享师 20
+      - 荷兰-youtube@资源分享师 21
+      - 荷兰-youtube@资源分享师 22
+      - 荷兰-youtube@资源分享师 23
+      - 荷兰-youtube@资源分享师 24
+      - 荷兰-youtube@资源分享师 25
+      - 荷兰-youtube@资源分享师 26
+      - 荷兰-youtube@资源分享师 27
+      - 荷兰-youtube@资源分享师 28
+      - 荷兰-youtube@资源分享师 29
+      - 荷兰-youtube@资源分享师 30
+      - 荷兰-youtube@资源分享师 31
+      - 荷兰-youtube@资源分享师 32
+      - 荷兰-youtube@资源分享师 33
+      - 荷兰-youtube@资源分享师 34
+      - 荷兰-youtube@资源分享师 35
+      - 荷兰-youtube@资源分享师 36
+      - 荷兰-youtube@资源分享师 37
+      - 荷兰-youtube@资源分享师 38
+      - 荷兰-youtube@资源分享师 39
+      - 荷兰-youtube@资源分享师 40
+      - 荷兰-youtube@资源分享师 41
+      - 荷兰-youtube@资源分享师 42
+      - 荷兰-youtube@资源分享师 43
+      - 荷兰-youtube@资源分享师 44
+      - 荷兰-youtube@资源分享师 45
+      - 荷兰-youtube@资源分享师 46
+      - 荷兰-youtube@资源分享师 47
+      - 荷兰-youtube@资源分享师 48
+      - 荷兰-youtube@资源分享师 49
+      - 荷兰-youtube@资源分享师 50
+      - 荷兰-youtube@资源分享师 51
+      - 德国-youtube@资源分享师 02
+      - 德国-youtube@资源分享师 03
+      - 德国-youtube@资源分享师 05
+      - 德国-youtube@资源分享师 06
+      - 德国-youtube@资源分享师 07
+      - 德国-youtube@资源分享师 08
+      - 日本-youtube@资源分享师 01
+      - 日本-youtube@资源分享师 02
+      - 日本-youtube@资源分享师 03
+      - 日本-youtube@资源分享师 04
+      - 日本-youtube@资源分享师 05
+      - 日本-youtube@资源分享师 06
+      - 日本-youtube@资源分享师 07
+      - 日本-youtube@资源分享师 08
+      - 日本-youtube@资源分享师 09
+      - 日本-youtube@资源分享师 10
+      - 日本-youtube@资源分享师 11
+      - 日本-youtube@资源分享师 12
+      - 台湾-youtube@资源分享师 01
+      - 台湾-youtube@资源分享师 02
+      - 台湾-youtube@资源分享师 03
+      - 台湾-youtube@资源分享师 04
+      - 台湾-youtube@资源分享师 05
+      - 台湾-youtube@资源分享师 06
+      - 台湾-youtube@资源分享师 07
+      - 加拿大-youtube@资源分享师 01
+      - 加拿大-youtube@资源分享师 02
+      - 加拿大-youtube@资源分享师 03
+      - 加拿大-youtube@资源分享师 04
+      - 加拿大-youtube@资源分享师 05
+      - 加拿大-youtube@资源分享师 06
+      - 加拿大-youtube@资源分享师 07
+      - 加拿大-youtube@资源分享师 08
+      - 加拿大-youtube@资源分享师 09
+      - 加拿大-youtube@资源分享师 10
+      - 加拿大-youtube@资源分享师 11
+      - 加拿大-youtube@资源分享师 12
+      - 加拿大-youtube@资源分享师 13
+      - 加拿大-youtube@资源分享师 14
+      - 香港-youtube@资源分享师 01
+      - 香港-youtube@资源分享师 02
+      - 塞舌尔-youtube@资源分享师 01
+      - 塞舌尔-youtube@资源分享师 02
+      - 韩国-youtube@资源分享师 01
+      - 韩国-youtube@资源分享师 02
+      - 韩国-youtube@资源分享师 03
+      - 韩国-youtube@资源分享师 04
+      - 韩国-youtube@资源分享师 05
+      - 韩国-youtube@资源分享师 06
+      - 韩国-youtube@资源分享师 07
+      - 韩国-youtube@资源分享师 08
+      - 韩国-youtube@资源分享师 09
+      - 韩国-youtube@资源分享师 10
+      - 韩国-youtube@资源分享师 11
+      - 韩国-youtube@资源分享师 12
+      - 韩国-youtube@资源分享师 13
+      - 美国-youtube@资源分享师 01
+      - 美国-youtube@资源分享师 02
+      - 美国-youtube@资源分享师 03
+      - 美国-youtube@资源分享师 04
+      - 美国-youtube@资源分享师 05
+      - 美国-youtube@资源分享师 06
+      - 美国-youtube@资源分享师 07
+      - 美国-youtube@资源分享师 08
+      - 美国-youtube@资源分享师 09
+      - 美国-youtube@资源分享师 10
+      - 美国-youtube@资源分享师 11
+      - 美国-youtube@资源分享师 12
+      - 美国-youtube@资源分享师 15
+      - 美国-youtube@资源分享师 16
+      - 美国-youtube@资源分享师 17
+      - 美国-youtube@资源分享师 18
+      - 美国-youtube@资源分享师 19
+      - 土耳其-youtube@资源分享师 01
+      - 土耳其-youtube@资源分享师 02
+      - 土耳其-youtube@资源分享师 03
+      - 土耳其-youtube@资源分享师 04
+      - 土耳其-youtube@资源分享师 05
+      - 土耳其-youtube@资源分享师 06
+      - 土耳其-youtube@资源分享师 07
+      - 土耳其-youtube@资源分享师 08
+      - 土耳其-youtube@资源分享师 09
+      - 土耳其-youtube@资源分享师 10
+      - 土耳其-youtube@资源分享师 11
+      - 土耳其-youtube@资源分享师 12
+      - 土耳其-youtube@资源分享师 13
+      - 土耳其-youtube@资源分享师 14
+      - 土耳其-youtube@资源分享师 15
+      - 土耳其-youtube@资源分享师 16
+      - 土耳其-youtube@资源分享师 17
+      - 土耳其-youtube@资源分享师 18
+      - 土耳其-youtube@资源分享师 19
+      - 波兰-youtube@资源分享师 01
+      - 波兰-youtube@资源分享师 02
+      - 新加坡-youtube@资源分享师 01
+      - 新加坡-youtube@资源分享师 02
+      - 新加坡-youtube@资源分享师 03
+      - 新加坡-youtube@资源分享师 04
+      - 新加坡-youtube@资源分享师 05
+      - 新加坡-youtube@资源分享师 06
+      - 立陶宛-youtube@资源分享师 01
+      - 芬兰-youtube@资源分享师 01
+      - 芬兰-youtube@资源分享师 02
+      - 保加利亚-youtube@资源分享师 01
+      - 英国-youtube@资源分享师 01
+      - 俄罗斯-youtube@资源分享师 01
+      - 俄罗斯-youtube@资源分享师 02
+      - 俄罗斯-youtube@资源分享师 03
+      - 俄罗斯-youtube@资源分享师 04
+      - 俄罗斯-youtube@资源分享师 05
+      - 塔吉克斯坦-youtube@资源分享师 01
+      - 塞浦路斯-youtube@资源分享师 01
+      - 瑞典-youtube@资源分享师 01
+      - 瑞典-youtube@资源分享师 02
+      - 瑞典-youtube@资源分享师 03
+      - 瑞典-youtube@资源分享师 04
+      - 瑞典-youtube@资源分享师 05
+      - 瑞典-youtube@资源分享师 06
+      - 瑞典-youtube@资源分享师 07
+      - 瑞典-youtube@资源分享师 08
+      - 瑞典-youtube@资源分享师 09
+      - 瑞典-youtube@资源分享师 10
+      - 瑞典-youtube@资源分享师 11
+      - 瑞典-youtube@资源分享师 12
+      - 瑞典-youtube@资源分享师 13
+      - 瑞典-youtube@资源分享师 14
+      - 瑞典-youtube@资源分享师 15
+      - 瑞典-youtube@资源分享师 16
+      - 瑞典-youtube@资源分享师 17
+      - 瑞典-youtube@资源分享师 18
+      - 瑞典-youtube@资源分享师 19
+      - 瑞典-youtube@资源分享师 20
+      - 瑞典-youtube@资源分享师 21
+      - 瑞典-youtube@资源分享师 22
+      - 罗马尼亚-youtube@资源分享师 01
+      - 罗马尼亚-youtube@资源分享师 02
+      - 罗马尼亚-youtube@资源分享师 03
+      - 罗马尼亚-youtube@资源分享师 04
+      - 罗马尼亚-youtube@资源分享师 05
+      - 罗马尼亚-youtube@资源分享师 06
+      - 罗马尼亚-youtube@资源分享师 07
+      - 罗马尼亚-youtube@资源分享师 08
+      - 罗马尼亚-youtube@资源分享师 09
+      - 罗马尼亚-youtube@资源分享师 10
+      - 罗马尼亚-youtube@资源分享师 11
+      - 罗马尼亚-youtube@资源分享师 12
+      - 罗马尼亚-youtube@资源分享师 13
+      - 罗马尼亚-youtube@资源分享师 14
+      - 罗马尼亚-youtube@资源分享师 15
+      - 罗马尼亚-youtube@资源分享师 16
+      - 罗马尼亚-youtube@资源分享师 17
+      - 罗马尼亚-youtube@资源分享师 18
+      - 罗马尼亚-youtube@资源分享师 19
+      - 罗马尼亚-youtube@资源分享师 20
+      - 罗马尼亚-youtube@资源分享师 21
+      - 罗马尼亚-youtube@资源分享师 22
+      - 罗马尼亚-youtube@资源分享师 23
+      - 西班牙-youtube@资源分享师 01
+      - 法国-youtube@资源分享师 01
+      - 巴西-youtube@资源分享师 01
+      - 伊朗-youtube@资源分享师 01
+      - 乌克兰-youtube@资源分享师 01
+      - 乌克兰-youtube@资源分享师 02
+      - 匈牙利-youtube@资源分享师 01
+      - 刚果(金)-youtube@资源分享师 01
+      - 刚果(金)-youtube@资源分享师 02
+      - 澳大利亚-youtube@资源分享师 01
+  - name: 🎯 全球直连
+    type: select
+    proxies:
+      - DIRECT
+      - 🚀 节点选择
+      - ♻️ 自动选择
+  - name: 🛑 全球拦截
+    type: select
+    proxies:
+      - REJECT
+      - DIRECT
+  - name: 🍃 应用净化
+    type: select
+    proxies:
+      - REJECT
+      - DIRECT
+  - name: 🐟 漏网之鱼
+    type: select
+    proxies:
+      - 🚀 节点选择
+      - 🎯 全球直连
+      - ♻️ 自动选择
+      - 捷克-youtube@资源分享师 06
+      - 捷克-youtube@资源分享师 01
+      - 捷克-youtube@资源分享师 02
+      - 捷克-youtube@资源分享师 03
+      - 捷克-youtube@资源分享师 04
+      - 捷克-youtube@资源分享师 05
+      - 捷克-youtube@资源分享师 07
+      - 捷克-youtube@资源分享师 08
+      - 捷克-youtube@资源分享师 09
+      - 荷兰-youtube@资源分享师 01
+      - 荷兰-youtube@资源分享师 02
+      - 荷兰-youtube@资源分享师 03
+      - 荷兰-youtube@资源分享师 04
+      - 荷兰-youtube@资源分享师 05
+      - 荷兰-youtube@资源分享师 06
+      - 荷兰-youtube@资源分享师 07
+      - 荷兰-youtube@资源分享师 08
+      - 荷兰-youtube@资源分享师 09
+      - 荷兰-youtube@资源分享师 10
+      - 荷兰-youtube@资源分享师 11
+      - 荷兰-youtube@资源分享师 12
+      - 荷兰-youtube@资源分享师 13
+      - 荷兰-youtube@资源分享师 14
+      - 荷兰-youtube@资源分享师 15
+      - 荷兰-youtube@资源分享师 16
+      - 荷兰-youtube@资源分享师 17
+      - 荷兰-youtube@资源分享师 18
+      - 荷兰-youtube@资源分享师 19
+      - 荷兰-youtube@资源分享师 20
+      - 荷兰-youtube@资源分享师 21
+      - 荷兰-youtube@资源分享师 22
+      - 荷兰-youtube@资源分享师 23
+      - 荷兰-youtube@资源分享师 24
+      - 荷兰-youtube@资源分享师 25
+      - 荷兰-youtube@资源分享师 26
+      - 荷兰-youtube@资源分享师 27
+      - 荷兰-youtube@资源分享师 28
+      - 荷兰-youtube@资源分享师 29
+      - 荷兰-youtube@资源分享师 30
+      - 荷兰-youtube@资源分享师 31
+      - 荷兰-youtube@资源分享师 32
+      - 荷兰-youtube@资源分享师 33
+      - 荷兰-youtube@资源分享师 34
+      - 荷兰-youtube@资源分享师 35
+      - 荷兰-youtube@资源分享师 36
+      - 荷兰-youtube@资源分享师 37
+      - 荷兰-youtube@资源分享师 38
+      - 荷兰-youtube@资源分享师 39
+      - 荷兰-youtube@资源分享师 40
+      - 荷兰-youtube@资源分享师 41
+      - 荷兰-youtube@资源分享师 42
+      - 荷兰-youtube@资源分享师 43
+      - 荷兰-youtube@资源分享师 44
+      - 荷兰-youtube@资源分享师 45
+      - 荷兰-youtube@资源分享师 46
+      - 荷兰-youtube@资源分享师 47
+      - 荷兰-youtube@资源分享师 48
+      - 荷兰-youtube@资源分享师 49
+      - 荷兰-youtube@资源分享师 50
+      - 荷兰-youtube@资源分享师 51
+      - 德国-youtube@资源分享师 02
+      - 德国-youtube@资源分享师 03
+      - 德国-youtube@资源分享师 05
+      - 德国-youtube@资源分享师 06
+      - 德国-youtube@资源分享师 07
+      - 德国-youtube@资源分享师 08
+      - 日本-youtube@资源分享师 01
+      - 日本-youtube@资源分享师 02
+      - 日本-youtube@资源分享师 03
+      - 日本-youtube@资源分享师 04
+      - 日本-youtube@资源分享师 05
+      - 日本-youtube@资源分享师 06
+      - 日本-youtube@资源分享师 07
+      - 日本-youtube@资源分享师 08
+      - 日本-youtube@资源分享师 09
+      - 日本-youtube@资源分享师 10
+      - 日本-youtube@资源分享师 11
+      - 日本-youtube@资源分享师 12
+      - 台湾-youtube@资源分享师 01
+      - 台湾-youtube@资源分享师 02
+      - 台湾-youtube@资源分享师 03
+      - 台湾-youtube@资源分享师 04
+      - 台湾-youtube@资源分享师 05
+      - 台湾-youtube@资源分享师 06
+      - 台湾-youtube@资源分享师 07
+      - 加拿大-youtube@资源分享师 01
+      - 加拿大-youtube@资源分享师 02
+      - 加拿大-youtube@资源分享师 03
+      - 加拿大-youtube@资源分享师 04
+      - 加拿大-youtube@资源分享师 05
+      - 加拿大-youtube@资源分享师 06
+      - 加拿大-youtube@资源分享师 07
+      - 加拿大-youtube@资源分享师 08
+      - 加拿大-youtube@资源分享师 09
+      - 加拿大-youtube@资源分享师 10
+      - 加拿大-youtube@资源分享师 11
+      - 加拿大-youtube@资源分享师 12
+      - 加拿大-youtube@资源分享师 13
+      - 加拿大-youtube@资源分享师 14
+      - 香港-youtube@资源分享师 01
+      - 香港-youtube@资源分享师 02
+      - 塞舌尔-youtube@资源分享师 01
+      - 塞舌尔-youtube@资源分享师 02
+      - 韩国-youtube@资源分享师 01
+      - 韩国-youtube@资源分享师 02
+      - 韩国-youtube@资源分享师 03
+      - 韩国-youtube@资源分享师 04
+      - 韩国-youtube@资源分享师 05
+      - 韩国-youtube@资源分享师 06
+      - 韩国-youtube@资源分享师 07
+      - 韩国-youtube@资源分享师 08
+      - 韩国-youtube@资源分享师 09
+      - 韩国-youtube@资源分享师 10
+      - 韩国-youtube@资源分享师 11
+      - 韩国-youtube@资源分享师 12
+      - 韩国-youtube@资源分享师 13
+      - 美国-youtube@资源分享师 01
+      - 美国-youtube@资源分享师 02
+      - 美国-youtube@资源分享师 03
+      - 美国-youtube@资源分享师 04
+      - 美国-youtube@资源分享师 05
+      - 美国-youtube@资源分享师 06
+      - 美国-youtube@资源分享师 07
+      - 美国-youtube@资源分享师 08
+      - 美国-youtube@资源分享师 09
+      - 美国-youtube@资源分享师 10
+      - 美国-youtube@资源分享师 11
+      - 美国-youtube@资源分享师 12
+      - 美国-youtube@资源分享师 15
+      - 美国-youtube@资源分享师 16
+      - 美国-youtube@资源分享师 17
+      - 美国-youtube@资源分享师 18
+      - 美国-youtube@资源分享师 19
+      - 土耳其-youtube@资源分享师 01
+      - 土耳其-youtube@资源分享师 02
+      - 土耳其-youtube@资源分享师 03
+      - 土耳其-youtube@资源分享师 04
+      - 土耳其-youtube@资源分享师 05
+      - 土耳其-youtube@资源分享师 06
+      - 土耳其-youtube@资源分享师 07
+      - 土耳其-youtube@资源分享师 08
+      - 土耳其-youtube@资源分享师 09
+      - 土耳其-youtube@资源分享师 10
+      - 土耳其-youtube@资源分享师 11
+      - 土耳其-youtube@资源分享师 12
+      - 土耳其-youtube@资源分享师 13
+      - 土耳其-youtube@资源分享师 14
+      - 土耳其-youtube@资源分享师 15
+      - 土耳其-youtube@资源分享师 16
+      - 土耳其-youtube@资源分享师 17
+      - 土耳其-youtube@资源分享师 18
+      - 土耳其-youtube@资源分享师 19
+      - 波兰-youtube@资源分享师 01
+      - 波兰-youtube@资源分享师 02
+      - 新加坡-youtube@资源分享师 01
+      - 新加坡-youtube@资源分享师 02
+      - 新加坡-youtube@资源分享师 03
+      - 新加坡-youtube@资源分享师 04
+      - 新加坡-youtube@资源分享师 05
+      - 新加坡-youtube@资源分享师 06
+      - 立陶宛-youtube@资源分享师 01
+      - 芬兰-youtube@资源分享师 01
+      - 芬兰-youtube@资源分享师 02
+      - 保加利亚-youtube@资源分享师 01
+      - 英国-youtube@资源分享师 01
+      - 俄罗斯-youtube@资源分享师 01
+      - 俄罗斯-youtube@资源分享师 02
+      - 俄罗斯-youtube@资源分享师 03
+      - 俄罗斯-youtube@资源分享师 04
+      - 俄罗斯-youtube@资源分享师 05
+      - 塔吉克斯坦-youtube@资源分享师 01
+      - 塞浦路斯-youtube@资源分享师 01
+      - 瑞典-youtube@资源分享师 01
+      - 瑞典-youtube@资源分享师 02
+      - 瑞典-youtube@资源分享师 03
+      - 瑞典-youtube@资源分享师 04
+      - 瑞典-youtube@资源分享师 05
+      - 瑞典-youtube@资源分享师 06
+      - 瑞典-youtube@资源分享师 07
+      - 瑞典-youtube@资源分享师 08
+      - 瑞典-youtube@资源分享师 09
+      - 瑞典-youtube@资源分享师 10
+      - 瑞典-youtube@资源分享师 11
+      - 瑞典-youtube@资源分享师 12
+      - 瑞典-youtube@资源分享师 13
+      - 瑞典-youtube@资源分享师 14
+      - 瑞典-youtube@资源分享师 15
+      - 瑞典-youtube@资源分享师 16
+      - 瑞典-youtube@资源分享师 17
+      - 瑞典-youtube@资源分享师 18
+      - 瑞典-youtube@资源分享师 19
+      - 瑞典-youtube@资源分享师 20
+      - 瑞典-youtube@资源分享师 21
+      - 瑞典-youtube@资源分享师 22
+      - 罗马尼亚-youtube@资源分享师 01
+      - 罗马尼亚-youtube@资源分享师 02
+      - 罗马尼亚-youtube@资源分享师 03
+      - 罗马尼亚-youtube@资源分享师 04
+      - 罗马尼亚-youtube@资源分享师 05
+      - 罗马尼亚-youtube@资源分享师 06
+      - 罗马尼亚-youtube@资源分享师 07
+      - 罗马尼亚-youtube@资源分享师 08
+      - 罗马尼亚-youtube@资源分享师 09
+      - 罗马尼亚-youtube@资源分享师 10
+      - 罗马尼亚-youtube@资源分享师 11
+      - 罗马尼亚-youtube@资源分享师 12
+      - 罗马尼亚-youtube@资源分享师 13
+      - 罗马尼亚-youtube@资源分享师 14
+      - 罗马尼亚-youtube@资源分享师 15
+      - 罗马尼亚-youtube@资源分享师 16
+      - 罗马尼亚-youtube@资源分享师 17
+      - 罗马尼亚-youtube@资源分享师 18
+      - 罗马尼亚-youtube@资源分享师 19
+      - 罗马尼亚-youtube@资源分享师 20
+      - 罗马尼亚-youtube@资源分享师 21
+      - 罗马尼亚-youtube@资源分享师 22
+      - 罗马尼亚-youtube@资源分享师 23
+      - 西班牙-youtube@资源分享师 01
+      - 法国-youtube@资源分享师 01
+      - 巴西-youtube@资源分享师 01
+      - 伊朗-youtube@资源分享师 01
+      - 乌克兰-youtube@资源分享师 01
+      - 乌克兰-youtube@资源分享师 02
+      - 匈牙利-youtube@资源分享师 01
+      - 刚果(金)-youtube@资源分享师 01
+      - 刚果(金)-youtube@资源分享师 02
+      - 澳大利亚-youtube@资源分享师 01
+rule-providers:
+  LocalAreaNetwork:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/refs/heads/master/Clash/LocalAreaNetwork.list
+    path: ./rules/LocalAreaNetwork.yaml
+  BanAD:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/refs/heads/master/Clash/BanAD.list
+    path: ./rules/BanAD.yaml
+  BanProgramAD:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/refs/heads/master/Clash/BanProgramAD.list
+    path: ./rules/BanProgramAD.yaml
+  GoogleCN:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/refs/heads/master/Clash/GoogleCN.list
+    path: ./rules/GoogleCN.yaml
+  SteamCN:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/refs/heads/master/Clash/Ruleset/SteamCN.list
+    path: ./rules/SteamCN.yaml
+  Microsoft:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/refs/heads/master/Clash/Microsoft.list
+    path: ./rules/Microsoft.yaml
+  Apple:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/refs/heads/master/Clash/Apple.list
+    path: ./rules/Apple.yaml
+  ProxyMedia:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/refs/heads/master/Clash/ProxyMedia.list
+    path: ./rules/ProxyMedia.yaml
+  Telegram:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/refs/heads/master/Clash/Telegram.list
+    path: ./rules/Telegram.yaml
+  ProxyLite:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/refs/heads/master/Clash/ProxyLite.list
+    path: ./rules/ProxyLite.yaml
+  ChinaDomain:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/refs/heads/master/Clash/ChinaDomain.list
+    path: ./rules/ChinaDomain.yaml
+  ChinaCompanyIp:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/refs/heads/master/Clash/ChinaCompanyIp.list
+    path: ./rules/ChinaCompanyIp.yaml
+rules:
+  - DOMAIN-SUFFIX,nodebuf.com,🚀 节点选择
+  - RULE-SET,LocalAreaNetwork,🎯 全球直连
+  - RULE-SET,BanAD,🛑 全球拦截
+  - RULE-SET,BanProgramAD,🍃 应用净化
+  - RULE-SET,GoogleCN,🎯 全球直连
+  - RULE-SET,SteamCN,🎯 全球直连
+  - RULE-SET,Microsoft,Ⓜ️ 微软服务
+  - RULE-SET,Apple,🍎 苹果服务
+  - RULE-SET,ProxyMedia,🌍 国外媒体
+  - RULE-SET,Telegram,📲 电报信息
+  - RULE-SET,ProxyLite,🚀 节点选择
+  - RULE-SET,ChinaDomain,🎯 全球直连
+  - RULE-SET,ChinaCompanyIp,🎯 全球直连
+  - GEOIP,CN,🎯 全球直连
+  - MATCH,🐟 漏网之鱼
