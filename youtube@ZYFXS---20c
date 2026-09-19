@@ -1,0 +1,1678 @@
+mixed-port: 7890
+allow-lan: false
+mode: rule
+log-level: info
+ipv6: false
+external-controller: 127.0.0.1:9090
+dns:
+  enable: true
+  listen: 127.0.0.1:1053
+  ipv6: false
+  enhanced-mode: fake-ip
+  fake-ip-range: 198.18.0.1/16
+  default-nameserver:
+    - 223.5.5.5
+    - 119.29.29.29
+  nameserver:
+    - https://dns.alidns.com/dns-query
+    - https://doh.pub/dns-query
+  proxy-server-nameserver:
+    - https://dns.alidns.com/dns-query
+    - https://doh.pub/dns-query
+  nameserver-policy:
+    geosite:geolocation-!cn:
+      - https://1.1.1.1/dns-query#🚀 节点选择
+      - https://8.8.8.8/dns-query#🚀 节点选择
+proxies:
+  - name: 未知_🏳️_youtube@资源分享师_ZZ_1
+    type: vless
+    server: 172.67.138.191
+    port: 443
+    uuid: cb53f904-c979-454f-bf43-621990008148
+    network: ws
+    servername: 6.qq1-0.kdns.fr
+    tls: true
+    client-fingerprint: chrome
+    ws-opts:
+      path: /LNbYtR09FXg1AmmjhdiHvR8v
+      headers:
+        Host: 6.qq1-0.kdns.fr
+    skip-cert-verify: true
+    udp: true
+  - name: 塞尔维亚_🇷🇸_youtube@资源分享师_RS_2
+    type: vless
+    server: 150.40.126.19
+    port: 443
+    uuid: 2f35965a-9a9b-45fd-ba32-987296dfb6be
+    network: grpc
+    servername: rs2.univesalsrv.com
+    tls: true
+    client-fingerprint: chrome
+    grpc-opts:
+      grpc-service-name: media.v1.ObjectService
+    reality-opts:
+      public-key: tL16MVY08r-7YDXb1_gxuBBWInpSFp97ZLJ_ax3R2iE
+      short-id: 1469af2040b7c323
+    skip-cert-verify: true
+    udp: true
+  - name: 未知_🏳️_youtube@资源分享师_ZZ_3
+    type: vless
+    server: 172.67.138.191
+    port: 443
+    uuid: cb53f904-c979-454f-bf43-621990008148
+    network: ws
+    servername: 6.qq1-0.kdns.fr
+    tls: true
+    client-fingerprint: chrome
+    ws-opts:
+      path: /LNbYtR09FXg1AmmjhdiHvR8v
+      headers:
+        Host: 6.qq1-0.kdns.fr
+    skip-cert-verify: true
+    udp: true
+  - name: 塞尔维亚_🇷🇸_youtube@资源分享师_RS_4
+    type: vless
+    server: 150.40.126.24
+    port: 443
+    uuid: 2f35965a-9a9b-45fd-ba32-987296dfb6be
+    network: grpc
+    servername: rs5.univesalsrv.com
+    tls: true
+    client-fingerprint: chrome
+    grpc-opts:
+      grpc-service-name: gw.v1.ObjectService
+    reality-opts:
+      public-key: X8mPYnsoTd8QCnvFZKSy7VvpSn_nrt_NWJkCUJhFCyE
+      short-id: 4872856d5489c37d
+    skip-cert-verify: true
+    udp: true
+  - name: 塞尔维亚_🇷🇸_youtube@资源分享师_RS_5
+    type: vless
+    server: 150.40.126.19
+    port: 443
+    uuid: 2f35965a-9a9b-45fd-ba32-987296dfb6be
+    network: grpc
+    servername: rs2.univesalsrv.com
+    tls: true
+    client-fingerprint: firefox
+    grpc-opts:
+      grpc-service-name: media.v1.ObjectService
+    reality-opts:
+      public-key: tL16MVY08r-7YDXb1_gxuBBWInpSFp97ZLJ_ax3R2iE
+      short-id: 1469af2040b7c323
+    skip-cert-verify: true
+    udp: true
+  - name: 塞尔维亚_🇷🇸_youtube@资源分享师_RS_6
+    type: vless
+    server: 150.40.126.19
+    port: 443
+    uuid: 2f35965a-9a9b-45fd-ba32-987296dfb6be
+    network: grpc
+    servername: rs2.univesalsrv.com
+    tls: true
+    client-fingerprint: firefox
+    grpc-opts:
+      grpc-service-name: media.v1.ObjectService
+    reality-opts:
+      public-key: tL16MVY08r-7YDXb1_gxuBBWInpSFp97ZLJ_ax3R2iE
+      short-id: 1469af2040b7c323
+    skip-cert-verify: true
+    udp: true
+  - name: 未知_🏳️_youtube@资源分享师_ZZ_7
+    type: trojan
+    server: 104.18.152.152
+    port: 443
+    password: humanity
+    sni: www.ignitelimit.com
+    skip-cert-verify: true
+    ws-opts:
+      path: /assignment
+      headers:
+        Host: www.ignitelimit.com
+    udp: true
+  - name: 未知_🏳️_youtube@资源分享师_ZZ_8
+    type: trojan
+    server: 104.16.174.148
+    port: 443
+    password: humanity
+    sni: www.ignitelimit.com
+    skip-cert-verify: true
+    ws-opts:
+      path: /assignment
+    udp: true
+  - name: 未知_🏳️_youtube@资源分享师_ZZ_9
+    type: trojan
+    server: 104.16.73.213
+    port: 443
+    password: humanity
+    sni: www.ignitelimit.com
+    skip-cert-verify: true
+    ws-opts:
+      path: /assignment
+    udp: true
+  - name: 美国_🇺🇸_youtube@资源分享师_US_10
+    type: trojan
+    server: 167.82.76.7
+    port: 443
+    password: MiTIVPN
+    sni: ssl.fastly.com
+    skip-cert-verify: true
+    ws-opts:
+      path: /
+      headers:
+        Host: mitivpn---ss--s---mitivpn-33e.global.ssl.fastly.net
+    udp: true
+  - name: 未知_🏳️_youtube@资源分享师_ZZ_11
+    type: trojan
+    server: ip.myip2.qzz.io
+    port: 443
+    password: humanity
+    sni: www.ignitelimit.com
+    skip-cert-verify: true
+    ws-opts:
+      path: /assignment
+      headers:
+        Host: www.ignitelimit.com
+    udp: true
+  - name: 未知_🏳️_youtube@资源分享师_ZZ_12
+    type: trojan
+    server: 104.18.23.63
+    port: 443
+    password: humanity
+    sni: www.ignitelimit.com
+    skip-cert-verify: true
+    ws-opts:
+      path: /assignment
+      headers:
+        Host: www.ignitelimit.com
+    udp: true
+  - name: 未知_🏳️_youtube@资源分享师_ZZ_13
+    type: trojan
+    server: 104.16.174.121
+    port: 443
+    password: humanity
+    sni: www.ignitelimit.com
+    skip-cert-verify: true
+    ws-opts:
+      path: //assignment
+      headers:
+        Host: www.ignitelimit.com
+    udp: true
+  - name: 未知_🏳️_youtube@资源分享师_ZZ_14
+    type: trojan
+    server: 104.18.152.161
+    port: 443
+    password: humanity
+    sni: www.ignitelimit.com
+    skip-cert-verify: true
+    ws-opts:
+      path: /assignment
+    udp: true
+  - name: 未知_🏳️_youtube@资源分享师_ZZ_15
+    type: trojan
+    server: 104.17.111.3
+    port: 443
+    password: humanity
+    sni: www.ignitelimit.com
+    skip-cert-verify: true
+    ws-opts:
+      path: /assignment
+      headers:
+        Host: www.ignitelimit.com
+    udp: true
+  - name: 未知_🏳️_youtube@资源分享师_ZZ_16
+    type: trojan
+    server: 104.16.174.143
+    port: 443
+    password: humanity
+    sni: www.ignitelimit.com
+    skip-cert-verify: true
+    ws-opts:
+      path: /assignment
+    udp: true
+  - name: 未知_🏳️_youtube@资源分享师_ZZ_17
+    type: trojan
+    server: 104.17.111.1
+    port: 443
+    password: humanity
+    sni: www.ignitelimit.com
+    skip-cert-verify: true
+    ws-opts:
+      path: /assignment
+    udp: true
+  - name: 美国_🇺🇸_youtube@资源分享师_US_18
+    type: trojan
+    server: 216.24.57.7
+    port: 443
+    password: humanity
+    sni: www.ignitelimit.com
+    skip-cert-verify: true
+    ws-opts:
+      path: /assignment
+    udp: true
+  - name: 未知_🏳️_youtube@资源分享师_ZZ_19
+    type: trojan
+    server: 104.18.152.73
+    port: 443
+    password: humanity
+    sni: www.ignitelimit.com
+    skip-cert-verify: true
+    ws-opts:
+      path: /assignment
+      headers:
+        Host: www.ignitelimit.com
+    udp: true
+  - name: 未知_🏳️_youtube@资源分享师_ZZ_20
+    type: trojan
+    server: 104.16.174.121
+    port: 443
+    password: humanity
+    sni: www.ignitelimit.com
+    skip-cert-verify: true
+    ws-opts:
+      path: /assignment
+    udp: true
+  - name: 未知_🏳️_youtube@资源分享师_ZZ_21
+    type: trojan
+    server: 104.18.152.73
+    port: 443
+    password: humanity
+    sni: www.ignitelimit.com
+    skip-cert-verify: true
+    ws-opts:
+      path: /assignment
+    udp: true
+  - name: 未知_🏳️_youtube@资源分享师_ZZ_22
+    type: trojan
+    server: 104.18.152.133
+    port: 443
+    password: humanity
+    sni: www.ignitelimit.com
+    skip-cert-verify: true
+    ws-opts:
+      path: /assignment
+      headers:
+        Host: www.ignitelimit.com
+    udp: true
+  - name: 未知_🏳️_youtube@资源分享师_ZZ_23
+    type: trojan
+    server: 104.21.46.3
+    port: 443
+    password: humanity
+    sni: www.ignitelimit.com
+    skip-cert-verify: true
+    ws-opts:
+      path: /assignment
+      headers:
+        Host: www.ignitelimit.com
+    udp: true
+  - name: 未知_🏳️_youtube@资源分享师_ZZ_24
+    type: trojan
+    server: 104.16.174.185
+    port: 443
+    password: humanity
+    sni: www.ignitelimit.com
+    skip-cert-verify: true
+    ws-opts:
+      path: /assignment
+    udp: true
+  - name: 未知_🏳️_youtube@资源分享师_ZZ_25
+    type: trojan
+    server: 104.16.174.33
+    port: 443
+    password: humanity
+    sni: www.ignitelimit.com
+    skip-cert-verify: true
+    ws-opts:
+      path: /assignment
+      headers:
+        Host: www.ignitelimit.com
+    udp: true
+  - name: 未知_🏳️_youtube@资源分享师_ZZ_26
+    type: trojan
+    server: 141.101.90.101
+    port: 443
+    password: humanity
+    sni: www.ignitelimit.com
+    skip-cert-verify: true
+    ws-opts:
+      path: /assignment
+      headers:
+        Host: www.ignitelimit.com
+    udp: true
+  - name: 未知_🏳️_youtube@资源分享师_ZZ_27
+    type: trojan
+    server: 172.67.149.60
+    port: 443
+    password: humanity
+    sni: www.ignitelimit.com
+    skip-cert-verify: true
+    ws-opts:
+      path: /assignment
+      headers:
+        Host: www.ignitelimit.com
+    udp: true
+  - name: 未知_🏳️_youtube@资源分享师_ZZ_28
+    type: trojan
+    server: 104.18.22.63
+    port: 443
+    password: humanity
+    sni: www.ignitelimit.com
+    skip-cert-verify: true
+    ws-opts:
+      path: /assignment
+      headers:
+        Host: www.ignitelimit.com
+    udp: true
+  - name: 未知_🏳️_youtube@资源分享师_ZZ_29
+    type: trojan
+    server: 104.18.152.225
+    port: 443
+    password: humanity
+    sni: www.ignitelimit.com
+    skip-cert-verify: true
+    ws-opts:
+      path: /assignment
+    udp: true
+  - name: 未知_🏳️_youtube@资源分享师_ZZ_30
+    type: trojan
+    server: 104.18.152.97
+    port: 443
+    password: humanity
+    sni: www.ignitelimit.com
+    skip-cert-verify: true
+    ws-opts:
+      path: /assignment
+    udp: true
+  - name: 未知_🏳️_youtube@资源分享师_ZZ_31
+    type: trojan
+    server: 104.18.152.140
+    port: 443
+    password: humanity
+    sni: www.ignitelimit.com
+    skip-cert-verify: true
+    ws-opts:
+      path: /assignment
+    udp: true
+  - name: 未知_🏳️_youtube@资源分享师_ZZ_32
+    type: trojan
+    server: 104.16.174.46
+    port: 443
+    password: humanity
+    sni: www.ignitelimit.com
+    skip-cert-verify: true
+    ws-opts:
+      path: /assignment
+      headers:
+        Host: www.ignitelimit.com
+    udp: true
+  - name: 未知_🏳️_youtube@资源分享师_ZZ_33
+    type: trojan
+    server: 104.16.174.37
+    port: 443
+    password: humanity
+    sni: www.ignitelimit.com
+    skip-cert-verify: true
+    ws-opts:
+      path: /assignment
+    udp: true
+  - name: 未知_🏳️_youtube@资源分享师_ZZ_34
+    type: trojan
+    server: 104.21.8.107
+    port: 443
+    password: humanity
+    sni: www.ignitelimit.com
+    skip-cert-verify: true
+    ws-opts:
+      path: /assignment
+    udp: true
+  - name: 未知_🏳️_youtube@资源分享师_ZZ_35
+    type: trojan
+    server: 104.16.174.109
+    port: 443
+    password: humanity
+    sni: www.ignitelimit.com
+    skip-cert-verify: true
+    ws-opts:
+      path: /assignment
+      headers:
+        Host: www.ignitelimit.com
+    udp: true
+  - name: 未知_🏳️_youtube@资源分享师_ZZ_36
+    type: trojan
+    server: 104.16.174.22
+    port: 443
+    password: humanity
+    sni: www.ignitelimit.com
+    skip-cert-verify: true
+    ws-opts:
+      path: /assignment
+      headers:
+        Host: www.ignitelimit.com
+    udp: true
+  - name: 未知_🏳️_youtube@资源分享师_ZZ_37
+    type: trojan
+    server: 104.18.12.149
+    port: 443
+    password: humanity
+    sni: www.ignitelimit.com
+    skip-cert-verify: true
+    ws-opts:
+      path: /assignment
+    udp: true
+  - name: 未知_🏳️_youtube@资源分享师_ZZ_38
+    type: trojan
+    server: 104.18.152.97
+    port: 443
+    password: humanity
+    sni: www.ignitelimit.com
+    skip-cert-verify: true
+    ws-opts:
+      path: /assignment
+      headers:
+        Host: www.ignitelimit.com
+    udp: true
+  - name: 未知_🏳️_youtube@资源分享师_ZZ_39
+    type: trojan
+    server: 104.18.152.233
+    port: 443
+    password: humanity
+    sni: www.ignitelimit.com
+    skip-cert-verify: true
+    ws-opts:
+      path: /assignment
+    udp: true
+  - name: 未知_🏳️_youtube@资源分享师_ZZ_40
+    type: trojan
+    server: 104.21.46.3
+    port: 443
+    password: humanity
+    sni: www.ignitelimit.com
+    skip-cert-verify: true
+    ws-opts:
+      path: /assignment
+    udp: true
+  - name: 未知_🏳️_youtube@资源分享师_ZZ_41
+    type: trojan
+    server: 104.16.174.37
+    port: 443
+    password: humanity
+    sni: www.ignitelimit.com
+    skip-cert-verify: true
+    ws-opts:
+      path: /assignment
+      headers:
+        Host: www.ignitelimit.com
+    udp: true
+  - name: 未知_🏳️_youtube@资源分享师_ZZ_42
+    type: trojan
+    server: 104.18.152.149
+    port: 443
+    password: humanity
+    sni: www.ignitelimit.com
+    skip-cert-verify: true
+    ws-opts:
+      path: /assignment
+      headers:
+        Host: www.ignitelimit.com
+    udp: true
+  - name: 未知_🏳️_youtube@资源分享师_ZZ_43
+    type: trojan
+    server: 104.17.111.8
+    port: 443
+    password: humanity
+    sni: www.ignitelimit.com
+    skip-cert-verify: true
+    ws-opts:
+      path: /assignment
+    udp: true
+  - name: 美国_🇺🇸_youtube@资源分享师_US_44
+    type: trojan
+    server: 162.159.136.234
+    port: 443
+    password: humanity
+    sni: www.ignitelimit.com
+    skip-cert-verify: true
+    ws-opts:
+      path: /assignment
+      headers:
+        Host: www.ignitelimit.com
+    udp: true
+  - name: 未知_🏳️_youtube@资源分享师_ZZ_45
+    type: trojan
+    server: 104.18.152.50
+    port: 443
+    password: humanity
+    sni: www.ignitelimit.com
+    skip-cert-verify: true
+    ws-opts:
+      path: /assignment
+      headers:
+        Host: www.ignitelimit.com
+    udp: true
+  - name: 未知_🏳️_youtube@资源分享师_ZZ_46
+    type: trojan
+    server: 104.18.152.77
+    port: 443
+    password: humanity
+    sni: www.ignitelimit.com
+    skip-cert-verify: true
+    ws-opts:
+      path: /assignment
+      headers:
+        Host: www.ignitelimit.com
+    udp: true
+  - name: 未知_🏳️_youtube@资源分享师_ZZ_47
+    type: trojan
+    server: 172.67.149.60
+    port: 443
+    password: humanity
+    sni: www.ignitelimit.com
+    skip-cert-verify: true
+    ws-opts:
+      path: /assignment
+      headers:
+        Host: www.ignitelimit.com
+    udp: true
+  - name: 未知_🏳️_youtube@资源分享师_ZZ_48
+    type: trojan
+    server: 104.21.8.107
+    port: 443
+    password: humanity
+    sni: www.ignitelimit.com
+    skip-cert-verify: true
+    ws-opts:
+      path: /assignment
+      headers:
+        Host: www.ignitelimit.com
+    udp: true
+  - name: 未知_🏳️_youtube@资源分享师_ZZ_49
+    type: trojan
+    server: 104.18.152.210
+    port: 443
+    password: humanity
+    sni: www.ignitelimit.com
+    skip-cert-verify: true
+    ws-opts:
+      path: /assignment
+      headers:
+        Host: www.ignitelimit.com
+    udp: true
+  - name: 未知_🏳️_youtube@资源分享师_ZZ_50
+    type: trojan
+    server: 104.18.152.149
+    port: 443
+    password: humanity
+    sni: www.ignitelimit.com
+    skip-cert-verify: true
+    ws-opts:
+      path: /assignment
+    udp: true
+  - name: 未知_🏳️_youtube@资源分享师_ZZ_51
+    type: trojan
+    server: 104.16.174.6
+    port: 443
+    password: humanity
+    sni: www.ignitelimit.com
+    skip-cert-verify: true
+    ws-opts:
+      path: /assignment
+    udp: true
+  - name: 未知_🏳️_youtube@资源分享师_ZZ_52
+    type: trojan
+    server: 104.18.152.50
+    port: 443
+    password: humanity
+    sni: www.ignitelimit.com
+    skip-cert-verify: true
+    ws-opts:
+      path: /assignment
+    udp: true
+  - name: 未知_🏳️_youtube@资源分享师_ZZ_53
+    type: trojan
+    server: 104.16.174.71
+    port: 443
+    password: humanity
+    sni: www.ignitelimit.com
+    skip-cert-verify: true
+    ws-opts:
+      path: /assignment
+    udp: true
+  - name: 未知_🏳️_youtube@资源分享师_ZZ_54
+    type: trojan
+    server: 104.16.174.117
+    port: 443
+    password: humanity
+    sni: www.ignitelimit.com
+    skip-cert-verify: true
+    ws-opts:
+      path: /assignment
+    udp: true
+  - name: 未知_🏳️_youtube@资源分享师_ZZ_55
+    type: trojan
+    server: www.ignitelimit.com
+    port: 443
+    password: humanity
+    sni: www.ignitelimit.com
+    skip-cert-verify: true
+    ws-opts:
+      path: /assignment
+    udp: true
+  - name: 未知_🏳️_youtube@资源分享师_ZZ_56
+    type: trojan
+    server: 104.16.174.46
+    port: 443
+    password: humanity
+    sni: www.ignitelimit.com
+    skip-cert-verify: true
+    ws-opts:
+      path: /assignment
+    udp: true
+  - name: 未知_🏳️_youtube@资源分享师_ZZ_57
+    type: trojan
+    server: 104.16.174.6
+    port: 443
+    password: humanity
+    sni: www.ignitelimit.com
+    skip-cert-verify: true
+    ws-opts:
+      path: /assignment
+    udp: true
+  - name: 未知_🏳️_youtube@资源分享师_ZZ_58
+    type: trojan
+    server: 104.16.174.117
+    port: 443
+    password: humanity
+    sni: www.ignitelimit.com
+    skip-cert-verify: true
+    ws-opts:
+      path: /assignment
+      headers:
+        Host: www.ignitelimit.com
+    udp: true
+  - name: 澳大利亚_🇦🇺_youtube@资源分享师_AU_59
+    type: vless
+    server: 34.87.244.111
+    port: 443
+    uuid: 325bc1be-0cb7-4cf7-bd35-a79ded91bbbd
+    servername: www.cloudflare.com
+    tls: true
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: fsdIMU2apN1C_NbkL7mHTsBKEfhwbDhgCRcB8ICf03E
+      short-id: d725f0dd8cce210f
+    skip-cert-verify: true
+    udp: true
+  - name: 未知_🏳️_youtube@资源分享师_ZZ_60
+    type: trojan
+    server: 104.18.152.133
+    port: 443
+    password: humanity
+    sni: www.ignitelimit.com
+    skip-cert-verify: true
+    ws-opts:
+      path: /assignment
+    udp: true
+  - name: 未知_🏳️_youtube@资源分享师_ZZ_61
+    type: trojan
+    server: 104.18.152.113
+    port: 443
+    password: humanity
+    sni: www.ignitelimit.com
+    skip-cert-verify: true
+    ws-opts:
+      path: /assignment
+    udp: true
+  - name: 未知_🏳️_youtube@资源分享师_ZZ_62
+    type: trojan
+    server: 104.18.152.113
+    port: 443
+    password: humanity
+    sni: www.ignitelimit.com
+    skip-cert-verify: true
+    ws-opts:
+      path: /assignment
+    udp: true
+  - name: 未知_🏳️_youtube@资源分享师_ZZ_63
+    type: trojan
+    server: 172.67.149.60
+    port: 443
+    password: humanity
+    sni: www.ignitelimit.com
+    skip-cert-verify: true
+    ws-opts:
+      path: /assignment
+    udp: true
+  - name: 未知_🏳️_youtube@资源分享师_ZZ_64
+    type: trojan
+    server: 104.18.152.233
+    port: 443
+    password: humanity
+    sni: www.ignitelimit.com
+    skip-cert-verify: true
+    ws-opts:
+      path: /assignment
+      headers:
+        Host: www.ignitelimit.com
+    udp: true
+  - name: 未知_🏳️_youtube@资源分享师_ZZ_65
+    type: trojan
+    server: 104.16.174.101
+    port: 443
+    password: humanity
+    sni: www.ignitelimit.com
+    skip-cert-verify: true
+    ws-opts:
+      path: /assignment
+    udp: true
+  - name: 未知_🏳️_youtube@资源分享师_ZZ_66
+    type: trojan
+    server: 104.16.174.72
+    port: 443
+    password: humanity
+    sni: www.ignitelimit.com
+    skip-cert-verify: true
+    ws-opts:
+      path: /assignment
+    udp: true
+  - name: 未知_🏳️_youtube@资源分享师_ZZ_67
+    type: trojan
+    server: 104.18.152.225
+    port: 443
+    password: humanity
+    sni: www.ignitelimit.com
+    skip-cert-verify: true
+    ws-opts:
+      path: /assignment
+      headers:
+        Host: www.ignitelimit.com
+    udp: true
+  - name: 未知_🏳️_youtube@资源分享师_ZZ_68
+    type: trojan
+    server: 104.18.22.63
+    port: 443
+    password: humanity
+    sni: www.ignitelimit.com
+    skip-cert-verify: true
+    ws-opts:
+      path: /assignment
+    udp: true
+  - name: 未知_🏳️_youtube@资源分享师_ZZ_69
+    type: trojan
+    server: 104.18.152.179
+    port: 443
+    password: humanity
+    sni: www.ignitelimit.com
+    skip-cert-verify: true
+    ws-opts:
+      path: /assignment
+    udp: true
+  - name: 未知_🏳️_youtube@资源分享师_ZZ_70
+    type: trojan
+    server: 104.16.174.14
+    port: 443
+    password: humanity
+    sni: www.ignitelimit.com
+    skip-cert-verify: true
+    ws-opts:
+      path: /assignment
+    udp: true
+  - name: 未知_🏳️_youtube@资源分享师_ZZ_71
+    type: trojan
+    server: 104.18.152.113
+    port: 443
+    password: humanity
+    sni: www.ignitelimit.com
+    skip-cert-verify: true
+    ws-opts:
+      path: /assignment
+      headers:
+        Host: www.ignitelimit.com
+    udp: true
+  - name: 未知_🏳️_youtube@资源分享师_ZZ_72
+    type: trojan
+    server: 104.18.152.204
+    port: 443
+    password: humanity
+    sni: www.ignitelimit.com
+    skip-cert-verify: true
+    ws-opts:
+      path: /assignment
+      headers:
+        Host: www.ignitelimit.com
+    udp: true
+  - name: 未知_🏳️_youtube@资源分享师_ZZ_73
+    type: trojan
+    server: 104.16.174.14
+    port: 443
+    password: humanity
+    sni: www.ignitelimit.com
+    skip-cert-verify: true
+    ws-opts:
+      path: /assignment
+      headers:
+        Host: www.ignitelimit.com
+    udp: true
+  - name: 日本_🇯🇵_youtube@资源分享师_JP_74
+    type: vless
+    server: 103.115.18.54
+    port: 443
+    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+    network: ws
+    servername: cdn8848.776676.xyz
+    tls: true
+    client-fingerprint: chrome
+    ws-opts:
+      path: /mall/china/doc?ed=2560
+      headers:
+        Host: cdn8848.776676.xyz
+    skip-cert-verify: true
+    udp: true
+  - name: 日本_🇯🇵_youtube@资源分享师_JP_75
+    type: vless
+    server: 103.115.18.54
+    port: 443
+    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+    network: ws
+    servername: cdn8848.776676.xyz
+    tls: true
+    ws-opts:
+      path: /episode/files?ed=2560
+      headers:
+        Host: cdn8848.776676.xyz
+    skip-cert-verify: true
+    udp: true
+  - name: 未知_🏳️_youtube@资源分享师_ZZ_76
+    type: trojan
+    server: 104.17.111.4
+    port: 443
+    password: humanity
+    sni: www.ignitelimit.com
+    skip-cert-verify: true
+    ws-opts:
+      path: /assignment
+    udp: true
+  - name: 日本_🇯🇵_youtube@资源分享师_JP_77
+    type: vless
+    server: 103.115.18.54
+    port: 443
+    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+    network: ws
+    servername: cdn8848.776676.xyz
+    tls: true
+    client-fingerprint: chrome
+    ws-opts:
+      path: /episode/files?ed=2560
+      headers:
+        Host: cdn8848.776676.xyz
+    skip-cert-verify: true
+    udp: true
+  - name: 未知_🏳️_youtube@资源分享师_ZZ_78
+    type: trojan
+    server: 104.16.174.12
+    port: 443
+    password: humanity
+    sni: www.ignitelimit.com
+    skip-cert-verify: true
+    ws-opts:
+      path: /assignment
+      headers:
+        Host: www.ignitelimit.com
+    udp: true
+  - name: 未知_🏳️_youtube@资源分享师_ZZ_79
+    type: vless
+    server: 162.159.237.80
+    port: 443
+    uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+    network: ws
+    servername: cdn8848.776676.xyz
+    tls: true
+    ws-opts:
+      path: /magnet?ed=2560
+      headers:
+        Host: cdn8848.776676.xyz
+    skip-cert-verify: true
+    udp: true
+  - name: 未知_🏳️_youtube@资源分享师_ZZ_80
+    type: vless
+    server: 104.16.10.2
+    port: 443
+    uuid: 8102891d-7b37-4dc5-8261-9474b59b5c63
+    network: ws
+    servername: vip.868068.xyz
+    tls: true
+    ws-opts:
+      path: /proxyip=us.xiabibi.cf
+      headers:
+        Host: vip.868068.xyz
+    skip-cert-verify: true
+    udp: true
+  - name: 中国_🇨🇳_youtube@资源分享师_CN_81
+    type: vless
+    server: us22.sofast.live
+    port: 58011
+    uuid: 0afc6426-606c-48e7-bd70-3c424a416842
+    tls: false
+    skip-cert-verify: true
+    udp: true
+  - name: 台湾_🇹🇼_youtube@资源分享师_TW_82
+    type: vmess
+    server: dee2309db4se3g5s1d65g672c6641e25.oylfmxz.cn
+    port: 443
+    uuid: d90e4077-bc7e-414d-a650-70bf1baae4d6
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: dee2309db4se3g5s1d65g672c6641e25.oylfmxz.cn
+    udp: true
+proxy-groups:
+  - name: 🚀 节点选择
+    type: select
+    proxies:
+      - ♻️ 自动选择
+      - DIRECT
+      - 未知_🏳️_youtube@资源分享师_ZZ_1
+      - 塞尔维亚_🇷🇸_youtube@资源分享师_RS_2
+      - 未知_🏳️_youtube@资源分享师_ZZ_3
+      - 塞尔维亚_🇷🇸_youtube@资源分享师_RS_4
+      - 塞尔维亚_🇷🇸_youtube@资源分享师_RS_5
+      - 塞尔维亚_🇷🇸_youtube@资源分享师_RS_6
+      - 未知_🏳️_youtube@资源分享师_ZZ_7
+      - 未知_🏳️_youtube@资源分享师_ZZ_8
+      - 未知_🏳️_youtube@资源分享师_ZZ_9
+      - 美国_🇺🇸_youtube@资源分享师_US_10
+      - 未知_🏳️_youtube@资源分享师_ZZ_11
+      - 未知_🏳️_youtube@资源分享师_ZZ_12
+      - 未知_🏳️_youtube@资源分享师_ZZ_13
+      - 未知_🏳️_youtube@资源分享师_ZZ_14
+      - 未知_🏳️_youtube@资源分享师_ZZ_15
+      - 未知_🏳️_youtube@资源分享师_ZZ_16
+      - 未知_🏳️_youtube@资源分享师_ZZ_17
+      - 美国_🇺🇸_youtube@资源分享师_US_18
+      - 未知_🏳️_youtube@资源分享师_ZZ_19
+      - 未知_🏳️_youtube@资源分享师_ZZ_20
+      - 未知_🏳️_youtube@资源分享师_ZZ_21
+      - 未知_🏳️_youtube@资源分享师_ZZ_22
+      - 未知_🏳️_youtube@资源分享师_ZZ_23
+      - 未知_🏳️_youtube@资源分享师_ZZ_24
+      - 未知_🏳️_youtube@资源分享师_ZZ_25
+      - 未知_🏳️_youtube@资源分享师_ZZ_26
+      - 未知_🏳️_youtube@资源分享师_ZZ_27
+      - 未知_🏳️_youtube@资源分享师_ZZ_28
+      - 未知_🏳️_youtube@资源分享师_ZZ_29
+      - 未知_🏳️_youtube@资源分享师_ZZ_30
+      - 未知_🏳️_youtube@资源分享师_ZZ_31
+      - 未知_🏳️_youtube@资源分享师_ZZ_32
+      - 未知_🏳️_youtube@资源分享师_ZZ_33
+      - 未知_🏳️_youtube@资源分享师_ZZ_34
+      - 未知_🏳️_youtube@资源分享师_ZZ_35
+      - 未知_🏳️_youtube@资源分享师_ZZ_36
+      - 未知_🏳️_youtube@资源分享师_ZZ_37
+      - 未知_🏳️_youtube@资源分享师_ZZ_38
+      - 未知_🏳️_youtube@资源分享师_ZZ_39
+      - 未知_🏳️_youtube@资源分享师_ZZ_40
+      - 未知_🏳️_youtube@资源分享师_ZZ_41
+      - 未知_🏳️_youtube@资源分享师_ZZ_42
+      - 未知_🏳️_youtube@资源分享师_ZZ_43
+      - 美国_🇺🇸_youtube@资源分享师_US_44
+      - 未知_🏳️_youtube@资源分享师_ZZ_45
+      - 未知_🏳️_youtube@资源分享师_ZZ_46
+      - 未知_🏳️_youtube@资源分享师_ZZ_47
+      - 未知_🏳️_youtube@资源分享师_ZZ_48
+      - 未知_🏳️_youtube@资源分享师_ZZ_49
+      - 未知_🏳️_youtube@资源分享师_ZZ_50
+      - 未知_🏳️_youtube@资源分享师_ZZ_51
+      - 未知_🏳️_youtube@资源分享师_ZZ_52
+      - 未知_🏳️_youtube@资源分享师_ZZ_53
+      - 未知_🏳️_youtube@资源分享师_ZZ_54
+      - 未知_🏳️_youtube@资源分享师_ZZ_55
+      - 未知_🏳️_youtube@资源分享师_ZZ_56
+      - 未知_🏳️_youtube@资源分享师_ZZ_57
+      - 未知_🏳️_youtube@资源分享师_ZZ_58
+      - 澳大利亚_🇦🇺_youtube@资源分享师_AU_59
+      - 未知_🏳️_youtube@资源分享师_ZZ_60
+      - 未知_🏳️_youtube@资源分享师_ZZ_61
+      - 未知_🏳️_youtube@资源分享师_ZZ_62
+      - 未知_🏳️_youtube@资源分享师_ZZ_63
+      - 未知_🏳️_youtube@资源分享师_ZZ_64
+      - 未知_🏳️_youtube@资源分享师_ZZ_65
+      - 未知_🏳️_youtube@资源分享师_ZZ_66
+      - 未知_🏳️_youtube@资源分享师_ZZ_67
+      - 未知_🏳️_youtube@资源分享师_ZZ_68
+      - 未知_🏳️_youtube@资源分享师_ZZ_69
+      - 未知_🏳️_youtube@资源分享师_ZZ_70
+      - 未知_🏳️_youtube@资源分享师_ZZ_71
+      - 未知_🏳️_youtube@资源分享师_ZZ_72
+      - 未知_🏳️_youtube@资源分享师_ZZ_73
+      - 日本_🇯🇵_youtube@资源分享师_JP_74
+      - 日本_🇯🇵_youtube@资源分享师_JP_75
+      - 未知_🏳️_youtube@资源分享师_ZZ_76
+      - 日本_🇯🇵_youtube@资源分享师_JP_77
+      - 未知_🏳️_youtube@资源分享师_ZZ_78
+      - 未知_🏳️_youtube@资源分享师_ZZ_79
+      - 未知_🏳️_youtube@资源分享师_ZZ_80
+      - 中国_🇨🇳_youtube@资源分享师_CN_81
+      - 台湾_🇹🇼_youtube@资源分享师_TW_82
+  - name: ♻️ 自动选择
+    type: url-test
+    proxies:
+      - 未知_🏳️_youtube@资源分享师_ZZ_1
+      - 塞尔维亚_🇷🇸_youtube@资源分享师_RS_2
+      - 未知_🏳️_youtube@资源分享师_ZZ_3
+      - 塞尔维亚_🇷🇸_youtube@资源分享师_RS_4
+      - 塞尔维亚_🇷🇸_youtube@资源分享师_RS_5
+      - 塞尔维亚_🇷🇸_youtube@资源分享师_RS_6
+      - 未知_🏳️_youtube@资源分享师_ZZ_7
+      - 未知_🏳️_youtube@资源分享师_ZZ_8
+      - 未知_🏳️_youtube@资源分享师_ZZ_9
+      - 美国_🇺🇸_youtube@资源分享师_US_10
+      - 未知_🏳️_youtube@资源分享师_ZZ_11
+      - 未知_🏳️_youtube@资源分享师_ZZ_12
+      - 未知_🏳️_youtube@资源分享师_ZZ_13
+      - 未知_🏳️_youtube@资源分享师_ZZ_14
+      - 未知_🏳️_youtube@资源分享师_ZZ_15
+      - 未知_🏳️_youtube@资源分享师_ZZ_16
+      - 未知_🏳️_youtube@资源分享师_ZZ_17
+      - 美国_🇺🇸_youtube@资源分享师_US_18
+      - 未知_🏳️_youtube@资源分享师_ZZ_19
+      - 未知_🏳️_youtube@资源分享师_ZZ_20
+      - 未知_🏳️_youtube@资源分享师_ZZ_21
+      - 未知_🏳️_youtube@资源分享师_ZZ_22
+      - 未知_🏳️_youtube@资源分享师_ZZ_23
+      - 未知_🏳️_youtube@资源分享师_ZZ_24
+      - 未知_🏳️_youtube@资源分享师_ZZ_25
+      - 未知_🏳️_youtube@资源分享师_ZZ_26
+      - 未知_🏳️_youtube@资源分享师_ZZ_27
+      - 未知_🏳️_youtube@资源分享师_ZZ_28
+      - 未知_🏳️_youtube@资源分享师_ZZ_29
+      - 未知_🏳️_youtube@资源分享师_ZZ_30
+      - 未知_🏳️_youtube@资源分享师_ZZ_31
+      - 未知_🏳️_youtube@资源分享师_ZZ_32
+      - 未知_🏳️_youtube@资源分享师_ZZ_33
+      - 未知_🏳️_youtube@资源分享师_ZZ_34
+      - 未知_🏳️_youtube@资源分享师_ZZ_35
+      - 未知_🏳️_youtube@资源分享师_ZZ_36
+      - 未知_🏳️_youtube@资源分享师_ZZ_37
+      - 未知_🏳️_youtube@资源分享师_ZZ_38
+      - 未知_🏳️_youtube@资源分享师_ZZ_39
+      - 未知_🏳️_youtube@资源分享师_ZZ_40
+      - 未知_🏳️_youtube@资源分享师_ZZ_41
+      - 未知_🏳️_youtube@资源分享师_ZZ_42
+      - 未知_🏳️_youtube@资源分享师_ZZ_43
+      - 美国_🇺🇸_youtube@资源分享师_US_44
+      - 未知_🏳️_youtube@资源分享师_ZZ_45
+      - 未知_🏳️_youtube@资源分享师_ZZ_46
+      - 未知_🏳️_youtube@资源分享师_ZZ_47
+      - 未知_🏳️_youtube@资源分享师_ZZ_48
+      - 未知_🏳️_youtube@资源分享师_ZZ_49
+      - 未知_🏳️_youtube@资源分享师_ZZ_50
+      - 未知_🏳️_youtube@资源分享师_ZZ_51
+      - 未知_🏳️_youtube@资源分享师_ZZ_52
+      - 未知_🏳️_youtube@资源分享师_ZZ_53
+      - 未知_🏳️_youtube@资源分享师_ZZ_54
+      - 未知_🏳️_youtube@资源分享师_ZZ_55
+      - 未知_🏳️_youtube@资源分享师_ZZ_56
+      - 未知_🏳️_youtube@资源分享师_ZZ_57
+      - 未知_🏳️_youtube@资源分享师_ZZ_58
+      - 澳大利亚_🇦🇺_youtube@资源分享师_AU_59
+      - 未知_🏳️_youtube@资源分享师_ZZ_60
+      - 未知_🏳️_youtube@资源分享师_ZZ_61
+      - 未知_🏳️_youtube@资源分享师_ZZ_62
+      - 未知_🏳️_youtube@资源分享师_ZZ_63
+      - 未知_🏳️_youtube@资源分享师_ZZ_64
+      - 未知_🏳️_youtube@资源分享师_ZZ_65
+      - 未知_🏳️_youtube@资源分享师_ZZ_66
+      - 未知_🏳️_youtube@资源分享师_ZZ_67
+      - 未知_🏳️_youtube@资源分享师_ZZ_68
+      - 未知_🏳️_youtube@资源分享师_ZZ_69
+      - 未知_🏳️_youtube@资源分享师_ZZ_70
+      - 未知_🏳️_youtube@资源分享师_ZZ_71
+      - 未知_🏳️_youtube@资源分享师_ZZ_72
+      - 未知_🏳️_youtube@资源分享师_ZZ_73
+      - 日本_🇯🇵_youtube@资源分享师_JP_74
+      - 日本_🇯🇵_youtube@资源分享师_JP_75
+      - 未知_🏳️_youtube@资源分享师_ZZ_76
+      - 日本_🇯🇵_youtube@资源分享师_JP_77
+      - 未知_🏳️_youtube@资源分享师_ZZ_78
+      - 未知_🏳️_youtube@资源分享师_ZZ_79
+      - 未知_🏳️_youtube@资源分享师_ZZ_80
+      - 中国_🇨🇳_youtube@资源分享师_CN_81
+      - 台湾_🇹🇼_youtube@资源分享师_TW_82
+    url: http://www.gstatic.com/generate_204
+    interval: 300
+    tolerance: 50
+  - name: 🌍 国外媒体
+    type: select
+    proxies:
+      - 🚀 节点选择
+      - ♻️ 自动选择
+      - 🎯 全球直连
+      - 未知_🏳️_youtube@资源分享师_ZZ_1
+      - 塞尔维亚_🇷🇸_youtube@资源分享师_RS_2
+      - 未知_🏳️_youtube@资源分享师_ZZ_3
+      - 塞尔维亚_🇷🇸_youtube@资源分享师_RS_4
+      - 塞尔维亚_🇷🇸_youtube@资源分享师_RS_5
+      - 塞尔维亚_🇷🇸_youtube@资源分享师_RS_6
+      - 未知_🏳️_youtube@资源分享师_ZZ_7
+      - 未知_🏳️_youtube@资源分享师_ZZ_8
+      - 未知_🏳️_youtube@资源分享师_ZZ_9
+      - 美国_🇺🇸_youtube@资源分享师_US_10
+      - 未知_🏳️_youtube@资源分享师_ZZ_11
+      - 未知_🏳️_youtube@资源分享师_ZZ_12
+      - 未知_🏳️_youtube@资源分享师_ZZ_13
+      - 未知_🏳️_youtube@资源分享师_ZZ_14
+      - 未知_🏳️_youtube@资源分享师_ZZ_15
+      - 未知_🏳️_youtube@资源分享师_ZZ_16
+      - 未知_🏳️_youtube@资源分享师_ZZ_17
+      - 美国_🇺🇸_youtube@资源分享师_US_18
+      - 未知_🏳️_youtube@资源分享师_ZZ_19
+      - 未知_🏳️_youtube@资源分享师_ZZ_20
+      - 未知_🏳️_youtube@资源分享师_ZZ_21
+      - 未知_🏳️_youtube@资源分享师_ZZ_22
+      - 未知_🏳️_youtube@资源分享师_ZZ_23
+      - 未知_🏳️_youtube@资源分享师_ZZ_24
+      - 未知_🏳️_youtube@资源分享师_ZZ_25
+      - 未知_🏳️_youtube@资源分享师_ZZ_26
+      - 未知_🏳️_youtube@资源分享师_ZZ_27
+      - 未知_🏳️_youtube@资源分享师_ZZ_28
+      - 未知_🏳️_youtube@资源分享师_ZZ_29
+      - 未知_🏳️_youtube@资源分享师_ZZ_30
+      - 未知_🏳️_youtube@资源分享师_ZZ_31
+      - 未知_🏳️_youtube@资源分享师_ZZ_32
+      - 未知_🏳️_youtube@资源分享师_ZZ_33
+      - 未知_🏳️_youtube@资源分享师_ZZ_34
+      - 未知_🏳️_youtube@资源分享师_ZZ_35
+      - 未知_🏳️_youtube@资源分享师_ZZ_36
+      - 未知_🏳️_youtube@资源分享师_ZZ_37
+      - 未知_🏳️_youtube@资源分享师_ZZ_38
+      - 未知_🏳️_youtube@资源分享师_ZZ_39
+      - 未知_🏳️_youtube@资源分享师_ZZ_40
+      - 未知_🏳️_youtube@资源分享师_ZZ_41
+      - 未知_🏳️_youtube@资源分享师_ZZ_42
+      - 未知_🏳️_youtube@资源分享师_ZZ_43
+      - 美国_🇺🇸_youtube@资源分享师_US_44
+      - 未知_🏳️_youtube@资源分享师_ZZ_45
+      - 未知_🏳️_youtube@资源分享师_ZZ_46
+      - 未知_🏳️_youtube@资源分享师_ZZ_47
+      - 未知_🏳️_youtube@资源分享师_ZZ_48
+      - 未知_🏳️_youtube@资源分享师_ZZ_49
+      - 未知_🏳️_youtube@资源分享师_ZZ_50
+      - 未知_🏳️_youtube@资源分享师_ZZ_51
+      - 未知_🏳️_youtube@资源分享师_ZZ_52
+      - 未知_🏳️_youtube@资源分享师_ZZ_53
+      - 未知_🏳️_youtube@资源分享师_ZZ_54
+      - 未知_🏳️_youtube@资源分享师_ZZ_55
+      - 未知_🏳️_youtube@资源分享师_ZZ_56
+      - 未知_🏳️_youtube@资源分享师_ZZ_57
+      - 未知_🏳️_youtube@资源分享师_ZZ_58
+      - 澳大利亚_🇦🇺_youtube@资源分享师_AU_59
+      - 未知_🏳️_youtube@资源分享师_ZZ_60
+      - 未知_🏳️_youtube@资源分享师_ZZ_61
+      - 未知_🏳️_youtube@资源分享师_ZZ_62
+      - 未知_🏳️_youtube@资源分享师_ZZ_63
+      - 未知_🏳️_youtube@资源分享师_ZZ_64
+      - 未知_🏳️_youtube@资源分享师_ZZ_65
+      - 未知_🏳️_youtube@资源分享师_ZZ_66
+      - 未知_🏳️_youtube@资源分享师_ZZ_67
+      - 未知_🏳️_youtube@资源分享师_ZZ_68
+      - 未知_🏳️_youtube@资源分享师_ZZ_69
+      - 未知_🏳️_youtube@资源分享师_ZZ_70
+      - 未知_🏳️_youtube@资源分享师_ZZ_71
+      - 未知_🏳️_youtube@资源分享师_ZZ_72
+      - 未知_🏳️_youtube@资源分享师_ZZ_73
+      - 日本_🇯🇵_youtube@资源分享师_JP_74
+      - 日本_🇯🇵_youtube@资源分享师_JP_75
+      - 未知_🏳️_youtube@资源分享师_ZZ_76
+      - 日本_🇯🇵_youtube@资源分享师_JP_77
+      - 未知_🏳️_youtube@资源分享师_ZZ_78
+      - 未知_🏳️_youtube@资源分享师_ZZ_79
+      - 未知_🏳️_youtube@资源分享师_ZZ_80
+      - 中国_🇨🇳_youtube@资源分享师_CN_81
+      - 台湾_🇹🇼_youtube@资源分享师_TW_82
+  - name: 📲 电报信息
+    type: select
+    proxies:
+      - 🚀 节点选择
+      - 🎯 全球直连
+      - 未知_🏳️_youtube@资源分享师_ZZ_1
+      - 塞尔维亚_🇷🇸_youtube@资源分享师_RS_2
+      - 未知_🏳️_youtube@资源分享师_ZZ_3
+      - 塞尔维亚_🇷🇸_youtube@资源分享师_RS_4
+      - 塞尔维亚_🇷🇸_youtube@资源分享师_RS_5
+      - 塞尔维亚_🇷🇸_youtube@资源分享师_RS_6
+      - 未知_🏳️_youtube@资源分享师_ZZ_7
+      - 未知_🏳️_youtube@资源分享师_ZZ_8
+      - 未知_🏳️_youtube@资源分享师_ZZ_9
+      - 美国_🇺🇸_youtube@资源分享师_US_10
+      - 未知_🏳️_youtube@资源分享师_ZZ_11
+      - 未知_🏳️_youtube@资源分享师_ZZ_12
+      - 未知_🏳️_youtube@资源分享师_ZZ_13
+      - 未知_🏳️_youtube@资源分享师_ZZ_14
+      - 未知_🏳️_youtube@资源分享师_ZZ_15
+      - 未知_🏳️_youtube@资源分享师_ZZ_16
+      - 未知_🏳️_youtube@资源分享师_ZZ_17
+      - 美国_🇺🇸_youtube@资源分享师_US_18
+      - 未知_🏳️_youtube@资源分享师_ZZ_19
+      - 未知_🏳️_youtube@资源分享师_ZZ_20
+      - 未知_🏳️_youtube@资源分享师_ZZ_21
+      - 未知_🏳️_youtube@资源分享师_ZZ_22
+      - 未知_🏳️_youtube@资源分享师_ZZ_23
+      - 未知_🏳️_youtube@资源分享师_ZZ_24
+      - 未知_🏳️_youtube@资源分享师_ZZ_25
+      - 未知_🏳️_youtube@资源分享师_ZZ_26
+      - 未知_🏳️_youtube@资源分享师_ZZ_27
+      - 未知_🏳️_youtube@资源分享师_ZZ_28
+      - 未知_🏳️_youtube@资源分享师_ZZ_29
+      - 未知_🏳️_youtube@资源分享师_ZZ_30
+      - 未知_🏳️_youtube@资源分享师_ZZ_31
+      - 未知_🏳️_youtube@资源分享师_ZZ_32
+      - 未知_🏳️_youtube@资源分享师_ZZ_33
+      - 未知_🏳️_youtube@资源分享师_ZZ_34
+      - 未知_🏳️_youtube@资源分享师_ZZ_35
+      - 未知_🏳️_youtube@资源分享师_ZZ_36
+      - 未知_🏳️_youtube@资源分享师_ZZ_37
+      - 未知_🏳️_youtube@资源分享师_ZZ_38
+      - 未知_🏳️_youtube@资源分享师_ZZ_39
+      - 未知_🏳️_youtube@资源分享师_ZZ_40
+      - 未知_🏳️_youtube@资源分享师_ZZ_41
+      - 未知_🏳️_youtube@资源分享师_ZZ_42
+      - 未知_🏳️_youtube@资源分享师_ZZ_43
+      - 美国_🇺🇸_youtube@资源分享师_US_44
+      - 未知_🏳️_youtube@资源分享师_ZZ_45
+      - 未知_🏳️_youtube@资源分享师_ZZ_46
+      - 未知_🏳️_youtube@资源分享师_ZZ_47
+      - 未知_🏳️_youtube@资源分享师_ZZ_48
+      - 未知_🏳️_youtube@资源分享师_ZZ_49
+      - 未知_🏳️_youtube@资源分享师_ZZ_50
+      - 未知_🏳️_youtube@资源分享师_ZZ_51
+      - 未知_🏳️_youtube@资源分享师_ZZ_52
+      - 未知_🏳️_youtube@资源分享师_ZZ_53
+      - 未知_🏳️_youtube@资源分享师_ZZ_54
+      - 未知_🏳️_youtube@资源分享师_ZZ_55
+      - 未知_🏳️_youtube@资源分享师_ZZ_56
+      - 未知_🏳️_youtube@资源分享师_ZZ_57
+      - 未知_🏳️_youtube@资源分享师_ZZ_58
+      - 澳大利亚_🇦🇺_youtube@资源分享师_AU_59
+      - 未知_🏳️_youtube@资源分享师_ZZ_60
+      - 未知_🏳️_youtube@资源分享师_ZZ_61
+      - 未知_🏳️_youtube@资源分享师_ZZ_62
+      - 未知_🏳️_youtube@资源分享师_ZZ_63
+      - 未知_🏳️_youtube@资源分享师_ZZ_64
+      - 未知_🏳️_youtube@资源分享师_ZZ_65
+      - 未知_🏳️_youtube@资源分享师_ZZ_66
+      - 未知_🏳️_youtube@资源分享师_ZZ_67
+      - 未知_🏳️_youtube@资源分享师_ZZ_68
+      - 未知_🏳️_youtube@资源分享师_ZZ_69
+      - 未知_🏳️_youtube@资源分享师_ZZ_70
+      - 未知_🏳️_youtube@资源分享师_ZZ_71
+      - 未知_🏳️_youtube@资源分享师_ZZ_72
+      - 未知_🏳️_youtube@资源分享师_ZZ_73
+      - 日本_🇯🇵_youtube@资源分享师_JP_74
+      - 日本_🇯🇵_youtube@资源分享师_JP_75
+      - 未知_🏳️_youtube@资源分享师_ZZ_76
+      - 日本_🇯🇵_youtube@资源分享师_JP_77
+      - 未知_🏳️_youtube@资源分享师_ZZ_78
+      - 未知_🏳️_youtube@资源分享师_ZZ_79
+      - 未知_🏳️_youtube@资源分享师_ZZ_80
+      - 中国_🇨🇳_youtube@资源分享师_CN_81
+      - 台湾_🇹🇼_youtube@资源分享师_TW_82
+  - name: Ⓜ️ 微软服务
+    type: select
+    proxies:
+      - 🎯 全球直连
+      - 🚀 节点选择
+      - 未知_🏳️_youtube@资源分享师_ZZ_1
+      - 塞尔维亚_🇷🇸_youtube@资源分享师_RS_2
+      - 未知_🏳️_youtube@资源分享师_ZZ_3
+      - 塞尔维亚_🇷🇸_youtube@资源分享师_RS_4
+      - 塞尔维亚_🇷🇸_youtube@资源分享师_RS_5
+      - 塞尔维亚_🇷🇸_youtube@资源分享师_RS_6
+      - 未知_🏳️_youtube@资源分享师_ZZ_7
+      - 未知_🏳️_youtube@资源分享师_ZZ_8
+      - 未知_🏳️_youtube@资源分享师_ZZ_9
+      - 美国_🇺🇸_youtube@资源分享师_US_10
+      - 未知_🏳️_youtube@资源分享师_ZZ_11
+      - 未知_🏳️_youtube@资源分享师_ZZ_12
+      - 未知_🏳️_youtube@资源分享师_ZZ_13
+      - 未知_🏳️_youtube@资源分享师_ZZ_14
+      - 未知_🏳️_youtube@资源分享师_ZZ_15
+      - 未知_🏳️_youtube@资源分享师_ZZ_16
+      - 未知_🏳️_youtube@资源分享师_ZZ_17
+      - 美国_🇺🇸_youtube@资源分享师_US_18
+      - 未知_🏳️_youtube@资源分享师_ZZ_19
+      - 未知_🏳️_youtube@资源分享师_ZZ_20
+      - 未知_🏳️_youtube@资源分享师_ZZ_21
+      - 未知_🏳️_youtube@资源分享师_ZZ_22
+      - 未知_🏳️_youtube@资源分享师_ZZ_23
+      - 未知_🏳️_youtube@资源分享师_ZZ_24
+      - 未知_🏳️_youtube@资源分享师_ZZ_25
+      - 未知_🏳️_youtube@资源分享师_ZZ_26
+      - 未知_🏳️_youtube@资源分享师_ZZ_27
+      - 未知_🏳️_youtube@资源分享师_ZZ_28
+      - 未知_🏳️_youtube@资源分享师_ZZ_29
+      - 未知_🏳️_youtube@资源分享师_ZZ_30
+      - 未知_🏳️_youtube@资源分享师_ZZ_31
+      - 未知_🏳️_youtube@资源分享师_ZZ_32
+      - 未知_🏳️_youtube@资源分享师_ZZ_33
+      - 未知_🏳️_youtube@资源分享师_ZZ_34
+      - 未知_🏳️_youtube@资源分享师_ZZ_35
+      - 未知_🏳️_youtube@资源分享师_ZZ_36
+      - 未知_🏳️_youtube@资源分享师_ZZ_37
+      - 未知_🏳️_youtube@资源分享师_ZZ_38
+      - 未知_🏳️_youtube@资源分享师_ZZ_39
+      - 未知_🏳️_youtube@资源分享师_ZZ_40
+      - 未知_🏳️_youtube@资源分享师_ZZ_41
+      - 未知_🏳️_youtube@资源分享师_ZZ_42
+      - 未知_🏳️_youtube@资源分享师_ZZ_43
+      - 美国_🇺🇸_youtube@资源分享师_US_44
+      - 未知_🏳️_youtube@资源分享师_ZZ_45
+      - 未知_🏳️_youtube@资源分享师_ZZ_46
+      - 未知_🏳️_youtube@资源分享师_ZZ_47
+      - 未知_🏳️_youtube@资源分享师_ZZ_48
+      - 未知_🏳️_youtube@资源分享师_ZZ_49
+      - 未知_🏳️_youtube@资源分享师_ZZ_50
+      - 未知_🏳️_youtube@资源分享师_ZZ_51
+      - 未知_🏳️_youtube@资源分享师_ZZ_52
+      - 未知_🏳️_youtube@资源分享师_ZZ_53
+      - 未知_🏳️_youtube@资源分享师_ZZ_54
+      - 未知_🏳️_youtube@资源分享师_ZZ_55
+      - 未知_🏳️_youtube@资源分享师_ZZ_56
+      - 未知_🏳️_youtube@资源分享师_ZZ_57
+      - 未知_🏳️_youtube@资源分享师_ZZ_58
+      - 澳大利亚_🇦🇺_youtube@资源分享师_AU_59
+      - 未知_🏳️_youtube@资源分享师_ZZ_60
+      - 未知_🏳️_youtube@资源分享师_ZZ_61
+      - 未知_🏳️_youtube@资源分享师_ZZ_62
+      - 未知_🏳️_youtube@资源分享师_ZZ_63
+      - 未知_🏳️_youtube@资源分享师_ZZ_64
+      - 未知_🏳️_youtube@资源分享师_ZZ_65
+      - 未知_🏳️_youtube@资源分享师_ZZ_66
+      - 未知_🏳️_youtube@资源分享师_ZZ_67
+      - 未知_🏳️_youtube@资源分享师_ZZ_68
+      - 未知_🏳️_youtube@资源分享师_ZZ_69
+      - 未知_🏳️_youtube@资源分享师_ZZ_70
+      - 未知_🏳️_youtube@资源分享师_ZZ_71
+      - 未知_🏳️_youtube@资源分享师_ZZ_72
+      - 未知_🏳️_youtube@资源分享师_ZZ_73
+      - 日本_🇯🇵_youtube@资源分享师_JP_74
+      - 日本_🇯🇵_youtube@资源分享师_JP_75
+      - 未知_🏳️_youtube@资源分享师_ZZ_76
+      - 日本_🇯🇵_youtube@资源分享师_JP_77
+      - 未知_🏳️_youtube@资源分享师_ZZ_78
+      - 未知_🏳️_youtube@资源分享师_ZZ_79
+      - 未知_🏳️_youtube@资源分享师_ZZ_80
+      - 中国_🇨🇳_youtube@资源分享师_CN_81
+      - 台湾_🇹🇼_youtube@资源分享师_TW_82
+  - name: 🍎 苹果服务
+    type: select
+    proxies:
+      - 🚀 节点选择
+      - 🎯 全球直连
+      - 未知_🏳️_youtube@资源分享师_ZZ_1
+      - 塞尔维亚_🇷🇸_youtube@资源分享师_RS_2
+      - 未知_🏳️_youtube@资源分享师_ZZ_3
+      - 塞尔维亚_🇷🇸_youtube@资源分享师_RS_4
+      - 塞尔维亚_🇷🇸_youtube@资源分享师_RS_5
+      - 塞尔维亚_🇷🇸_youtube@资源分享师_RS_6
+      - 未知_🏳️_youtube@资源分享师_ZZ_7
+      - 未知_🏳️_youtube@资源分享师_ZZ_8
+      - 未知_🏳️_youtube@资源分享师_ZZ_9
+      - 美国_🇺🇸_youtube@资源分享师_US_10
+      - 未知_🏳️_youtube@资源分享师_ZZ_11
+      - 未知_🏳️_youtube@资源分享师_ZZ_12
+      - 未知_🏳️_youtube@资源分享师_ZZ_13
+      - 未知_🏳️_youtube@资源分享师_ZZ_14
+      - 未知_🏳️_youtube@资源分享师_ZZ_15
+      - 未知_🏳️_youtube@资源分享师_ZZ_16
+      - 未知_🏳️_youtube@资源分享师_ZZ_17
+      - 美国_🇺🇸_youtube@资源分享师_US_18
+      - 未知_🏳️_youtube@资源分享师_ZZ_19
+      - 未知_🏳️_youtube@资源分享师_ZZ_20
+      - 未知_🏳️_youtube@资源分享师_ZZ_21
+      - 未知_🏳️_youtube@资源分享师_ZZ_22
+      - 未知_🏳️_youtube@资源分享师_ZZ_23
+      - 未知_🏳️_youtube@资源分享师_ZZ_24
+      - 未知_🏳️_youtube@资源分享师_ZZ_25
+      - 未知_🏳️_youtube@资源分享师_ZZ_26
+      - 未知_🏳️_youtube@资源分享师_ZZ_27
+      - 未知_🏳️_youtube@资源分享师_ZZ_28
+      - 未知_🏳️_youtube@资源分享师_ZZ_29
+      - 未知_🏳️_youtube@资源分享师_ZZ_30
+      - 未知_🏳️_youtube@资源分享师_ZZ_31
+      - 未知_🏳️_youtube@资源分享师_ZZ_32
+      - 未知_🏳️_youtube@资源分享师_ZZ_33
+      - 未知_🏳️_youtube@资源分享师_ZZ_34
+      - 未知_🏳️_youtube@资源分享师_ZZ_35
+      - 未知_🏳️_youtube@资源分享师_ZZ_36
+      - 未知_🏳️_youtube@资源分享师_ZZ_37
+      - 未知_🏳️_youtube@资源分享师_ZZ_38
+      - 未知_🏳️_youtube@资源分享师_ZZ_39
+      - 未知_🏳️_youtube@资源分享师_ZZ_40
+      - 未知_🏳️_youtube@资源分享师_ZZ_41
+      - 未知_🏳️_youtube@资源分享师_ZZ_42
+      - 未知_🏳️_youtube@资源分享师_ZZ_43
+      - 美国_🇺🇸_youtube@资源分享师_US_44
+      - 未知_🏳️_youtube@资源分享师_ZZ_45
+      - 未知_🏳️_youtube@资源分享师_ZZ_46
+      - 未知_🏳️_youtube@资源分享师_ZZ_47
+      - 未知_🏳️_youtube@资源分享师_ZZ_48
+      - 未知_🏳️_youtube@资源分享师_ZZ_49
+      - 未知_🏳️_youtube@资源分享师_ZZ_50
+      - 未知_🏳️_youtube@资源分享师_ZZ_51
+      - 未知_🏳️_youtube@资源分享师_ZZ_52
+      - 未知_🏳️_youtube@资源分享师_ZZ_53
+      - 未知_🏳️_youtube@资源分享师_ZZ_54
+      - 未知_🏳️_youtube@资源分享师_ZZ_55
+      - 未知_🏳️_youtube@资源分享师_ZZ_56
+      - 未知_🏳️_youtube@资源分享师_ZZ_57
+      - 未知_🏳️_youtube@资源分享师_ZZ_58
+      - 澳大利亚_🇦🇺_youtube@资源分享师_AU_59
+      - 未知_🏳️_youtube@资源分享师_ZZ_60
+      - 未知_🏳️_youtube@资源分享师_ZZ_61
+      - 未知_🏳️_youtube@资源分享师_ZZ_62
+      - 未知_🏳️_youtube@资源分享师_ZZ_63
+      - 未知_🏳️_youtube@资源分享师_ZZ_64
+      - 未知_🏳️_youtube@资源分享师_ZZ_65
+      - 未知_🏳️_youtube@资源分享师_ZZ_66
+      - 未知_🏳️_youtube@资源分享师_ZZ_67
+      - 未知_🏳️_youtube@资源分享师_ZZ_68
+      - 未知_🏳️_youtube@资源分享师_ZZ_69
+      - 未知_🏳️_youtube@资源分享师_ZZ_70
+      - 未知_🏳️_youtube@资源分享师_ZZ_71
+      - 未知_🏳️_youtube@资源分享师_ZZ_72
+      - 未知_🏳️_youtube@资源分享师_ZZ_73
+      - 日本_🇯🇵_youtube@资源分享师_JP_74
+      - 日本_🇯🇵_youtube@资源分享师_JP_75
+      - 未知_🏳️_youtube@资源分享师_ZZ_76
+      - 日本_🇯🇵_youtube@资源分享师_JP_77
+      - 未知_🏳️_youtube@资源分享师_ZZ_78
+      - 未知_🏳️_youtube@资源分享师_ZZ_79
+      - 未知_🏳️_youtube@资源分享师_ZZ_80
+      - 中国_🇨🇳_youtube@资源分享师_CN_81
+      - 台湾_🇹🇼_youtube@资源分享师_TW_82
+  - name: 🎯 全球直连
+    type: select
+    proxies:
+      - DIRECT
+      - 🚀 节点选择
+      - ♻️ 自动选择
+  - name: 🛑 全球拦截
+    type: select
+    proxies:
+      - REJECT
+      - DIRECT
+  - name: 🍃 应用净化
+    type: select
+    proxies:
+      - REJECT
+      - DIRECT
+  - name: 🐟 漏网之鱼
+    type: select
+    proxies:
+      - 🚀 节点选择
+      - 🎯 全球直连
+      - ♻️ 自动选择
+      - 未知_🏳️_youtube@资源分享师_ZZ_1
+      - 塞尔维亚_🇷🇸_youtube@资源分享师_RS_2
+      - 未知_🏳️_youtube@资源分享师_ZZ_3
+      - 塞尔维亚_🇷🇸_youtube@资源分享师_RS_4
+      - 塞尔维亚_🇷🇸_youtube@资源分享师_RS_5
+      - 塞尔维亚_🇷🇸_youtube@资源分享师_RS_6
+      - 未知_🏳️_youtube@资源分享师_ZZ_7
+      - 未知_🏳️_youtube@资源分享师_ZZ_8
+      - 未知_🏳️_youtube@资源分享师_ZZ_9
+      - 美国_🇺🇸_youtube@资源分享师_US_10
+      - 未知_🏳️_youtube@资源分享师_ZZ_11
+      - 未知_🏳️_youtube@资源分享师_ZZ_12
+      - 未知_🏳️_youtube@资源分享师_ZZ_13
+      - 未知_🏳️_youtube@资源分享师_ZZ_14
+      - 未知_🏳️_youtube@资源分享师_ZZ_15
+      - 未知_🏳️_youtube@资源分享师_ZZ_16
+      - 未知_🏳️_youtube@资源分享师_ZZ_17
+      - 美国_🇺🇸_youtube@资源分享师_US_18
+      - 未知_🏳️_youtube@资源分享师_ZZ_19
+      - 未知_🏳️_youtube@资源分享师_ZZ_20
+      - 未知_🏳️_youtube@资源分享师_ZZ_21
+      - 未知_🏳️_youtube@资源分享师_ZZ_22
+      - 未知_🏳️_youtube@资源分享师_ZZ_23
+      - 未知_🏳️_youtube@资源分享师_ZZ_24
+      - 未知_🏳️_youtube@资源分享师_ZZ_25
+      - 未知_🏳️_youtube@资源分享师_ZZ_26
+      - 未知_🏳️_youtube@资源分享师_ZZ_27
+      - 未知_🏳️_youtube@资源分享师_ZZ_28
+      - 未知_🏳️_youtube@资源分享师_ZZ_29
+      - 未知_🏳️_youtube@资源分享师_ZZ_30
+      - 未知_🏳️_youtube@资源分享师_ZZ_31
+      - 未知_🏳️_youtube@资源分享师_ZZ_32
+      - 未知_🏳️_youtube@资源分享师_ZZ_33
+      - 未知_🏳️_youtube@资源分享师_ZZ_34
+      - 未知_🏳️_youtube@资源分享师_ZZ_35
+      - 未知_🏳️_youtube@资源分享师_ZZ_36
+      - 未知_🏳️_youtube@资源分享师_ZZ_37
+      - 未知_🏳️_youtube@资源分享师_ZZ_38
+      - 未知_🏳️_youtube@资源分享师_ZZ_39
+      - 未知_🏳️_youtube@资源分享师_ZZ_40
+      - 未知_🏳️_youtube@资源分享师_ZZ_41
+      - 未知_🏳️_youtube@资源分享师_ZZ_42
+      - 未知_🏳️_youtube@资源分享师_ZZ_43
+      - 美国_🇺🇸_youtube@资源分享师_US_44
+      - 未知_🏳️_youtube@资源分享师_ZZ_45
+      - 未知_🏳️_youtube@资源分享师_ZZ_46
+      - 未知_🏳️_youtube@资源分享师_ZZ_47
+      - 未知_🏳️_youtube@资源分享师_ZZ_48
+      - 未知_🏳️_youtube@资源分享师_ZZ_49
+      - 未知_🏳️_youtube@资源分享师_ZZ_50
+      - 未知_🏳️_youtube@资源分享师_ZZ_51
+      - 未知_🏳️_youtube@资源分享师_ZZ_52
+      - 未知_🏳️_youtube@资源分享师_ZZ_53
+      - 未知_🏳️_youtube@资源分享师_ZZ_54
+      - 未知_🏳️_youtube@资源分享师_ZZ_55
+      - 未知_🏳️_youtube@资源分享师_ZZ_56
+      - 未知_🏳️_youtube@资源分享师_ZZ_57
+      - 未知_🏳️_youtube@资源分享师_ZZ_58
+      - 澳大利亚_🇦🇺_youtube@资源分享师_AU_59
+      - 未知_🏳️_youtube@资源分享师_ZZ_60
+      - 未知_🏳️_youtube@资源分享师_ZZ_61
+      - 未知_🏳️_youtube@资源分享师_ZZ_62
+      - 未知_🏳️_youtube@资源分享师_ZZ_63
+      - 未知_🏳️_youtube@资源分享师_ZZ_64
+      - 未知_🏳️_youtube@资源分享师_ZZ_65
+      - 未知_🏳️_youtube@资源分享师_ZZ_66
+      - 未知_🏳️_youtube@资源分享师_ZZ_67
+      - 未知_🏳️_youtube@资源分享师_ZZ_68
+      - 未知_🏳️_youtube@资源分享师_ZZ_69
+      - 未知_🏳️_youtube@资源分享师_ZZ_70
+      - 未知_🏳️_youtube@资源分享师_ZZ_71
+      - 未知_🏳️_youtube@资源分享师_ZZ_72
+      - 未知_🏳️_youtube@资源分享师_ZZ_73
+      - 日本_🇯🇵_youtube@资源分享师_JP_74
+      - 日本_🇯🇵_youtube@资源分享师_JP_75
+      - 未知_🏳️_youtube@资源分享师_ZZ_76
+      - 日本_🇯🇵_youtube@资源分享师_JP_77
+      - 未知_🏳️_youtube@资源分享师_ZZ_78
+      - 未知_🏳️_youtube@资源分享师_ZZ_79
+      - 未知_🏳️_youtube@资源分享师_ZZ_80
+      - 中国_🇨🇳_youtube@资源分享师_CN_81
+      - 台湾_🇹🇼_youtube@资源分享师_TW_82
+rule-providers:
+  LocalAreaNetwork:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/refs/heads/master/Clash/LocalAreaNetwork.list
+    path: ./rules/LocalAreaNetwork.yaml
+  BanAD:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/refs/heads/master/Clash/BanAD.list
+    path: ./rules/BanAD.yaml
+  BanProgramAD:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/refs/heads/master/Clash/BanProgramAD.list
+    path: ./rules/BanProgramAD.yaml
+  GoogleCN:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/refs/heads/master/Clash/GoogleCN.list
+    path: ./rules/GoogleCN.yaml
+  SteamCN:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/refs/heads/master/Clash/Ruleset/SteamCN.list
+    path: ./rules/SteamCN.yaml
+  Microsoft:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/refs/heads/master/Clash/Microsoft.list
+    path: ./rules/Microsoft.yaml
+  Apple:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/refs/heads/master/Clash/Apple.list
+    path: ./rules/Apple.yaml
+  ProxyMedia:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/refs/heads/master/Clash/ProxyMedia.list
+    path: ./rules/ProxyMedia.yaml
+  Telegram:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/refs/heads/master/Clash/Telegram.list
+    path: ./rules/Telegram.yaml
+  ProxyLite:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/refs/heads/master/Clash/ProxyLite.list
+    path: ./rules/ProxyLite.yaml
+  ChinaDomain:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/refs/heads/master/Clash/ChinaDomain.list
+    path: ./rules/ChinaDomain.yaml
+  ChinaCompanyIp:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/refs/heads/master/Clash/ChinaCompanyIp.list
+    path: ./rules/ChinaCompanyIp.yaml
+rules:
+  - DOMAIN-SUFFIX,nodebuf.com,🚀 节点选择
+  - RULE-SET,LocalAreaNetwork,🎯 全球直连
+  - RULE-SET,BanAD,🛑 全球拦截
+  - RULE-SET,BanProgramAD,🍃 应用净化
+  - RULE-SET,GoogleCN,🎯 全球直连
+  - RULE-SET,SteamCN,🎯 全球直连
+  - RULE-SET,Microsoft,Ⓜ️ 微软服务
+  - RULE-SET,Apple,🍎 苹果服务
+  - RULE-SET,ProxyMedia,🌍 国外媒体
+  - RULE-SET,Telegram,📲 电报信息
+  - RULE-SET,ProxyLite,🚀 节点选择
+  - RULE-SET,ChinaDomain,🎯 全球直连
+  - RULE-SET,ChinaCompanyIp,🎯 全球直连
+  - GEOIP,CN,🎯 全球直连
+  - MATCH,🐟 漏网之鱼
