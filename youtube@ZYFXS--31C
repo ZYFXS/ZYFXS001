@@ -1,0 +1,4460 @@
+mixed-port: 7890
+allow-lan: false
+mode: rule
+log-level: warning
+ipv6: true
+dns:
+  enable: true
+  listen: 127.0.0.1:1053
+  ipv6: true
+  prefer-h3: false
+  enhanced-mode: fake-ip
+  fake-ip-range: 198.18.0.1/16
+  fake-ip-filter-mode: blacklist
+  fake-ip-filter:
+    - localhost
+    - +.localhost
+    - +.lan
+    - +.local
+    - +.home.arpa
+  use-hosts: true
+  use-system-hosts: true
+  respect-rules: true
+  default-nameserver:
+    - https://223.5.5.5/dns-query#DIRECT
+    - https://223.6.6.6/dns-query#DIRECT
+  proxy-server-nameserver:
+    - https://223.5.5.5/dns-query#DIRECT
+    - https://223.6.6.6/dns-query#DIRECT
+  direct-nameserver:
+    - https://223.5.5.5/dns-query#DIRECT
+    - https://doh.pub/dns-query#DIRECT
+  direct-nameserver-follow-policy: false
+  nameserver-policy:
+    geosite:cn:
+      - https://223.5.5.5/dns-query#DIRECT
+      - https://doh.pub/dns-query#DIRECT
+  nameserver:
+    - https://1.1.1.1/dns-query
+    - https://1.0.0.1/dns-query
+proxies:
+  - type: trojan
+    name: youtube@资源分享师_01
+    server: 104.18.33.121
+    port: 443
+    password: humanity
+    udp: true
+    tls: true
+    servername: www.cordweave.com
+    sni: www.cordweave.com
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /assignment
+  - type: vless
+    name: 美国_youtube@资源分享师_02
+    server: wwww.qarvian.ir
+    port: 443
+    uuid: 780aa2f6-1a02-4fa2-bcd0-fa7d469bdff7
+    udp: true
+    tls: true
+    servername: cdn.akamai.steamstatic.com
+    sni: cdn.akamai.steamstatic.com
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: copy_az_channel_NUFiLTER_17i.global.ssl.fastly.net.
+  - type: trojan
+    name: youtube@资源分享师_03
+    server: 104.18.47.138
+    port: 443
+    password: humanity
+    udp: true
+    tls: true
+    servername: www.cordweave.com
+    sni: www.cordweave.com
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /assignment
+  - type: trojan
+    name: youtube@资源分享师_04
+    server: 104.17.135.68
+    port: 443
+    password: humanity
+    udp: true
+    tls: true
+    servername: www.cordweave.com
+    sni: www.cordweave.com
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /assignment
+  - type: ss
+    name: 意大利_youtube@资源分享师_05
+    server: 202.50.253.81
+    port: 19999
+    password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+    cipher: aes-256-gcm
+    udp: true
+    tls: false
+    skip-cert-verify: false
+  - type: vless
+    name: 美国_youtube@资源分享师_06
+    server: wwww.qarvian.ir
+    port: 443
+    uuid: 780aa2f6-1a02-4fa2-bcd0-fa7d469bdff7
+    udp: true
+    tls: true
+    servername: cdn.akamai.steamstatic.com
+    sni: cdn.akamai.steamstatic.com
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: copy_az_channel_NUFiLTER_7i.global.ssl.fastly.net.
+  - type: vless
+    name: 瑞士_youtube@资源分享师_07
+    server: 138.124.39.251
+    port: 443
+    uuid: 5254c281-3bc1-40ee-ba89-1aaf8c251402
+    flow: xtls-rprx-vision
+    udp: true
+    tls: true
+    servername: nl-modx-prime.storagedirectguide.com
+    sni: nl-modx-prime.storagedirectguide.com
+    skip-cert-verify: false
+    client-fingerprint: firefox
+    reality-opts:
+      public-key: node0aB_7yyVADkeieiBBpxqIlxNLQcvgotRClh0QXQ
+  - type: trojan
+    name: 美国_youtube@资源分享师_08
+    server: 179.255.157.247
+    port: 8443
+    password: humanity
+    udp: true
+    tls: true
+    servername: www.cordweave.com
+    sni: www.cordweave.com
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /assignment
+  - type: trojan
+    name: youtube@资源分享师_09
+    server: 172.67.203.46
+    port: 443
+    password: humanity
+    udp: true
+    tls: true
+    servername: www.cordweave.com
+    sni: www.cordweave.com
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /assignment
+      headers:
+        Host: www.cordweave.com
+  - type: trojan
+    name: youtube@资源分享师_10
+    server: 104.27.55.4
+    port: 443
+    password: humanity
+    udp: true
+    tls: true
+    servername: www.cordweave.com
+    sni: www.cordweave.com
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /assignment
+  - type: trojan
+    name: youtube@资源分享师_11
+    server: 104.16.144.215
+    port: 443
+    password: humanity
+    udp: true
+    tls: true
+    servername: www.cordweave.com
+    sni: www.cordweave.com
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /assignment
+  - type: trojan
+    name: youtube@资源分享师_12
+    server: 104.26.3.162
+    port: 443
+    password: humanity
+    udp: true
+    tls: true
+    servername: www.cordweave.com
+    sni: www.cordweave.com
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /assignment
+  - type: trojan
+    name: youtube@资源分享师_13
+    server: 104.17.191.193
+    port: 443
+    password: humanity
+    udp: true
+    tls: true
+    servername: www.cordweave.com
+    sni: www.cordweave.com
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /assignment
+  - type: trojan
+    name: youtube@资源分享师_14
+    server: 104.17.98.29
+    port: 443
+    password: humanity
+    udp: true
+    tls: true
+    servername: www.cordweave.com
+    sni: www.cordweave.com
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /assignment
+  - type: trojan
+    name: youtube@资源分享师_15
+    server: 104.18.189.153
+    port: 443
+    password: humanity
+    udp: true
+    tls: true
+    servername: www.cordweave.com
+    sni: www.cordweave.com
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /assignment
+  - type: trojan
+    name: youtube@资源分享师_16
+    server: 104.17.119.105
+    port: 443
+    password: humanity
+    udp: true
+    tls: true
+    servername: www.cordweave.com
+    sni: www.cordweave.com
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /assignment
+  - type: trojan
+    name: youtube@资源分享师_17
+    server: 104.17.28.10
+    port: 443
+    password: humanity
+    udp: true
+    tls: true
+    servername: www.cordweave.com
+    sni: www.cordweave.com
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /assignment
+  - type: trojan
+    name: youtube@资源分享师_18
+    server: 104.17.49.122
+    port: 443
+    password: humanity
+    udp: true
+    tls: true
+    servername: www.cordweave.com
+    sni: www.cordweave.com
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /assignment
+  - type: trojan
+    name: youtube@资源分享师_19
+    server: 104.16.245.194
+    port: 443
+    password: humanity
+    udp: true
+    tls: true
+    servername: www.cordweave.com
+    sni: www.cordweave.com
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /assignment
+  - type: trojan
+    name: 美国_youtube@资源分享师_20
+    server: 162.159.128.253
+    port: 443
+    password: humanity
+    udp: true
+    tls: true
+    servername: www.cordweave.com
+    sni: www.cordweave.com
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /assignment
+  - type: trojan
+    name: youtube@资源分享师_21
+    server: 104.17.145.145
+    port: 443
+    password: humanity
+    udp: true
+    tls: true
+    servername: www.cordweave.com
+    sni: www.cordweave.com
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /assignment
+  - type: trojan
+    name: 美国_youtube@资源分享师_22
+    server: 179.255.127.200
+    port: 443
+    password: humanity
+    udp: true
+    tls: true
+    servername: www.cordweave.com
+    sni: www.cordweave.com
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /assignment
+  - type: trojan
+    name: youtube@资源分享师_23
+    server: 172.67.203.46
+    port: 443
+    password: humanity
+    udp: true
+    tls: true
+    servername: www.cordweave.com
+    sni: www.cordweave.com
+    skip-cert-verify: false
+    alpn:
+      - http/1.1
+    network: ws
+    ws-opts:
+      path: /assignment
+  - type: trojan
+    name: youtube@资源分享师_24
+    server: 172.67.203.46
+    port: 443
+    password: humanity
+    udp: true
+    tls: true
+    servername: www.cordweave.com
+    sni: www.cordweave.com
+    skip-cert-verify: false
+    alpn:
+      - http/1.1
+    network: ws
+    ws-opts:
+      path: /assignment
+      headers:
+        Host: www.cordweave.com
+  - type: trojan
+    name: youtube@资源分享师_25
+    server: 104.17.110.1
+    port: 443
+    password: humanity
+    udp: true
+    tls: true
+    servername: www.cordweave.com
+    sni: www.cordweave.com
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /assignment
+  - type: trojan
+    name: 美国_youtube@资源分享师_26
+    server: 151.101.36.120
+    port: 443
+    password: MiTiVPN
+    udp: true
+    tls: true
+    servername: firefox.com
+    sni: firefox.com
+    skip-cert-verify: false
+    alpn:
+      - http/1.1
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: /---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/NLSus---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN
+      headers:
+        Host: mitivpn--mitivpn.ac.ir
+  - type: trojan
+    name: youtube@资源分享师_27
+    server: 104.18.35.31
+    port: 443
+    password: humanity
+    udp: true
+    tls: true
+    servername: www.cordweave.com
+    sni: www.cordweave.com
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /assignment
+  - type: trojan
+    name: youtube@资源分享师_28
+    server: 172.64.154.219
+    port: 443
+    password: humanity
+    udp: true
+    tls: true
+    servername: www.cordweave.com
+    sni: www.cordweave.com
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /assignment
+  - type: trojan
+    name: youtube@资源分享师_29
+    server: 104.16.244.188
+    port: 443
+    password: humanity
+    udp: true
+    tls: true
+    servername: www.cordweave.com
+    sni: www.cordweave.com
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /assignment
+  - type: trojan
+    name: youtube@资源分享师_30
+    server: 104.17.155.44
+    port: 443
+    password: humanity
+    udp: true
+    tls: true
+    servername: www.cordweave.com
+    sni: www.cordweave.com
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /assignment
+  - type: trojan
+    name: youtube@资源分享师_31
+    server: 172.64.155.36
+    port: 443
+    password: humanity
+    udp: true
+    tls: true
+    servername: www.cordweave.com
+    sni: www.cordweave.com
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /assignment
+  - type: trojan
+    name: youtube@资源分享师_32
+    server: 104.16.65.1
+    port: 443
+    password: humanity
+    udp: true
+    tls: true
+    servername: www.cordweave.com
+    sni: www.cordweave.com
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /assignment
+  - type: trojan
+    name: 美国_youtube@资源分享师_33
+    server: 179.255.136.189
+    port: 443
+    password: humanity
+    udp: true
+    tls: true
+    servername: www.cordweave.com
+    sni: www.cordweave.com
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /assignment
+  - type: trojan
+    name: youtube@资源分享师_34
+    server: 162.159.58.65
+    port: 443
+    password: humanity
+    udp: true
+    tls: true
+    servername: www.cordweave.com
+    sni: www.cordweave.com
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /assignment
+  - type: trojan
+    name: youtube@资源分享师_35
+    server: 104.17.159.71
+    port: 443
+    password: humanity
+    udp: true
+    tls: true
+    servername: www.cordweave.com
+    sni: www.cordweave.com
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /assignment
+  - type: trojan
+    name: youtube@资源分享师_36
+    server: 104.18.42.190
+    port: 443
+    password: humanity
+    udp: true
+    tls: true
+    servername: www.cordweave.com
+    sni: www.cordweave.com
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /assignment
+  - type: vless
+    name: 德国_youtube@资源分享师_37
+    server: 178.105.133.160
+    port: 4443
+    uuid: fb0818b3-4031-4843-b5f7-1d75177a1758
+    udp: true
+    tls: true
+    servername: jln31qtswdkut5.60kohcognywybguuq3ouc818oofnxfvn35daott.workers.dev
+    sni: jln31qtswdkut5.60kohcognywybguuq3ouc818oofnxfvn35daott.workers.dev
+    skip-cert-verify: false
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: /@Marisa_kristi
+      headers:
+        Host: jln31qtswdkut5.60kohcognywybguuq3ouc818oofnxfvn35daott.workers.dev
+  - type: trojan
+    name: youtube@资源分享师_38
+    server: 104.18.41.167
+    port: 443
+    password: humanity
+    udp: true
+    tls: true
+    servername: www.cordweave.com
+    sni: www.cordweave.com
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /assignment
+  - type: trojan
+    name: youtube@资源分享师_39
+    server: 172.64.151.23
+    port: 443
+    password: humanity
+    udp: true
+    tls: true
+    servername: www.cordweave.com
+    sni: www.cordweave.com
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /assignment
+  - type: trojan
+    name: youtube@资源分享师_40
+    server: 172.64.229.7
+    port: 443
+    password: humanity
+    udp: true
+    tls: true
+    servername: www.cordweave.com
+    sni: www.cordweave.com
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /assignment
+  - type: trojan
+    name: youtube@资源分享师_41
+    server: 104.18.38.127
+    port: 443
+    password: humanity
+    udp: true
+    tls: true
+    servername: www.cordweave.com
+    sni: www.cordweave.com
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /assignment
+  - type: hysteria2
+    name: 美国_youtube@资源分享师_42
+    server: 179.255.103.55
+    port: 443
+    password: 92bf29cc-ee08-4c97-bf0b-b4dff41e5bd8
+    udp: true
+    tls: true
+    servername: n02.jinggai.online
+    sni: n02.jinggai.online
+    skip-cert-verify: false
+  - type: trojan
+    name: youtube@资源分享师_43
+    server: 104.17.28.254
+    port: 443
+    password: humanity
+    udp: true
+    tls: true
+    servername: www.cordweave.com
+    sni: www.cordweave.com
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /assignment
+  - type: trojan
+    name: youtube@资源分享师_44
+    server: 162.159.61.183
+    port: 443
+    password: humanity
+    udp: true
+    tls: true
+    servername: www.cordweave.com
+    sni: www.cordweave.com
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /assignment
+  - type: trojan
+    name: youtube@资源分享师_45
+    server: 172.64.154.144
+    port: 443
+    password: humanity
+    udp: true
+    tls: true
+    servername: www.cordweave.com
+    sni: www.cordweave.com
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /assignment
+  - type: trojan
+    name: youtube@资源分享师_46
+    server: 104.18.46.59
+    port: 443
+    password: humanity
+    udp: true
+    tls: true
+    servername: www.cordweave.com
+    sni: www.cordweave.com
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /assignment
+  - type: trojan
+    name: youtube@资源分享师_47
+    server: 104.18.46.127
+    port: 443
+    password: humanity
+    udp: true
+    tls: true
+    servername: www.cordweave.com
+    sni: www.cordweave.com
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /assignment
+  - type: trojan
+    name: 韩国_youtube@资源分享师_48
+    server: 141.164.56.22
+    port: 443
+    password: humanity
+    udp: true
+    tls: true
+    servername: www.cordweave.com
+    sni: www.cordweave.com
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /assignment
+  - type: trojan
+    name: youtube@资源分享师_49
+    server: 162.159.45.1
+    port: 443
+    password: humanity
+    udp: true
+    tls: true
+    servername: www.cordweave.com
+    sni: www.cordweave.com
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /assignment
+  - type: trojan
+    name: 美国_youtube@资源分享师_50
+    server: 162.159.150.241
+    port: 443
+    password: humanity
+    udp: true
+    tls: true
+    servername: www.cordweave.com
+    sni: www.cordweave.com
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /assignment
+  - type: trojan
+    name: youtube@资源分享师_51
+    server: 172.64.149.78
+    port: 443
+    password: humanity
+    udp: true
+    tls: true
+    servername: www.cordweave.com
+    sni: www.cordweave.com
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /assignment
+  - type: trojan
+    name: youtube@资源分享师_52
+    server: 172.64.153.224
+    port: 443
+    password: humanity
+    udp: true
+    tls: true
+    servername: www.cordweave.com
+    sni: www.cordweave.com
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /assignment
+  - type: vless
+    name: youtube@资源分享师_53
+    server: cdn-v2ahop.povrak.ir
+    port: 2053
+    uuid: d3487c8b-f537-4139-84e6-58ad35f6470c
+    udp: true
+    tls: true
+    servername: cdn-v2ahop.povrak.ir
+    sni: cdn-v2ahop.povrak.ir
+    skip-cert-verify: false
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: /cdn
+      headers:
+        Host: cdn-v2ahop.povrak.ir
+  - type: trojan
+    name: youtube@资源分享师_54
+    server: 172.64.151.20
+    port: 443
+    password: humanity
+    udp: true
+    tls: true
+    servername: www.cordweave.com
+    sni: www.cordweave.com
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /assignment
+  - type: trojan
+    name: 美国_youtube@资源分享师_55
+    server: 179.255.127.45
+    port: 443
+    password: humanity
+    udp: true
+    tls: true
+    servername: www.cordweave.com
+    sni: www.cordweave.com
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /assignment
+  - type: trojan
+    name: 俄罗斯_youtube@资源分享师_56
+    server: 201.24.57.254
+    port: 2053
+    password: humanity
+    udp: true
+    tls: true
+    servername: www.cordweave.com
+    sni: www.cordweave.com
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /assignment
+  - type: trojan
+    name: youtube@资源分享师_58
+    server: 104.18.0.1
+    port: 443
+    password: humanity
+    udp: true
+    tls: true
+    servername: www.cordweave.com
+    sni: www.cordweave.com
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /assignment
+  - type: ss
+    name: 意大利_youtube@资源分享师_59
+    server: 202.50.253.18
+    port: 19999
+    password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+    cipher: aes-256-gcm
+    udp: true
+    tls: false
+    skip-cert-verify: false
+  - type: ss
+    name: 意大利_youtube@资源分享师_60
+    server: 202.50.253.27
+    port: 19999
+    password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+    cipher: aes-256-gcm
+    udp: true
+    tls: false
+    skip-cert-verify: false
+  - type: trojan
+    name: 摩尔多瓦_youtube@资源分享师_61
+    server: 143.246.223.110
+    port: 443
+    password: humanity
+    udp: true
+    tls: true
+    servername: www.cordweave.com
+    sni: www.cordweave.com
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /assignment
+  - type: trojan
+    name: youtube@资源分享师_62
+    server: 172.64.150.181
+    port: 443
+    password: humanity
+    udp: true
+    tls: true
+    servername: www.cordweave.com
+    sni: www.cordweave.com
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /assignment
+  - type: trojan
+    name: youtube@资源分享师_63
+    server: 104.19.212.207
+    port: 443
+    password: humanity
+    udp: true
+    tls: true
+    servername: www.cordweave.com
+    sni: www.cordweave.com
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /assignment
+  - type: trojan
+    name: 香港_youtube@资源分享师_64
+    server: 103.219.195.65
+    port: 443
+    password: humanity
+    udp: true
+    tls: true
+    servername: www.cordweave.com
+    sni: www.cordweave.com
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /assignment
+  - type: trojan
+    name: 新加坡_youtube@资源分享师_66
+    server: 128.199.128.117
+    port: 443
+    password: humanity
+    udp: true
+    tls: true
+    servername: www.cordweave.com
+    sni: www.cordweave.com
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /assignment
+  - type: trojan
+    name: youtube@资源分享师_67
+    server: 104.19.46.152
+    port: 443
+    password: humanity
+    udp: true
+    tls: true
+    servername: www.cordweave.com
+    sni: www.cordweave.com
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /assignment
+  - type: vless
+    name: 拉脱维亚_youtube@资源分享师_68
+    server: 109.248.148.140
+    port: 443
+    uuid: 28e7f9e1-006c-4c38-822d-2d2903477444
+    flow: xtls-rprx-vision
+    udp: true
+    tls: true
+    servername: www.apple.com
+    sni: www.apple.com
+    skip-cert-verify: false
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: RFZXfsd3WfxOKRcdO4Q7RoElfE8JbMpR6bG3jYLV_Uc
+  - type: trojan
+    name: youtube@资源分享师_69
+    server: 104.17.148.111
+    port: 443
+    password: humanity
+    udp: true
+    tls: true
+    servername: www.cordweave.com
+    sni: www.cordweave.com
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /assignment
+  - type: trojan
+    name: 美国_youtube@资源分享师_70
+    server: 179.255.127.82
+    port: 443
+    password: humanity
+    udp: true
+    tls: true
+    servername: www.cordweave.com
+    sni: www.cordweave.com
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /assignment
+  - type: vless
+    name: 荷兰_youtube@资源分享师_71
+    server: hiweb.my.id
+    port: 443
+    uuid: 32413dda-504c-4906-b732-8ecaff901179
+    udp: true
+    tls: true
+    servername: hiweb.my.id
+    sni: hiweb.my.id
+    skip-cert-verify: false
+    alpn:
+      - http/1.1
+    client-fingerprint: chrome
+  - type: trojan
+    name: youtube@资源分享师_72
+    server: 104.17.117.104
+    port: 443
+    password: humanity
+    udp: true
+    tls: true
+    servername: www.cordweave.com
+    sni: www.cordweave.com
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /assignment
+  - type: trojan
+    name: youtube@资源分享师_73
+    server: 104.18.151.172
+    port: 443
+    password: humanity
+    udp: true
+    tls: true
+    servername: www.cordweave.com
+    sni: www.cordweave.com
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /assignment
+  - type: vless
+    name: 波兰_youtube@资源分享师_74
+    server: 177.1.192.117
+    port: 443
+    uuid: 706bce83-91db-4260-b175-cba29145cd56
+    flow: xtls-rprx-vision
+    udp: true
+    tls: true
+    servername: up7.uni-plan.com
+    sni: up7.uni-plan.com
+    skip-cert-verify: false
+    reality-opts:
+      public-key: Lt3gSdGmfQMx50yH-OOJaNBSg80vzIveaNVwUUWJwzQ
+      short-id: 3952a220c86628a8
+  - type: trojan
+    name: 新加坡_youtube@资源分享师_75
+    server: 165.22.102.89
+    port: 443
+    password: humanity
+    udp: true
+    tls: true
+    servername: www.cordweave.com
+    sni: www.cordweave.com
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /assignment
+  - type: vless
+    name: 波兰_youtube@资源分享师_76
+    server: 177.1.192.117
+    port: 443
+    uuid: 706bce83-91db-4260-b175-cba29145cd56
+    flow: xtls-rprx-vision
+    udp: true
+    tls: true
+    servername: up7.uni-plan.com
+    sni: up7.uni-plan.com
+    skip-cert-verify: false
+    client-fingerprint: firefox
+    reality-opts:
+      public-key: Lt3gSdGmfQMx50yH-OOJaNBSg80vzIveaNVwUUWJwzQ
+      short-id: 3952a220c86628a8
+  - type: trojan
+    name: 荷兰_youtube@资源分享师_77
+    server: 188.164.248.143
+    port: 443
+    password: humanity
+    udp: true
+    tls: true
+    servername: www.cordweave.com
+    sni: www.cordweave.com
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /assignment
+  - type: trojan
+    name: youtube@资源分享师_78
+    server: 104.17.61.37
+    port: 443
+    password: humanity
+    udp: true
+    tls: true
+    servername: www.cordweave.com
+    sni: www.cordweave.com
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /assignment
+  - type: trojan
+    name: youtube@资源分享师_79
+    server: 104.19.154.200
+    port: 443
+    password: humanity
+    udp: true
+    tls: true
+    servername: www.cordweave.com
+    sni: www.cordweave.com
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /assignment
+  - type: trojan
+    name: 西班牙_youtube@资源分享师_80
+    server: 66.163.118.177
+    port: 443
+    password: humanity
+    udp: true
+    tls: true
+    servername: www.cordweave.com
+    sni: www.cordweave.com
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /assignment
+  - type: trojan
+    name: youtube@资源分享师_81
+    server: 104.17.162.3
+    port: 443
+    password: humanity
+    udp: true
+    tls: true
+    servername: www.cordweave.com
+    sni: www.cordweave.com
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /assignment
+  - type: trojan
+    name: 瑞典_youtube@资源分享师_82
+    server: 83.147.254.59
+    port: 2053
+    password: humanity
+    udp: true
+    tls: true
+    servername: www.cordweave.com
+    sni: www.cordweave.com
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /assignment
+  - type: vless
+    name: 俄罗斯_youtube@资源分享师_83
+    server: 194.87.143.165
+    port: 8443
+    uuid: f9613819-d2fe-4b3a-a2e6-40c184c6854c
+    udp: true
+    tls: true
+    servername: wsru1.wba-pn.ru
+    sni: wsru1.wba-pn.ru
+    skip-cert-verify: false
+    client-fingerprint: ios
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: 194.87.143.165
+  - type: trojan
+    name: 新加坡_youtube@资源分享师_85
+    server: 178.93.160.132
+    port: 443
+    password: humanity
+    udp: true
+    tls: true
+    servername: www.cordweave.com
+    sni: www.cordweave.com
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /assignment
+  - type: vless
+    name: youtube@资源分享师_86
+    server: 8.35.211.73
+    port: 2087
+    uuid: 9f534ac4-3c58-4a16-8b74-13dff09a0cf1
+    udp: true
+    tls: true
+    servername: d39333476.pages.dev
+    sni: d39333476.pages.dev
+    skip-cert-verify: false
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: /resource
+      headers:
+        Host: d39333476.pages.dev
+  - type: trojan
+    name: 日本_youtube@资源分享师_87
+    server: 212.192.221.107
+    port: 443
+    password: humanity
+    udp: true
+    tls: true
+    servername: www.cordweave.com
+    sni: www.cordweave.com
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /assignment
+  - type: trojan
+    name: 德国_youtube@资源分享师_88
+    server: 144.31.120.77
+    port: 443
+    password: humanity
+    udp: true
+    tls: true
+    servername: www.cordweave.com
+    sni: www.cordweave.com
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /assignment
+  - type: trojan
+    name: 瑞典_youtube@资源分享师_89
+    server: 77.221.139.114
+    port: 443
+    password: humanity
+    udp: true
+    tls: true
+    servername: www.cordweave.com
+    sni: www.cordweave.com
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /assignment
+  - type: trojan
+    name: youtube@资源分享师_90
+    server: 104.19.56.198
+    port: 443
+    password: humanity
+    udp: true
+    tls: true
+    servername: www.cordweave.com
+    sni: www.cordweave.com
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /assignment
+  - type: trojan
+    name: 香港_youtube@资源分享师_91
+    server: 45.196.235.64
+    port: 443
+    password: humanity
+    udp: true
+    tls: true
+    servername: www.cordweave.com
+    sni: www.cordweave.com
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /assignment
+  - type: vless
+    name: 俄罗斯_youtube@资源分享师_92
+    server: ch2.h1cloud.net
+    port: 25879
+    uuid: 241306b3-9f27-4ed3-9524-6c0792c55856
+    udp: true
+    tls: true
+    servername: www.bing.com
+    sni: www.bing.com
+    skip-cert-verify: false
+    client-fingerprint: firefox
+    reality-opts:
+      public-key: XuI492LMe1OPIwQH5TQlIo33JRqMM3kfnto62tbx5FU
+      short-id: f1a7a14461a3f389
+  - type: trojan
+    name: 意大利_youtube@资源分享师_93
+    server: 213.109.192.6
+    port: 8443
+    password: humanity
+    udp: true
+    tls: true
+    servername: www.cordweave.com
+    sni: www.cordweave.com
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /assignment
+  - type: trojan
+    name: youtube@资源分享师_94
+    server: 104.19.43.102
+    port: 443
+    password: humanity
+    udp: true
+    tls: true
+    servername: www.cordweave.com
+    sni: www.cordweave.com
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /assignment
+  - type: trojan
+    name: youtube@资源分享师_95
+    server: 104.24.144.224
+    port: 443
+    password: humanity
+    udp: true
+    tls: true
+    servername: www.cordweave.com
+    sni: www.cordweave.com
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /assignment
+  - type: vless
+    name: youtube@资源分享师_96
+    server: 104.21.68.142
+    port: 2053
+    uuid: 0d284ad0-f38a-4c12-b221-6507dc7c9f23
+    udp: true
+    tls: true
+    servername: g1.muzaik.online
+    sni: g1.muzaik.online
+    skip-cert-verify: false
+    alpn:
+      - http/1.1
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: /1505cc33c5bc
+      headers:
+        Host: g1.muzaik.online
+  - type: vless
+    name: 俄罗斯_youtube@资源分享师_97
+    server: 189.74.114.119
+    port: 443
+    uuid: abd5755a-8b77-4ed4-afbd-f2ccbc08e6f5
+    udp: true
+    tls: true
+    servername: api.mediaklenov.cc
+    sni: api.mediaklenov.cc
+    skip-cert-verify: false
+    client-fingerprint: safari
+    network: grpc
+    grpc-opts:
+      grpc-service-name: 3e99d50d5740985d
+  - type: vless
+    name: 斯洛文尼亚_youtube@资源分享师_98
+    server: 92.42.201.65
+    port: 4443
+    uuid: e0134f1c-8b74-4733-9c34-50cb251480c2
+    flow: xtls-rprx-vision
+    udp: true
+    tls: true
+    servername: node-slo03.rkitman.ru
+    sni: node-slo03.rkitman.ru
+    skip-cert-verify: false
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: CTiiN_SriTUj-eBv0047HpCWgLtAzWzq-gwvIWN9KUI
+      short-id: 7f0275a4db6068fb
+  - type: vless
+    name: 瑞士_youtube@资源分享师_99
+    server: 195.141.65.98
+    port: 443
+    uuid: 53f03acd-fec1-6685-fc8f-03baf9550cb8
+    udp: true
+    tls: true
+    servername: 148-253-210-191.sslip.io
+    sni: 148-253-210-191.sslip.io
+    skip-cert-verify: false
+    alpn:
+      - http/1.1
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: /test-ws
+      headers:
+        Host: 148-253-210-191.sslip.io
+  - type: vless
+    name: 荷兰_youtube@资源分享师_100
+    server: 188.164.248.151
+    port: 2096
+    uuid: 9f534ac4-3c58-4a16-8b74-13dff09a0cf1
+    udp: true
+    tls: true
+    servername: d39333476.pages.dev
+    sni: d39333476.pages.dev
+    skip-cert-verify: false
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: /item/m
+      headers:
+        Host: d39333476.pages.dev
+  - type: trojan
+    name: 新加坡_youtube@资源分享师_101
+    server: 157.245.159.88
+    port: 443
+    password: humanity
+    udp: true
+    tls: true
+    servername: www.cordweave.com
+    sni: www.cordweave.com
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /assignment
+  - type: trojan
+    name: youtube@资源分享师_102
+    server: 104.19.53.114
+    port: 443
+    password: humanity
+    udp: true
+    tls: true
+    servername: www.cordweave.com
+    sni: www.cordweave.com
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /assignment
+  - type: trojan
+    name: 匈牙利_youtube@资源分享师_104
+    server: 38.180.225.247
+    port: 2053
+    password: humanity
+    udp: true
+    tls: true
+    servername: www.cordweave.com
+    sni: www.cordweave.com
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /assignment
+  - type: trojan
+    name: youtube@资源分享师_105
+    server: 172.67.203.46
+    port: 443
+    password: humanity
+    udp: true
+    tls: true
+    servername: www.cordweave.com
+    sni: www.cordweave.com
+    skip-cert-verify: false
+    alpn:
+      - http/1.1
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: /assignment
+  - type: trojan
+    name: 捷克_youtube@资源分享师_106
+    server: 141.133.174.88
+    port: 443
+    password: humanity
+    udp: true
+    tls: true
+    servername: www.cordweave.com
+    sni: www.cordweave.com
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /assignment
+  - type: trojan
+    name: youtube@资源分享师_107
+    server: 104.17.145.43
+    port: 443
+    password: humanity
+    udp: true
+    tls: true
+    servername: www.cordweave.com
+    sni: www.cordweave.com
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /assignment
+  - type: ss
+    name: 意大利_youtube@资源分享师_108
+    server: 202.50.253.63
+    port: 19999
+    password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+    cipher: aes-256-gcm
+    udp: true
+    tls: false
+    skip-cert-verify: false
+  - type: trojan
+    name: 美国_youtube@资源分享师_109
+    server: wwww.qarvian.ir
+    port: 443
+    password: MiTiVPN
+    udp: true
+    tls: true
+    servername: firefox.com
+    sni: firefox.com
+    skip-cert-verify: false
+    alpn:
+      - http/1.1
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: mitivpn--mitivpn.ac.ir
+  - type: vless
+    name: 美国_youtube@资源分享师_110
+    server: 156.229.166.66
+    port: 443
+    uuid: a8945d73-e450-47ea-90cb-10062c8632b7
+    flow: xtls-rprx-vision
+    udp: true
+    tls: true
+    servername: www.amazon.com
+    sni: www.amazon.com
+    skip-cert-verify: false
+    client-fingerprint: edge
+    reality-opts:
+      public-key: 0hIFPaEn4RdFib8_eP8HYxMywR5izEwM3JA2W1Zo8U4
+      short-id: b390142456517acc
+  - type: trojan
+    name: 越南_youtube@资源分享师_111
+    server: 103.161.179.36
+    port: 443
+    password: humanity
+    udp: true
+    tls: true
+    servername: www.cordweave.com
+    sni: www.cordweave.com
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /assignment
+  - type: trojan
+    name: youtube@资源分享师_112
+    server: 104.17.167.134
+    port: 443
+    password: humanity
+    udp: true
+    tls: true
+    servername: www.cordweave.com
+    sni: www.cordweave.com
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /assignment
+  - type: trojan
+    name: 阿拉伯联合酋长国_youtube@资源分享师_113
+    server: 46.8.124.8
+    port: 443
+    password: humanity
+    udp: true
+    tls: true
+    servername: www.cordweave.com
+    sni: www.cordweave.com
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /assignment
+  - type: trojan
+    name: 俄罗斯_youtube@资源分享师_114
+    server: 217.26.26.14
+    port: 443
+    password: humanity
+    udp: true
+    tls: true
+    servername: www.cordweave.com
+    sni: www.cordweave.com
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /assignment
+  - type: trojan
+    name: 英国_youtube@资源分享师_115
+    server: 143.110.175.165
+    port: 443
+    password: humanity
+    udp: true
+    tls: true
+    servername: www.cordweave.com
+    sni: www.cordweave.com
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /assignment
+  - type: trojan
+    name: 韩国_youtube@资源分享师_116
+    server: 54.116.249.102
+    port: 443
+    password: humanity
+    udp: true
+    tls: true
+    servername: www.cordweave.com
+    sni: www.cordweave.com
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /assignment
+  - type: trojan
+    name: 越南_youtube@资源分享师_117
+    server: 103.161.178.72
+    port: 443
+    password: humanity
+    udp: true
+    tls: true
+    servername: www.cordweave.com
+    sni: www.cordweave.com
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /assignment
+  - type: ss
+    name: 意大利_youtube@资源分享师_118
+    server: 202.50.253.90
+    port: 19999
+    password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+    cipher: aes-256-gcm
+    udp: true
+    tls: false
+    skip-cert-verify: false
+  - type: vless
+    name: 俄罗斯_youtube@资源分享师_119
+    server: 146.185.197.95
+    port: 443
+    uuid: 9ea8b000-58ce-0005-b108-989dd4f248f1
+    udp: true
+    tls: false
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /live/ws2
+  - type: trojan
+    name: youtube@资源分享师_120
+    server: 104.17.221.194
+    port: 443
+    password: humanity
+    udp: true
+    tls: true
+    servername: www.cordweave.com
+    sni: www.cordweave.com
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /assignment
+  - type: trojan
+    name: 美国_youtube@资源分享师_121
+    server: 146.75.57.120
+    port: 443
+    password: MiTiVPN
+    udp: true
+    tls: true
+    servername: firefox.com
+    sni: firefox.com
+    skip-cert-verify: false
+    alpn:
+      - http/1.1
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: mitivpn--mitivpn.ac.ir
+  - type: trojan
+    name: youtube@资源分享师_122
+    server: 104.16.240.177
+    port: 443
+    password: humanity
+    udp: true
+    tls: true
+    servername: www.cordweave.com
+    sni: www.cordweave.com
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /assignment
+  - type: trojan
+    name: 挪威_youtube@资源分享师_123
+    server: 202.50.55.76
+    port: 443
+    password: humanity
+    udp: true
+    tls: true
+    servername: www.cordweave.com
+    sni: www.cordweave.com
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /assignment
+  - type: trojan
+    name: 瑞典_youtube@资源分享师_124
+    server: 213.165.34.40
+    port: 443
+    password: humanity
+    udp: true
+    tls: true
+    servername: www.cordweave.com
+    sni: www.cordweave.com
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /assignment
+  - type: vmess
+    name: 意大利_youtube@资源分享师_125
+    server: aesafdfaesfv.asopardaz.ir
+    port: 80
+    uuid: ce71b8c2-54a4-4dd0-b780-a4521b16f2fd
+    cipher: auto
+    alterId: 0
+    udp: true
+    tls: false
+    servername: aesafdfaesfv.asopardaz.ir
+    sni: aesafdfaesfv.asopardaz.ir
+    skip-cert-verify: false
+  - type: trojan
+    name: youtube@资源分享师_126
+    server: 104.18.89.52
+    port: 443
+    password: humanity
+    udp: true
+    tls: true
+    servername: www.cordweave.com
+    sni: www.cordweave.com
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /assignment
+  - type: hysteria2
+    name: 爱沙尼亚_youtube@资源分享师_127
+    server: 13.143.239.127
+    port: 443
+    password: 2a0fc918-9c61-451b-a9ad-e8f796e70f52
+    udp: true
+    tls: true
+    servername: nl1.obxodvpn.us
+    sni: nl1.obxodvpn.us
+    skip-cert-verify: false
+  - type: vless
+    name: 荷兰_youtube@资源分享师_128
+    server: 79.182.39.37
+    port: 27591
+    uuid: 056405e8-de9f-4d0d-8145-956f13cc34da
+    udp: true
+    tls: true
+    servername: www.samsung.com
+    sni: www.samsung.com
+    skip-cert-verify: false
+    client-fingerprint: firefox
+    reality-opts:
+      public-key: LY0H47MWx87_L_JBzxFAuTzKZB53U7MrZQK8-dNnMxM
+      short-id: 6c5c7900406a1ae7
+  - type: vless
+    name: 美国_youtube@资源分享师_129
+    server: 128.241.25.11
+    port: 30021
+    uuid: 339cda3d-79a5-4d37-8ad8-eddc130c992a
+    udp: true
+    tls: true
+    servername: kqjifhg9rw.tradsc8p9xp7wxyqmc1wy0ah.workers.dev
+    sni: kqjifhg9rw.tradsc8p9xp7wxyqmc1wy0ah.workers.dev
+    skip-cert-verify: false
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: /@Marisa_kristi
+      headers:
+        Host: kqjifhg9rw.tradsc8p9xp7wxyqmc1wy0ah.workers.dev
+  - type: trojan
+    name: 日本_youtube@资源分享师_130
+    server: 172.104.120.92
+    port: 443
+    password: humanity
+    udp: true
+    tls: true
+    servername: www.cordweave.com
+    sni: www.cordweave.com
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /assignment
+  - type: trojan
+    name: 墨西哥_youtube@资源分享师_131
+    server: 131.196.253.141
+    port: 443
+    password: humanity
+    udp: true
+    tls: true
+    servername: www.cordweave.com
+    sni: www.cordweave.com
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /assignment
+  - type: trojan
+    name: 韩国_youtube@资源分享师_132
+    server: 141.164.34.161
+    port: 8443
+    password: humanity
+    udp: true
+    tls: true
+    servername: www.cordweave.com
+    sni: www.cordweave.com
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /assignment
+  - type: trojan
+    name: 日本_youtube@资源分享师_133
+    server: 35.78.243.103
+    port: 443
+    password: humanity
+    udp: true
+    tls: true
+    servername: www.cordweave.com
+    sni: www.cordweave.com
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /assignment
+  - type: trojan
+    name: 葡萄牙_youtube@资源分享师_134
+    server: 195.133.92.71
+    port: 443
+    password: humanity
+    udp: true
+    tls: true
+    servername: www.cordweave.com
+    sni: www.cordweave.com
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /assignment
+  - type: trojan
+    name: 德国_youtube@资源分享师_135
+    server: 202.61.198.53
+    port: 443
+    password: humanity
+    udp: true
+    tls: true
+    servername: www.cordweave.com
+    sni: www.cordweave.com
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /assignment
+  - type: trojan
+    name: youtube@资源分享师_136
+    server: 104.19.0.1
+    port: 443
+    password: humanity
+    udp: true
+    tls: true
+    servername: www.cordweave.com
+    sni: www.cordweave.com
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /assignment
+  - type: trojan
+    name: 美国_youtube@资源分享师_137
+    server: 172.66.0.172
+    port: 443
+    password: humanity
+    udp: true
+    tls: true
+    servername: www.cordweave.com
+    sni: www.cordweave.com
+    skip-cert-verify: false
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: /assignment
+  - type: trojan
+    name: 香港_youtube@资源分享师_138
+    server: 103.69.128.221
+    port: 443
+    password: humanity
+    udp: true
+    tls: true
+    servername: www.cordweave.com
+    sni: www.cordweave.com
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /assignment
+  - type: trojan
+    name: youtube@资源分享师_139
+    server: 172.66.47.18
+    port: 443
+    password: e7TTceggMwUMg+aFN:F4
+    udp: true
+    tls: true
+    servername: APkD964o1oghlTghHt0L0Of.pAgeS.Dev
+    sni: APkD964o1oghlTghHt0L0Of.pAgeS.Dev
+    skip-cert-verify: false
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: /tr/SIeRkg2QvR2Zcpu0SeEMow?ed=2560
+  - type: vless
+    name: 塞浦路斯_youtube@资源分享师_140
+    server: hydra.yokkastars.com
+    port: 2443
+    uuid: 5e679ccd-1586-4d5f-b87b-48251046cad8
+    udp: true
+    tls: true
+    servername: deepl.com
+    sni: deepl.com
+    skip-cert-verify: false
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: h85e28MxBgNyT9d9cNeOLVtWfHq6cT_1_oxZOTajtTg
+      short-id: 92c32de179e5d908
+    network: grpc
+    grpc-opts:
+      grpc-service-name: rex-eb0bf76b710ce763
+  - type: trojan
+    name: 塞浦路斯_youtube@资源分享师_141
+    server: 5.253.29.83
+    port: 443
+    password: humanity
+    udp: true
+    tls: true
+    servername: www.cordweave.com
+    sni: www.cordweave.com
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /assignment
+  - type: vless
+    name: youtube@资源分享师_142
+    server: 104.18.42.98
+    port: 443
+    uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+    udp: true
+    tls: true
+    servername: jp3.yohototo.top
+    sni: jp3.yohototo.top
+    skip-cert-verify: false
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: /tyxyws
+      headers:
+        Host: jp3.yohototo.top
+  - type: trojan
+    name: youtube@资源分享师_143
+    server: 104.19.34.37
+    port: 443
+    password: humanity
+    udp: true
+    tls: true
+    servername: www.cordweave.com
+    sni: www.cordweave.com
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /assignment
+  - type: trojan
+    name: 阿拉伯联合酋长国_youtube@资源分享师_144
+    server: 46.174.142.238
+    port: 443
+    password: humanity
+    udp: true
+    tls: true
+    servername: www.cordweave.com
+    sni: www.cordweave.com
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /assignment
+  - type: ss
+    name: 意大利_youtube@资源分享师_145
+    server: 202.50.253.45
+    port: 19999
+    password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+    cipher: aes-256-gcm
+    udp: true
+    tls: false
+    skip-cert-verify: false
+  - type: vless
+    name: youtube@资源分享师_146
+    server: cdn.8211992.xyz
+    port: 443
+    uuid: 30610baf-4645-4c7b-9a22-0d0a0a79eab5
+    udp: true
+    tls: true
+    servername: mao.kipfel.de5.net
+    sni: mao.kipfel.de5.net
+    skip-cert-verify: false
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: /api/v1/guests/profiles/5de14443985f/
+      headers:
+        Host: mao.kipfel.de5.net
+  - type: vless
+    name: 德国_youtube@资源分享师_147
+    server: 78.17.178.125
+    port: 443
+    uuid: 6c713691-3ca2-4446-ad25-113d1bed6b03
+    flow: xtls-rprx-vision
+    udp: true
+    tls: true
+    servername: cdn.tbank.ru
+    sni: cdn.tbank.ru
+    skip-cert-verify: false
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: jcp4Lj_qYzxtkalm_XFjrmvqEMGRG7sb19yMwLe16WE
+      short-id: e0215064d8d1fd7c
+  - type: trojan
+    name: youtube@资源分享师_148
+    server: 172.67.89.103
+    port: 443
+    password: humanity
+    udp: true
+    tls: true
+    servername: www.cordweave.com
+    sni: www.cordweave.com
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /assignment
+  - type: trojan
+    name: 新加坡_youtube@资源分享师_149
+    server: 168.144.41.69
+    port: 443
+    password: humanity
+    udp: true
+    tls: true
+    servername: www.cordweave.com
+    sni: www.cordweave.com
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /assignment
+  - type: trojan
+    name: 德国_youtube@资源分享师_150
+    server: 108.165.236.229
+    port: 443
+    password: humanity
+    udp: true
+    tls: true
+    servername: www.cordweave.com
+    sni: www.cordweave.com
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /assignment
+  - type: vless
+    name: 美国_youtube@资源分享师_151
+    server: 172.66.0.172
+    port: 443
+    uuid: e53eacb6-cd30-4964-a57c-febcb5151b98
+    udp: true
+    tls: true
+    servername: wallweb-4r0.pages.dev
+    sni: wallweb-4r0.pages.dev
+    skip-cert-verify: false
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: wallweb-4r0.pages.dev
+  - type: trojan
+    name: youtube@资源分享师_152
+    server: 104.17.17.238
+    port: 443
+    password: humanity
+    udp: true
+    tls: true
+    servername: www.cordweave.com
+    sni: www.cordweave.com
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /assignment
+  - type: vless
+    name: 亚美尼亚_youtube@资源分享师_153
+    server: 2.56.207.68
+    port: 443
+    uuid: 0192c3d3-18d5-4b95-8eb3-598e18de6918
+    flow: xtls-rprx-vision
+    udp: true
+    tls: true
+    servername: www.slovarik.xyz
+    sni: www.slovarik.xyz
+    skip-cert-verify: false
+    client-fingerprint: firefox
+  - type: vless
+    name: 德国_youtube@资源分享师_154
+    server: 78.17.178.125
+    port: 443
+    uuid: 6c713691-3ca2-4446-ad25-113d1bed6b03
+    flow: xtls-rprx-vision
+    udp: true
+    tls: true
+    servername: cdn.tbank.ru
+    sni: cdn.tbank.ru
+    skip-cert-verify: false
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: jcp4Lj_qYzxtkalm_XFjrmvqEMGRG7sb19yMwLe16WE
+      short-id: e0215064d8d1fd7c
+  - type: trojan
+    name: youtube@资源分享师_155
+    server: 172.66.47.18
+    port: 443
+    password: e7TTceggMwUMg+aFN:F4
+    udp: true
+    tls: true
+    servername: APkD964o1oghlTghHt0L0Of.pAgeS.Dev
+    sni: APkD964o1oghlTghHt0L0Of.pAgeS.Dev
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /tr/SIeRkg2QvR2Zcpu0SeEMow?ed=2560
+  - type: ss
+    name: 意大利_youtube@资源分享师_156
+    server: 202.50.253.54
+    port: 19999
+    password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+    cipher: aes-256-gcm
+    udp: true
+    tls: false
+    skip-cert-verify: false
+  - type: trojan
+    name: 墨西哥_youtube@资源分享师_157
+    server: 131.196.254.151
+    port: 443
+    password: humanity
+    udp: true
+    tls: true
+    servername: www.cordweave.com
+    sni: www.cordweave.com
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /assignment
+  - type: trojan
+    name: youtube@资源分享师_158
+    server: 104.19.48.73
+    port: 443
+    password: humanity
+    udp: true
+    tls: true
+    servername: www.cordweave.com
+    sni: www.cordweave.com
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /assignment
+  - type: trojan
+    name: 法国_youtube@资源分享师_159
+    server: 169.58.44.174
+    port: 443
+    password: humanity
+    udp: true
+    tls: true
+    servername: www.cordweave.com
+    sni: www.cordweave.com
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /assignment
+  - type: vless
+    name: 荷兰_youtube@资源分享师_160
+    server: 188.164.248.110
+    port: 443
+    uuid: 13134515-adc7-404b-8d2a-f9ad99e8dcbd
+    udp: true
+    tls: true
+    servername: imanvipreserved.pages.dev
+    sni: imanvipreserved.pages.dev
+    skip-cert-verify: false
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: imanvipreserved.pages.dev
+  - type: trojan
+    name: 美国_youtube@资源分享师_161
+    server: 78.40.209.33
+    port: 443
+    password: humanity
+    udp: true
+    tls: true
+    servername: www.cordweave.com
+    sni: www.cordweave.com
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /assignment
+  - type: trojan
+    name: 美国_youtube@资源分享师_162
+    server: 193.134.209.165
+    port: 443
+    password: humanity
+    udp: true
+    tls: true
+    servername: www.cordweave.com
+    sni: www.cordweave.com
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /assignment
+  - type: vless
+    name: 哈萨克斯坦_youtube@资源分享师_163
+    server: 95.56.251.12
+    port: 47443
+    uuid: 1fe01c8a-ab37-4e95-bbfc-95d4a608931e
+    flow: xtls-rprx-vision
+    udp: true
+    tls: true
+    servername: kz1.waspnest.space
+    sni: kz1.waspnest.space
+    skip-cert-verify: false
+    client-fingerprint: firefox
+    reality-opts:
+      public-key: z1GSwCEACvO9RLcMVpcURiT8er4oeIdeSJhraw_0cGU
+      short-id: ae97223a8f799877
+  - type: vless
+    name: 美国_youtube@资源分享师_164
+    server: s12.bsh-net.ru
+    port: 443
+    uuid: a0fa7e19-70ec-41e0-b0cc-bcc984d4201a
+    flow: xtls-rprx-vision
+    udp: true
+    tls: true
+    servername: s12.bsh-net.ru
+    sni: s12.bsh-net.ru
+    skip-cert-verify: false
+    client-fingerprint: firefox
+    reality-opts:
+      public-key: QvT-t_h_AF2EAT4Ggh_a6pcCK3StY8G9WCXn6-dJbxk
+      short-id: 51079f144d661484
+  - type: ss
+    name: 日本_youtube@资源分享师_165
+    server: 154.36.158.197
+    port: 8388
+    password: BeaUf9c0AEWH40Pu
+    cipher: aes-256-gcm
+    udp: true
+    tls: false
+    skip-cert-verify: false
+  - type: trojan
+    name: 塞浦路斯_youtube@资源分享师_166
+    server: 194.55.164.118
+    port: 443
+    password: humanity
+    udp: true
+    tls: true
+    servername: www.cordweave.com
+    sni: www.cordweave.com
+    skip-cert-verify: false
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: /assignment
+  - type: vless
+    name: youtube@资源分享师_167
+    server: 104.16.251.179
+    port: 443
+    uuid: fceb3200-2516-47d2-8e28-d04ecde9427a
+    udp: true
+    tls: true
+    servername: edge-fef90023.pages.dev
+    sni: edge-fef90023.pages.dev
+    skip-cert-verify: false
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: edge-fef90023.pages.dev
+  - type: trojan
+    name: 泰国_youtube@资源分享师_168
+    server: 103.224.84.7
+    port: 443
+    password: humanity
+    udp: true
+    tls: true
+    servername: www.cordweave.com
+    sni: www.cordweave.com
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /assignment
+  - type: trojan
+    name: youtube@资源分享师_169
+    server: 104.18.223.253
+    port: 443
+    password: humanity
+    udp: true
+    tls: true
+    servername: www.cordweave.com
+    sni: www.cordweave.com
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /assignment
+  - type: trojan
+    name: youtube@资源分享师_170
+    server: 104.16.251.219
+    port: 443
+    password: humanity
+    udp: true
+    tls: true
+    servername: www.cordweave.com
+    sni: www.cordweave.com
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /assignment
+  - type: trojan
+    name: youtube@资源分享师_171
+    server: 172.64.52.127
+    port: 443
+    password: humanity
+    udp: true
+    tls: true
+    servername: www.cordweave.com
+    sni: www.cordweave.com
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /assignment
+  - type: trojan
+    name: 美国_youtube@资源分享师_172
+    server: 172.66.0.118
+    port: 443
+    password: humanity
+    udp: true
+    tls: true
+    servername: www.cordweave.com
+    sni: www.cordweave.com
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /assignment
+  - type: trojan
+    name: youtube@资源分享师_173
+    server: 104.18.72.213
+    port: 443
+    password: humanity
+    udp: true
+    tls: true
+    servername: www.cordweave.com
+    sni: www.cordweave.com
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /assignment
+  - type: trojan
+    name: 美国_youtube@资源分享师_174
+    server: 68.64.180.218
+    port: 443
+    password: humanity
+    udp: true
+    tls: true
+    servername: www.cordweave.com
+    sni: www.cordweave.com
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /assignment
+  - type: trojan
+    name: 美国_youtube@资源分享师_175
+    server: 162.159.149.157
+    port: 443
+    password: humanity
+    udp: true
+    tls: true
+    servername: www.cordweave.com
+    sni: www.cordweave.com
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /assignment
+  - type: trojan
+    name: 美国_youtube@资源分享师_176
+    server: 172.66.0.172
+    port: 443
+    password: humanity
+    udp: true
+    tls: true
+    servername: www.cordweave.com
+    sni: www.cordweave.com
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /assignment
+  - type: trojan
+    name: youtube@资源分享师_177
+    server: 198.41.216.1
+    port: 443
+    password: humanity
+    udp: true
+    tls: true
+    servername: www.cordweave.com
+    sni: www.cordweave.com
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /assignment
+  - type: trojan
+    name: youtube@资源分享师_178
+    server: 104.17.116.75
+    port: 443
+    password: humanity
+    udp: true
+    tls: true
+    servername: www.cordweave.com
+    sni: www.cordweave.com
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /assignment
+  - type: trojan
+    name: youtube@资源分享师_179
+    server: 104.18.255.167
+    port: 443
+    password: humanity
+    udp: true
+    tls: true
+    servername: www.cordweave.com
+    sni: www.cordweave.com
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /assignment
+  - type: trojan
+    name: 美国_youtube@资源分享师_180
+    server: 199.119.137.32
+    port: 8443
+    password: humanity
+    udp: true
+    tls: true
+    servername: www.cordweave.com
+    sni: www.cordweave.com
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /assignment
+  - type: trojan
+    name: 摩尔多瓦_youtube@资源分享师_181
+    server: 5.181.158.96
+    port: 443
+    password: humanity
+    udp: true
+    tls: true
+    servername: www.cordweave.com
+    sni: www.cordweave.com
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /assignment
+  - type: trojan
+    name: 德国_youtube@资源分享师_182
+    server: 165.22.89.207
+    port: 443
+    password: humanity
+    udp: true
+    tls: true
+    servername: www.cordweave.com
+    sni: www.cordweave.com
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /assignment
+  - type: trojan
+    name: 爱沙尼亚_youtube@资源分享师_183
+    server: 185.225.205.75
+    port: 8443
+    password: humanity
+    udp: true
+    tls: true
+    servername: www.cordweave.com
+    sni: www.cordweave.com
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /assignment
+  - type: trojan
+    name: 土耳其_youtube@资源分享师_184
+    server: 213.238.182.13
+    port: 443
+    password: humanity
+    udp: true
+    tls: true
+    servername: www.cordweave.com
+    sni: www.cordweave.com
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /assignment
+  - type: trojan
+    name: 西班牙_youtube@资源分享师_185
+    server: 193.17.183.48
+    port: 443
+    password: humanity
+    udp: true
+    tls: true
+    servername: www.cordweave.com
+    sni: www.cordweave.com
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /assignment
+  - type: trojan
+    name: 美国_youtube@资源分享师_186
+    server: 31.76.0.15
+    port: 443
+    password: humanity
+    udp: true
+    tls: true
+    servername: www.cordweave.com
+    sni: www.cordweave.com
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /assignment
+  - type: trojan
+    name: youtube@资源分享师_187
+    server: 172.67.94.180
+    port: 443
+    password: humanity
+    udp: true
+    tls: true
+    servername: www.cordweave.com
+    sni: www.cordweave.com
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /assignment
+  - type: trojan
+    name: youtube@资源分享师_188
+    server: 104.25.60.205
+    port: 443
+    password: humanity
+    udp: true
+    tls: true
+    servername: www.cordweave.com
+    sni: www.cordweave.com
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /assignment
+  - type: trojan
+    name: 瑞士_youtube@资源分享师_189
+    server: 83.228.199.3
+    port: 443
+    password: humanity
+    udp: true
+    tls: true
+    servername: www.cordweave.com
+    sni: www.cordweave.com
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /assignment
+  - type: trojan
+    name: youtube@资源分享师_190
+    server: 172.67.203.46
+    port: 443
+    password: humanity
+    udp: true
+    tls: true
+    servername: www.cordweave.com
+    sni: www.cordweave.com
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /assignment
+  - type: trojan
+    name: youtube@资源分享师_191
+    server: 172.67.67.89
+    port: 443
+    password: humanity
+    udp: true
+    tls: true
+    servername: www.cordweave.com
+    sni: www.cordweave.com
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /assignment
+  - type: trojan
+    name: youtube@资源分享师_192
+    server: 172.67.74.177
+    port: 443
+    password: humanity
+    udp: true
+    tls: true
+    servername: www.cordweave.com
+    sni: www.cordweave.com
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /assignment
+  - type: vless
+    name: 阿拉伯联合酋长国_youtube@资源分享师_193
+    server: 130.49.162.137
+    port: 443
+    uuid: 689a62e4-37e7-41de-9e6a-f2a56368c9e2
+    flow: xtls-rprx-vision-udp443
+    udp: true
+    tls: true
+    servername: sk3.speedtestinternet.link
+    sni: sk3.speedtestinternet.link
+    skip-cert-verify: false
+    client-fingerprint: firefox
+  - type: ss
+    name: 意大利_youtube@资源分享师_194
+    server: 202.50.253.45
+    port: 19999
+    password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+    cipher: aes-256-gcm
+    udp: true
+    tls: false
+    skip-cert-verify: false
+  - type: ss
+    name: 意大利_youtube@资源分享师_195
+    server: 202.50.253.18
+    port: 19999
+    password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+    cipher: aes-256-gcm
+    udp: true
+    tls: false
+    skip-cert-verify: false
+  - type: ss
+    name: 意大利_youtube@资源分享师_196
+    server: 202.50.253.63
+    port: 19999
+    password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+    cipher: aes-256-gcm
+    udp: true
+    tls: false
+    skip-cert-verify: false
+  - type: ss
+    name: 意大利_youtube@资源分享师_197
+    server: 202.50.253.27
+    port: 19999
+    password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+    cipher: aes-256-gcm
+    udp: true
+    tls: false
+    skip-cert-verify: false
+  - type: ss
+    name: 意大利_youtube@资源分享师_198
+    server: 202.50.253.54
+    port: 19999
+    password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+    cipher: aes-256-gcm
+    udp: true
+    tls: false
+    skip-cert-verify: false
+  - type: ss
+    name: 意大利_youtube@资源分享师_199
+    server: 202.50.253.99
+    port: 19999
+    password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+    cipher: aes-256-gcm
+    udp: true
+    tls: false
+    skip-cert-verify: false
+  - type: ss
+    name: 意大利_youtube@资源分享师_200
+    server: 202.50.253.90
+    port: 19999
+    password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+    cipher: aes-256-gcm
+    udp: true
+    tls: false
+    skip-cert-verify: false
+  - type: ss
+    name: 意大利_youtube@资源分享师_201
+    server: 202.50.253.18
+    port: 19999
+    password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+    cipher: aes-256-gcm
+    udp: true
+    tls: false
+    skip-cert-verify: false
+  - type: ss
+    name: 意大利_youtube@资源分享师_202
+    server: 202.50.253.72
+    port: 19999
+    password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+    cipher: aes-256-gcm
+    udp: true
+    tls: false
+    skip-cert-verify: false
+  - type: ss
+    name: 意大利_youtube@资源分享师_203
+    server: 202.50.253.72
+    port: 19999
+    password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+    cipher: aes-256-gcm
+    udp: true
+    tls: false
+    skip-cert-verify: false
+  - type: ss
+    name: 意大利_youtube@资源分享师_204
+    server: 202.50.253.99
+    port: 19999
+    password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+    cipher: aes-256-gcm
+    udp: true
+    tls: false
+    skip-cert-verify: false
+  - type: ss
+    name: 意大利_youtube@资源分享师_205
+    server: 202.50.253.36
+    port: 19999
+    password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+    cipher: aes-256-gcm
+    udp: true
+    tls: false
+    skip-cert-verify: false
+  - type: trojan
+    name: youtube@资源分享师_206
+    server: 172.67.203.46
+    port: 443
+    password: humanity
+    udp: true
+    tls: true
+    servername: www.cordweave.com
+    sni: www.cordweave.com
+    skip-cert-verify: false
+    alpn:
+      - http/1.1
+    network: ws
+    ws-opts:
+      path: /assignment
+      headers:
+        Host: www.cordweave.com
+  - type: ss
+    name: 意大利_youtube@资源分享师_207
+    server: 202.50.253.63
+    port: 19999
+    password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+    cipher: aes-256-gcm
+    udp: true
+    tls: false
+    skip-cert-verify: false
+  - type: ss
+    name: 意大利_youtube@资源分享师_208
+    server: 202.50.253.54
+    port: 19999
+    password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+    cipher: aes-256-gcm
+    udp: true
+    tls: false
+    skip-cert-verify: false
+  - type: ss
+    name: 意大利_youtube@资源分享师_209
+    server: 202.50.253.72
+    port: 19999
+    password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+    cipher: aes-256-gcm
+    udp: true
+    tls: false
+    skip-cert-verify: false
+  - type: ss
+    name: 意大利_youtube@资源分享师_210
+    server: 202.50.253.18
+    port: 19999
+    password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+    cipher: aes-256-gcm
+    udp: true
+    tls: false
+    skip-cert-verify: false
+  - type: ss
+    name: 意大利_youtube@资源分享师_211
+    server: 202.50.253.99
+    port: 19999
+    password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+    cipher: aes-256-gcm
+    udp: true
+    tls: false
+    skip-cert-verify: false
+  - type: ss
+    name: 意大利_youtube@资源分享师_212
+    server: 202.50.253.36
+    port: 19999
+    password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+    cipher: aes-256-gcm
+    udp: true
+    tls: false
+    skip-cert-verify: false
+  - type: ss
+    name: 意大利_youtube@资源分享师_213
+    server: 202.50.253.27
+    port: 19999
+    password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+    cipher: aes-256-gcm
+    udp: true
+    tls: false
+    skip-cert-verify: false
+  - type: ss
+    name: 日本_youtube@资源分享师_214
+    server: 154.36.158.197
+    port: 8388
+    password: BeaUf9c0AEWH40Pu
+    cipher: aes-256-gcm
+    udp: true
+    tls: false
+    skip-cert-verify: false
+  - type: trojan
+    name: youtube@资源分享师_215
+    server: www.calmlunch.com
+    port: 443
+    password: humanity
+    udp: true
+    tls: true
+    servername: www.calmlunch.com
+    sni: www.calmlunch.com
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /assignment
+      headers:
+        Host: www.calmlunch.com
+  - type: trojan
+    name: youtube@资源分享师_216
+    server: 172.66.40.99
+    port: 443
+    password: humanity
+    udp: true
+    tls: true
+    servername: www.trusteeforward.com
+    sni: www.trusteeforward.com
+    skip-cert-verify: false
+    alpn:
+      - http/1.1
+    network: ws
+    ws-opts:
+      path: /assignment
+      headers:
+        Host: www.trusteeforward.com
+  - type: trojan
+    name: 美国_youtube@资源分享师_217
+    server: 172.66.0.172
+    port: 443
+    password: humanity
+    udp: true
+    tls: true
+    servername: www.cordweave.com
+    sni: www.cordweave.com
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /assignment
+  - type: hysteria2
+    name: 俄罗斯_youtube@资源分享师_218
+    server: 103.88.243.142
+    port: 11592
+    password: 41edb44c8e
+    udp: true
+    tls: true
+    servername: srv-17e124.21freedom.net
+    sni: srv-17e124.21freedom.net
+    skip-cert-verify: false
+proxy-groups:
+  - name: 🚀 节点选择
+    type: select
+    proxies:
+      - ♻️ 自动选择
+      - DIRECT
+      - youtube@资源分享师_01
+      - 美国_youtube@资源分享师_02
+      - youtube@资源分享师_03
+      - youtube@资源分享师_04
+      - 意大利_youtube@资源分享师_05
+      - 美国_youtube@资源分享师_06
+      - 瑞士_youtube@资源分享师_07
+      - 美国_youtube@资源分享师_08
+      - youtube@资源分享师_09
+      - youtube@资源分享师_10
+      - youtube@资源分享师_11
+      - youtube@资源分享师_12
+      - youtube@资源分享师_13
+      - youtube@资源分享师_14
+      - youtube@资源分享师_15
+      - youtube@资源分享师_16
+      - youtube@资源分享师_17
+      - youtube@资源分享师_18
+      - youtube@资源分享师_19
+      - 美国_youtube@资源分享师_20
+      - youtube@资源分享师_21
+      - 美国_youtube@资源分享师_22
+      - youtube@资源分享师_23
+      - youtube@资源分享师_24
+      - youtube@资源分享师_25
+      - 美国_youtube@资源分享师_26
+      - youtube@资源分享师_27
+      - youtube@资源分享师_28
+      - youtube@资源分享师_29
+      - youtube@资源分享师_30
+      - youtube@资源分享师_31
+      - youtube@资源分享师_32
+      - 美国_youtube@资源分享师_33
+      - youtube@资源分享师_34
+      - youtube@资源分享师_35
+      - youtube@资源分享师_36
+      - 德国_youtube@资源分享师_37
+      - youtube@资源分享师_38
+      - youtube@资源分享师_39
+      - youtube@资源分享师_40
+      - youtube@资源分享师_41
+      - 美国_youtube@资源分享师_42
+      - youtube@资源分享师_43
+      - youtube@资源分享师_44
+      - youtube@资源分享师_45
+      - youtube@资源分享师_46
+      - youtube@资源分享师_47
+      - 韩国_youtube@资源分享师_48
+      - youtube@资源分享师_49
+      - 美国_youtube@资源分享师_50
+      - youtube@资源分享师_51
+      - youtube@资源分享师_52
+      - youtube@资源分享师_53
+      - youtube@资源分享师_54
+      - 美国_youtube@资源分享师_55
+      - 俄罗斯_youtube@资源分享师_56
+      - youtube@资源分享师_58
+      - 意大利_youtube@资源分享师_59
+      - 意大利_youtube@资源分享师_60
+      - 摩尔多瓦_youtube@资源分享师_61
+      - youtube@资源分享师_62
+      - youtube@资源分享师_63
+      - 香港_youtube@资源分享师_64
+      - 新加坡_youtube@资源分享师_66
+      - youtube@资源分享师_67
+      - 拉脱维亚_youtube@资源分享师_68
+      - youtube@资源分享师_69
+      - 美国_youtube@资源分享师_70
+      - 荷兰_youtube@资源分享师_71
+      - youtube@资源分享师_72
+      - youtube@资源分享师_73
+      - 波兰_youtube@资源分享师_74
+      - 新加坡_youtube@资源分享师_75
+      - 波兰_youtube@资源分享师_76
+      - 荷兰_youtube@资源分享师_77
+      - youtube@资源分享师_78
+      - youtube@资源分享师_79
+      - 西班牙_youtube@资源分享师_80
+      - youtube@资源分享师_81
+      - 瑞典_youtube@资源分享师_82
+      - 俄罗斯_youtube@资源分享师_83
+      - 新加坡_youtube@资源分享师_85
+      - youtube@资源分享师_86
+      - 日本_youtube@资源分享师_87
+      - 德国_youtube@资源分享师_88
+      - 瑞典_youtube@资源分享师_89
+      - youtube@资源分享师_90
+      - 香港_youtube@资源分享师_91
+      - 俄罗斯_youtube@资源分享师_92
+      - 意大利_youtube@资源分享师_93
+      - youtube@资源分享师_94
+      - youtube@资源分享师_95
+      - youtube@资源分享师_96
+      - 俄罗斯_youtube@资源分享师_97
+      - 斯洛文尼亚_youtube@资源分享师_98
+      - 瑞士_youtube@资源分享师_99
+      - 荷兰_youtube@资源分享师_100
+      - 新加坡_youtube@资源分享师_101
+      - youtube@资源分享师_102
+      - 匈牙利_youtube@资源分享师_104
+      - youtube@资源分享师_105
+      - 捷克_youtube@资源分享师_106
+      - youtube@资源分享师_107
+      - 意大利_youtube@资源分享师_108
+      - 美国_youtube@资源分享师_109
+      - 美国_youtube@资源分享师_110
+      - 越南_youtube@资源分享师_111
+      - youtube@资源分享师_112
+      - 阿拉伯联合酋长国_youtube@资源分享师_113
+      - 俄罗斯_youtube@资源分享师_114
+      - 英国_youtube@资源分享师_115
+      - 韩国_youtube@资源分享师_116
+      - 越南_youtube@资源分享师_117
+      - 意大利_youtube@资源分享师_118
+      - 俄罗斯_youtube@资源分享师_119
+      - youtube@资源分享师_120
+      - 美国_youtube@资源分享师_121
+      - youtube@资源分享师_122
+      - 挪威_youtube@资源分享师_123
+      - 瑞典_youtube@资源分享师_124
+      - 意大利_youtube@资源分享师_125
+      - youtube@资源分享师_126
+      - 爱沙尼亚_youtube@资源分享师_127
+      - 荷兰_youtube@资源分享师_128
+      - 美国_youtube@资源分享师_129
+      - 日本_youtube@资源分享师_130
+      - 墨西哥_youtube@资源分享师_131
+      - 韩国_youtube@资源分享师_132
+      - 日本_youtube@资源分享师_133
+      - 葡萄牙_youtube@资源分享师_134
+      - 德国_youtube@资源分享师_135
+      - youtube@资源分享师_136
+      - 美国_youtube@资源分享师_137
+      - 香港_youtube@资源分享师_138
+      - youtube@资源分享师_139
+      - 塞浦路斯_youtube@资源分享师_140
+      - 塞浦路斯_youtube@资源分享师_141
+      - youtube@资源分享师_142
+      - youtube@资源分享师_143
+      - 阿拉伯联合酋长国_youtube@资源分享师_144
+      - 意大利_youtube@资源分享师_145
+      - youtube@资源分享师_146
+      - 德国_youtube@资源分享师_147
+      - youtube@资源分享师_148
+      - 新加坡_youtube@资源分享师_149
+      - 德国_youtube@资源分享师_150
+      - 美国_youtube@资源分享师_151
+      - youtube@资源分享师_152
+      - 亚美尼亚_youtube@资源分享师_153
+      - 德国_youtube@资源分享师_154
+      - youtube@资源分享师_155
+      - 意大利_youtube@资源分享师_156
+      - 墨西哥_youtube@资源分享师_157
+      - youtube@资源分享师_158
+      - 法国_youtube@资源分享师_159
+      - 荷兰_youtube@资源分享师_160
+      - 美国_youtube@资源分享师_161
+      - 美国_youtube@资源分享师_162
+      - 哈萨克斯坦_youtube@资源分享师_163
+      - 美国_youtube@资源分享师_164
+      - 日本_youtube@资源分享师_165
+      - 塞浦路斯_youtube@资源分享师_166
+      - youtube@资源分享师_167
+      - 泰国_youtube@资源分享师_168
+      - youtube@资源分享师_169
+      - youtube@资源分享师_170
+      - youtube@资源分享师_171
+      - 美国_youtube@资源分享师_172
+      - youtube@资源分享师_173
+      - 美国_youtube@资源分享师_174
+      - 美国_youtube@资源分享师_175
+      - 美国_youtube@资源分享师_176
+      - youtube@资源分享师_177
+      - youtube@资源分享师_178
+      - youtube@资源分享师_179
+      - 美国_youtube@资源分享师_180
+      - 摩尔多瓦_youtube@资源分享师_181
+      - 德国_youtube@资源分享师_182
+      - 爱沙尼亚_youtube@资源分享师_183
+      - 土耳其_youtube@资源分享师_184
+      - 西班牙_youtube@资源分享师_185
+      - 美国_youtube@资源分享师_186
+      - youtube@资源分享师_187
+      - youtube@资源分享师_188
+      - 瑞士_youtube@资源分享师_189
+      - youtube@资源分享师_190
+      - youtube@资源分享师_191
+      - youtube@资源分享师_192
+      - 阿拉伯联合酋长国_youtube@资源分享师_193
+      - 意大利_youtube@资源分享师_194
+      - 意大利_youtube@资源分享师_195
+      - 意大利_youtube@资源分享师_196
+      - 意大利_youtube@资源分享师_197
+      - 意大利_youtube@资源分享师_198
+      - 意大利_youtube@资源分享师_199
+      - 意大利_youtube@资源分享师_200
+      - 意大利_youtube@资源分享师_201
+      - 意大利_youtube@资源分享师_202
+      - 意大利_youtube@资源分享师_203
+      - 意大利_youtube@资源分享师_204
+      - 意大利_youtube@资源分享师_205
+      - youtube@资源分享师_206
+      - 意大利_youtube@资源分享师_207
+      - 意大利_youtube@资源分享师_208
+      - 意大利_youtube@资源分享师_209
+      - 意大利_youtube@资源分享师_210
+      - 意大利_youtube@资源分享师_211
+      - 意大利_youtube@资源分享师_212
+      - 意大利_youtube@资源分享师_213
+      - 日本_youtube@资源分享师_214
+      - youtube@资源分享师_215
+      - youtube@资源分享师_216
+      - 美国_youtube@资源分享师_217
+      - 俄罗斯_youtube@资源分享师_218
+  - name: ♻️ 自动选择
+    type: url-test
+    proxies:
+      - youtube@资源分享师_01
+      - 美国_youtube@资源分享师_02
+      - youtube@资源分享师_03
+      - youtube@资源分享师_04
+      - 意大利_youtube@资源分享师_05
+      - 美国_youtube@资源分享师_06
+      - 瑞士_youtube@资源分享师_07
+      - 美国_youtube@资源分享师_08
+      - youtube@资源分享师_09
+      - youtube@资源分享师_10
+      - youtube@资源分享师_11
+      - youtube@资源分享师_12
+      - youtube@资源分享师_13
+      - youtube@资源分享师_14
+      - youtube@资源分享师_15
+      - youtube@资源分享师_16
+      - youtube@资源分享师_17
+      - youtube@资源分享师_18
+      - youtube@资源分享师_19
+      - 美国_youtube@资源分享师_20
+      - youtube@资源分享师_21
+      - 美国_youtube@资源分享师_22
+      - youtube@资源分享师_23
+      - youtube@资源分享师_24
+      - youtube@资源分享师_25
+      - 美国_youtube@资源分享师_26
+      - youtube@资源分享师_27
+      - youtube@资源分享师_28
+      - youtube@资源分享师_29
+      - youtube@资源分享师_30
+      - youtube@资源分享师_31
+      - youtube@资源分享师_32
+      - 美国_youtube@资源分享师_33
+      - youtube@资源分享师_34
+      - youtube@资源分享师_35
+      - youtube@资源分享师_36
+      - 德国_youtube@资源分享师_37
+      - youtube@资源分享师_38
+      - youtube@资源分享师_39
+      - youtube@资源分享师_40
+      - youtube@资源分享师_41
+      - 美国_youtube@资源分享师_42
+      - youtube@资源分享师_43
+      - youtube@资源分享师_44
+      - youtube@资源分享师_45
+      - youtube@资源分享师_46
+      - youtube@资源分享师_47
+      - 韩国_youtube@资源分享师_48
+      - youtube@资源分享师_49
+      - 美国_youtube@资源分享师_50
+      - youtube@资源分享师_51
+      - youtube@资源分享师_52
+      - youtube@资源分享师_53
+      - youtube@资源分享师_54
+      - 美国_youtube@资源分享师_55
+      - 俄罗斯_youtube@资源分享师_56
+      - youtube@资源分享师_58
+      - 意大利_youtube@资源分享师_59
+      - 意大利_youtube@资源分享师_60
+      - 摩尔多瓦_youtube@资源分享师_61
+      - youtube@资源分享师_62
+      - youtube@资源分享师_63
+      - 香港_youtube@资源分享师_64
+      - 新加坡_youtube@资源分享师_66
+      - youtube@资源分享师_67
+      - 拉脱维亚_youtube@资源分享师_68
+      - youtube@资源分享师_69
+      - 美国_youtube@资源分享师_70
+      - 荷兰_youtube@资源分享师_71
+      - youtube@资源分享师_72
+      - youtube@资源分享师_73
+      - 波兰_youtube@资源分享师_74
+      - 新加坡_youtube@资源分享师_75
+      - 波兰_youtube@资源分享师_76
+      - 荷兰_youtube@资源分享师_77
+      - youtube@资源分享师_78
+      - youtube@资源分享师_79
+      - 西班牙_youtube@资源分享师_80
+      - youtube@资源分享师_81
+      - 瑞典_youtube@资源分享师_82
+      - 俄罗斯_youtube@资源分享师_83
+      - 新加坡_youtube@资源分享师_85
+      - youtube@资源分享师_86
+      - 日本_youtube@资源分享师_87
+      - 德国_youtube@资源分享师_88
+      - 瑞典_youtube@资源分享师_89
+      - youtube@资源分享师_90
+      - 香港_youtube@资源分享师_91
+      - 俄罗斯_youtube@资源分享师_92
+      - 意大利_youtube@资源分享师_93
+      - youtube@资源分享师_94
+      - youtube@资源分享师_95
+      - youtube@资源分享师_96
+      - 俄罗斯_youtube@资源分享师_97
+      - 斯洛文尼亚_youtube@资源分享师_98
+      - 瑞士_youtube@资源分享师_99
+      - 荷兰_youtube@资源分享师_100
+      - 新加坡_youtube@资源分享师_101
+      - youtube@资源分享师_102
+      - 匈牙利_youtube@资源分享师_104
+      - youtube@资源分享师_105
+      - 捷克_youtube@资源分享师_106
+      - youtube@资源分享师_107
+      - 意大利_youtube@资源分享师_108
+      - 美国_youtube@资源分享师_109
+      - 美国_youtube@资源分享师_110
+      - 越南_youtube@资源分享师_111
+      - youtube@资源分享师_112
+      - 阿拉伯联合酋长国_youtube@资源分享师_113
+      - 俄罗斯_youtube@资源分享师_114
+      - 英国_youtube@资源分享师_115
+      - 韩国_youtube@资源分享师_116
+      - 越南_youtube@资源分享师_117
+      - 意大利_youtube@资源分享师_118
+      - 俄罗斯_youtube@资源分享师_119
+      - youtube@资源分享师_120
+      - 美国_youtube@资源分享师_121
+      - youtube@资源分享师_122
+      - 挪威_youtube@资源分享师_123
+      - 瑞典_youtube@资源分享师_124
+      - 意大利_youtube@资源分享师_125
+      - youtube@资源分享师_126
+      - 爱沙尼亚_youtube@资源分享师_127
+      - 荷兰_youtube@资源分享师_128
+      - 美国_youtube@资源分享师_129
+      - 日本_youtube@资源分享师_130
+      - 墨西哥_youtube@资源分享师_131
+      - 韩国_youtube@资源分享师_132
+      - 日本_youtube@资源分享师_133
+      - 葡萄牙_youtube@资源分享师_134
+      - 德国_youtube@资源分享师_135
+      - youtube@资源分享师_136
+      - 美国_youtube@资源分享师_137
+      - 香港_youtube@资源分享师_138
+      - youtube@资源分享师_139
+      - 塞浦路斯_youtube@资源分享师_140
+      - 塞浦路斯_youtube@资源分享师_141
+      - youtube@资源分享师_142
+      - youtube@资源分享师_143
+      - 阿拉伯联合酋长国_youtube@资源分享师_144
+      - 意大利_youtube@资源分享师_145
+      - youtube@资源分享师_146
+      - 德国_youtube@资源分享师_147
+      - youtube@资源分享师_148
+      - 新加坡_youtube@资源分享师_149
+      - 德国_youtube@资源分享师_150
+      - 美国_youtube@资源分享师_151
+      - youtube@资源分享师_152
+      - 亚美尼亚_youtube@资源分享师_153
+      - 德国_youtube@资源分享师_154
+      - youtube@资源分享师_155
+      - 意大利_youtube@资源分享师_156
+      - 墨西哥_youtube@资源分享师_157
+      - youtube@资源分享师_158
+      - 法国_youtube@资源分享师_159
+      - 荷兰_youtube@资源分享师_160
+      - 美国_youtube@资源分享师_161
+      - 美国_youtube@资源分享师_162
+      - 哈萨克斯坦_youtube@资源分享师_163
+      - 美国_youtube@资源分享师_164
+      - 日本_youtube@资源分享师_165
+      - 塞浦路斯_youtube@资源分享师_166
+      - youtube@资源分享师_167
+      - 泰国_youtube@资源分享师_168
+      - youtube@资源分享师_169
+      - youtube@资源分享师_170
+      - youtube@资源分享师_171
+      - 美国_youtube@资源分享师_172
+      - youtube@资源分享师_173
+      - 美国_youtube@资源分享师_174
+      - 美国_youtube@资源分享师_175
+      - 美国_youtube@资源分享师_176
+      - youtube@资源分享师_177
+      - youtube@资源分享师_178
+      - youtube@资源分享师_179
+      - 美国_youtube@资源分享师_180
+      - 摩尔多瓦_youtube@资源分享师_181
+      - 德国_youtube@资源分享师_182
+      - 爱沙尼亚_youtube@资源分享师_183
+      - 土耳其_youtube@资源分享师_184
+      - 西班牙_youtube@资源分享师_185
+      - 美国_youtube@资源分享师_186
+      - youtube@资源分享师_187
+      - youtube@资源分享师_188
+      - 瑞士_youtube@资源分享师_189
+      - youtube@资源分享师_190
+      - youtube@资源分享师_191
+      - youtube@资源分享师_192
+      - 阿拉伯联合酋长国_youtube@资源分享师_193
+      - 意大利_youtube@资源分享师_194
+      - 意大利_youtube@资源分享师_195
+      - 意大利_youtube@资源分享师_196
+      - 意大利_youtube@资源分享师_197
+      - 意大利_youtube@资源分享师_198
+      - 意大利_youtube@资源分享师_199
+      - 意大利_youtube@资源分享师_200
+      - 意大利_youtube@资源分享师_201
+      - 意大利_youtube@资源分享师_202
+      - 意大利_youtube@资源分享师_203
+      - 意大利_youtube@资源分享师_204
+      - 意大利_youtube@资源分享师_205
+      - youtube@资源分享师_206
+      - 意大利_youtube@资源分享师_207
+      - 意大利_youtube@资源分享师_208
+      - 意大利_youtube@资源分享师_209
+      - 意大利_youtube@资源分享师_210
+      - 意大利_youtube@资源分享师_211
+      - 意大利_youtube@资源分享师_212
+      - 意大利_youtube@资源分享师_213
+      - 日本_youtube@资源分享师_214
+      - youtube@资源分享师_215
+      - youtube@资源分享师_216
+      - 美国_youtube@资源分享师_217
+      - 俄罗斯_youtube@资源分享师_218
+    url: http://www.gstatic.com/generate_204
+    interval: 300
+    tolerance: 50
+  - name: 🌍 国外媒体
+    type: select
+    proxies:
+      - 🚀 节点选择
+      - ♻️ 自动选择
+      - 🎯 全球直连
+      - youtube@资源分享师_01
+      - 美国_youtube@资源分享师_02
+      - youtube@资源分享师_03
+      - youtube@资源分享师_04
+      - 意大利_youtube@资源分享师_05
+      - 美国_youtube@资源分享师_06
+      - 瑞士_youtube@资源分享师_07
+      - 美国_youtube@资源分享师_08
+      - youtube@资源分享师_09
+      - youtube@资源分享师_10
+      - youtube@资源分享师_11
+      - youtube@资源分享师_12
+      - youtube@资源分享师_13
+      - youtube@资源分享师_14
+      - youtube@资源分享师_15
+      - youtube@资源分享师_16
+      - youtube@资源分享师_17
+      - youtube@资源分享师_18
+      - youtube@资源分享师_19
+      - 美国_youtube@资源分享师_20
+      - youtube@资源分享师_21
+      - 美国_youtube@资源分享师_22
+      - youtube@资源分享师_23
+      - youtube@资源分享师_24
+      - youtube@资源分享师_25
+      - 美国_youtube@资源分享师_26
+      - youtube@资源分享师_27
+      - youtube@资源分享师_28
+      - youtube@资源分享师_29
+      - youtube@资源分享师_30
+      - youtube@资源分享师_31
+      - youtube@资源分享师_32
+      - 美国_youtube@资源分享师_33
+      - youtube@资源分享师_34
+      - youtube@资源分享师_35
+      - youtube@资源分享师_36
+      - 德国_youtube@资源分享师_37
+      - youtube@资源分享师_38
+      - youtube@资源分享师_39
+      - youtube@资源分享师_40
+      - youtube@资源分享师_41
+      - 美国_youtube@资源分享师_42
+      - youtube@资源分享师_43
+      - youtube@资源分享师_44
+      - youtube@资源分享师_45
+      - youtube@资源分享师_46
+      - youtube@资源分享师_47
+      - 韩国_youtube@资源分享师_48
+      - youtube@资源分享师_49
+      - 美国_youtube@资源分享师_50
+      - youtube@资源分享师_51
+      - youtube@资源分享师_52
+      - youtube@资源分享师_53
+      - youtube@资源分享师_54
+      - 美国_youtube@资源分享师_55
+      - 俄罗斯_youtube@资源分享师_56
+      - youtube@资源分享师_58
+      - 意大利_youtube@资源分享师_59
+      - 意大利_youtube@资源分享师_60
+      - 摩尔多瓦_youtube@资源分享师_61
+      - youtube@资源分享师_62
+      - youtube@资源分享师_63
+      - 香港_youtube@资源分享师_64
+      - 新加坡_youtube@资源分享师_66
+      - youtube@资源分享师_67
+      - 拉脱维亚_youtube@资源分享师_68
+      - youtube@资源分享师_69
+      - 美国_youtube@资源分享师_70
+      - 荷兰_youtube@资源分享师_71
+      - youtube@资源分享师_72
+      - youtube@资源分享师_73
+      - 波兰_youtube@资源分享师_74
+      - 新加坡_youtube@资源分享师_75
+      - 波兰_youtube@资源分享师_76
+      - 荷兰_youtube@资源分享师_77
+      - youtube@资源分享师_78
+      - youtube@资源分享师_79
+      - 西班牙_youtube@资源分享师_80
+      - youtube@资源分享师_81
+      - 瑞典_youtube@资源分享师_82
+      - 俄罗斯_youtube@资源分享师_83
+      - 新加坡_youtube@资源分享师_85
+      - youtube@资源分享师_86
+      - 日本_youtube@资源分享师_87
+      - 德国_youtube@资源分享师_88
+      - 瑞典_youtube@资源分享师_89
+      - youtube@资源分享师_90
+      - 香港_youtube@资源分享师_91
+      - 俄罗斯_youtube@资源分享师_92
+      - 意大利_youtube@资源分享师_93
+      - youtube@资源分享师_94
+      - youtube@资源分享师_95
+      - youtube@资源分享师_96
+      - 俄罗斯_youtube@资源分享师_97
+      - 斯洛文尼亚_youtube@资源分享师_98
+      - 瑞士_youtube@资源分享师_99
+      - 荷兰_youtube@资源分享师_100
+      - 新加坡_youtube@资源分享师_101
+      - youtube@资源分享师_102
+      - 匈牙利_youtube@资源分享师_104
+      - youtube@资源分享师_105
+      - 捷克_youtube@资源分享师_106
+      - youtube@资源分享师_107
+      - 意大利_youtube@资源分享师_108
+      - 美国_youtube@资源分享师_109
+      - 美国_youtube@资源分享师_110
+      - 越南_youtube@资源分享师_111
+      - youtube@资源分享师_112
+      - 阿拉伯联合酋长国_youtube@资源分享师_113
+      - 俄罗斯_youtube@资源分享师_114
+      - 英国_youtube@资源分享师_115
+      - 韩国_youtube@资源分享师_116
+      - 越南_youtube@资源分享师_117
+      - 意大利_youtube@资源分享师_118
+      - 俄罗斯_youtube@资源分享师_119
+      - youtube@资源分享师_120
+      - 美国_youtube@资源分享师_121
+      - youtube@资源分享师_122
+      - 挪威_youtube@资源分享师_123
+      - 瑞典_youtube@资源分享师_124
+      - 意大利_youtube@资源分享师_125
+      - youtube@资源分享师_126
+      - 爱沙尼亚_youtube@资源分享师_127
+      - 荷兰_youtube@资源分享师_128
+      - 美国_youtube@资源分享师_129
+      - 日本_youtube@资源分享师_130
+      - 墨西哥_youtube@资源分享师_131
+      - 韩国_youtube@资源分享师_132
+      - 日本_youtube@资源分享师_133
+      - 葡萄牙_youtube@资源分享师_134
+      - 德国_youtube@资源分享师_135
+      - youtube@资源分享师_136
+      - 美国_youtube@资源分享师_137
+      - 香港_youtube@资源分享师_138
+      - youtube@资源分享师_139
+      - 塞浦路斯_youtube@资源分享师_140
+      - 塞浦路斯_youtube@资源分享师_141
+      - youtube@资源分享师_142
+      - youtube@资源分享师_143
+      - 阿拉伯联合酋长国_youtube@资源分享师_144
+      - 意大利_youtube@资源分享师_145
+      - youtube@资源分享师_146
+      - 德国_youtube@资源分享师_147
+      - youtube@资源分享师_148
+      - 新加坡_youtube@资源分享师_149
+      - 德国_youtube@资源分享师_150
+      - 美国_youtube@资源分享师_151
+      - youtube@资源分享师_152
+      - 亚美尼亚_youtube@资源分享师_153
+      - 德国_youtube@资源分享师_154
+      - youtube@资源分享师_155
+      - 意大利_youtube@资源分享师_156
+      - 墨西哥_youtube@资源分享师_157
+      - youtube@资源分享师_158
+      - 法国_youtube@资源分享师_159
+      - 荷兰_youtube@资源分享师_160
+      - 美国_youtube@资源分享师_161
+      - 美国_youtube@资源分享师_162
+      - 哈萨克斯坦_youtube@资源分享师_163
+      - 美国_youtube@资源分享师_164
+      - 日本_youtube@资源分享师_165
+      - 塞浦路斯_youtube@资源分享师_166
+      - youtube@资源分享师_167
+      - 泰国_youtube@资源分享师_168
+      - youtube@资源分享师_169
+      - youtube@资源分享师_170
+      - youtube@资源分享师_171
+      - 美国_youtube@资源分享师_172
+      - youtube@资源分享师_173
+      - 美国_youtube@资源分享师_174
+      - 美国_youtube@资源分享师_175
+      - 美国_youtube@资源分享师_176
+      - youtube@资源分享师_177
+      - youtube@资源分享师_178
+      - youtube@资源分享师_179
+      - 美国_youtube@资源分享师_180
+      - 摩尔多瓦_youtube@资源分享师_181
+      - 德国_youtube@资源分享师_182
+      - 爱沙尼亚_youtube@资源分享师_183
+      - 土耳其_youtube@资源分享师_184
+      - 西班牙_youtube@资源分享师_185
+      - 美国_youtube@资源分享师_186
+      - youtube@资源分享师_187
+      - youtube@资源分享师_188
+      - 瑞士_youtube@资源分享师_189
+      - youtube@资源分享师_190
+      - youtube@资源分享师_191
+      - youtube@资源分享师_192
+      - 阿拉伯联合酋长国_youtube@资源分享师_193
+      - 意大利_youtube@资源分享师_194
+      - 意大利_youtube@资源分享师_195
+      - 意大利_youtube@资源分享师_196
+      - 意大利_youtube@资源分享师_197
+      - 意大利_youtube@资源分享师_198
+      - 意大利_youtube@资源分享师_199
+      - 意大利_youtube@资源分享师_200
+      - 意大利_youtube@资源分享师_201
+      - 意大利_youtube@资源分享师_202
+      - 意大利_youtube@资源分享师_203
+      - 意大利_youtube@资源分享师_204
+      - 意大利_youtube@资源分享师_205
+      - youtube@资源分享师_206
+      - 意大利_youtube@资源分享师_207
+      - 意大利_youtube@资源分享师_208
+      - 意大利_youtube@资源分享师_209
+      - 意大利_youtube@资源分享师_210
+      - 意大利_youtube@资源分享师_211
+      - 意大利_youtube@资源分享师_212
+      - 意大利_youtube@资源分享师_213
+      - 日本_youtube@资源分享师_214
+      - youtube@资源分享师_215
+      - youtube@资源分享师_216
+      - 美国_youtube@资源分享师_217
+      - 俄罗斯_youtube@资源分享师_218
+  - name: 📲 电报信息
+    type: select
+    proxies:
+      - 🚀 节点选择
+      - 🎯 全球直连
+      - youtube@资源分享师_01
+      - 美国_youtube@资源分享师_02
+      - youtube@资源分享师_03
+      - youtube@资源分享师_04
+      - 意大利_youtube@资源分享师_05
+      - 美国_youtube@资源分享师_06
+      - 瑞士_youtube@资源分享师_07
+      - 美国_youtube@资源分享师_08
+      - youtube@资源分享师_09
+      - youtube@资源分享师_10
+      - youtube@资源分享师_11
+      - youtube@资源分享师_12
+      - youtube@资源分享师_13
+      - youtube@资源分享师_14
+      - youtube@资源分享师_15
+      - youtube@资源分享师_16
+      - youtube@资源分享师_17
+      - youtube@资源分享师_18
+      - youtube@资源分享师_19
+      - 美国_youtube@资源分享师_20
+      - youtube@资源分享师_21
+      - 美国_youtube@资源分享师_22
+      - youtube@资源分享师_23
+      - youtube@资源分享师_24
+      - youtube@资源分享师_25
+      - 美国_youtube@资源分享师_26
+      - youtube@资源分享师_27
+      - youtube@资源分享师_28
+      - youtube@资源分享师_29
+      - youtube@资源分享师_30
+      - youtube@资源分享师_31
+      - youtube@资源分享师_32
+      - 美国_youtube@资源分享师_33
+      - youtube@资源分享师_34
+      - youtube@资源分享师_35
+      - youtube@资源分享师_36
+      - 德国_youtube@资源分享师_37
+      - youtube@资源分享师_38
+      - youtube@资源分享师_39
+      - youtube@资源分享师_40
+      - youtube@资源分享师_41
+      - 美国_youtube@资源分享师_42
+      - youtube@资源分享师_43
+      - youtube@资源分享师_44
+      - youtube@资源分享师_45
+      - youtube@资源分享师_46
+      - youtube@资源分享师_47
+      - 韩国_youtube@资源分享师_48
+      - youtube@资源分享师_49
+      - 美国_youtube@资源分享师_50
+      - youtube@资源分享师_51
+      - youtube@资源分享师_52
+      - youtube@资源分享师_53
+      - youtube@资源分享师_54
+      - 美国_youtube@资源分享师_55
+      - 俄罗斯_youtube@资源分享师_56
+      - youtube@资源分享师_58
+      - 意大利_youtube@资源分享师_59
+      - 意大利_youtube@资源分享师_60
+      - 摩尔多瓦_youtube@资源分享师_61
+      - youtube@资源分享师_62
+      - youtube@资源分享师_63
+      - 香港_youtube@资源分享师_64
+      - 新加坡_youtube@资源分享师_66
+      - youtube@资源分享师_67
+      - 拉脱维亚_youtube@资源分享师_68
+      - youtube@资源分享师_69
+      - 美国_youtube@资源分享师_70
+      - 荷兰_youtube@资源分享师_71
+      - youtube@资源分享师_72
+      - youtube@资源分享师_73
+      - 波兰_youtube@资源分享师_74
+      - 新加坡_youtube@资源分享师_75
+      - 波兰_youtube@资源分享师_76
+      - 荷兰_youtube@资源分享师_77
+      - youtube@资源分享师_78
+      - youtube@资源分享师_79
+      - 西班牙_youtube@资源分享师_80
+      - youtube@资源分享师_81
+      - 瑞典_youtube@资源分享师_82
+      - 俄罗斯_youtube@资源分享师_83
+      - 新加坡_youtube@资源分享师_85
+      - youtube@资源分享师_86
+      - 日本_youtube@资源分享师_87
+      - 德国_youtube@资源分享师_88
+      - 瑞典_youtube@资源分享师_89
+      - youtube@资源分享师_90
+      - 香港_youtube@资源分享师_91
+      - 俄罗斯_youtube@资源分享师_92
+      - 意大利_youtube@资源分享师_93
+      - youtube@资源分享师_94
+      - youtube@资源分享师_95
+      - youtube@资源分享师_96
+      - 俄罗斯_youtube@资源分享师_97
+      - 斯洛文尼亚_youtube@资源分享师_98
+      - 瑞士_youtube@资源分享师_99
+      - 荷兰_youtube@资源分享师_100
+      - 新加坡_youtube@资源分享师_101
+      - youtube@资源分享师_102
+      - 匈牙利_youtube@资源分享师_104
+      - youtube@资源分享师_105
+      - 捷克_youtube@资源分享师_106
+      - youtube@资源分享师_107
+      - 意大利_youtube@资源分享师_108
+      - 美国_youtube@资源分享师_109
+      - 美国_youtube@资源分享师_110
+      - 越南_youtube@资源分享师_111
+      - youtube@资源分享师_112
+      - 阿拉伯联合酋长国_youtube@资源分享师_113
+      - 俄罗斯_youtube@资源分享师_114
+      - 英国_youtube@资源分享师_115
+      - 韩国_youtube@资源分享师_116
+      - 越南_youtube@资源分享师_117
+      - 意大利_youtube@资源分享师_118
+      - 俄罗斯_youtube@资源分享师_119
+      - youtube@资源分享师_120
+      - 美国_youtube@资源分享师_121
+      - youtube@资源分享师_122
+      - 挪威_youtube@资源分享师_123
+      - 瑞典_youtube@资源分享师_124
+      - 意大利_youtube@资源分享师_125
+      - youtube@资源分享师_126
+      - 爱沙尼亚_youtube@资源分享师_127
+      - 荷兰_youtube@资源分享师_128
+      - 美国_youtube@资源分享师_129
+      - 日本_youtube@资源分享师_130
+      - 墨西哥_youtube@资源分享师_131
+      - 韩国_youtube@资源分享师_132
+      - 日本_youtube@资源分享师_133
+      - 葡萄牙_youtube@资源分享师_134
+      - 德国_youtube@资源分享师_135
+      - youtube@资源分享师_136
+      - 美国_youtube@资源分享师_137
+      - 香港_youtube@资源分享师_138
+      - youtube@资源分享师_139
+      - 塞浦路斯_youtube@资源分享师_140
+      - 塞浦路斯_youtube@资源分享师_141
+      - youtube@资源分享师_142
+      - youtube@资源分享师_143
+      - 阿拉伯联合酋长国_youtube@资源分享师_144
+      - 意大利_youtube@资源分享师_145
+      - youtube@资源分享师_146
+      - 德国_youtube@资源分享师_147
+      - youtube@资源分享师_148
+      - 新加坡_youtube@资源分享师_149
+      - 德国_youtube@资源分享师_150
+      - 美国_youtube@资源分享师_151
+      - youtube@资源分享师_152
+      - 亚美尼亚_youtube@资源分享师_153
+      - 德国_youtube@资源分享师_154
+      - youtube@资源分享师_155
+      - 意大利_youtube@资源分享师_156
+      - 墨西哥_youtube@资源分享师_157
+      - youtube@资源分享师_158
+      - 法国_youtube@资源分享师_159
+      - 荷兰_youtube@资源分享师_160
+      - 美国_youtube@资源分享师_161
+      - 美国_youtube@资源分享师_162
+      - 哈萨克斯坦_youtube@资源分享师_163
+      - 美国_youtube@资源分享师_164
+      - 日本_youtube@资源分享师_165
+      - 塞浦路斯_youtube@资源分享师_166
+      - youtube@资源分享师_167
+      - 泰国_youtube@资源分享师_168
+      - youtube@资源分享师_169
+      - youtube@资源分享师_170
+      - youtube@资源分享师_171
+      - 美国_youtube@资源分享师_172
+      - youtube@资源分享师_173
+      - 美国_youtube@资源分享师_174
+      - 美国_youtube@资源分享师_175
+      - 美国_youtube@资源分享师_176
+      - youtube@资源分享师_177
+      - youtube@资源分享师_178
+      - youtube@资源分享师_179
+      - 美国_youtube@资源分享师_180
+      - 摩尔多瓦_youtube@资源分享师_181
+      - 德国_youtube@资源分享师_182
+      - 爱沙尼亚_youtube@资源分享师_183
+      - 土耳其_youtube@资源分享师_184
+      - 西班牙_youtube@资源分享师_185
+      - 美国_youtube@资源分享师_186
+      - youtube@资源分享师_187
+      - youtube@资源分享师_188
+      - 瑞士_youtube@资源分享师_189
+      - youtube@资源分享师_190
+      - youtube@资源分享师_191
+      - youtube@资源分享师_192
+      - 阿拉伯联合酋长国_youtube@资源分享师_193
+      - 意大利_youtube@资源分享师_194
+      - 意大利_youtube@资源分享师_195
+      - 意大利_youtube@资源分享师_196
+      - 意大利_youtube@资源分享师_197
+      - 意大利_youtube@资源分享师_198
+      - 意大利_youtube@资源分享师_199
+      - 意大利_youtube@资源分享师_200
+      - 意大利_youtube@资源分享师_201
+      - 意大利_youtube@资源分享师_202
+      - 意大利_youtube@资源分享师_203
+      - 意大利_youtube@资源分享师_204
+      - 意大利_youtube@资源分享师_205
+      - youtube@资源分享师_206
+      - 意大利_youtube@资源分享师_207
+      - 意大利_youtube@资源分享师_208
+      - 意大利_youtube@资源分享师_209
+      - 意大利_youtube@资源分享师_210
+      - 意大利_youtube@资源分享师_211
+      - 意大利_youtube@资源分享师_212
+      - 意大利_youtube@资源分享师_213
+      - 日本_youtube@资源分享师_214
+      - youtube@资源分享师_215
+      - youtube@资源分享师_216
+      - 美国_youtube@资源分享师_217
+      - 俄罗斯_youtube@资源分享师_218
+  - name: Ⓜ️ 微软服务
+    type: select
+    proxies:
+      - 🎯 全球直连
+      - 🚀 节点选择
+      - youtube@资源分享师_01
+      - 美国_youtube@资源分享师_02
+      - youtube@资源分享师_03
+      - youtube@资源分享师_04
+      - 意大利_youtube@资源分享师_05
+      - 美国_youtube@资源分享师_06
+      - 瑞士_youtube@资源分享师_07
+      - 美国_youtube@资源分享师_08
+      - youtube@资源分享师_09
+      - youtube@资源分享师_10
+      - youtube@资源分享师_11
+      - youtube@资源分享师_12
+      - youtube@资源分享师_13
+      - youtube@资源分享师_14
+      - youtube@资源分享师_15
+      - youtube@资源分享师_16
+      - youtube@资源分享师_17
+      - youtube@资源分享师_18
+      - youtube@资源分享师_19
+      - 美国_youtube@资源分享师_20
+      - youtube@资源分享师_21
+      - 美国_youtube@资源分享师_22
+      - youtube@资源分享师_23
+      - youtube@资源分享师_24
+      - youtube@资源分享师_25
+      - 美国_youtube@资源分享师_26
+      - youtube@资源分享师_27
+      - youtube@资源分享师_28
+      - youtube@资源分享师_29
+      - youtube@资源分享师_30
+      - youtube@资源分享师_31
+      - youtube@资源分享师_32
+      - 美国_youtube@资源分享师_33
+      - youtube@资源分享师_34
+      - youtube@资源分享师_35
+      - youtube@资源分享师_36
+      - 德国_youtube@资源分享师_37
+      - youtube@资源分享师_38
+      - youtube@资源分享师_39
+      - youtube@资源分享师_40
+      - youtube@资源分享师_41
+      - 美国_youtube@资源分享师_42
+      - youtube@资源分享师_43
+      - youtube@资源分享师_44
+      - youtube@资源分享师_45
+      - youtube@资源分享师_46
+      - youtube@资源分享师_47
+      - 韩国_youtube@资源分享师_48
+      - youtube@资源分享师_49
+      - 美国_youtube@资源分享师_50
+      - youtube@资源分享师_51
+      - youtube@资源分享师_52
+      - youtube@资源分享师_53
+      - youtube@资源分享师_54
+      - 美国_youtube@资源分享师_55
+      - 俄罗斯_youtube@资源分享师_56
+      - youtube@资源分享师_58
+      - 意大利_youtube@资源分享师_59
+      - 意大利_youtube@资源分享师_60
+      - 摩尔多瓦_youtube@资源分享师_61
+      - youtube@资源分享师_62
+      - youtube@资源分享师_63
+      - 香港_youtube@资源分享师_64
+      - 新加坡_youtube@资源分享师_66
+      - youtube@资源分享师_67
+      - 拉脱维亚_youtube@资源分享师_68
+      - youtube@资源分享师_69
+      - 美国_youtube@资源分享师_70
+      - 荷兰_youtube@资源分享师_71
+      - youtube@资源分享师_72
+      - youtube@资源分享师_73
+      - 波兰_youtube@资源分享师_74
+      - 新加坡_youtube@资源分享师_75
+      - 波兰_youtube@资源分享师_76
+      - 荷兰_youtube@资源分享师_77
+      - youtube@资源分享师_78
+      - youtube@资源分享师_79
+      - 西班牙_youtube@资源分享师_80
+      - youtube@资源分享师_81
+      - 瑞典_youtube@资源分享师_82
+      - 俄罗斯_youtube@资源分享师_83
+      - 新加坡_youtube@资源分享师_85
+      - youtube@资源分享师_86
+      - 日本_youtube@资源分享师_87
+      - 德国_youtube@资源分享师_88
+      - 瑞典_youtube@资源分享师_89
+      - youtube@资源分享师_90
+      - 香港_youtube@资源分享师_91
+      - 俄罗斯_youtube@资源分享师_92
+      - 意大利_youtube@资源分享师_93
+      - youtube@资源分享师_94
+      - youtube@资源分享师_95
+      - youtube@资源分享师_96
+      - 俄罗斯_youtube@资源分享师_97
+      - 斯洛文尼亚_youtube@资源分享师_98
+      - 瑞士_youtube@资源分享师_99
+      - 荷兰_youtube@资源分享师_100
+      - 新加坡_youtube@资源分享师_101
+      - youtube@资源分享师_102
+      - 匈牙利_youtube@资源分享师_104
+      - youtube@资源分享师_105
+      - 捷克_youtube@资源分享师_106
+      - youtube@资源分享师_107
+      - 意大利_youtube@资源分享师_108
+      - 美国_youtube@资源分享师_109
+      - 美国_youtube@资源分享师_110
+      - 越南_youtube@资源分享师_111
+      - youtube@资源分享师_112
+      - 阿拉伯联合酋长国_youtube@资源分享师_113
+      - 俄罗斯_youtube@资源分享师_114
+      - 英国_youtube@资源分享师_115
+      - 韩国_youtube@资源分享师_116
+      - 越南_youtube@资源分享师_117
+      - 意大利_youtube@资源分享师_118
+      - 俄罗斯_youtube@资源分享师_119
+      - youtube@资源分享师_120
+      - 美国_youtube@资源分享师_121
+      - youtube@资源分享师_122
+      - 挪威_youtube@资源分享师_123
+      - 瑞典_youtube@资源分享师_124
+      - 意大利_youtube@资源分享师_125
+      - youtube@资源分享师_126
+      - 爱沙尼亚_youtube@资源分享师_127
+      - 荷兰_youtube@资源分享师_128
+      - 美国_youtube@资源分享师_129
+      - 日本_youtube@资源分享师_130
+      - 墨西哥_youtube@资源分享师_131
+      - 韩国_youtube@资源分享师_132
+      - 日本_youtube@资源分享师_133
+      - 葡萄牙_youtube@资源分享师_134
+      - 德国_youtube@资源分享师_135
+      - youtube@资源分享师_136
+      - 美国_youtube@资源分享师_137
+      - 香港_youtube@资源分享师_138
+      - youtube@资源分享师_139
+      - 塞浦路斯_youtube@资源分享师_140
+      - 塞浦路斯_youtube@资源分享师_141
+      - youtube@资源分享师_142
+      - youtube@资源分享师_143
+      - 阿拉伯联合酋长国_youtube@资源分享师_144
+      - 意大利_youtube@资源分享师_145
+      - youtube@资源分享师_146
+      - 德国_youtube@资源分享师_147
+      - youtube@资源分享师_148
+      - 新加坡_youtube@资源分享师_149
+      - 德国_youtube@资源分享师_150
+      - 美国_youtube@资源分享师_151
+      - youtube@资源分享师_152
+      - 亚美尼亚_youtube@资源分享师_153
+      - 德国_youtube@资源分享师_154
+      - youtube@资源分享师_155
+      - 意大利_youtube@资源分享师_156
+      - 墨西哥_youtube@资源分享师_157
+      - youtube@资源分享师_158
+      - 法国_youtube@资源分享师_159
+      - 荷兰_youtube@资源分享师_160
+      - 美国_youtube@资源分享师_161
+      - 美国_youtube@资源分享师_162
+      - 哈萨克斯坦_youtube@资源分享师_163
+      - 美国_youtube@资源分享师_164
+      - 日本_youtube@资源分享师_165
+      - 塞浦路斯_youtube@资源分享师_166
+      - youtube@资源分享师_167
+      - 泰国_youtube@资源分享师_168
+      - youtube@资源分享师_169
+      - youtube@资源分享师_170
+      - youtube@资源分享师_171
+      - 美国_youtube@资源分享师_172
+      - youtube@资源分享师_173
+      - 美国_youtube@资源分享师_174
+      - 美国_youtube@资源分享师_175
+      - 美国_youtube@资源分享师_176
+      - youtube@资源分享师_177
+      - youtube@资源分享师_178
+      - youtube@资源分享师_179
+      - 美国_youtube@资源分享师_180
+      - 摩尔多瓦_youtube@资源分享师_181
+      - 德国_youtube@资源分享师_182
+      - 爱沙尼亚_youtube@资源分享师_183
+      - 土耳其_youtube@资源分享师_184
+      - 西班牙_youtube@资源分享师_185
+      - 美国_youtube@资源分享师_186
+      - youtube@资源分享师_187
+      - youtube@资源分享师_188
+      - 瑞士_youtube@资源分享师_189
+      - youtube@资源分享师_190
+      - youtube@资源分享师_191
+      - youtube@资源分享师_192
+      - 阿拉伯联合酋长国_youtube@资源分享师_193
+      - 意大利_youtube@资源分享师_194
+      - 意大利_youtube@资源分享师_195
+      - 意大利_youtube@资源分享师_196
+      - 意大利_youtube@资源分享师_197
+      - 意大利_youtube@资源分享师_198
+      - 意大利_youtube@资源分享师_199
+      - 意大利_youtube@资源分享师_200
+      - 意大利_youtube@资源分享师_201
+      - 意大利_youtube@资源分享师_202
+      - 意大利_youtube@资源分享师_203
+      - 意大利_youtube@资源分享师_204
+      - 意大利_youtube@资源分享师_205
+      - youtube@资源分享师_206
+      - 意大利_youtube@资源分享师_207
+      - 意大利_youtube@资源分享师_208
+      - 意大利_youtube@资源分享师_209
+      - 意大利_youtube@资源分享师_210
+      - 意大利_youtube@资源分享师_211
+      - 意大利_youtube@资源分享师_212
+      - 意大利_youtube@资源分享师_213
+      - 日本_youtube@资源分享师_214
+      - youtube@资源分享师_215
+      - youtube@资源分享师_216
+      - 美国_youtube@资源分享师_217
+      - 俄罗斯_youtube@资源分享师_218
+  - name: 🍎 苹果服务
+    type: select
+    proxies:
+      - 🚀 节点选择
+      - 🎯 全球直连
+      - youtube@资源分享师_01
+      - 美国_youtube@资源分享师_02
+      - youtube@资源分享师_03
+      - youtube@资源分享师_04
+      - 意大利_youtube@资源分享师_05
+      - 美国_youtube@资源分享师_06
+      - 瑞士_youtube@资源分享师_07
+      - 美国_youtube@资源分享师_08
+      - youtube@资源分享师_09
+      - youtube@资源分享师_10
+      - youtube@资源分享师_11
+      - youtube@资源分享师_12
+      - youtube@资源分享师_13
+      - youtube@资源分享师_14
+      - youtube@资源分享师_15
+      - youtube@资源分享师_16
+      - youtube@资源分享师_17
+      - youtube@资源分享师_18
+      - youtube@资源分享师_19
+      - 美国_youtube@资源分享师_20
+      - youtube@资源分享师_21
+      - 美国_youtube@资源分享师_22
+      - youtube@资源分享师_23
+      - youtube@资源分享师_24
+      - youtube@资源分享师_25
+      - 美国_youtube@资源分享师_26
+      - youtube@资源分享师_27
+      - youtube@资源分享师_28
+      - youtube@资源分享师_29
+      - youtube@资源分享师_30
+      - youtube@资源分享师_31
+      - youtube@资源分享师_32
+      - 美国_youtube@资源分享师_33
+      - youtube@资源分享师_34
+      - youtube@资源分享师_35
+      - youtube@资源分享师_36
+      - 德国_youtube@资源分享师_37
+      - youtube@资源分享师_38
+      - youtube@资源分享师_39
+      - youtube@资源分享师_40
+      - youtube@资源分享师_41
+      - 美国_youtube@资源分享师_42
+      - youtube@资源分享师_43
+      - youtube@资源分享师_44
+      - youtube@资源分享师_45
+      - youtube@资源分享师_46
+      - youtube@资源分享师_47
+      - 韩国_youtube@资源分享师_48
+      - youtube@资源分享师_49
+      - 美国_youtube@资源分享师_50
+      - youtube@资源分享师_51
+      - youtube@资源分享师_52
+      - youtube@资源分享师_53
+      - youtube@资源分享师_54
+      - 美国_youtube@资源分享师_55
+      - 俄罗斯_youtube@资源分享师_56
+      - youtube@资源分享师_58
+      - 意大利_youtube@资源分享师_59
+      - 意大利_youtube@资源分享师_60
+      - 摩尔多瓦_youtube@资源分享师_61
+      - youtube@资源分享师_62
+      - youtube@资源分享师_63
+      - 香港_youtube@资源分享师_64
+      - 新加坡_youtube@资源分享师_66
+      - youtube@资源分享师_67
+      - 拉脱维亚_youtube@资源分享师_68
+      - youtube@资源分享师_69
+      - 美国_youtube@资源分享师_70
+      - 荷兰_youtube@资源分享师_71
+      - youtube@资源分享师_72
+      - youtube@资源分享师_73
+      - 波兰_youtube@资源分享师_74
+      - 新加坡_youtube@资源分享师_75
+      - 波兰_youtube@资源分享师_76
+      - 荷兰_youtube@资源分享师_77
+      - youtube@资源分享师_78
+      - youtube@资源分享师_79
+      - 西班牙_youtube@资源分享师_80
+      - youtube@资源分享师_81
+      - 瑞典_youtube@资源分享师_82
+      - 俄罗斯_youtube@资源分享师_83
+      - 新加坡_youtube@资源分享师_85
+      - youtube@资源分享师_86
+      - 日本_youtube@资源分享师_87
+      - 德国_youtube@资源分享师_88
+      - 瑞典_youtube@资源分享师_89
+      - youtube@资源分享师_90
+      - 香港_youtube@资源分享师_91
+      - 俄罗斯_youtube@资源分享师_92
+      - 意大利_youtube@资源分享师_93
+      - youtube@资源分享师_94
+      - youtube@资源分享师_95
+      - youtube@资源分享师_96
+      - 俄罗斯_youtube@资源分享师_97
+      - 斯洛文尼亚_youtube@资源分享师_98
+      - 瑞士_youtube@资源分享师_99
+      - 荷兰_youtube@资源分享师_100
+      - 新加坡_youtube@资源分享师_101
+      - youtube@资源分享师_102
+      - 匈牙利_youtube@资源分享师_104
+      - youtube@资源分享师_105
+      - 捷克_youtube@资源分享师_106
+      - youtube@资源分享师_107
+      - 意大利_youtube@资源分享师_108
+      - 美国_youtube@资源分享师_109
+      - 美国_youtube@资源分享师_110
+      - 越南_youtube@资源分享师_111
+      - youtube@资源分享师_112
+      - 阿拉伯联合酋长国_youtube@资源分享师_113
+      - 俄罗斯_youtube@资源分享师_114
+      - 英国_youtube@资源分享师_115
+      - 韩国_youtube@资源分享师_116
+      - 越南_youtube@资源分享师_117
+      - 意大利_youtube@资源分享师_118
+      - 俄罗斯_youtube@资源分享师_119
+      - youtube@资源分享师_120
+      - 美国_youtube@资源分享师_121
+      - youtube@资源分享师_122
+      - 挪威_youtube@资源分享师_123
+      - 瑞典_youtube@资源分享师_124
+      - 意大利_youtube@资源分享师_125
+      - youtube@资源分享师_126
+      - 爱沙尼亚_youtube@资源分享师_127
+      - 荷兰_youtube@资源分享师_128
+      - 美国_youtube@资源分享师_129
+      - 日本_youtube@资源分享师_130
+      - 墨西哥_youtube@资源分享师_131
+      - 韩国_youtube@资源分享师_132
+      - 日本_youtube@资源分享师_133
+      - 葡萄牙_youtube@资源分享师_134
+      - 德国_youtube@资源分享师_135
+      - youtube@资源分享师_136
+      - 美国_youtube@资源分享师_137
+      - 香港_youtube@资源分享师_138
+      - youtube@资源分享师_139
+      - 塞浦路斯_youtube@资源分享师_140
+      - 塞浦路斯_youtube@资源分享师_141
+      - youtube@资源分享师_142
+      - youtube@资源分享师_143
+      - 阿拉伯联合酋长国_youtube@资源分享师_144
+      - 意大利_youtube@资源分享师_145
+      - youtube@资源分享师_146
+      - 德国_youtube@资源分享师_147
+      - youtube@资源分享师_148
+      - 新加坡_youtube@资源分享师_149
+      - 德国_youtube@资源分享师_150
+      - 美国_youtube@资源分享师_151
+      - youtube@资源分享师_152
+      - 亚美尼亚_youtube@资源分享师_153
+      - 德国_youtube@资源分享师_154
+      - youtube@资源分享师_155
+      - 意大利_youtube@资源分享师_156
+      - 墨西哥_youtube@资源分享师_157
+      - youtube@资源分享师_158
+      - 法国_youtube@资源分享师_159
+      - 荷兰_youtube@资源分享师_160
+      - 美国_youtube@资源分享师_161
+      - 美国_youtube@资源分享师_162
+      - 哈萨克斯坦_youtube@资源分享师_163
+      - 美国_youtube@资源分享师_164
+      - 日本_youtube@资源分享师_165
+      - 塞浦路斯_youtube@资源分享师_166
+      - youtube@资源分享师_167
+      - 泰国_youtube@资源分享师_168
+      - youtube@资源分享师_169
+      - youtube@资源分享师_170
+      - youtube@资源分享师_171
+      - 美国_youtube@资源分享师_172
+      - youtube@资源分享师_173
+      - 美国_youtube@资源分享师_174
+      - 美国_youtube@资源分享师_175
+      - 美国_youtube@资源分享师_176
+      - youtube@资源分享师_177
+      - youtube@资源分享师_178
+      - youtube@资源分享师_179
+      - 美国_youtube@资源分享师_180
+      - 摩尔多瓦_youtube@资源分享师_181
+      - 德国_youtube@资源分享师_182
+      - 爱沙尼亚_youtube@资源分享师_183
+      - 土耳其_youtube@资源分享师_184
+      - 西班牙_youtube@资源分享师_185
+      - 美国_youtube@资源分享师_186
+      - youtube@资源分享师_187
+      - youtube@资源分享师_188
+      - 瑞士_youtube@资源分享师_189
+      - youtube@资源分享师_190
+      - youtube@资源分享师_191
+      - youtube@资源分享师_192
+      - 阿拉伯联合酋长国_youtube@资源分享师_193
+      - 意大利_youtube@资源分享师_194
+      - 意大利_youtube@资源分享师_195
+      - 意大利_youtube@资源分享师_196
+      - 意大利_youtube@资源分享师_197
+      - 意大利_youtube@资源分享师_198
+      - 意大利_youtube@资源分享师_199
+      - 意大利_youtube@资源分享师_200
+      - 意大利_youtube@资源分享师_201
+      - 意大利_youtube@资源分享师_202
+      - 意大利_youtube@资源分享师_203
+      - 意大利_youtube@资源分享师_204
+      - 意大利_youtube@资源分享师_205
+      - youtube@资源分享师_206
+      - 意大利_youtube@资源分享师_207
+      - 意大利_youtube@资源分享师_208
+      - 意大利_youtube@资源分享师_209
+      - 意大利_youtube@资源分享师_210
+      - 意大利_youtube@资源分享师_211
+      - 意大利_youtube@资源分享师_212
+      - 意大利_youtube@资源分享师_213
+      - 日本_youtube@资源分享师_214
+      - youtube@资源分享师_215
+      - youtube@资源分享师_216
+      - 美国_youtube@资源分享师_217
+      - 俄罗斯_youtube@资源分享师_218
+  - name: 🎯 全球直连
+    type: select
+    proxies:
+      - DIRECT
+      - 🚀 节点选择
+      - ♻️ 自动选择
+  - name: 🛑 全球拦截
+    type: select
+    proxies:
+      - REJECT
+      - DIRECT
+  - name: 🍃 应用净化
+    type: select
+    proxies:
+      - REJECT
+      - DIRECT
+  - name: 🐟 漏网之鱼
+    type: select
+    proxies:
+      - 🚀 节点选择
+      - 🎯 全球直连
+      - ♻️ 自动选择
+      - youtube@资源分享师_01
+      - 美国_youtube@资源分享师_02
+      - youtube@资源分享师_03
+      - youtube@资源分享师_04
+      - 意大利_youtube@资源分享师_05
+      - 美国_youtube@资源分享师_06
+      - 瑞士_youtube@资源分享师_07
+      - 美国_youtube@资源分享师_08
+      - youtube@资源分享师_09
+      - youtube@资源分享师_10
+      - youtube@资源分享师_11
+      - youtube@资源分享师_12
+      - youtube@资源分享师_13
+      - youtube@资源分享师_14
+      - youtube@资源分享师_15
+      - youtube@资源分享师_16
+      - youtube@资源分享师_17
+      - youtube@资源分享师_18
+      - youtube@资源分享师_19
+      - 美国_youtube@资源分享师_20
+      - youtube@资源分享师_21
+      - 美国_youtube@资源分享师_22
+      - youtube@资源分享师_23
+      - youtube@资源分享师_24
+      - youtube@资源分享师_25
+      - 美国_youtube@资源分享师_26
+      - youtube@资源分享师_27
+      - youtube@资源分享师_28
+      - youtube@资源分享师_29
+      - youtube@资源分享师_30
+      - youtube@资源分享师_31
+      - youtube@资源分享师_32
+      - 美国_youtube@资源分享师_33
+      - youtube@资源分享师_34
+      - youtube@资源分享师_35
+      - youtube@资源分享师_36
+      - 德国_youtube@资源分享师_37
+      - youtube@资源分享师_38
+      - youtube@资源分享师_39
+      - youtube@资源分享师_40
+      - youtube@资源分享师_41
+      - 美国_youtube@资源分享师_42
+      - youtube@资源分享师_43
+      - youtube@资源分享师_44
+      - youtube@资源分享师_45
+      - youtube@资源分享师_46
+      - youtube@资源分享师_47
+      - 韩国_youtube@资源分享师_48
+      - youtube@资源分享师_49
+      - 美国_youtube@资源分享师_50
+      - youtube@资源分享师_51
+      - youtube@资源分享师_52
+      - youtube@资源分享师_53
+      - youtube@资源分享师_54
+      - 美国_youtube@资源分享师_55
+      - 俄罗斯_youtube@资源分享师_56
+      - youtube@资源分享师_58
+      - 意大利_youtube@资源分享师_59
+      - 意大利_youtube@资源分享师_60
+      - 摩尔多瓦_youtube@资源分享师_61
+      - youtube@资源分享师_62
+      - youtube@资源分享师_63
+      - 香港_youtube@资源分享师_64
+      - 新加坡_youtube@资源分享师_66
+      - youtube@资源分享师_67
+      - 拉脱维亚_youtube@资源分享师_68
+      - youtube@资源分享师_69
+      - 美国_youtube@资源分享师_70
+      - 荷兰_youtube@资源分享师_71
+      - youtube@资源分享师_72
+      - youtube@资源分享师_73
+      - 波兰_youtube@资源分享师_74
+      - 新加坡_youtube@资源分享师_75
+      - 波兰_youtube@资源分享师_76
+      - 荷兰_youtube@资源分享师_77
+      - youtube@资源分享师_78
+      - youtube@资源分享师_79
+      - 西班牙_youtube@资源分享师_80
+      - youtube@资源分享师_81
+      - 瑞典_youtube@资源分享师_82
+      - 俄罗斯_youtube@资源分享师_83
+      - 新加坡_youtube@资源分享师_85
+      - youtube@资源分享师_86
+      - 日本_youtube@资源分享师_87
+      - 德国_youtube@资源分享师_88
+      - 瑞典_youtube@资源分享师_89
+      - youtube@资源分享师_90
+      - 香港_youtube@资源分享师_91
+      - 俄罗斯_youtube@资源分享师_92
+      - 意大利_youtube@资源分享师_93
+      - youtube@资源分享师_94
+      - youtube@资源分享师_95
+      - youtube@资源分享师_96
+      - 俄罗斯_youtube@资源分享师_97
+      - 斯洛文尼亚_youtube@资源分享师_98
+      - 瑞士_youtube@资源分享师_99
+      - 荷兰_youtube@资源分享师_100
+      - 新加坡_youtube@资源分享师_101
+      - youtube@资源分享师_102
+      - 匈牙利_youtube@资源分享师_104
+      - youtube@资源分享师_105
+      - 捷克_youtube@资源分享师_106
+      - youtube@资源分享师_107
+      - 意大利_youtube@资源分享师_108
+      - 美国_youtube@资源分享师_109
+      - 美国_youtube@资源分享师_110
+      - 越南_youtube@资源分享师_111
+      - youtube@资源分享师_112
+      - 阿拉伯联合酋长国_youtube@资源分享师_113
+      - 俄罗斯_youtube@资源分享师_114
+      - 英国_youtube@资源分享师_115
+      - 韩国_youtube@资源分享师_116
+      - 越南_youtube@资源分享师_117
+      - 意大利_youtube@资源分享师_118
+      - 俄罗斯_youtube@资源分享师_119
+      - youtube@资源分享师_120
+      - 美国_youtube@资源分享师_121
+      - youtube@资源分享师_122
+      - 挪威_youtube@资源分享师_123
+      - 瑞典_youtube@资源分享师_124
+      - 意大利_youtube@资源分享师_125
+      - youtube@资源分享师_126
+      - 爱沙尼亚_youtube@资源分享师_127
+      - 荷兰_youtube@资源分享师_128
+      - 美国_youtube@资源分享师_129
+      - 日本_youtube@资源分享师_130
+      - 墨西哥_youtube@资源分享师_131
+      - 韩国_youtube@资源分享师_132
+      - 日本_youtube@资源分享师_133
+      - 葡萄牙_youtube@资源分享师_134
+      - 德国_youtube@资源分享师_135
+      - youtube@资源分享师_136
+      - 美国_youtube@资源分享师_137
+      - 香港_youtube@资源分享师_138
+      - youtube@资源分享师_139
+      - 塞浦路斯_youtube@资源分享师_140
+      - 塞浦路斯_youtube@资源分享师_141
+      - youtube@资源分享师_142
+      - youtube@资源分享师_143
+      - 阿拉伯联合酋长国_youtube@资源分享师_144
+      - 意大利_youtube@资源分享师_145
+      - youtube@资源分享师_146
+      - 德国_youtube@资源分享师_147
+      - youtube@资源分享师_148
+      - 新加坡_youtube@资源分享师_149
+      - 德国_youtube@资源分享师_150
+      - 美国_youtube@资源分享师_151
+      - youtube@资源分享师_152
+      - 亚美尼亚_youtube@资源分享师_153
+      - 德国_youtube@资源分享师_154
+      - youtube@资源分享师_155
+      - 意大利_youtube@资源分享师_156
+      - 墨西哥_youtube@资源分享师_157
+      - youtube@资源分享师_158
+      - 法国_youtube@资源分享师_159
+      - 荷兰_youtube@资源分享师_160
+      - 美国_youtube@资源分享师_161
+      - 美国_youtube@资源分享师_162
+      - 哈萨克斯坦_youtube@资源分享师_163
+      - 美国_youtube@资源分享师_164
+      - 日本_youtube@资源分享师_165
+      - 塞浦路斯_youtube@资源分享师_166
+      - youtube@资源分享师_167
+      - 泰国_youtube@资源分享师_168
+      - youtube@资源分享师_169
+      - youtube@资源分享师_170
+      - youtube@资源分享师_171
+      - 美国_youtube@资源分享师_172
+      - youtube@资源分享师_173
+      - 美国_youtube@资源分享师_174
+      - 美国_youtube@资源分享师_175
+      - 美国_youtube@资源分享师_176
+      - youtube@资源分享师_177
+      - youtube@资源分享师_178
+      - youtube@资源分享师_179
+      - 美国_youtube@资源分享师_180
+      - 摩尔多瓦_youtube@资源分享师_181
+      - 德国_youtube@资源分享师_182
+      - 爱沙尼亚_youtube@资源分享师_183
+      - 土耳其_youtube@资源分享师_184
+      - 西班牙_youtube@资源分享师_185
+      - 美国_youtube@资源分享师_186
+      - youtube@资源分享师_187
+      - youtube@资源分享师_188
+      - 瑞士_youtube@资源分享师_189
+      - youtube@资源分享师_190
+      - youtube@资源分享师_191
+      - youtube@资源分享师_192
+      - 阿拉伯联合酋长国_youtube@资源分享师_193
+      - 意大利_youtube@资源分享师_194
+      - 意大利_youtube@资源分享师_195
+      - 意大利_youtube@资源分享师_196
+      - 意大利_youtube@资源分享师_197
+      - 意大利_youtube@资源分享师_198
+      - 意大利_youtube@资源分享师_199
+      - 意大利_youtube@资源分享师_200
+      - 意大利_youtube@资源分享师_201
+      - 意大利_youtube@资源分享师_202
+      - 意大利_youtube@资源分享师_203
+      - 意大利_youtube@资源分享师_204
+      - 意大利_youtube@资源分享师_205
+      - youtube@资源分享师_206
+      - 意大利_youtube@资源分享师_207
+      - 意大利_youtube@资源分享师_208
+      - 意大利_youtube@资源分享师_209
+      - 意大利_youtube@资源分享师_210
+      - 意大利_youtube@资源分享师_211
+      - 意大利_youtube@资源分享师_212
+      - 意大利_youtube@资源分享师_213
+      - 日本_youtube@资源分享师_214
+      - youtube@资源分享师_215
+      - youtube@资源分享师_216
+      - 美国_youtube@资源分享师_217
+      - 俄罗斯_youtube@资源分享师_218
+rule-providers:
+  LocalAreaNetwork:
+    type: http
+    behavior: classical
+    format: text
+    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/LocalAreaNetwork.list
+    path: ./rules/LocalAreaNetwork.list
+    interval: 86400
+  BanAD:
+    type: http
+    behavior: classical
+    format: text
+    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/BanAD.list
+    path: ./rules/BanAD.list
+    interval: 86400
+  BanProgramAD:
+    type: http
+    behavior: classical
+    format: text
+    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/BanProgramAD.list
+    path: ./rules/BanProgramAD.list
+    interval: 86400
+  GoogleCN:
+    type: http
+    behavior: classical
+    format: text
+    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/GoogleCN.list
+    path: ./rules/GoogleCN.list
+    interval: 86400
+  SteamCN:
+    type: http
+    behavior: classical
+    format: text
+    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/SteamCN.list
+    path: ./rules/SteamCN.list
+    interval: 86400
+  Microsoft:
+    type: http
+    behavior: classical
+    format: text
+    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Microsoft.list
+    path: ./rules/Microsoft.list
+    interval: 86400
+  Apple:
+    type: http
+    behavior: classical
+    format: text
+    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Apple.list
+    path: ./rules/Apple.list
+    interval: 86400
+  ProxyMedia:
+    type: http
+    behavior: classical
+    format: text
+    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ProxyMedia.list
+    path: ./rules/ProxyMedia.list
+    interval: 86400
+  Telegram:
+    type: http
+    behavior: classical
+    format: text
+    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Telegram.list
+    path: ./rules/Telegram.list
+    interval: 86400
+  ProxyLite:
+    type: http
+    behavior: classical
+    format: text
+    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ProxyLite.list
+    path: ./rules/ProxyLite.list
+    interval: 86400
+  ChinaDomain:
+    type: http
+    behavior: classical
+    format: text
+    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ChinaDomain.list
+    path: ./rules/ChinaDomain.list
+    interval: 86400
+  ChinaCompanyIp:
+    type: http
+    behavior: classical
+    format: text
+    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ChinaCompanyIp.list
+    path: ./rules/ChinaCompanyIp.list
+    interval: 86400
+rules:
+  - DOMAIN-SUFFIX,nodebuf.com,🚀 节点选择
+  - RULE-SET,LocalAreaNetwork,🎯 全球直连
+  - RULE-SET,BanAD,🛑 全球拦截
+  - RULE-SET,BanProgramAD,🍃 应用净化
+  - RULE-SET,GoogleCN,🎯 全球直连
+  - RULE-SET,SteamCN,🎯 全球直连
+  - RULE-SET,Microsoft,Ⓜ️ 微软服务
+  - RULE-SET,Apple,🍎 苹果服务
+  - RULE-SET,ProxyMedia,🌍 国外媒体
+  - RULE-SET,Telegram,📲 电报信息
+  - RULE-SET,ProxyLite,🚀 节点选择
+  - RULE-SET,ChinaDomain,🎯 全球直连
+  - RULE-SET,ChinaCompanyIp,🎯 全球直连
+  - GEOIP,CN,🎯 全球直连
+  - MATCH,🐟 漏网之鱼
