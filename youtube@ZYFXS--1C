@@ -1,0 +1,2038 @@
+mixed-port: 7890
+allow-lan: false
+mode: rule
+log-level: warning
+ipv6: true
+dns:
+  enable: true
+  listen: 127.0.0.1:1053
+  ipv6: true
+  prefer-h3: false
+  enhanced-mode: fake-ip
+  fake-ip-range: 198.18.0.1/16
+  fake-ip-filter-mode: blacklist
+  fake-ip-filter:
+    - localhost
+    - +.localhost
+    - +.lan
+    - +.local
+    - +.home.arpa
+  use-hosts: true
+  use-system-hosts: true
+  respect-rules: true
+  default-nameserver:
+    - https://223.5.5.5/dns-query#DIRECT
+    - https://223.6.6.6/dns-query#DIRECT
+  proxy-server-nameserver:
+    - https://223.5.5.5/dns-query#DIRECT
+    - https://223.6.6.6/dns-query#DIRECT
+  direct-nameserver:
+    - https://223.5.5.5/dns-query#DIRECT
+    - https://doh.pub/dns-query#DIRECT
+  direct-nameserver-follow-policy: false
+  nameserver-policy:
+    geosite:cn:
+      - https://223.5.5.5/dns-query#DIRECT
+      - https://doh.pub/dns-query#DIRECT
+  nameserver:
+    - https://1.1.1.1/dns-query
+    - https://1.0.0.1/dns-query
+proxies:
+  - type: vless
+    name: youtube@资源分享师_01
+    server: 104.18.152.233
+    port: 443
+    uuid: 08b006dc-17e4-411d-9528-4369d72ad646
+    udp: true
+    tls: true
+    servername: support.zoom.us.ex33r.eu.cc
+    sni: support.zoom.us.ex33r.eu.cc
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /sg-melbi
+      headers:
+        Host: support.zoom.us.ex33r.eu.cc
+  - type: trojan
+    name: youtube@资源分享师_02
+    server: 172.64.145.133
+    port: 443
+    password: humanity
+    udp: true
+    tls: true
+    servername: www.pleadcourt.org
+    sni: www.pleadcourt.org
+    skip-cert-verify: false
+    client-fingerprint: unsafe
+    network: ws
+    ws-opts:
+      path: /assignment
+      headers:
+        Host: www.pleadcourt.org
+  - type: vless
+    name: 🇭🇰_香港_youtube@资源分享师_03
+    server: 152.175.6.229
+    port: 31884
+    uuid: e9a8144e-5237-488a-afb1-9ca3d8d54c80
+    udp: true
+    tls: true
+    servername: hk010.zestapp778.com
+    sni: hk010.zestapp778.com
+    skip-cert-verify: false
+    client-fingerprint: firefox
+  - type: vless
+    name: 🇺🇸_美国_youtube@资源分享师_04
+    server: 141.193.213.10
+    port: 443
+    uuid: a321980f-54ce-432a-862a-76035b9d78ad
+    udp: true
+    tls: true
+    servername: m.udemy.com.r3xxe.eu.cc
+    sni: m.udemy.com.r3xxe.eu.cc
+    skip-cert-verify: false
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: /nl-tw
+      headers:
+        Host: m.udemy.com.r3xxe.eu.cc
+  - type: vless
+    name: 🇷🇺_俄罗斯_youtube@资源分享师_05
+    server: 213.159.209.66
+    port: 443
+    uuid: afbd410e-1663-4f40-9d3b-df5117aa23ca
+    flow: xtls-rprx-vision
+    udp: true
+    tls: true
+    servername: ru11.oshost.network
+    sni: ru11.oshost.network
+    skip-cert-verify: false
+    client-fingerprint: firefox
+    reality-opts:
+      public-key: 52fsWySqEpUvCt-jbEy2rYjVIZBYwoqsGfmSef8_UgI
+      short-id: 97a15f5af85c4a30
+  - type: vless
+    name: youtube@资源分享师_06
+    server: nexusmods.com
+    port: 443
+    uuid: 44d636ef-7056-4bdf-a3f4-acabe2adfc6f
+    udp: true
+    tls: true
+    servername: oyj7.zw9.hhll.vavava.kdns.fr
+    sni: oyj7.zw9.hhll.vavava.kdns.fr
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /?auto=1&ed=2560
+      headers:
+        Host: oyj7.zw9.hhll.vavava.kdns.fr
+  - type: vless
+    name: 🇩🇪_德国_youtube@资源分享师_07
+    server: 178.105.133.160
+    port: 4443
+    uuid: fb0818b3-4031-4843-b5f7-1d75177a1758
+    udp: true
+    tls: true
+    servername: jln31qtswdkut5.60kohcognywybguuq3ouc818oofnxfvn35daott.workers.dev
+    sni: jln31qtswdkut5.60kohcognywybguuq3ouc818oofnxfvn35daott.workers.dev
+    skip-cert-verify: false
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: /@Marisa_kristi
+      headers:
+        Host: jln31qtswdkut5.60kohcognywybguuq3ouc818oofnxfvn35daott.workers.dev
+  - type: vless
+    name: 🇷🇺_俄罗斯_youtube@资源分享师_10
+    server: 87.242.119.253
+    port: 443
+    uuid: aba9cdd4-026c-0001-87a9-9b3e5f24dd82
+    udp: true
+    tls: true
+    servername: hvtlr-ru-47sb.fade.mom
+    sni: hvtlr-ru-47sb.fade.mom
+    skip-cert-verify: false
+    alpn:
+      - "[http/1.1"
+    client-fingerprint: qq
+  - type: vless
+    name: 🇷🇺_俄罗斯_youtube@资源分享师_11
+    server: 87.242.119.253
+    port: 443
+    uuid: aba9cdd4-026c-0001-87a9-9b3e5f24dd82
+    udp: true
+    tls: true
+    servername: hvtlr-ru-47sb.fade.mom
+    sni: hvtlr-ru-47sb.fade.mom
+    skip-cert-verify: false
+    alpn:
+      - http/1.1
+      - h2
+    client-fingerprint: qq
+  - type: vless
+    name: 🇵🇱_波兰_youtube@资源分享师_12
+    server: 185.16.38.132
+    port: 443
+    uuid: 8007dda2-aed2-4514-8299-6e3edbdb015b
+    flow: xtls-rprx-vision
+    udp: true
+    tls: true
+    servername: pl1.magazinnarubeva.ru
+    sni: pl1.magazinnarubeva.ru
+    skip-cert-verify: false
+    reality-opts:
+      public-key: jIq_COD-tIXTvgDn-TslFGtB_a8HVgUOOIlUByv8fkg
+      short-id: 8718c58d3d51db59
+  - type: vless
+    name: 🇷🇺_俄罗斯_youtube@资源分享师_13
+    server: 87.242.119.253
+    port: 443
+    uuid: aba9cdd4-026c-0001-87a9-9b3e5f24dd82
+    udp: true
+    tls: true
+    servername: hvtlr-ru-47sb.fade.mom
+    sni: hvtlr-ru-47sb.fade.mom
+    skip-cert-verify: false
+    alpn:
+      - http/1.1
+      - h2
+    client-fingerprint: edge
+  - type: trojan
+    name: youtube@资源分享师_14
+    server: 104.17.0.1
+    port: 443
+    password: humanity
+    udp: true
+    tls: true
+    servername: www.calmlunch.com
+    sni: www.calmlunch.com
+    skip-cert-verify: false
+    alpn:
+      - http/1.1
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: /assignment
+      headers:
+        Host: www.calmlunch.com
+  - type: trojan
+    name: youtube@资源分享师_15
+    server: 104.21.0.1
+    port: 443
+    password: humanity
+    udp: true
+    tls: true
+    servername: www.calmlunch.com
+    sni: www.calmlunch.com
+    skip-cert-verify: false
+    alpn:
+      - http/1.1
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: /assignment?ed
+      headers:
+        Host: www.calmlunch.com
+  - type: trojan
+    name: 🇺🇸_美国_youtube@资源分享师_17
+    server: 172.66.0.1
+    port: 443
+    password: humanity
+    udp: true
+    tls: true
+    servername: www.calmlunch.com
+    sni: www.calmlunch.com
+    skip-cert-verify: false
+    alpn:
+      - http/1.1
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: /assignment
+      headers:
+        Host: www.calmlunch.com
+  - type: vless
+    name: 🇺🇸_美国_youtube@资源分享师_18
+    server: 13.143.184.226
+    port: 443
+    uuid: 6158d429-74fe-4415-aae5-5ead48c2ecfa
+    flow: xtls-rprx-vision
+    udp: true
+    tls: true
+    servername: msc1.serverslocal.ru
+    sni: msc1.serverslocal.ru
+    skip-cert-verify: false
+    client-fingerprint: firefox
+    reality-opts:
+      public-key: qPh1iuwpELosLWTxOXyfCiMghs_sjSzCOGbkiF0gdkk
+      short-id: f7e66e308136e1a1
+  - type: ss
+    name: 🇮🇹_意大利_youtube@资源分享师_20
+    server: 202.50.253.90
+    port: 19999
+    password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+    cipher: aes-256-gcm
+    udp: true
+    tls: false
+    skip-cert-verify: false
+  - type: vless
+    name: youtube@资源分享师_21
+    server: youxuan.cf.090227.xyz
+    port: 443
+    uuid: 44d636ef-7056-4bdf-a3f4-acabe2adfc6f
+    udp: true
+    tls: true
+    servername: oyj7.zw9.hhll.vavava.kdns.fr
+    sni: oyj7.zw9.hhll.vavava.kdns.fr
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /?auto=1&ed=2560
+      headers:
+        Host: oyj7.zw9.hhll.vavava.kdns.fr
+  - type: trojan
+    name: youtube@资源分享师_22
+    server: 104.27.0.1
+    port: 443
+    password: humanity
+    udp: true
+    tls: true
+    servername: www.calmlunch.com
+    sni: www.calmlunch.com
+    skip-cert-verify: false
+    alpn:
+      - http/1.1
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: //assignment?TELEGRAM--B2Hub-B2Hub-B2Hub-B2Hub-B2Hub-B2Hub-B2Hub-B2Hub-B2Hub-B2Hub--TELEGRAM
+      headers:
+        Host: www.calmlunch.com
+  - type: vless
+    name: 🇵🇱_波兰_youtube@资源分享师_24
+    server: 179.253.179.109
+    port: 63053
+    uuid: e3aa3d22-a95e-407b-aacc-d855b90a5d70
+    udp: true
+    tls: true
+    servername: de2.derevohom.xyz
+    sni: de2.derevohom.xyz
+    skip-cert-verify: false
+    client-fingerprint: chrome
+  - type: vless
+    name: youtube@资源分享师_25
+    server: nexusmods.com
+    port: 443
+    uuid: 44d636ef-7056-4bdf-a3f4-acabe2adfc6f
+    udp: true
+    tls: true
+    servername: oyj7.zw9.hhll.vavava.kdns.fr
+    sni: oyj7.zw9.hhll.vavava.kdns.fr
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /?auto=1&ed=2560
+      headers:
+        Host: oyj7.zw9.hhll.vavava.kdns.fr
+  - type: trojan
+    name: youtube@资源分享师_26
+    server: 104.16.75.127
+    port: 443
+    password: 45c47cfa-67da-47e0-b20b-5efa674e6a9b
+    udp: true
+    tls: true
+    servername: unnes.ac.id.r3xxe.eu.cc
+    sni: unnes.ac.id.r3xxe.eu.cc
+    skip-cert-verify: false
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: /us-gllc
+  - type: vless
+    name: youtube@资源分享师_27
+    server: 104.18.155.229
+    port: 443
+    uuid: 42026ed0-7d74-4585-8e46-0fe6aa4d665a
+    udp: true
+    tls: true
+    servername: www.genflix.co.id.r3xxe.eu.cc
+    sni: www.genflix.co.id.r3xxe.eu.cc
+    skip-cert-verify: false
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: /au-do
+      headers:
+        Host: www.genflix.co.id.r3xxe.eu.cc
+  - type: vless
+    name: 🇺🇸_美国_youtube@资源分享师_28
+    server: 209.46.30.149
+    port: 443
+    uuid: 933e8995-3b6d-4d42-8b23-e649f0e7205f
+    udp: true
+    tls: true
+    servername: resources.office.com.r3xxe.eu.cc
+    sni: resources.office.com.r3xxe.eu.cc
+    skip-cert-verify: false
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: /us-gllc
+      headers:
+        Host: resources.office.com.r3xxe.eu.cc
+  - type: vless
+    name: 🇵🇱_波兰_youtube@资源分享师_29
+    server: 179.253.179.109
+    port: 57043
+    uuid: da8fab8e-4a25-4eb0-b224-88ab96c753ce
+    udp: true
+    tls: true
+    servername: 87.121.86.24
+    sni: 87.121.86.24
+    skip-cert-verify: false
+    client-fingerprint: firefox
+  - type: vless
+    name: 🇺🇸_美国_youtube@资源分享师_30
+    server: 151.101.65.242
+    port: 443
+    uuid: a3108d14-1f45-4f82-bb36-e2c41bdab527
+    udp: true
+    tls: true
+    servername: grimness-backlogs.cdn-content.com
+    sni: grimness-backlogs.cdn-content.com
+    skip-cert-verify: false
+    alpn:
+      - http/1.1
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: /ws
+      headers:
+        Host: grimness-backlogs.cdn-content.com
+  - type: vless
+    name: 🇯🇵_日本_youtube@资源分享师_31
+    server: 203.137.165.164
+    port: 57554
+    uuid: 0985e268-5c1c-4141-9d96-139f8046c47c
+    udp: true
+    tls: true
+    servername: kqjifhg9rw.tradsc8p9xp7wxyqmc1wy0ah.workers.dev
+    sni: kqjifhg9rw.tradsc8p9xp7wxyqmc1wy0ah.workers.dev
+    skip-cert-verify: false
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: /@Marisa_kristi
+      headers:
+        Host: kqjifhg9rw.tradsc8p9xp7wxyqmc1wy0ah.workers.dev
+  - type: vless
+    name: 🇰🇿_哈萨克斯坦_youtube@资源分享师_33
+    server: 95.56.251.12
+    port: 47443
+    uuid: 1fe01c8a-ab37-4e95-bbfc-95d4a608931e
+    flow: xtls-rprx-vision
+    udp: true
+    tls: true
+    servername: kz1.waspnest.space
+    sni: kz1.waspnest.space
+    skip-cert-verify: false
+    client-fingerprint: firefox
+    reality-opts:
+      public-key: z1GSwCEACvO9RLcMVpcURiT8er4oeIdeSJhraw_0cGU
+      short-id: ae97223a8f799877
+  - type: vless
+    name: youtube@资源分享师_34
+    server: www.buydomains.com
+    port: 443
+    uuid: 4d945644-69ab-47e0-98b3-d43a6313135d
+    udp: true
+    tls: true
+    servername: mhoX6Xz96zGe3qv5HISuFj9B.paGeS.DEV
+    sni: mhoX6Xz96zGe3qv5HISuFj9B.paGeS.DEV
+    skip-cert-verify: false
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: /vl/SaXqikbSPA3ImtmZKAFin?ed=2560
+      headers:
+        Host: mhoX6Xz96zGe3qv5HISuFj9B.paGeS.DEV
+  - type: vless
+    name: 🇺🇸_美国_youtube@资源分享师_35
+    server: 151.101.129.242
+    port: 443
+    uuid: da546ae1-49ee-4d95-9727-49708192125b
+    udp: true
+    tls: true
+    servername: ghosts-spasm.quick-cdn.net
+    sni: ghosts-spasm.quick-cdn.net
+    skip-cert-verify: false
+    alpn:
+      - http/1.1
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: /ws
+      headers:
+        Host: ghosts-spasm.quick-cdn.net
+  - type: trojan
+    name: 🇨🇭_瑞士_youtube@资源分享师_36
+    server: 185.18.250.252
+    port: 443
+    password: 74480619-b6a8-4ab8-94e1-1132fc18b2fa
+    udp: true
+    tls: true
+    servername: unnes.ac.id.r3xxe.eu.cc
+    sni: unnes.ac.id.r3xxe.eu.cc
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /au-mt
+      headers:
+        Host: unnes.ac.id.r3xxe.eu.cc
+  - type: vless
+    name: 🇺🇸_美国_youtube@资源分享师_37
+    server: 151.101.193.242
+    port: 443
+    uuid: da546ae1-49ee-4d95-9727-49708192125b
+    udp: true
+    tls: true
+    servername: grimness-backlogs.cdn-content.com
+    sni: grimness-backlogs.cdn-content.com
+    skip-cert-verify: false
+    alpn:
+      - http/1.1
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: /ws
+      headers:
+        Host: grimness-backlogs.cdn-content.com
+  - type: vless
+    name: 🇺🇸_美国_youtube@资源分享师_38
+    server: 151.101.193.242
+    port: 443
+    uuid: a3108d14-1f45-4f82-bb36-e2c41bdab527
+    udp: true
+    tls: true
+    servername: grimness-backlogs.cdn-content.com
+    sni: grimness-backlogs.cdn-content.com
+    skip-cert-verify: false
+    alpn:
+      - http/1.1
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: /ws
+      headers:
+        Host: grimness-backlogs.cdn-content.com
+  - type: vless
+    name: 🇵🇱_波兰_youtube@资源分享师_39
+    server: 45.198.0.88
+    port: 443
+    uuid: 8263aa5b-601d-4e05-b61d-a70e15d97869
+    flow: xtls-rprx-vision
+    udp: true
+    tls: true
+    servername: pl1.edge.rbullet.net
+    sni: pl1.edge.rbullet.net
+    skip-cert-verify: false
+    client-fingerprint: firefox
+    reality-opts:
+      public-key: GG5vpbtQpYpZkAa3qQfLe3f9kzym3EU5t8_MYUkX_z0
+      short-id: 458374ae
+  - type: vless
+    name: 🇪🇸_西班牙_youtube@资源分享师_40
+    server: 179.255.189.51
+    port: 443
+    uuid: 8263aa5b-601d-4e05-b61d-a70e15d97869
+    flow: xtls-rprx-vision
+    udp: true
+    tls: true
+    servername: es.edge.rbullet.net
+    sni: es.edge.rbullet.net
+    skip-cert-verify: false
+    reality-opts:
+      public-key: 3O_L8f5d9jboj5k0fijL5tsT-i2S4QB5NYnOu-n2Nmw
+      short-id: b2f67ff6e4699ece
+  - type: vless
+    name: 🇵🇱_波兰_youtube@资源分享师_41
+    server: 179.253.179.109
+    port: 63053
+    uuid: e3aa3d22-a95e-407b-aacc-d855b90a5d70
+    udp: true
+    tls: true
+    servername: de2.derevohom.xyz
+    sni: de2.derevohom.xyz
+    skip-cert-verify: false
+    client-fingerprint: chrome
+  - type: vless
+    name: youtube@资源分享师_42
+    server: 104.17.44.17
+    port: 443
+    uuid: d37a75db-76b6-4db8-b213-0d5b044d138d
+    udp: true
+    tls: true
+    servername: top-e4s.pages.dev
+    sni: top-e4s.pages.dev
+    skip-cert-verify: false
+    client-fingerprint: unsafe
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: top-e4s.pages.dev
+  - type: ss
+    name: 🇷🇺_俄罗斯_youtube@资源分享师_43
+    server: 46.17.46.27
+    port: 18443
+    password: cCMJgJTA3BA489YUYrFq7XHXSiSpWlLa
+    cipher: aes-256-gcm
+    udp: true
+    tls: false
+    skip-cert-verify: false
+  - type: vless
+    name: youtube@资源分享师_44
+    server: cf.090227.xyz
+    port: 443
+    uuid: 5b374761-e26c-4117-8af8-5c637992fcbf
+    udp: true
+    tls: true
+    servername: vls.baiyi.cloudns.org
+    sni: vls.baiyi.cloudns.org
+    skip-cert-verify: false
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: /?ed=2560
+      headers:
+        Host: vls.baiyi.cloudns.org
+  - type: vless
+    name: 🇨🇭_瑞士_youtube@资源分享师_45
+    server: 195.141.65.98
+    port: 443
+    uuid: 53f03acd-fec1-6685-fc8f-03baf9550cb8
+    udp: true
+    tls: true
+    servername: 148-253-210-191.sslip.io
+    sni: 148-253-210-191.sslip.io
+    skip-cert-verify: false
+    client-fingerprint: ios
+    network: ws
+    ws-opts:
+      path: /test-ws
+      headers:
+        Host: 148-253-210-191.sslip.io
+  - type: vless
+    name: 🇨🇭_瑞士_youtube@资源分享师_46
+    server: 195.141.65.98
+    port: 443
+    uuid: 53f03acd-fec1-6685-fc8f-03baf9550cb8
+    udp: true
+    tls: true
+    servername: 148-253-210-191.sslip.io
+    sni: 148-253-210-191.sslip.io
+    skip-cert-verify: false
+    client-fingerprint: safari
+    network: ws
+    ws-opts:
+      path: /test-ws
+      headers:
+        Host: 148-253-210-191.sslip.io
+  - type: trojan
+    name: 🇺🇸_美国_youtube@资源分享师_47
+    server: 141.193.213.172
+    port: 443
+    password: humanity
+    udp: true
+    tls: true
+    servername: www.calmlunch.com
+    sni: www.calmlunch.com
+    skip-cert-verify: false
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: /assignment
+      headers:
+        Host: www.calmlunch.com
+  - type: trojan
+    name: 🇺🇸_美国_youtube@资源分享师_48
+    server: 141.193.213.172
+    port: 443
+    password: humanity
+    udp: true
+    tls: true
+    servername: www.calmlunch.com
+    sni: www.calmlunch.com
+    skip-cert-verify: false
+    client-fingerprint: firefox
+    network: ws
+    ws-opts:
+      path: /assignment
+      headers:
+        Host: www.calmlunch.com
+  - type: vless
+    name: 🇷🇺_俄罗斯_youtube@资源分享师_50
+    server: 185.186.143.76
+    port: 443
+    uuid: 2c0a296d-3b2a-4529-9ba6-8484aecbc14b
+    udp: true
+    tls: true
+    servername: ru-kitchen.ru
+    sni: ru-kitchen.ru
+    skip-cert-verify: false
+    client-fingerprint: edge
+    reality-opts:
+      public-key: 6vDdlh4aAipoRQ-IXDjzTUtKpZS09xtNXIisCa__2CM
+      short-id: f74c6a18133e2e72
+    network: grpc
+    grpc-opts:
+      grpc-service-name: grpc
+  - type: vless
+    name: 🇷🇺_俄罗斯_youtube@资源分享师_51
+    server: 185.186.143.76
+    port: 443
+    uuid: 2c0a296d-3b2a-4529-9ba6-8484aecbc14b
+    udp: true
+    tls: true
+    servername: ru-kitchen.ru
+    sni: ru-kitchen.ru
+    skip-cert-verify: false
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: 6vDdlh4aAipoRQ-IXDjzTUtKpZS09xtNXIisCa__2CM
+      short-id: f74c6a18133e2e72
+    network: grpc
+    grpc-opts:
+      grpc-service-name: grpc
+  - type: vless
+    name: 🇷🇺_俄罗斯_youtube@资源分享师_52
+    server: 185.186.143.76
+    port: 443
+    uuid: 2c0a296d-3b2a-4529-9ba6-8484aecbc14b
+    udp: true
+    tls: true
+    servername: ru-kitchen.ru
+    sni: ru-kitchen.ru
+    skip-cert-verify: false
+    client-fingerprint: ios
+    reality-opts:
+      public-key: 6vDdlh4aAipoRQ-IXDjzTUtKpZS09xtNXIisCa__2CM
+      short-id: f74c6a18133e2e72
+    network: grpc
+    grpc-opts:
+      grpc-service-name: grpc
+  - type: vless
+    name: 🇷🇺_俄罗斯_youtube@资源分享师_55
+    server: 46.254.19.164
+    port: 443
+    uuid: a5212bcb-ab85-459a-bec6-9f259eeeebfa
+    udp: true
+    tls: true
+    servername: wtb.tems.bet
+    sni: wtb.tems.bet
+    skip-cert-verify: false
+    client-fingerprint: firefox
+    reality-opts:
+      public-key: 3qgZ9UlB-y1i9jx_zQQBgiNgFHz6fPQdP9gMMl4zXiM
+      short-id: 8937c9ed2d470352
+  - type: vless
+    name: 🇷🇺_俄罗斯_youtube@资源分享师_56
+    server: 46.254.19.164
+    port: 443
+    uuid: a5212bcb-ab85-459a-bec6-9f259eeeebfa
+    udp: true
+    tls: true
+    servername: wtb.tems.bet
+    sni: wtb.tems.bet
+    skip-cert-verify: false
+    client-fingerprint: random
+    reality-opts:
+      public-key: 3qgZ9UlB-y1i9jx_zQQBgiNgFHz6fPQdP9gMMl4zXiM
+      short-id: 8937c9ed2d470352
+  - type: vless
+    name: 🇷🇺_俄罗斯_youtube@资源分享师_57
+    server: 87.242.119.253
+    port: 443
+    uuid: aba9cdd4-026c-0001-87a9-9b3e5f24dd82
+    udp: true
+    tls: true
+    servername: hvtlr-ru-47sb.fade.mom
+    sni: hvtlr-ru-47sb.fade.mom
+    skip-cert-verify: false
+    client-fingerprint: edge
+  - type: vless
+    name: 🇷🇺_俄罗斯_youtube@资源分享师_58
+    server: 87.242.119.253
+    port: 443
+    uuid: aba9cdd4-026c-0001-87a9-9b3e5f24dd82
+    udp: true
+    tls: true
+    servername: hvtlr-ru-47sb.fade.mom
+    sni: hvtlr-ru-47sb.fade.mom
+    skip-cert-verify: false
+    client-fingerprint: qq
+  - type: vless
+    name: 🇷🇺_俄罗斯_youtube@资源分享师_59
+    server: 87.242.119.253
+    port: 443
+    uuid: aba9cdd4-026c-0001-87a9-9b3e5f24dd82
+    udp: true
+    tls: true
+    servername: hvtlr-ru-47sb.fade.mom
+    sni: hvtlr-ru-47sb.fade.mom
+    skip-cert-verify: false
+    alpn:
+      - http/1.1
+      - h2
+    client-fingerprint: ios
+  - type: vless
+    name: 🇷🇺_俄罗斯_youtube@资源分享师_60
+    server: 87.242.119.253
+    port: 443
+    uuid: aba9cdd4-026c-0001-87a9-9b3e5f24dd82
+    udp: true
+    tls: true
+    servername: hvtlr-ru-47sb.fade.mom
+    sni: hvtlr-ru-47sb.fade.mom
+    skip-cert-verify: false
+  - type: vless
+    name: 🇷🇺_俄罗斯_youtube@资源分享师_61
+    server: 87.242.119.253
+    port: 443
+    uuid: aba9cdd4-026c-0001-87a9-9b3e5f24dd82
+    udp: true
+    tls: true
+    servername: hvtlr-ru-47sb.fade.mom
+    sni: hvtlr-ru-47sb.fade.mom
+    skip-cert-verify: false
+    alpn:
+      - '["%5Bhttp%2F1.1"]'
+  - type: vless
+    name: 🇷🇺_俄罗斯_youtube@资源分享师_62
+    server: 87.242.119.253
+    port: 443
+    uuid: aba9cdd4-026c-0001-87a9-9b3e5f24dd82
+    udp: true
+    tls: true
+    servername: hvtlr-ru-47sb.fade.mom
+    sni: hvtlr-ru-47sb.fade.mom
+    skip-cert-verify: false
+    client-fingerprint: qq
+  - type: trojan
+    name: 🇷🇺_俄罗斯_youtube@资源分享师_63
+    server: 176.114.95.242
+    port: 443
+    password: UAKWGor-h0woFsxKSWK92HptcM0g2k2h
+    udp: true
+    tls: true
+    servername: us-1.1984.love
+    sni: us-1.1984.love
+    skip-cert-verify: false
+    client-fingerprint: safari
+  - type: vless
+    name: 🇷🇺_俄罗斯_youtube@资源分享师_64
+    server: 146.185.197.95
+    port: 443
+    uuid: 9ea8b000-58ce-0005-b108-989dd4f248f1
+    udp: true
+    tls: false
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /live/ws2
+  - type: trojan
+    name: 🇺🇸_美国_youtube@资源分享师_65
+    server: 162.159.140.245
+    port: 443
+    password: humanity
+    udp: true
+    tls: true
+    servername: www.calmlunch.com
+    sni: www.calmlunch.com
+    skip-cert-verify: false
+    client-fingerprint: unsafe
+    network: ws
+    ws-opts:
+      path: /assignment?ed#Telegram---MTMVPN---MTMVPN---MTMVPN---MTMVPN
+      headers:
+        Host: www.calmlunch.com
+  - type: vless
+    name: 🇺🇸_美国_youtube@资源分享师_67
+    server: wwww.qarvian.ir
+    port: 443
+    uuid: 780aa2f6-1a02-4fa2-bcd0-fa7d469bdff7
+    udp: true
+    tls: true
+    servername: cdn.akamai.steamstatic.com
+    sni: cdn.akamai.steamstatic.com
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: copy_az_channel_NUFiLTER_7i.global.ssl.fastly.net.
+  - type: vless
+    name: 🇷🇺_俄罗斯_youtube@资源分享师_68
+    server: 46.254.19.164
+    port: 443
+    uuid: a5212bcb-ab85-459a-bec6-9f259eeeebfa
+    udp: true
+    tls: true
+    servername: wtb.tems.bet
+    sni: wtb.tems.bet
+    skip-cert-verify: false
+    client-fingerprint: firefox
+    reality-opts:
+      public-key: 3qgZ9UlB-y1i9jx_zQQBgiNgFHz6fPQdP9gMMl4zXiM
+      short-id: 8937c9ed2d470352
+  - type: vless
+    name: 🇨🇾_塞浦路斯_youtube@资源分享师_70
+    server: 5.253.28.240
+    port: 2443
+    uuid: 5e679ccd-1586-4d5f-b87b-48251046cad8
+    udp: true
+    tls: true
+    servername: deepl.com
+    sni: deepl.com
+    skip-cert-verify: false
+    client-fingerprint: firefox
+    reality-opts:
+      public-key: h85e28MxBgNyT9d9cNeOLVtWfHq6cT_1_oxZOTajtTg
+      short-id: 92c32de179e5d908
+    network: grpc
+    grpc-opts:
+      grpc-service-name: rex-eb0bf76b710ce763
+  - type: vless
+    name: 🇺🇸_美国_youtube@资源分享师_71
+    server: 151.101.1.242
+    port: 443
+    uuid: da546ae1-49ee-4d95-9727-49708192125b
+    udp: true
+    tls: true
+    servername: ghosts-spasm.quick-cdn.net
+    sni: ghosts-spasm.quick-cdn.net
+    skip-cert-verify: false
+    alpn:
+      - http/1.1
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: /ws
+      headers:
+        Host: ghosts-spasm.quick-cdn.net
+  - type: vless
+    name: 🇺🇸_美国_youtube@资源分享师_72
+    server: 151.101.65.242
+    port: 443
+    uuid: da546ae1-49ee-4d95-9727-49708192125b
+    udp: true
+    tls: true
+    servername: ghosts-spasm.quick-cdn.net
+    sni: ghosts-spasm.quick-cdn.net
+    skip-cert-verify: false
+    alpn:
+      - http/1.1
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: /ws
+      headers:
+        Host: ghosts-spasm.quick-cdn.net
+  - type: trojan
+    name: youtube@资源分享师_73
+    server: 104.16.72.70
+    port: 443
+    password: 74480619-b6a8-4ab8-94e1-1132fc18b2fa
+    udp: true
+    tls: true
+    servername: unnes.ac.id.r3xxe.eu.cc
+    sni: unnes.ac.id.r3xxe.eu.cc
+    skip-cert-verify: false
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: /au-mt
+  - type: vless
+    name: 🇺🇸_美国_youtube@资源分享师_74
+    server: 151.101.129.242
+    port: 443
+    uuid: 1b3837df-41d5-4740-8a36-467ea03adfc3
+    udp: true
+    tls: true
+    servername: adheres-scruple.quick-cdn.net
+    sni: adheres-scruple.quick-cdn.net
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /ws
+      headers:
+        Host: adheres-scruple.quick-cdn.net
+  - type: vless
+    name: 🇺🇸_美国_youtube@资源分享师_75
+    server: 151.101.1.242
+    port: 443
+    uuid: 1b3837df-41d5-4740-8a36-467ea03adfc3
+    udp: true
+    tls: true
+    servername: adheres-scruple.quick-cdn.net
+    sni: adheres-scruple.quick-cdn.net
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /ws
+      headers:
+        Host: adheres-scruple.quick-cdn.net
+  - type: vless
+    name: youtube@资源分享师_76
+    server: 172.67.161.104
+    port: 443
+    uuid: 767b6340-96dc-4aa0-8013-a8af7513d920
+    udp: true
+    tls: true
+    servername: c7dabe95.proxy-978.pages.dev
+    sni: c7dabe95.proxy-978.pages.dev
+    skip-cert-verify: false
+    client-fingerprint: random
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: c7dabe95.proxy-978.pages.dev
+  - type: vless
+    name: 🇺🇸_美国_youtube@资源分享师_77
+    server: 151.101.129.242
+    port: 443
+    uuid: a3108d14-1f45-4f82-bb36-e2c41bdab527
+    udp: true
+    tls: true
+    servername: grimness-backlogs.cdn-content.com
+    sni: grimness-backlogs.cdn-content.com
+    skip-cert-verify: false
+    alpn:
+      - http/1.1
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: /ws
+      headers:
+        Host: grimness-backlogs.cdn-content.com
+  - type: vless
+    name: 🇦🇱_阿尔巴尼亚_youtube@资源分享师_78
+    server: 151.123.187.198
+    port: 443
+    uuid: b24ad12f-f6ce-4f0b-a264-d58a76104026
+    flow: xtls-rprx-vision
+    udp: true
+    tls: true
+    servername: al2.magazinnarubeva.ru
+    sni: al2.magazinnarubeva.ru
+    skip-cert-verify: false
+    reality-opts:
+      public-key: trN5x0amt2YuVzF2vZnK294YBAuh_zl5QkZjPyWz-TI
+      short-id: 8718c58d3d51db59
+  - type: vless
+    name: 🇨🇾_塞浦路斯_youtube@资源分享师_79
+    server: 5.253.28.240
+    port: 2443
+    uuid: 5e679ccd-1586-4d5f-b87b-48251046cad8
+    udp: true
+    tls: true
+    servername: deepl.com
+    sni: deepl.com
+    skip-cert-verify: false
+    client-fingerprint: qq
+    reality-opts:
+      public-key: h85e28MxBgNyT9d9cNeOLVtWfHq6cT_1_oxZOTajtTg
+      short-id: 92c32de179e5d908
+    network: grpc
+    grpc-opts:
+      grpc-service-name: rex-eb0bf76b710ce763
+  - type: vless
+    name: 🇨🇾_塞浦路斯_youtube@资源分享师_80
+    server: 5.253.28.240
+    port: 2443
+    uuid: 5e679ccd-1586-4d5f-b87b-48251046cad8
+    udp: true
+    tls: true
+    servername: deepl.com
+    sni: deepl.com
+    skip-cert-verify: false
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: h85e28MxBgNyT9d9cNeOLVtWfHq6cT_1_oxZOTajtTg
+      short-id: 92c32de179e5d908
+    network: grpc
+    grpc-opts:
+      grpc-service-name: rex-eb0bf76b710ce763
+  - type: ss
+    name: 🇮🇹_意大利_youtube@资源分享师_81
+    server: 202.50.253.18
+    port: 19999
+    password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+    cipher: aes-256-gcm
+    udp: true
+    tls: false
+    skip-cert-verify: false
+  - type: ss
+    name: 🇮🇹_意大利_youtube@资源分享师_82
+    server: 202.50.253.36
+    port: 19999
+    password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+    cipher: aes-256-gcm
+    udp: true
+    tls: false
+    skip-cert-verify: false
+  - type: ss
+    name: 🇮🇹_意大利_youtube@资源分享师_83
+    server: 202.50.253.54
+    port: 19999
+    password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+    cipher: aes-256-gcm
+    udp: true
+    tls: false
+    skip-cert-verify: false
+  - type: ss
+    name: 🇮🇹_意大利_youtube@资源分享师_84
+    server: 202.50.253.63
+    port: 19999
+    password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+    cipher: aes-256-gcm
+    udp: true
+    tls: false
+    skip-cert-verify: false
+  - type: ss
+    name: 🇮🇹_意大利_youtube@资源分享师_85
+    server: 202.50.253.99
+    port: 19999
+    password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+    cipher: aes-256-gcm
+    udp: true
+    tls: false
+    skip-cert-verify: false
+  - type: ss
+    name: 🇮🇹_意大利_youtube@资源分享师_86
+    server: 202.50.253.27
+    port: 19999
+    password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+    cipher: aes-256-gcm
+    udp: true
+    tls: false
+    skip-cert-verify: false
+  - type: ss
+    name: 🇮🇹_意大利_youtube@资源分享师_87
+    server: 202.50.253.72
+    port: 19999
+    password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+    cipher: aes-256-gcm
+    udp: true
+    tls: false
+    skip-cert-verify: false
+  - type: ss
+    name: 🇮🇹_意大利_youtube@资源分享师_88
+    server: 202.50.253.36
+    port: 19999
+    password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+    cipher: aes-256-gcm
+    udp: true
+    tls: false
+    skip-cert-verify: false
+  - type: vless
+    name: youtube@资源分享师_89
+    server: youxuan.cf.090227.xyz
+    port: 443
+    uuid: 44d636ef-7056-4bdf-a3f4-acabe2adfc6f
+    udp: true
+    tls: true
+    servername: oyj7.zw9.hhll.vavava.kdns.fr
+    sni: oyj7.zw9.hhll.vavava.kdns.fr
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: /?auto=1&ed=2560
+      headers:
+        Host: oyj7.zw9.hhll.vavava.kdns.fr
+  - type: vless
+    name: 🇷🇺_俄罗斯_youtube@资源分享师_90
+    server: 87.242.119.253
+    port: 443
+    uuid: aba9cdd4-026c-0001-87a9-9b3e5f24dd82
+    udp: true
+    tls: true
+    servername: hvtlr-ru-47sb.fade.mom
+    sni: hvtlr-ru-47sb.fade.mom
+    skip-cert-verify: false
+    alpn:
+      - http/1.1
+      - h2
+    client-fingerprint: qq
+  - type: vless
+    name: youtube@资源分享师_91
+    server: 172.64.149.88
+    port: 443
+    uuid: d37a75db-76b6-4db8-b213-0d5b044d138d
+    udp: true
+    tls: true
+    servername: top-e4s.pages.dev
+    sni: top-e4s.pages.dev
+    skip-cert-verify: false
+    client-fingerprint: unsafe
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: top-e4s.pages.dev
+  - type: vless
+    name: youtube@资源分享师_93
+    server: 172.64.152.19
+    port: 443
+    uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+    udp: true
+    tls: true
+    servername: jp3.yohototo.top
+    sni: jp3.yohototo.top
+    skip-cert-verify: false
+    client-fingerprint: unsafe
+    network: ws
+    ws-opts:
+      path: /tyxyws
+      headers:
+        Host: jp3.yohototo.top
+  - type: vless
+    name: 🇷🇺_俄罗斯_youtube@资源分享师_94
+    server: 200.169.184.168
+    port: 443
+    uuid: 6036c28a-8db2-432e-8118-ff0c16641ad0
+    flow: xtls-rprx-vision
+    udp: true
+    tls: true
+    servername: net.formatgo.ru
+    sni: net.formatgo.ru
+    skip-cert-verify: false
+    client-fingerprint: firefox
+    reality-opts:
+      public-key: QnaizqXrXA0e4XihP_5Nf1z1aOOf0obBoyJ8QY_03kw
+      short-id: 9d0e1b6bf9c5eddb
+  - type: vless
+    name: 🇰🇿_哈萨克斯坦_youtube@资源分享师_95
+    server: 95.56.251.12
+    port: 47443
+    uuid: 1fe01c8a-ab37-4e95-bbfc-95d4a608931e
+    flow: xtls-rprx-vision
+    udp: true
+    tls: true
+    servername: kz1.waspnest.space
+    sni: kz1.waspnest.space
+    skip-cert-verify: false
+    client-fingerprint: firefox
+    reality-opts:
+      public-key: z1GSwCEACvO9RLcMVpcURiT8er4oeIdeSJhraw_0cGU
+      short-id: ae97223a8f799877
+  - type: vless
+    name: youtube@资源分享师_96
+    server: 104.17.44.17
+    port: 443
+    uuid: d37a75db-76b6-4db8-b213-0d5b044d138d
+    udp: true
+    tls: true
+    servername: top-e4s.pages.dev
+    sni: top-e4s.pages.dev
+    skip-cert-verify: false
+    client-fingerprint: unsafe
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: top-e4s.pages.dev
+  - type: ss
+    name: 🇮🇹_意大利_youtube@资源分享师_97
+    server: 202.50.253.36
+    port: 19999
+    password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+    cipher: aes-256-gcm
+    udp: true
+    tls: false
+    skip-cert-verify: false
+  - type: ss
+    name: 🇮🇹_意大利_youtube@资源分享师_98
+    server: 202.50.253.90
+    port: 19999
+    password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+    cipher: aes-256-gcm
+    udp: true
+    tls: false
+    skip-cert-verify: false
+  - type: trojan
+    name: 🇺🇸_美国_youtube@资源分享师_99
+    server: 167.82.96.58
+    port: 443
+    password: MiTiVPN
+    udp: true
+    tls: true
+    servername: ssl.fastly.com
+    sni: ssl.fastly.com
+    skip-cert-verify: false
+proxy-groups:
+  - name: 🚀 节点选择
+    type: select
+    proxies:
+      - ♻️ 自动选择
+      - DIRECT
+      - youtube@资源分享师_01
+      - youtube@资源分享师_02
+      - 🇭🇰_香港_youtube@资源分享师_03
+      - 🇺🇸_美国_youtube@资源分享师_04
+      - 🇷🇺_俄罗斯_youtube@资源分享师_05
+      - youtube@资源分享师_06
+      - 🇩🇪_德国_youtube@资源分享师_07
+      - 🇷🇺_俄罗斯_youtube@资源分享师_10
+      - 🇷🇺_俄罗斯_youtube@资源分享师_11
+      - 🇵🇱_波兰_youtube@资源分享师_12
+      - 🇷🇺_俄罗斯_youtube@资源分享师_13
+      - youtube@资源分享师_14
+      - youtube@资源分享师_15
+      - 🇺🇸_美国_youtube@资源分享师_17
+      - 🇺🇸_美国_youtube@资源分享师_18
+      - 🇮🇹_意大利_youtube@资源分享师_20
+      - youtube@资源分享师_21
+      - youtube@资源分享师_22
+      - 🇵🇱_波兰_youtube@资源分享师_24
+      - youtube@资源分享师_25
+      - youtube@资源分享师_26
+      - youtube@资源分享师_27
+      - 🇺🇸_美国_youtube@资源分享师_28
+      - 🇵🇱_波兰_youtube@资源分享师_29
+      - 🇺🇸_美国_youtube@资源分享师_30
+      - 🇯🇵_日本_youtube@资源分享师_31
+      - 🇰🇿_哈萨克斯坦_youtube@资源分享师_33
+      - youtube@资源分享师_34
+      - 🇺🇸_美国_youtube@资源分享师_35
+      - 🇨🇭_瑞士_youtube@资源分享师_36
+      - 🇺🇸_美国_youtube@资源分享师_37
+      - 🇺🇸_美国_youtube@资源分享师_38
+      - 🇵🇱_波兰_youtube@资源分享师_39
+      - 🇪🇸_西班牙_youtube@资源分享师_40
+      - 🇵🇱_波兰_youtube@资源分享师_41
+      - youtube@资源分享师_42
+      - 🇷🇺_俄罗斯_youtube@资源分享师_43
+      - youtube@资源分享师_44
+      - 🇨🇭_瑞士_youtube@资源分享师_45
+      - 🇨🇭_瑞士_youtube@资源分享师_46
+      - 🇺🇸_美国_youtube@资源分享师_47
+      - 🇺🇸_美国_youtube@资源分享师_48
+      - 🇷🇺_俄罗斯_youtube@资源分享师_50
+      - 🇷🇺_俄罗斯_youtube@资源分享师_51
+      - 🇷🇺_俄罗斯_youtube@资源分享师_52
+      - 🇷🇺_俄罗斯_youtube@资源分享师_55
+      - 🇷🇺_俄罗斯_youtube@资源分享师_56
+      - 🇷🇺_俄罗斯_youtube@资源分享师_57
+      - 🇷🇺_俄罗斯_youtube@资源分享师_58
+      - 🇷🇺_俄罗斯_youtube@资源分享师_59
+      - 🇷🇺_俄罗斯_youtube@资源分享师_60
+      - 🇷🇺_俄罗斯_youtube@资源分享师_61
+      - 🇷🇺_俄罗斯_youtube@资源分享师_62
+      - 🇷🇺_俄罗斯_youtube@资源分享师_63
+      - 🇷🇺_俄罗斯_youtube@资源分享师_64
+      - 🇺🇸_美国_youtube@资源分享师_65
+      - 🇺🇸_美国_youtube@资源分享师_67
+      - 🇷🇺_俄罗斯_youtube@资源分享师_68
+      - 🇨🇾_塞浦路斯_youtube@资源分享师_70
+      - 🇺🇸_美国_youtube@资源分享师_71
+      - 🇺🇸_美国_youtube@资源分享师_72
+      - youtube@资源分享师_73
+      - 🇺🇸_美国_youtube@资源分享师_74
+      - 🇺🇸_美国_youtube@资源分享师_75
+      - youtube@资源分享师_76
+      - 🇺🇸_美国_youtube@资源分享师_77
+      - 🇦🇱_阿尔巴尼亚_youtube@资源分享师_78
+      - 🇨🇾_塞浦路斯_youtube@资源分享师_79
+      - 🇨🇾_塞浦路斯_youtube@资源分享师_80
+      - 🇮🇹_意大利_youtube@资源分享师_81
+      - 🇮🇹_意大利_youtube@资源分享师_82
+      - 🇮🇹_意大利_youtube@资源分享师_83
+      - 🇮🇹_意大利_youtube@资源分享师_84
+      - 🇮🇹_意大利_youtube@资源分享师_85
+      - 🇮🇹_意大利_youtube@资源分享师_86
+      - 🇮🇹_意大利_youtube@资源分享师_87
+      - 🇮🇹_意大利_youtube@资源分享师_88
+      - youtube@资源分享师_89
+      - 🇷🇺_俄罗斯_youtube@资源分享师_90
+      - youtube@资源分享师_91
+      - youtube@资源分享师_93
+      - 🇷🇺_俄罗斯_youtube@资源分享师_94
+      - 🇰🇿_哈萨克斯坦_youtube@资源分享师_95
+      - youtube@资源分享师_96
+      - 🇮🇹_意大利_youtube@资源分享师_97
+      - 🇮🇹_意大利_youtube@资源分享师_98
+      - 🇺🇸_美国_youtube@资源分享师_99
+  - name: ♻️ 自动选择
+    type: url-test
+    proxies:
+      - youtube@资源分享师_01
+      - youtube@资源分享师_02
+      - 🇭🇰_香港_youtube@资源分享师_03
+      - 🇺🇸_美国_youtube@资源分享师_04
+      - 🇷🇺_俄罗斯_youtube@资源分享师_05
+      - youtube@资源分享师_06
+      - 🇩🇪_德国_youtube@资源分享师_07
+      - 🇷🇺_俄罗斯_youtube@资源分享师_10
+      - 🇷🇺_俄罗斯_youtube@资源分享师_11
+      - 🇵🇱_波兰_youtube@资源分享师_12
+      - 🇷🇺_俄罗斯_youtube@资源分享师_13
+      - youtube@资源分享师_14
+      - youtube@资源分享师_15
+      - 🇺🇸_美国_youtube@资源分享师_17
+      - 🇺🇸_美国_youtube@资源分享师_18
+      - 🇮🇹_意大利_youtube@资源分享师_20
+      - youtube@资源分享师_21
+      - youtube@资源分享师_22
+      - 🇵🇱_波兰_youtube@资源分享师_24
+      - youtube@资源分享师_25
+      - youtube@资源分享师_26
+      - youtube@资源分享师_27
+      - 🇺🇸_美国_youtube@资源分享师_28
+      - 🇵🇱_波兰_youtube@资源分享师_29
+      - 🇺🇸_美国_youtube@资源分享师_30
+      - 🇯🇵_日本_youtube@资源分享师_31
+      - 🇰🇿_哈萨克斯坦_youtube@资源分享师_33
+      - youtube@资源分享师_34
+      - 🇺🇸_美国_youtube@资源分享师_35
+      - 🇨🇭_瑞士_youtube@资源分享师_36
+      - 🇺🇸_美国_youtube@资源分享师_37
+      - 🇺🇸_美国_youtube@资源分享师_38
+      - 🇵🇱_波兰_youtube@资源分享师_39
+      - 🇪🇸_西班牙_youtube@资源分享师_40
+      - 🇵🇱_波兰_youtube@资源分享师_41
+      - youtube@资源分享师_42
+      - 🇷🇺_俄罗斯_youtube@资源分享师_43
+      - youtube@资源分享师_44
+      - 🇨🇭_瑞士_youtube@资源分享师_45
+      - 🇨🇭_瑞士_youtube@资源分享师_46
+      - 🇺🇸_美国_youtube@资源分享师_47
+      - 🇺🇸_美国_youtube@资源分享师_48
+      - 🇷🇺_俄罗斯_youtube@资源分享师_50
+      - 🇷🇺_俄罗斯_youtube@资源分享师_51
+      - 🇷🇺_俄罗斯_youtube@资源分享师_52
+      - 🇷🇺_俄罗斯_youtube@资源分享师_55
+      - 🇷🇺_俄罗斯_youtube@资源分享师_56
+      - 🇷🇺_俄罗斯_youtube@资源分享师_57
+      - 🇷🇺_俄罗斯_youtube@资源分享师_58
+      - 🇷🇺_俄罗斯_youtube@资源分享师_59
+      - 🇷🇺_俄罗斯_youtube@资源分享师_60
+      - 🇷🇺_俄罗斯_youtube@资源分享师_61
+      - 🇷🇺_俄罗斯_youtube@资源分享师_62
+      - 🇷🇺_俄罗斯_youtube@资源分享师_63
+      - 🇷🇺_俄罗斯_youtube@资源分享师_64
+      - 🇺🇸_美国_youtube@资源分享师_65
+      - 🇺🇸_美国_youtube@资源分享师_67
+      - 🇷🇺_俄罗斯_youtube@资源分享师_68
+      - 🇨🇾_塞浦路斯_youtube@资源分享师_70
+      - 🇺🇸_美国_youtube@资源分享师_71
+      - 🇺🇸_美国_youtube@资源分享师_72
+      - youtube@资源分享师_73
+      - 🇺🇸_美国_youtube@资源分享师_74
+      - 🇺🇸_美国_youtube@资源分享师_75
+      - youtube@资源分享师_76
+      - 🇺🇸_美国_youtube@资源分享师_77
+      - 🇦🇱_阿尔巴尼亚_youtube@资源分享师_78
+      - 🇨🇾_塞浦路斯_youtube@资源分享师_79
+      - 🇨🇾_塞浦路斯_youtube@资源分享师_80
+      - 🇮🇹_意大利_youtube@资源分享师_81
+      - 🇮🇹_意大利_youtube@资源分享师_82
+      - 🇮🇹_意大利_youtube@资源分享师_83
+      - 🇮🇹_意大利_youtube@资源分享师_84
+      - 🇮🇹_意大利_youtube@资源分享师_85
+      - 🇮🇹_意大利_youtube@资源分享师_86
+      - 🇮🇹_意大利_youtube@资源分享师_87
+      - 🇮🇹_意大利_youtube@资源分享师_88
+      - youtube@资源分享师_89
+      - 🇷🇺_俄罗斯_youtube@资源分享师_90
+      - youtube@资源分享师_91
+      - youtube@资源分享师_93
+      - 🇷🇺_俄罗斯_youtube@资源分享师_94
+      - 🇰🇿_哈萨克斯坦_youtube@资源分享师_95
+      - youtube@资源分享师_96
+      - 🇮🇹_意大利_youtube@资源分享师_97
+      - 🇮🇹_意大利_youtube@资源分享师_98
+      - 🇺🇸_美国_youtube@资源分享师_99
+    url: http://www.gstatic.com/generate_204
+    interval: 300
+    tolerance: 50
+  - name: 🌍 国外媒体
+    type: select
+    proxies:
+      - 🚀 节点选择
+      - ♻️ 自动选择
+      - 🎯 全球直连
+      - youtube@资源分享师_01
+      - youtube@资源分享师_02
+      - 🇭🇰_香港_youtube@资源分享师_03
+      - 🇺🇸_美国_youtube@资源分享师_04
+      - 🇷🇺_俄罗斯_youtube@资源分享师_05
+      - youtube@资源分享师_06
+      - 🇩🇪_德国_youtube@资源分享师_07
+      - 🇷🇺_俄罗斯_youtube@资源分享师_10
+      - 🇷🇺_俄罗斯_youtube@资源分享师_11
+      - 🇵🇱_波兰_youtube@资源分享师_12
+      - 🇷🇺_俄罗斯_youtube@资源分享师_13
+      - youtube@资源分享师_14
+      - youtube@资源分享师_15
+      - 🇺🇸_美国_youtube@资源分享师_17
+      - 🇺🇸_美国_youtube@资源分享师_18
+      - 🇮🇹_意大利_youtube@资源分享师_20
+      - youtube@资源分享师_21
+      - youtube@资源分享师_22
+      - 🇵🇱_波兰_youtube@资源分享师_24
+      - youtube@资源分享师_25
+      - youtube@资源分享师_26
+      - youtube@资源分享师_27
+      - 🇺🇸_美国_youtube@资源分享师_28
+      - 🇵🇱_波兰_youtube@资源分享师_29
+      - 🇺🇸_美国_youtube@资源分享师_30
+      - 🇯🇵_日本_youtube@资源分享师_31
+      - 🇰🇿_哈萨克斯坦_youtube@资源分享师_33
+      - youtube@资源分享师_34
+      - 🇺🇸_美国_youtube@资源分享师_35
+      - 🇨🇭_瑞士_youtube@资源分享师_36
+      - 🇺🇸_美国_youtube@资源分享师_37
+      - 🇺🇸_美国_youtube@资源分享师_38
+      - 🇵🇱_波兰_youtube@资源分享师_39
+      - 🇪🇸_西班牙_youtube@资源分享师_40
+      - 🇵🇱_波兰_youtube@资源分享师_41
+      - youtube@资源分享师_42
+      - 🇷🇺_俄罗斯_youtube@资源分享师_43
+      - youtube@资源分享师_44
+      - 🇨🇭_瑞士_youtube@资源分享师_45
+      - 🇨🇭_瑞士_youtube@资源分享师_46
+      - 🇺🇸_美国_youtube@资源分享师_47
+      - 🇺🇸_美国_youtube@资源分享师_48
+      - 🇷🇺_俄罗斯_youtube@资源分享师_50
+      - 🇷🇺_俄罗斯_youtube@资源分享师_51
+      - 🇷🇺_俄罗斯_youtube@资源分享师_52
+      - 🇷🇺_俄罗斯_youtube@资源分享师_55
+      - 🇷🇺_俄罗斯_youtube@资源分享师_56
+      - 🇷🇺_俄罗斯_youtube@资源分享师_57
+      - 🇷🇺_俄罗斯_youtube@资源分享师_58
+      - 🇷🇺_俄罗斯_youtube@资源分享师_59
+      - 🇷🇺_俄罗斯_youtube@资源分享师_60
+      - 🇷🇺_俄罗斯_youtube@资源分享师_61
+      - 🇷🇺_俄罗斯_youtube@资源分享师_62
+      - 🇷🇺_俄罗斯_youtube@资源分享师_63
+      - 🇷🇺_俄罗斯_youtube@资源分享师_64
+      - 🇺🇸_美国_youtube@资源分享师_65
+      - 🇺🇸_美国_youtube@资源分享师_67
+      - 🇷🇺_俄罗斯_youtube@资源分享师_68
+      - 🇨🇾_塞浦路斯_youtube@资源分享师_70
+      - 🇺🇸_美国_youtube@资源分享师_71
+      - 🇺🇸_美国_youtube@资源分享师_72
+      - youtube@资源分享师_73
+      - 🇺🇸_美国_youtube@资源分享师_74
+      - 🇺🇸_美国_youtube@资源分享师_75
+      - youtube@资源分享师_76
+      - 🇺🇸_美国_youtube@资源分享师_77
+      - 🇦🇱_阿尔巴尼亚_youtube@资源分享师_78
+      - 🇨🇾_塞浦路斯_youtube@资源分享师_79
+      - 🇨🇾_塞浦路斯_youtube@资源分享师_80
+      - 🇮🇹_意大利_youtube@资源分享师_81
+      - 🇮🇹_意大利_youtube@资源分享师_82
+      - 🇮🇹_意大利_youtube@资源分享师_83
+      - 🇮🇹_意大利_youtube@资源分享师_84
+      - 🇮🇹_意大利_youtube@资源分享师_85
+      - 🇮🇹_意大利_youtube@资源分享师_86
+      - 🇮🇹_意大利_youtube@资源分享师_87
+      - 🇮🇹_意大利_youtube@资源分享师_88
+      - youtube@资源分享师_89
+      - 🇷🇺_俄罗斯_youtube@资源分享师_90
+      - youtube@资源分享师_91
+      - youtube@资源分享师_93
+      - 🇷🇺_俄罗斯_youtube@资源分享师_94
+      - 🇰🇿_哈萨克斯坦_youtube@资源分享师_95
+      - youtube@资源分享师_96
+      - 🇮🇹_意大利_youtube@资源分享师_97
+      - 🇮🇹_意大利_youtube@资源分享师_98
+      - 🇺🇸_美国_youtube@资源分享师_99
+  - name: 📲 电报信息
+    type: select
+    proxies:
+      - 🚀 节点选择
+      - 🎯 全球直连
+      - youtube@资源分享师_01
+      - youtube@资源分享师_02
+      - 🇭🇰_香港_youtube@资源分享师_03
+      - 🇺🇸_美国_youtube@资源分享师_04
+      - 🇷🇺_俄罗斯_youtube@资源分享师_05
+      - youtube@资源分享师_06
+      - 🇩🇪_德国_youtube@资源分享师_07
+      - 🇷🇺_俄罗斯_youtube@资源分享师_10
+      - 🇷🇺_俄罗斯_youtube@资源分享师_11
+      - 🇵🇱_波兰_youtube@资源分享师_12
+      - 🇷🇺_俄罗斯_youtube@资源分享师_13
+      - youtube@资源分享师_14
+      - youtube@资源分享师_15
+      - 🇺🇸_美国_youtube@资源分享师_17
+      - 🇺🇸_美国_youtube@资源分享师_18
+      - 🇮🇹_意大利_youtube@资源分享师_20
+      - youtube@资源分享师_21
+      - youtube@资源分享师_22
+      - 🇵🇱_波兰_youtube@资源分享师_24
+      - youtube@资源分享师_25
+      - youtube@资源分享师_26
+      - youtube@资源分享师_27
+      - 🇺🇸_美国_youtube@资源分享师_28
+      - 🇵🇱_波兰_youtube@资源分享师_29
+      - 🇺🇸_美国_youtube@资源分享师_30
+      - 🇯🇵_日本_youtube@资源分享师_31
+      - 🇰🇿_哈萨克斯坦_youtube@资源分享师_33
+      - youtube@资源分享师_34
+      - 🇺🇸_美国_youtube@资源分享师_35
+      - 🇨🇭_瑞士_youtube@资源分享师_36
+      - 🇺🇸_美国_youtube@资源分享师_37
+      - 🇺🇸_美国_youtube@资源分享师_38
+      - 🇵🇱_波兰_youtube@资源分享师_39
+      - 🇪🇸_西班牙_youtube@资源分享师_40
+      - 🇵🇱_波兰_youtube@资源分享师_41
+      - youtube@资源分享师_42
+      - 🇷🇺_俄罗斯_youtube@资源分享师_43
+      - youtube@资源分享师_44
+      - 🇨🇭_瑞士_youtube@资源分享师_45
+      - 🇨🇭_瑞士_youtube@资源分享师_46
+      - 🇺🇸_美国_youtube@资源分享师_47
+      - 🇺🇸_美国_youtube@资源分享师_48
+      - 🇷🇺_俄罗斯_youtube@资源分享师_50
+      - 🇷🇺_俄罗斯_youtube@资源分享师_51
+      - 🇷🇺_俄罗斯_youtube@资源分享师_52
+      - 🇷🇺_俄罗斯_youtube@资源分享师_55
+      - 🇷🇺_俄罗斯_youtube@资源分享师_56
+      - 🇷🇺_俄罗斯_youtube@资源分享师_57
+      - 🇷🇺_俄罗斯_youtube@资源分享师_58
+      - 🇷🇺_俄罗斯_youtube@资源分享师_59
+      - 🇷🇺_俄罗斯_youtube@资源分享师_60
+      - 🇷🇺_俄罗斯_youtube@资源分享师_61
+      - 🇷🇺_俄罗斯_youtube@资源分享师_62
+      - 🇷🇺_俄罗斯_youtube@资源分享师_63
+      - 🇷🇺_俄罗斯_youtube@资源分享师_64
+      - 🇺🇸_美国_youtube@资源分享师_65
+      - 🇺🇸_美国_youtube@资源分享师_67
+      - 🇷🇺_俄罗斯_youtube@资源分享师_68
+      - 🇨🇾_塞浦路斯_youtube@资源分享师_70
+      - 🇺🇸_美国_youtube@资源分享师_71
+      - 🇺🇸_美国_youtube@资源分享师_72
+      - youtube@资源分享师_73
+      - 🇺🇸_美国_youtube@资源分享师_74
+      - 🇺🇸_美国_youtube@资源分享师_75
+      - youtube@资源分享师_76
+      - 🇺🇸_美国_youtube@资源分享师_77
+      - 🇦🇱_阿尔巴尼亚_youtube@资源分享师_78
+      - 🇨🇾_塞浦路斯_youtube@资源分享师_79
+      - 🇨🇾_塞浦路斯_youtube@资源分享师_80
+      - 🇮🇹_意大利_youtube@资源分享师_81
+      - 🇮🇹_意大利_youtube@资源分享师_82
+      - 🇮🇹_意大利_youtube@资源分享师_83
+      - 🇮🇹_意大利_youtube@资源分享师_84
+      - 🇮🇹_意大利_youtube@资源分享师_85
+      - 🇮🇹_意大利_youtube@资源分享师_86
+      - 🇮🇹_意大利_youtube@资源分享师_87
+      - 🇮🇹_意大利_youtube@资源分享师_88
+      - youtube@资源分享师_89
+      - 🇷🇺_俄罗斯_youtube@资源分享师_90
+      - youtube@资源分享师_91
+      - youtube@资源分享师_93
+      - 🇷🇺_俄罗斯_youtube@资源分享师_94
+      - 🇰🇿_哈萨克斯坦_youtube@资源分享师_95
+      - youtube@资源分享师_96
+      - 🇮🇹_意大利_youtube@资源分享师_97
+      - 🇮🇹_意大利_youtube@资源分享师_98
+      - 🇺🇸_美国_youtube@资源分享师_99
+  - name: Ⓜ️ 微软服务
+    type: select
+    proxies:
+      - 🎯 全球直连
+      - 🚀 节点选择
+      - youtube@资源分享师_01
+      - youtube@资源分享师_02
+      - 🇭🇰_香港_youtube@资源分享师_03
+      - 🇺🇸_美国_youtube@资源分享师_04
+      - 🇷🇺_俄罗斯_youtube@资源分享师_05
+      - youtube@资源分享师_06
+      - 🇩🇪_德国_youtube@资源分享师_07
+      - 🇷🇺_俄罗斯_youtube@资源分享师_10
+      - 🇷🇺_俄罗斯_youtube@资源分享师_11
+      - 🇵🇱_波兰_youtube@资源分享师_12
+      - 🇷🇺_俄罗斯_youtube@资源分享师_13
+      - youtube@资源分享师_14
+      - youtube@资源分享师_15
+      - 🇺🇸_美国_youtube@资源分享师_17
+      - 🇺🇸_美国_youtube@资源分享师_18
+      - 🇮🇹_意大利_youtube@资源分享师_20
+      - youtube@资源分享师_21
+      - youtube@资源分享师_22
+      - 🇵🇱_波兰_youtube@资源分享师_24
+      - youtube@资源分享师_25
+      - youtube@资源分享师_26
+      - youtube@资源分享师_27
+      - 🇺🇸_美国_youtube@资源分享师_28
+      - 🇵🇱_波兰_youtube@资源分享师_29
+      - 🇺🇸_美国_youtube@资源分享师_30
+      - 🇯🇵_日本_youtube@资源分享师_31
+      - 🇰🇿_哈萨克斯坦_youtube@资源分享师_33
+      - youtube@资源分享师_34
+      - 🇺🇸_美国_youtube@资源分享师_35
+      - 🇨🇭_瑞士_youtube@资源分享师_36
+      - 🇺🇸_美国_youtube@资源分享师_37
+      - 🇺🇸_美国_youtube@资源分享师_38
+      - 🇵🇱_波兰_youtube@资源分享师_39
+      - 🇪🇸_西班牙_youtube@资源分享师_40
+      - 🇵🇱_波兰_youtube@资源分享师_41
+      - youtube@资源分享师_42
+      - 🇷🇺_俄罗斯_youtube@资源分享师_43
+      - youtube@资源分享师_44
+      - 🇨🇭_瑞士_youtube@资源分享师_45
+      - 🇨🇭_瑞士_youtube@资源分享师_46
+      - 🇺🇸_美国_youtube@资源分享师_47
+      - 🇺🇸_美国_youtube@资源分享师_48
+      - 🇷🇺_俄罗斯_youtube@资源分享师_50
+      - 🇷🇺_俄罗斯_youtube@资源分享师_51
+      - 🇷🇺_俄罗斯_youtube@资源分享师_52
+      - 🇷🇺_俄罗斯_youtube@资源分享师_55
+      - 🇷🇺_俄罗斯_youtube@资源分享师_56
+      - 🇷🇺_俄罗斯_youtube@资源分享师_57
+      - 🇷🇺_俄罗斯_youtube@资源分享师_58
+      - 🇷🇺_俄罗斯_youtube@资源分享师_59
+      - 🇷🇺_俄罗斯_youtube@资源分享师_60
+      - 🇷🇺_俄罗斯_youtube@资源分享师_61
+      - 🇷🇺_俄罗斯_youtube@资源分享师_62
+      - 🇷🇺_俄罗斯_youtube@资源分享师_63
+      - 🇷🇺_俄罗斯_youtube@资源分享师_64
+      - 🇺🇸_美国_youtube@资源分享师_65
+      - 🇺🇸_美国_youtube@资源分享师_67
+      - 🇷🇺_俄罗斯_youtube@资源分享师_68
+      - 🇨🇾_塞浦路斯_youtube@资源分享师_70
+      - 🇺🇸_美国_youtube@资源分享师_71
+      - 🇺🇸_美国_youtube@资源分享师_72
+      - youtube@资源分享师_73
+      - 🇺🇸_美国_youtube@资源分享师_74
+      - 🇺🇸_美国_youtube@资源分享师_75
+      - youtube@资源分享师_76
+      - 🇺🇸_美国_youtube@资源分享师_77
+      - 🇦🇱_阿尔巴尼亚_youtube@资源分享师_78
+      - 🇨🇾_塞浦路斯_youtube@资源分享师_79
+      - 🇨🇾_塞浦路斯_youtube@资源分享师_80
+      - 🇮🇹_意大利_youtube@资源分享师_81
+      - 🇮🇹_意大利_youtube@资源分享师_82
+      - 🇮🇹_意大利_youtube@资源分享师_83
+      - 🇮🇹_意大利_youtube@资源分享师_84
+      - 🇮🇹_意大利_youtube@资源分享师_85
+      - 🇮🇹_意大利_youtube@资源分享师_86
+      - 🇮🇹_意大利_youtube@资源分享师_87
+      - 🇮🇹_意大利_youtube@资源分享师_88
+      - youtube@资源分享师_89
+      - 🇷🇺_俄罗斯_youtube@资源分享师_90
+      - youtube@资源分享师_91
+      - youtube@资源分享师_93
+      - 🇷🇺_俄罗斯_youtube@资源分享师_94
+      - 🇰🇿_哈萨克斯坦_youtube@资源分享师_95
+      - youtube@资源分享师_96
+      - 🇮🇹_意大利_youtube@资源分享师_97
+      - 🇮🇹_意大利_youtube@资源分享师_98
+      - 🇺🇸_美国_youtube@资源分享师_99
+  - name: 🍎 苹果服务
+    type: select
+    proxies:
+      - 🚀 节点选择
+      - 🎯 全球直连
+      - youtube@资源分享师_01
+      - youtube@资源分享师_02
+      - 🇭🇰_香港_youtube@资源分享师_03
+      - 🇺🇸_美国_youtube@资源分享师_04
+      - 🇷🇺_俄罗斯_youtube@资源分享师_05
+      - youtube@资源分享师_06
+      - 🇩🇪_德国_youtube@资源分享师_07
+      - 🇷🇺_俄罗斯_youtube@资源分享师_10
+      - 🇷🇺_俄罗斯_youtube@资源分享师_11
+      - 🇵🇱_波兰_youtube@资源分享师_12
+      - 🇷🇺_俄罗斯_youtube@资源分享师_13
+      - youtube@资源分享师_14
+      - youtube@资源分享师_15
+      - 🇺🇸_美国_youtube@资源分享师_17
+      - 🇺🇸_美国_youtube@资源分享师_18
+      - 🇮🇹_意大利_youtube@资源分享师_20
+      - youtube@资源分享师_21
+      - youtube@资源分享师_22
+      - 🇵🇱_波兰_youtube@资源分享师_24
+      - youtube@资源分享师_25
+      - youtube@资源分享师_26
+      - youtube@资源分享师_27
+      - 🇺🇸_美国_youtube@资源分享师_28
+      - 🇵🇱_波兰_youtube@资源分享师_29
+      - 🇺🇸_美国_youtube@资源分享师_30
+      - 🇯🇵_日本_youtube@资源分享师_31
+      - 🇰🇿_哈萨克斯坦_youtube@资源分享师_33
+      - youtube@资源分享师_34
+      - 🇺🇸_美国_youtube@资源分享师_35
+      - 🇨🇭_瑞士_youtube@资源分享师_36
+      - 🇺🇸_美国_youtube@资源分享师_37
+      - 🇺🇸_美国_youtube@资源分享师_38
+      - 🇵🇱_波兰_youtube@资源分享师_39
+      - 🇪🇸_西班牙_youtube@资源分享师_40
+      - 🇵🇱_波兰_youtube@资源分享师_41
+      - youtube@资源分享师_42
+      - 🇷🇺_俄罗斯_youtube@资源分享师_43
+      - youtube@资源分享师_44
+      - 🇨🇭_瑞士_youtube@资源分享师_45
+      - 🇨🇭_瑞士_youtube@资源分享师_46
+      - 🇺🇸_美国_youtube@资源分享师_47
+      - 🇺🇸_美国_youtube@资源分享师_48
+      - 🇷🇺_俄罗斯_youtube@资源分享师_50
+      - 🇷🇺_俄罗斯_youtube@资源分享师_51
+      - 🇷🇺_俄罗斯_youtube@资源分享师_52
+      - 🇷🇺_俄罗斯_youtube@资源分享师_55
+      - 🇷🇺_俄罗斯_youtube@资源分享师_56
+      - 🇷🇺_俄罗斯_youtube@资源分享师_57
+      - 🇷🇺_俄罗斯_youtube@资源分享师_58
+      - 🇷🇺_俄罗斯_youtube@资源分享师_59
+      - 🇷🇺_俄罗斯_youtube@资源分享师_60
+      - 🇷🇺_俄罗斯_youtube@资源分享师_61
+      - 🇷🇺_俄罗斯_youtube@资源分享师_62
+      - 🇷🇺_俄罗斯_youtube@资源分享师_63
+      - 🇷🇺_俄罗斯_youtube@资源分享师_64
+      - 🇺🇸_美国_youtube@资源分享师_65
+      - 🇺🇸_美国_youtube@资源分享师_67
+      - 🇷🇺_俄罗斯_youtube@资源分享师_68
+      - 🇨🇾_塞浦路斯_youtube@资源分享师_70
+      - 🇺🇸_美国_youtube@资源分享师_71
+      - 🇺🇸_美国_youtube@资源分享师_72
+      - youtube@资源分享师_73
+      - 🇺🇸_美国_youtube@资源分享师_74
+      - 🇺🇸_美国_youtube@资源分享师_75
+      - youtube@资源分享师_76
+      - 🇺🇸_美国_youtube@资源分享师_77
+      - 🇦🇱_阿尔巴尼亚_youtube@资源分享师_78
+      - 🇨🇾_塞浦路斯_youtube@资源分享师_79
+      - 🇨🇾_塞浦路斯_youtube@资源分享师_80
+      - 🇮🇹_意大利_youtube@资源分享师_81
+      - 🇮🇹_意大利_youtube@资源分享师_82
+      - 🇮🇹_意大利_youtube@资源分享师_83
+      - 🇮🇹_意大利_youtube@资源分享师_84
+      - 🇮🇹_意大利_youtube@资源分享师_85
+      - 🇮🇹_意大利_youtube@资源分享师_86
+      - 🇮🇹_意大利_youtube@资源分享师_87
+      - 🇮🇹_意大利_youtube@资源分享师_88
+      - youtube@资源分享师_89
+      - 🇷🇺_俄罗斯_youtube@资源分享师_90
+      - youtube@资源分享师_91
+      - youtube@资源分享师_93
+      - 🇷🇺_俄罗斯_youtube@资源分享师_94
+      - 🇰🇿_哈萨克斯坦_youtube@资源分享师_95
+      - youtube@资源分享师_96
+      - 🇮🇹_意大利_youtube@资源分享师_97
+      - 🇮🇹_意大利_youtube@资源分享师_98
+      - 🇺🇸_美国_youtube@资源分享师_99
+  - name: 🎯 全球直连
+    type: select
+    proxies:
+      - DIRECT
+      - 🚀 节点选择
+      - ♻️ 自动选择
+  - name: 🛑 全球拦截
+    type: select
+    proxies:
+      - REJECT
+      - DIRECT
+  - name: 🍃 应用净化
+    type: select
+    proxies:
+      - REJECT
+      - DIRECT
+  - name: 🐟 漏网之鱼
+    type: select
+    proxies:
+      - 🚀 节点选择
+      - 🎯 全球直连
+      - ♻️ 自动选择
+      - youtube@资源分享师_01
+      - youtube@资源分享师_02
+      - 🇭🇰_香港_youtube@资源分享师_03
+      - 🇺🇸_美国_youtube@资源分享师_04
+      - 🇷🇺_俄罗斯_youtube@资源分享师_05
+      - youtube@资源分享师_06
+      - 🇩🇪_德国_youtube@资源分享师_07
+      - 🇷🇺_俄罗斯_youtube@资源分享师_10
+      - 🇷🇺_俄罗斯_youtube@资源分享师_11
+      - 🇵🇱_波兰_youtube@资源分享师_12
+      - 🇷🇺_俄罗斯_youtube@资源分享师_13
+      - youtube@资源分享师_14
+      - youtube@资源分享师_15
+      - 🇺🇸_美国_youtube@资源分享师_17
+      - 🇺🇸_美国_youtube@资源分享师_18
+      - 🇮🇹_意大利_youtube@资源分享师_20
+      - youtube@资源分享师_21
+      - youtube@资源分享师_22
+      - 🇵🇱_波兰_youtube@资源分享师_24
+      - youtube@资源分享师_25
+      - youtube@资源分享师_26
+      - youtube@资源分享师_27
+      - 🇺🇸_美国_youtube@资源分享师_28
+      - 🇵🇱_波兰_youtube@资源分享师_29
+      - 🇺🇸_美国_youtube@资源分享师_30
+      - 🇯🇵_日本_youtube@资源分享师_31
+      - 🇰🇿_哈萨克斯坦_youtube@资源分享师_33
+      - youtube@资源分享师_34
+      - 🇺🇸_美国_youtube@资源分享师_35
+      - 🇨🇭_瑞士_youtube@资源分享师_36
+      - 🇺🇸_美国_youtube@资源分享师_37
+      - 🇺🇸_美国_youtube@资源分享师_38
+      - 🇵🇱_波兰_youtube@资源分享师_39
+      - 🇪🇸_西班牙_youtube@资源分享师_40
+      - 🇵🇱_波兰_youtube@资源分享师_41
+      - youtube@资源分享师_42
+      - 🇷🇺_俄罗斯_youtube@资源分享师_43
+      - youtube@资源分享师_44
+      - 🇨🇭_瑞士_youtube@资源分享师_45
+      - 🇨🇭_瑞士_youtube@资源分享师_46
+      - 🇺🇸_美国_youtube@资源分享师_47
+      - 🇺🇸_美国_youtube@资源分享师_48
+      - 🇷🇺_俄罗斯_youtube@资源分享师_50
+      - 🇷🇺_俄罗斯_youtube@资源分享师_51
+      - 🇷🇺_俄罗斯_youtube@资源分享师_52
+      - 🇷🇺_俄罗斯_youtube@资源分享师_55
+      - 🇷🇺_俄罗斯_youtube@资源分享师_56
+      - 🇷🇺_俄罗斯_youtube@资源分享师_57
+      - 🇷🇺_俄罗斯_youtube@资源分享师_58
+      - 🇷🇺_俄罗斯_youtube@资源分享师_59
+      - 🇷🇺_俄罗斯_youtube@资源分享师_60
+      - 🇷🇺_俄罗斯_youtube@资源分享师_61
+      - 🇷🇺_俄罗斯_youtube@资源分享师_62
+      - 🇷🇺_俄罗斯_youtube@资源分享师_63
+      - 🇷🇺_俄罗斯_youtube@资源分享师_64
+      - 🇺🇸_美国_youtube@资源分享师_65
+      - 🇺🇸_美国_youtube@资源分享师_67
+      - 🇷🇺_俄罗斯_youtube@资源分享师_68
+      - 🇨🇾_塞浦路斯_youtube@资源分享师_70
+      - 🇺🇸_美国_youtube@资源分享师_71
+      - 🇺🇸_美国_youtube@资源分享师_72
+      - youtube@资源分享师_73
+      - 🇺🇸_美国_youtube@资源分享师_74
+      - 🇺🇸_美国_youtube@资源分享师_75
+      - youtube@资源分享师_76
+      - 🇺🇸_美国_youtube@资源分享师_77
+      - 🇦🇱_阿尔巴尼亚_youtube@资源分享师_78
+      - 🇨🇾_塞浦路斯_youtube@资源分享师_79
+      - 🇨🇾_塞浦路斯_youtube@资源分享师_80
+      - 🇮🇹_意大利_youtube@资源分享师_81
+      - 🇮🇹_意大利_youtube@资源分享师_82
+      - 🇮🇹_意大利_youtube@资源分享师_83
+      - 🇮🇹_意大利_youtube@资源分享师_84
+      - 🇮🇹_意大利_youtube@资源分享师_85
+      - 🇮🇹_意大利_youtube@资源分享师_86
+      - 🇮🇹_意大利_youtube@资源分享师_87
+      - 🇮🇹_意大利_youtube@资源分享师_88
+      - youtube@资源分享师_89
+      - 🇷🇺_俄罗斯_youtube@资源分享师_90
+      - youtube@资源分享师_91
+      - youtube@资源分享师_93
+      - 🇷🇺_俄罗斯_youtube@资源分享师_94
+      - 🇰🇿_哈萨克斯坦_youtube@资源分享师_95
+      - youtube@资源分享师_96
+      - 🇮🇹_意大利_youtube@资源分享师_97
+      - 🇮🇹_意大利_youtube@资源分享师_98
+      - 🇺🇸_美国_youtube@资源分享师_99
+rule-providers:
+  LocalAreaNetwork:
+    type: http
+    behavior: classical
+    format: text
+    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/LocalAreaNetwork.list
+    path: ./rules/LocalAreaNetwork.list
+    interval: 86400
+  BanAD:
+    type: http
+    behavior: classical
+    format: text
+    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/BanAD.list
+    path: ./rules/BanAD.list
+    interval: 86400
+  BanProgramAD:
+    type: http
+    behavior: classical
+    format: text
+    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/BanProgramAD.list
+    path: ./rules/BanProgramAD.list
+    interval: 86400
+  GoogleCN:
+    type: http
+    behavior: classical
+    format: text
+    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/GoogleCN.list
+    path: ./rules/GoogleCN.list
+    interval: 86400
+  SteamCN:
+    type: http
+    behavior: classical
+    format: text
+    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/SteamCN.list
+    path: ./rules/SteamCN.list
+    interval: 86400
+  Microsoft:
+    type: http
+    behavior: classical
+    format: text
+    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Microsoft.list
+    path: ./rules/Microsoft.list
+    interval: 86400
+  Apple:
+    type: http
+    behavior: classical
+    format: text
+    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Apple.list
+    path: ./rules/Apple.list
+    interval: 86400
+  ProxyMedia:
+    type: http
+    behavior: classical
+    format: text
+    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ProxyMedia.list
+    path: ./rules/ProxyMedia.list
+    interval: 86400
+  Telegram:
+    type: http
+    behavior: classical
+    format: text
+    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Telegram.list
+    path: ./rules/Telegram.list
+    interval: 86400
+  ProxyLite:
+    type: http
+    behavior: classical
+    format: text
+    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ProxyLite.list
+    path: ./rules/ProxyLite.list
+    interval: 86400
+  ChinaDomain:
+    type: http
+    behavior: classical
+    format: text
+    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ChinaDomain.list
+    path: ./rules/ChinaDomain.list
+    interval: 86400
+  ChinaCompanyIp:
+    type: http
+    behavior: classical
+    format: text
+    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ChinaCompanyIp.list
+    path: ./rules/ChinaCompanyIp.list
+    interval: 86400
+rules:
+  - DOMAIN-SUFFIX,nodebuf.com,🚀 节点选择
+  - RULE-SET,LocalAreaNetwork,🎯 全球直连
+  - RULE-SET,BanAD,🛑 全球拦截
+  - RULE-SET,BanProgramAD,🍃 应用净化
+  - RULE-SET,GoogleCN,🎯 全球直连
+  - RULE-SET,SteamCN,🎯 全球直连
+  - RULE-SET,Microsoft,Ⓜ️ 微软服务
+  - RULE-SET,Apple,🍎 苹果服务
+  - RULE-SET,ProxyMedia,🌍 国外媒体
+  - RULE-SET,Telegram,📲 电报信息
+  - RULE-SET,ProxyLite,🚀 节点选择
+  - RULE-SET,ChinaDomain,🎯 全球直连
+  - RULE-SET,ChinaCompanyIp,🎯 全球直连
+  - GEOIP,CN,🎯 全球直连
+  - MATCH,🐟 漏网之鱼
